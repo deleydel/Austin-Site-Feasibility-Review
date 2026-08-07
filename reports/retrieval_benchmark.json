@@ -1,0 +1,2134 @@
+{
+  "hybrid/instruction": {
+    "mode": "hybrid",
+    "hit_at_1": 0.667,
+    "hit_at_5": 0.944,
+    "recall_at_5": 0.721,
+    "mrr": 0.782,
+    "hit_at_5_by_type": {
+      "realistic": 0.933,
+      "citation": 1.0
+    },
+    "median_latency_ms": 8.8,
+    "misses": [
+      {
+        "id": "q01",
+        "question": "What is the maximum impervious cover allowed in an SF-3 family residence zoning district?",
+        "gold": [
+          [
+            "LDC",
+            "25-2-492"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-2-556"
+          ],
+          [
+            "LDC",
+            "25-2-57"
+          ],
+          [
+            "LDC",
+            "25-8-64"
+          ],
+          [
+            "LDC",
+            "25-2-555"
+          ],
+          [
+            "LDC",
+            "25-8-366"
+          ]
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "id": "q01",
+        "type": "realistic",
+        "question": "What is the maximum impervious cover allowed in an SF-3 family residence zoning district?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-2-556 (ADDITIONAL IMPERVIOUS COVER IN SINGLE-FA)",
+          "LDC 25-2-57 (FAMILY RESIDENCE (SF-3) DISTRICT DESIGNA)",
+          "LDC 25-8-64 (IMPERVIOUS COVER ASSUMPTIONS)",
+          "LDC 25-2-555 (FAMILY RESIDENCE (SF-3) DISTRICT REGULAT)",
+          "LDC 25-8-366 (IMPERVIOUS COVER RESTRICTIONS FOR EDUCAT)"
+        ]
+      },
+      {
+        "id": "q02",
+        "type": "realistic",
+        "question": "How is impervious cover measured and what counts toward it?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-8-64 (IMPERVIOUS COVER ASSUMPTIONS)",
+          "LDC 25-1-23 (IMPERVIOUS COVER MEASUREMENT)",
+          "LDC 25-8-63 (IMPERVIOUS COVER CALCULATIONS)",
+          "LDC 25-8-63 (IMPERVIOUS COVER CALCULATIONS)",
+          "LDC 25-8-392 (UPLANDS ZONE)"
+        ]
+      },
+      {
+        "id": "q03",
+        "type": "realistic",
+        "question": "When is a traffic impact analysis required for a proposed development?",
+        "gold_hit_rank": 4,
+        "retrieved": [
+          "LDC 25-6-111 (TRAFFIC IMPACT ANALYSIS DESCRIBED)",
+          "LDC 25-6-101 (MITIGATION OF TRANSPORTATION IMPACTS)",
+          "LDC 25-6-23 (PROPORTIONALITY OF REQUIRED INFRASTRUCTU)",
+          "LDC 25-6-113 (TRAFFIC IMPACT ANALYSIS REQUIRED)",
+          "LDC 25-6-117 (WAIVER AUTHORIZED)"
+        ]
+      },
+      {
+        "id": "q04",
+        "type": "realistic",
+        "question": "What development is prohibited or restricted within the 25-year floodplain?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-7-92 (ENCROACHMENT ON FLOODPLAIN PROHIBITED)",
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-7-7 (DETERMINATION OF THE 25-YEAR FLOODPLAIN)"
+        ]
+      },
+      {
+        "id": "q05",
+        "type": "realistic",
+        "question": "How is the 25-year floodplain determined and delineated?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-7-7 (DETERMINATION OF THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-7-33 (FLOODPLAIN MAPS, DELINEATION, AND DEPICT)",
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)"
+        ]
+      },
+      {
+        "id": "q06",
+        "type": "realistic",
+        "question": "How is required detention pond storage volume determined?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 8.4.0 (DETENTION POND STORAGE DETERMINATION)",
+          "DCM 8.3.2 (Performance Criteria for SWM Ponds)",
+          "DCM 2.2.1 (Design Assumptions for Storm Runoff Anal)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.2 (General)"
+        ]
+      },
+      {
+        "id": "q07",
+        "type": "realistic",
+        "question": "What are the maintenance and equipment access requirements for detention basins?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 8.5.0 (DETENTION BASIN MAINTENANCE AND EQUIPMEN)",
+          "LDC 25-7-153 (DETENTION BASIN MAINTENANCE AND INSPECTI)",
+          "LDC 25-7-153 (DETENTION BASIN MAINTENANCE AND INSPECTI)",
+          "DCM 1.2.4 (Drainage System)",
+          "DCM 1.2.4 (Drainage System)"
+        ]
+      },
+      {
+        "id": "q08",
+        "type": "realistic",
+        "question": "What development restrictions apply in a critical water quality zone?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-8-261 (CRITICAL WATER QUALITY ZONE DEVELOPMENT)",
+          "LDC 25-8-452 (WATER QUALITY TRANSITION ZONE)",
+          "LDC 25-8-422 (WATER QUALITY TRANSITION ZONE)",
+          "LDC 25-8-482 (WATER QUALITY TRANSITION ZONE)",
+          "LDC 25-8-261 (CRITICAL WATER QUALITY ZONE DEVELOPMENT)"
+        ]
+      },
+      {
+        "id": "q09",
+        "type": "realistic",
+        "question": "What water quality control standards must proposed development meet?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-8-213 (WATER QUALITY CONTROL STANDARDS)",
+          "LDC 25-8-213 (WATER QUALITY CONTROL STANDARDS)",
+          "LDC 25-8-212 (PREVIOUS WAIVERS AND SPECIAL EXCEPTIONS)",
+          "LDC 25-8-151 (INNOVATIVE MANAGEMENT PRACTICES)",
+          "LDC 25-8-211 (WATER QUALITY CONTROL REQUIREMENT)"
+        ]
+      },
+      {
+        "id": "q10",
+        "type": "realistic",
+        "question": "What are the design requirements for a driveway approach serving a new development?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "LDC 25-6-295 (REMOVING EXISTING CURB OPENINGS OR DRIVE)",
+          "LDC 25-6-264 (DRIVEWAY APPROACH DESIGN)",
+          "TCM 7.7.0 (DRIVEWAY PERMITTING)",
+          "TCM Section 7 [preamble] ()",
+          "LDC 25-6-2 (DRIVEWAY APPROACHES DESCRIBED)"
+        ]
+      },
+      {
+        "id": "q11",
+        "type": "realistic",
+        "question": "When must sidewalks be installed as part of a site plan?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-6-352 (SIDEWALK INSTALLATION WITH SITE PLANS)",
+          "LDC 25-6-351 (SIDEWALK INSTALLATION IN SUBDIVISIONS)",
+          "LDC 2.2 (RELATIONSHIP OF BUILDINGS TO STREETS AND)",
+          "LDC 25-6-353 (SIDEWALK INSTALLATION WITH BUILDING OR R)",
+          "LDC 25-6-354 (PAYMENT INSTEAD OF SIDEWALK INSTALLATION)"
+        ]
+      },
+      {
+        "id": "q12",
+        "type": "realistic",
+        "question": "What compatibility height limits apply near residential property?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-2-1061 (COMPATIBILITY HEIGHT LIMITS)",
+          "LDC 25-2-1062 (COMPATIBILITY BUFFERS AND SETBACKS)",
+          "LDC 25-2-652 (DENSITY BONUS 90 (DB90) COMBINING DISTRI)",
+          "LDC 25-2-1564 (COMPATIBILITY STANDARDS)",
+          "LDC 25-8-700 (MINIMUM REQUIREMENTS FOR COMPATIBILITY B)"
+        ]
+      },
+      {
+        "id": "q13",
+        "type": "realistic",
+        "question": "What are the requirements for off-street parking design and pedestrian paths from parking areas?",
+        "gold_hit_rank": 3,
+        "retrieved": [
+          "TCM 9.4.1 (OFF-STREET GENERAL LOADING REQUIREMENTS)",
+          "TCM 9.1.0 (GENERAL)",
+          "TCM 9.3.3.2 (Pedestrian Parking Paths General Criteri)",
+          "TCM 9.3.3.3 (Design Strategies)",
+          "LDC 25-6-471 (OFF-STREET PARKING)"
+        ]
+      },
+      {
+        "id": "q14",
+        "type": "realistic",
+        "question": "What stormwater runoff peak flow limits apply to new development discharges?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.3 (Street Drainage)",
+          "DCM 8.1.0 (GENERAL)",
+          "DCM 1.2.2 (General)",
+          "LDC 25-7-66 (SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMEN)"
+        ]
+      },
+      {
+        "id": "q15",
+        "type": "realistic",
+        "question": "What analysis is required to establish an erosion hazard zone?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-7-32 (EROSION HAZARD ZONE ANALYSIS REQUIREMENT)",
+          "DCM Appendix E [preamble] ()",
+          "DCM Appendix E [preamble] ()",
+          "DCM Appendix E [preamble] ()",
+          "DCM Appendix E [preamble] ()"
+        ]
+      },
+      {
+        "id": "q16",
+        "type": "citation",
+        "question": "What does LDC section 25-8-92 establish?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-8-92 (CRITICAL WATER QUALITY ZONES ESTABLISHED)",
+          "LDC 25-8-92 (CRITICAL WATER QUALITY ZONES ESTABLISHED)",
+          "LDC 25-8-92 (CRITICAL WATER QUALITY ZONES ESTABLISHED)",
+          "LDC 25-8-92 (CRITICAL WATER QUALITY ZONES ESTABLISHED)",
+          "LDC ARTICLE 5: DEFINITIONS [preamble] ()"
+        ]
+      },
+      {
+        "id": "q17",
+        "type": "citation",
+        "question": "Definitions in section 25-1-21 of the Land Development Code",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-1-21 (DEFINITIONS)"
+        ]
+      },
+      {
+        "id": "q18",
+        "type": "citation",
+        "question": "Drainage Criteria Manual 1.2.2 general drainage policy requirements",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.1.0 (GENERAL)"
+        ]
+      }
+    ]
+  },
+  "dense/instruction": {
+    "mode": "dense",
+    "hit_at_1": 0.667,
+    "hit_at_5": 0.889,
+    "recall_at_5": 0.647,
+    "mrr": 0.759,
+    "hit_at_5_by_type": {
+      "realistic": 0.933,
+      "citation": 0.667
+    },
+    "median_latency_ms": 3.9,
+    "misses": [
+      {
+        "id": "q01",
+        "question": "What is the maximum impervious cover allowed in an SF-3 family residence zoning district?",
+        "gold": [
+          [
+            "LDC",
+            "25-2-492"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-2-556"
+          ],
+          [
+            "LDC",
+            "25-2-57"
+          ],
+          [
+            "LDC",
+            "25-8-64"
+          ],
+          [
+            "LDC",
+            "25-2-1603"
+          ],
+          [
+            "LDC",
+            "25-2-770"
+          ]
+        ]
+      },
+      {
+        "id": "q16",
+        "question": "What does LDC section 25-8-92 establish?",
+        "gold": [
+          [
+            "LDC",
+            "25-8-92"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "ARTICLE 5: DEFINITIONS [preamble]"
+          ],
+          [
+            "LDC",
+            "25-9-164"
+          ],
+          [
+            "LDC",
+            "25-1-1"
+          ],
+          [
+            "LDC",
+            "25-2-1601"
+          ],
+          [
+            "LDC",
+            "25-2-835"
+          ]
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "id": "q01",
+        "type": "realistic",
+        "question": "What is the maximum impervious cover allowed in an SF-3 family residence zoning district?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-2-556 (ADDITIONAL IMPERVIOUS COVER IN SINGLE-FA)",
+          "LDC 25-2-57 (FAMILY RESIDENCE (SF-3) DISTRICT DESIGNA)",
+          "LDC 25-8-64 (IMPERVIOUS COVER ASSUMPTIONS)",
+          "LDC 25-2-1603 (IMPERVIOUS COVER AND PARKING PLACEMENT R)",
+          "LDC 25-2-770 (CONSERVATION SINGLE FAMILY RESIDENTIAL U)"
+        ]
+      },
+      {
+        "id": "q02",
+        "type": "realistic",
+        "question": "How is impervious cover measured and what counts toward it?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-1-23 (IMPERVIOUS COVER MEASUREMENT)",
+          "LDC 25-8-63 (IMPERVIOUS COVER CALCULATIONS)",
+          "LDC 25-8-63 (IMPERVIOUS COVER CALCULATIONS)",
+          "LDC 25-8-61 (APPLICABILITY)",
+          "LDC 25-8-64 (IMPERVIOUS COVER ASSUMPTIONS)"
+        ]
+      },
+      {
+        "id": "q03",
+        "type": "realistic",
+        "question": "When is a traffic impact analysis required for a proposed development?",
+        "gold_hit_rank": 3,
+        "retrieved": [
+          "LDC 25-6-111 (TRAFFIC IMPACT ANALYSIS DESCRIBED)",
+          "LDC 25-6-115 (STANDARDS FOR TRAFFIC IMPACT ANALYSIS)",
+          "LDC 25-6-113 (TRAFFIC IMPACT ANALYSIS REQUIRED)",
+          "LDC 25-6-101 (MITIGATION OF TRANSPORTATION IMPACTS)",
+          "LDC 25-6-141 (ACTION ON APPLICATION)"
+        ]
+      },
+      {
+        "id": "q04",
+        "type": "realistic",
+        "question": "What development is prohibited or restricted within the 25-year floodplain?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-7-92 (ENCROACHMENT ON FLOODPLAIN PROHIBITED)",
+          "LDC 25-7-3 (OBSTRUCTION OF WATERWAYS PROHIBITED)",
+          "LDC 25-7-93 (GENERAL EXCEPTIONS)",
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)"
+        ]
+      },
+      {
+        "id": "q05",
+        "type": "realistic",
+        "question": "How is the 25-year floodplain determined and delineated?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-7-7 (DETERMINATION OF THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-7-6 (DETERMINATION OF THE 100-YEAR FLOODPLAIN)",
+          "LDC 25-7-33 (FLOODPLAIN MAPS, DELINEATION, AND DEPICT)",
+          "LDC 25-7-33 (FLOODPLAIN MAPS, DELINEATION, AND DEPICT)"
+        ]
+      },
+      {
+        "id": "q06",
+        "type": "realistic",
+        "question": "How is required detention pond storage volume determined?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 8.4.0 (DETENTION POND STORAGE DETERMINATION)",
+          "DCM 8.3.2 (Performance Criteria for SWM Ponds)",
+          "DCM 1.2.2 (General)",
+          "DCM 2.2.1 (Design Assumptions for Storm Runoff Anal)",
+          "DCM 8.5.0 (DETENTION BASIN MAINTENANCE AND EQUIPMEN)"
+        ]
+      },
+      {
+        "id": "q07",
+        "type": "realistic",
+        "question": "What are the maintenance and equipment access requirements for detention basins?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 8.5.0 (DETENTION BASIN MAINTENANCE AND EQUIPMEN)",
+          "LDC 25-7-153 (DETENTION BASIN MAINTENANCE AND INSPECTI)",
+          "LDC 25-7-153 (DETENTION BASIN MAINTENANCE AND INSPECTI)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.4 (Drainage System)"
+        ]
+      },
+      {
+        "id": "q08",
+        "type": "realistic",
+        "question": "What development restrictions apply in a critical water quality zone?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-8-261 (CRITICAL WATER QUALITY ZONE DEVELOPMENT)",
+          "LDC 25-8-261 (CRITICAL WATER QUALITY ZONE DEVELOPMENT)",
+          "LDC 25-8-261 (CRITICAL WATER QUALITY ZONE DEVELOPMENT)",
+          "LDC 25-8-452 (WATER QUALITY TRANSITION ZONE)",
+          "LDC 25-8-422 (WATER QUALITY TRANSITION ZONE)"
+        ]
+      },
+      {
+        "id": "q09",
+        "type": "realistic",
+        "question": "What water quality control standards must proposed development meet?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-8-213 (WATER QUALITY CONTROL STANDARDS)",
+          "LDC 25-8-151 (INNOVATIVE MANAGEMENT PRACTICES)",
+          "LDC 25-8-213 (WATER QUALITY CONTROL STANDARDS)",
+          "LDC 25-8-212 (PREVIOUS WAIVERS AND SPECIAL EXCEPTIONS)",
+          "LDC 25-8-211 (WATER QUALITY CONTROL REQUIREMENT)"
+        ]
+      },
+      {
+        "id": "q10",
+        "type": "realistic",
+        "question": "What are the design requirements for a driveway approach serving a new development?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-6-264 (DRIVEWAY APPROACH DESIGN)",
+          "LDC 25-6-295 (REMOVING EXISTING CURB OPENINGS OR DRIVE)",
+          "TCM 7.7.0 (DRIVEWAY PERMITTING)",
+          "TCM Section 7 [preamble] ()",
+          "LDC 25-6-2 (DRIVEWAY APPROACHES DESCRIBED)"
+        ]
+      },
+      {
+        "id": "q11",
+        "type": "realistic",
+        "question": "When must sidewalks be installed as part of a site plan?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-6-352 (SIDEWALK INSTALLATION WITH SITE PLANS)",
+          "LDC 25-6-351 (SIDEWALK INSTALLATION IN SUBDIVISIONS)",
+          "LDC 25-6-354 (PAYMENT INSTEAD OF SIDEWALK INSTALLATION)",
+          "LDC 25-6-353 (SIDEWALK INSTALLATION WITH BUILDING OR R)",
+          "LDC 25-6-354 (PAYMENT INSTEAD OF SIDEWALK INSTALLATION)"
+        ]
+      },
+      {
+        "id": "q12",
+        "type": "realistic",
+        "question": "What compatibility height limits apply near residential property?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-2-1061 (COMPATIBILITY HEIGHT LIMITS)",
+          "LDC 25-2-1062 (COMPATIBILITY BUFFERS AND SETBACKS)",
+          "LDC 25-2-652 (DENSITY BONUS 90 (DB90) COMBINING DISTRI)",
+          "LDC 25-2-652 (DENSITY BONUS 90 (DB90) COMBINING DISTRI)",
+          "LDC 25-2-655 (DENSITY BONUS CREATIVE SPACES (DBCS) COM)"
+        ]
+      },
+      {
+        "id": "q13",
+        "type": "realistic",
+        "question": "What are the requirements for off-street parking design and pedestrian paths from parking areas?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "TCM 9.3.0 (PARKING DESIGN (OFF-STREET))",
+          "TCM 9.4.1 (OFF-STREET GENERAL LOADING REQUIREMENTS)",
+          "TCM 9.1.0 (GENERAL)",
+          "TCM 9.3.3.2 (Pedestrian Parking Paths General Criteri)",
+          "LDC 25-6-471 (OFF-STREET PARKING)"
+        ]
+      },
+      {
+        "id": "q14",
+        "type": "realistic",
+        "question": "What stormwater runoff peak flow limits apply to new development discharges?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.3 (Street Drainage)",
+          "LDC 25-7-66 (SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMEN)",
+          "LDC 25-7-61 (CRITERIA FOR APPROVAL OF DEVELOPMENT APP)",
+          "DCM 1.2.2 (General)"
+        ]
+      },
+      {
+        "id": "q15",
+        "type": "realistic",
+        "question": "What analysis is required to establish an erosion hazard zone?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-7-32 (EROSION HAZARD ZONE ANALYSIS REQUIREMENT)",
+          "DCM Appendix E [preamble] ()",
+          "DCM Appendix E [preamble] ()",
+          "DCM Appendix E [preamble] ()",
+          "DCM Appendix E [preamble] ()"
+        ]
+      },
+      {
+        "id": "q16",
+        "type": "citation",
+        "question": "What does LDC section 25-8-92 establish?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC ARTICLE 5: DEFINITIONS [preamble] ()",
+          "LDC 25-9-164 (CONSTRUCTION OF ARTICLE)",
+          "LDC 25-1-1 (IMPLEMENTATION OF COMPREHENSIVE PLAN)",
+          "LDC 25-2-1601 (APPLICABILITY)",
+          "LDC 25-2-835 (SCHOOL DISTRICT DEVELOPMENT AGREEMENTS)"
+        ]
+      },
+      {
+        "id": "q17",
+        "type": "citation",
+        "question": "Definitions in section 25-1-21 of the Land Development Code",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC ARTICLE 5: DEFINITIONS [preamble] ()",
+          "LDC 25-1-281 (APPLICABILITY)",
+          "LDC 25-2-766.01 (CONFLICTS; NONAPPLICABILITY)"
+        ]
+      },
+      {
+        "id": "q18",
+        "type": "citation",
+        "question": "Drainage Criteria Manual 1.2.2 general drainage policy requirements",
+        "gold_hit_rank": 3,
+        "retrieved": [
+          "DCM 1.1.0 (GENERAL)",
+          "DCM 1.2.1 (Application)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.7 (City Ordinances)",
+          "DCM 1.2.4 (Drainage System)"
+        ]
+      }
+    ]
+  },
+  "bm25/instruction": {
+    "mode": "bm25",
+    "hit_at_1": 0.278,
+    "hit_at_5": 0.667,
+    "recall_at_5": 0.467,
+    "mrr": 0.454,
+    "hit_at_5_by_type": {
+      "realistic": 0.667,
+      "citation": 0.667
+    },
+    "median_latency_ms": 2.0,
+    "misses": [
+      {
+        "id": "q01",
+        "question": "What is the maximum impervious cover allowed in an SF-3 family residence zoning district?",
+        "gold": [
+          [
+            "LDC",
+            "25-2-492"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-2-1407"
+          ],
+          [
+            "LDC",
+            "25-8-366"
+          ],
+          [
+            "LDC",
+            "25-2-556"
+          ],
+          [
+            "LDC",
+            "25-2-57"
+          ],
+          [
+            "LDC",
+            "25-2-779"
+          ]
+        ]
+      },
+      {
+        "id": "q03",
+        "question": "When is a traffic impact analysis required for a proposed development?",
+        "gold": [
+          [
+            "LDC",
+            "25-6-113"
+          ],
+          [
+            "TCM",
+            "10.2.0"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-6-23"
+          ],
+          [
+            "LDC",
+            "25-6-101"
+          ],
+          [
+            "LDC",
+            "25-6-117"
+          ],
+          [
+            "LDC",
+            "25-6-111"
+          ],
+          [
+            "LDC",
+            "25-6-112"
+          ]
+        ]
+      },
+      {
+        "id": "q05",
+        "question": "How is the 25-year floodplain determined and delineated?",
+        "gold": [
+          [
+            "DCM",
+            "1.2.6"
+          ],
+          [
+            "LDC",
+            "25-7-33"
+          ],
+          [
+            "LDC",
+            "25-7-7"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-7-2"
+          ],
+          [
+            "LDC",
+            "25-7-96"
+          ],
+          [
+            "LDC",
+            "25-7-96"
+          ],
+          [
+            "LDC",
+            "25-7-2"
+          ],
+          [
+            "LDC",
+            "25-8-263"
+          ]
+        ]
+      },
+      {
+        "id": "q08",
+        "question": "What development restrictions apply in a critical water quality zone?",
+        "gold": [
+          [
+            "LDC",
+            "25-8-261"
+          ],
+          [
+            "LDC",
+            "25-8-92"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-8-422"
+          ],
+          [
+            "LDC",
+            "25-8-452"
+          ],
+          [
+            "LDC",
+            "25-8-482"
+          ],
+          [
+            "LDC",
+            "25-8-363"
+          ],
+          [
+            "LDC",
+            "25-8-361"
+          ]
+        ]
+      },
+      {
+        "id": "q10",
+        "question": "What are the design requirements for a driveway approach serving a new development?",
+        "gold": [
+          [
+            "LDC",
+            "25-6-264"
+          ],
+          [
+            "TCM",
+            "7.4.1"
+          ],
+          [
+            "TCM",
+            "7.5.1.1"
+          ],
+          [
+            "TCM",
+            "7.5.1.2"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-6-295"
+          ],
+          [
+            "TCM",
+            "7.7.0"
+          ],
+          [
+            "TCM",
+            "Section 7 [preamble]"
+          ],
+          [
+            "LDC",
+            "25-6-263"
+          ],
+          [
+            "LDC",
+            "25-6-292"
+          ]
+        ]
+      },
+      {
+        "id": "q16",
+        "question": "What does LDC section 25-8-92 establish?",
+        "gold": [
+          [
+            "LDC",
+            "25-8-92"
+          ]
+        ],
+        "got": [
+          [
+            "TCM",
+            "10.2.0"
+          ],
+          [
+            "TCM",
+            "10.5.0"
+          ],
+          [
+            "TCM",
+            "10.4.5"
+          ],
+          [
+            "TCM",
+            "9.6.0"
+          ],
+          [
+            "TCM",
+            "10.4.3.2"
+          ]
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "id": "q01",
+        "type": "realistic",
+        "question": "What is the maximum impervious cover allowed in an SF-3 family residence zoning district?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-2-1407 (AFFORDABLE HOUSING)",
+          "LDC 25-8-366 (IMPERVIOUS COVER RESTRICTIONS FOR EDUCAT)",
+          "LDC 25-2-556 (ADDITIONAL IMPERVIOUS COVER IN SINGLE-FA)",
+          "LDC 25-2-57 (FAMILY RESIDENCE (SF-3) DISTRICT DESIGNA)",
+          "LDC 25-2-779 (SMALL LOT SINGLE-FAMILY RESIDENTIAL USE)"
+        ]
+      },
+      {
+        "id": "q02",
+        "type": "realistic",
+        "question": "How is impervious cover measured and what counts toward it?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "TCM 9.2.0 (PARKING DESIGN (ON-STREET))",
+          "LDC 25-8-64 (IMPERVIOUS COVER ASSUMPTIONS)",
+          "LDC 25-2-551 (LAKE AUSTIN (LA) DISTRICT REGULATIONS)",
+          "LDC 25-2-551 (LAKE AUSTIN (LA) DISTRICT REGULATIONS)",
+          "LDC 25-6-419 (EXCLUDING IMPERVIOUS COVER OF A JOINT-US)"
+        ]
+      },
+      {
+        "id": "q03",
+        "type": "realistic",
+        "question": "When is a traffic impact analysis required for a proposed development?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-6-23 (PROPORTIONALITY OF REQUIRED INFRASTRUCTU)",
+          "LDC 25-6-101 (MITIGATION OF TRANSPORTATION IMPACTS)",
+          "LDC 25-6-117 (WAIVER AUTHORIZED)",
+          "LDC 25-6-111 (TRAFFIC IMPACT ANALYSIS DESCRIBED)",
+          "LDC 25-6-112 (NEIGHBORHOOD TRAFFIC ANALYSIS DESCRIBED)"
+        ]
+      },
+      {
+        "id": "q04",
+        "type": "realistic",
+        "question": "What development is prohibited or restricted within the 25-year floodplain?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-7-92 (ENCROACHMENT ON FLOODPLAIN PROHIBITED)",
+          "LDC 25-7-95 (REQUIREMENTS FOR PARKING AREAS)",
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)"
+        ]
+      },
+      {
+        "id": "q05",
+        "type": "realistic",
+        "question": "How is the 25-year floodplain determined and delineated?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-8-263 (FLOODPLAIN MODIFICATION)"
+        ]
+      },
+      {
+        "id": "q06",
+        "type": "realistic",
+        "question": "How is required detention pond storage volume determined?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "DCM 8.3.2 (Performance Criteria for SWM Ponds)",
+          "DCM 8.4.0 (DETENTION POND STORAGE DETERMINATION)",
+          "DCM 2.2.1 (Design Assumptions for Storm Runoff Anal)",
+          "DCM 1.2.2 (General)",
+          "LDC 25-8-231 (WATER QUALITY CONTROL MAINTENANCE AND IN)"
+        ]
+      },
+      {
+        "id": "q07",
+        "type": "realistic",
+        "question": "What are the maintenance and equipment access requirements for detention basins?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "DCM 1.2.4 (Drainage System)",
+          "DCM 8.5.0 (DETENTION BASIN MAINTENANCE AND EQUIPMEN)",
+          "LDC 25-8-63 (IMPERVIOUS COVER CALCULATIONS)",
+          "DCM 1.2.4 (Drainage System)",
+          "LDC 25-2-6 (CIVIC USES DESCRIBED)"
+        ]
+      },
+      {
+        "id": "q08",
+        "type": "realistic",
+        "question": "What development restrictions apply in a critical water quality zone?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-8-422 (WATER QUALITY TRANSITION ZONE)",
+          "LDC 25-8-452 (WATER QUALITY TRANSITION ZONE)",
+          "LDC 25-8-482 (WATER QUALITY TRANSITION ZONE)",
+          "LDC 25-8-363 (BLASTING PROHIBITED)",
+          "LDC 25-8-361 (WASTEWATER RESTRICTIONS)"
+        ]
+      },
+      {
+        "id": "q09",
+        "type": "realistic",
+        "question": "What water quality control standards must proposed development meet?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-8-213 (WATER QUALITY CONTROL STANDARDS)",
+          "LDC 25-8-213 (WATER QUALITY CONTROL STANDARDS)",
+          "LDC 25-8-231 (WATER QUALITY CONTROL MAINTENANCE AND IN)",
+          "LDC 25-8-215 (COST RECOVERY PROGRAM)",
+          "LDC 25-8-212 (PREVIOUS WAIVERS AND SPECIAL EXCEPTIONS)"
+        ]
+      },
+      {
+        "id": "q10",
+        "type": "realistic",
+        "question": "What are the design requirements for a driveway approach serving a new development?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-6-295 (REMOVING EXISTING CURB OPENINGS OR DRIVE)",
+          "TCM 7.7.0 (DRIVEWAY PERMITTING)",
+          "TCM Section 7 [preamble] ()",
+          "LDC 25-6-263 (CONSTRUCTION PERMIT FOR DRIVEWAY APPROAC)",
+          "LDC 25-6-292 (DESIGN AND CONSTRUCTION STANDARDS)"
+        ]
+      },
+      {
+        "id": "q11",
+        "type": "realistic",
+        "question": "When must sidewalks be installed as part of a site plan?",
+        "gold_hit_rank": 3,
+        "retrieved": [
+          "LDC 25-6-351 (SIDEWALK INSTALLATION IN SUBDIVISIONS)",
+          "TCM 9.8.1 (BIKE PARKING LOCATIONS)",
+          "LDC 25-6-352 (SIDEWALK INSTALLATION WITH SITE PLANS)",
+          "LDC 25-7-66 (SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMEN)",
+          "LDC 2.2 (RELATIONSHIP OF BUILDINGS TO STREETS AND)"
+        ]
+      },
+      {
+        "id": "q12",
+        "type": "realistic",
+        "question": "What compatibility height limits apply near residential property?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-2-1061 (COMPATIBILITY HEIGHT LIMITS)",
+          "LDC 25-2-1564 (COMPATIBILITY STANDARDS)",
+          "LDC 25-2-1062 (COMPATIBILITY BUFFERS AND SETBACKS)",
+          "LDC 25-2-652 (DENSITY BONUS 90 (DB90) COMBINING DISTRI)",
+          "LDC 25-2-1052 (EXCEPTIONS)"
+        ]
+      },
+      {
+        "id": "q13",
+        "type": "realistic",
+        "question": "What are the requirements for off-street parking design and pedestrian paths from parking areas?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "TCM 9.4.1 (OFF-STREET GENERAL LOADING REQUIREMENTS)",
+          "TCM 9.3.3.3 (Design Strategies)",
+          "TCM 9.1.0 (GENERAL)",
+          "TCM 9.3.3.2 (Pedestrian Parking Paths General Criteri)",
+          "TCM 9.3.3.3.2 (Pavement Markings)"
+        ]
+      },
+      {
+        "id": "q14",
+        "type": "realistic",
+        "question": "What stormwater runoff peak flow limits apply to new development discharges?",
+        "gold_hit_rank": 3,
+        "retrieved": [
+          "LDC 25-8-185 (OVERLAND FLOW)",
+          "DCM 8.1.0 (GENERAL)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.2 (General)",
+          "DCM 8.3.1 (General)"
+        ]
+      },
+      {
+        "id": "q15",
+        "type": "realistic",
+        "question": "What analysis is required to establish an erosion hazard zone?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-7-32 (EROSION HAZARD ZONE ANALYSIS REQUIREMENT)",
+          "DCM Appendix E [preamble] ()",
+          "LDC 25-7-32 (EROSION HAZARD ZONE ANALYSIS REQUIREMENT)",
+          "DCM Appendix E [preamble] ()",
+          "DCM Appendix E [preamble] ()"
+        ]
+      },
+      {
+        "id": "q16",
+        "type": "citation",
+        "question": "What does LDC section 25-8-92 establish?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "TCM 10.2.0 (TRAFFIC IMPACT ANALYSIS DETERMINATION)",
+          "TCM 10.5.0 (ZONING TRANSPORTATION ANALYSIS)",
+          "TCM 10.4.5 (PROPORTIONALITY OF TRANSPORTATION IMPROV)",
+          "TCM 9.6.0 (CALCULATION OF PARKING REQUIREMENTS)",
+          "TCM 10.4.3.2 (Neighborhood Traffic Analysis)"
+        ]
+      },
+      {
+        "id": "q17",
+        "type": "citation",
+        "question": "Definitions in section 25-1-21 of the Land Development Code",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "LDC 1.4 (CONFLICTING PROVISIONS)",
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-9-346 (EXEMPTION FOR CITY-SUPPORTED COMMUNITY G)",
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-1-21 (DEFINITIONS)"
+        ]
+      },
+      {
+        "id": "q18",
+        "type": "citation",
+        "question": "Drainage Criteria Manual 1.2.2 general drainage policy requirements",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 1.2.2 (General)",
+          "DCM 1.1.0 (GENERAL)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.0 (CITY OF AUSTIN DRAINAGE POLICY)",
+          "DCM 1.2.2 (General)"
+        ]
+      }
+    ]
+  },
+  "hybrid/no_instruction": {
+    "mode": "hybrid",
+    "hit_at_1": 0.722,
+    "hit_at_5": 0.944,
+    "recall_at_5": 0.721,
+    "mrr": 0.824,
+    "hit_at_5_by_type": {
+      "realistic": 0.933,
+      "citation": 1.0
+    },
+    "median_latency_ms": 9.5,
+    "misses": [
+      {
+        "id": "q01",
+        "question": "What is the maximum impervious cover allowed in an SF-3 family residence zoning district?",
+        "gold": [
+          [
+            "LDC",
+            "25-2-492"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-2-556"
+          ],
+          [
+            "LDC",
+            "25-2-57"
+          ],
+          [
+            "LDC",
+            "25-8-64"
+          ],
+          [
+            "LDC",
+            "25-2-555"
+          ],
+          [
+            "LDC",
+            "25-8-372"
+          ]
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "id": "q01",
+        "type": "realistic",
+        "question": "What is the maximum impervious cover allowed in an SF-3 family residence zoning district?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-2-556 (ADDITIONAL IMPERVIOUS COVER IN SINGLE-FA)",
+          "LDC 25-2-57 (FAMILY RESIDENCE (SF-3) DISTRICT DESIGNA)",
+          "LDC 25-8-64 (IMPERVIOUS COVER ASSUMPTIONS)",
+          "LDC 25-2-555 (FAMILY RESIDENCE (SF-3) DISTRICT REGULAT)",
+          "LDC 25-8-372 (UPLANDS ZONE)"
+        ]
+      },
+      {
+        "id": "q02",
+        "type": "realistic",
+        "question": "How is impervious cover measured and what counts toward it?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-8-64 (IMPERVIOUS COVER ASSUMPTIONS)",
+          "LDC 25-8-63 (IMPERVIOUS COVER CALCULATIONS)",
+          "LDC 25-1-23 (IMPERVIOUS COVER MEASUREMENT)",
+          "LDC 25-8-392 (UPLANDS ZONE)",
+          "LDC 25-8-63 (IMPERVIOUS COVER CALCULATIONS)"
+        ]
+      },
+      {
+        "id": "q03",
+        "type": "realistic",
+        "question": "When is a traffic impact analysis required for a proposed development?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "LDC 25-6-111 (TRAFFIC IMPACT ANALYSIS DESCRIBED)",
+          "LDC 25-6-113 (TRAFFIC IMPACT ANALYSIS REQUIRED)",
+          "LDC 25-6-101 (MITIGATION OF TRANSPORTATION IMPACTS)",
+          "LDC 25-6-23 (PROPORTIONALITY OF REQUIRED INFRASTRUCTU)",
+          "LDC 25-6-115 (STANDARDS FOR TRAFFIC IMPACT ANALYSIS)"
+        ]
+      },
+      {
+        "id": "q04",
+        "type": "realistic",
+        "question": "What development is prohibited or restricted within the 25-year floodplain?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-7-92 (ENCROACHMENT ON FLOODPLAIN PROHIBITED)",
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-8-452 (WATER QUALITY TRANSITION ZONE)"
+        ]
+      },
+      {
+        "id": "q05",
+        "type": "realistic",
+        "question": "How is the 25-year floodplain determined and delineated?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-7-7 (DETERMINATION OF THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-7-33 (FLOODPLAIN MAPS, DELINEATION, AND DEPICT)",
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)",
+          "DCM 1.2.6 (Floodplain Delineations)"
+        ]
+      },
+      {
+        "id": "q06",
+        "type": "realistic",
+        "question": "How is required detention pond storage volume determined?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 8.4.0 (DETENTION POND STORAGE DETERMINATION)",
+          "DCM 8.3.2 (Performance Criteria for SWM Ponds)",
+          "DCM 2.2.1 (Design Assumptions for Storm Runoff Anal)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.2 (General)"
+        ]
+      },
+      {
+        "id": "q07",
+        "type": "realistic",
+        "question": "What are the maintenance and equipment access requirements for detention basins?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 8.5.0 (DETENTION BASIN MAINTENANCE AND EQUIPMEN)",
+          "LDC 25-7-153 (DETENTION BASIN MAINTENANCE AND INSPECTI)",
+          "LDC 25-7-153 (DETENTION BASIN MAINTENANCE AND INSPECTI)",
+          "DCM 1.2.4 (Drainage System)",
+          "DCM 1.2.4 (Drainage System)"
+        ]
+      },
+      {
+        "id": "q08",
+        "type": "realistic",
+        "question": "What development restrictions apply in a critical water quality zone?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-8-261 (CRITICAL WATER QUALITY ZONE DEVELOPMENT)",
+          "LDC 25-8-452 (WATER QUALITY TRANSITION ZONE)",
+          "LDC 25-8-422 (WATER QUALITY TRANSITION ZONE)",
+          "LDC 25-8-482 (WATER QUALITY TRANSITION ZONE)",
+          "LDC 25-8-261 (CRITICAL WATER QUALITY ZONE DEVELOPMENT)"
+        ]
+      },
+      {
+        "id": "q09",
+        "type": "realistic",
+        "question": "What water quality control standards must proposed development meet?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-8-213 (WATER QUALITY CONTROL STANDARDS)",
+          "LDC 25-8-213 (WATER QUALITY CONTROL STANDARDS)",
+          "LDC 25-8-212 (PREVIOUS WAIVERS AND SPECIAL EXCEPTIONS)",
+          "LDC 25-8-151 (INNOVATIVE MANAGEMENT PRACTICES)",
+          "LDC 25-8-211 (WATER QUALITY CONTROL REQUIREMENT)"
+        ]
+      },
+      {
+        "id": "q10",
+        "type": "realistic",
+        "question": "What are the design requirements for a driveway approach serving a new development?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "TCM 7.7.0 (DRIVEWAY PERMITTING)",
+          "LDC 25-6-264 (DRIVEWAY APPROACH DESIGN)",
+          "LDC 25-6-295 (REMOVING EXISTING CURB OPENINGS OR DRIVE)",
+          "TCM Section 7 [preamble] ()",
+          "TCM 7.5.0 (DRIVEWAY GEOMETRIC DESIGN CRITERIA)"
+        ]
+      },
+      {
+        "id": "q11",
+        "type": "realistic",
+        "question": "When must sidewalks be installed as part of a site plan?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-6-352 (SIDEWALK INSTALLATION WITH SITE PLANS)",
+          "LDC 25-6-351 (SIDEWALK INSTALLATION IN SUBDIVISIONS)",
+          "LDC 2.2 (RELATIONSHIP OF BUILDINGS TO STREETS AND)",
+          "LDC 25-6-353 (SIDEWALK INSTALLATION WITH BUILDING OR R)",
+          "LDC 25-6-354 (PAYMENT INSTEAD OF SIDEWALK INSTALLATION)"
+        ]
+      },
+      {
+        "id": "q12",
+        "type": "realistic",
+        "question": "What compatibility height limits apply near residential property?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-2-1061 (COMPATIBILITY HEIGHT LIMITS)",
+          "LDC 25-2-1062 (COMPATIBILITY BUFFERS AND SETBACKS)",
+          "LDC 25-2-652 (DENSITY BONUS 90 (DB90) COMBINING DISTRI)",
+          "LDC 25-8-700 (MINIMUM REQUIREMENTS FOR COMPATIBILITY B)",
+          "LDC 25-2-652 (DENSITY BONUS 90 (DB90) COMBINING DISTRI)"
+        ]
+      },
+      {
+        "id": "q13",
+        "type": "realistic",
+        "question": "What are the requirements for off-street parking design and pedestrian paths from parking areas?",
+        "gold_hit_rank": 3,
+        "retrieved": [
+          "TCM 9.1.0 (GENERAL)",
+          "TCM 9.4.1 (OFF-STREET GENERAL LOADING REQUIREMENTS)",
+          "TCM 9.3.3.2 (Pedestrian Parking Paths General Criteri)",
+          "TCM 9.3.3.3 (Design Strategies)",
+          "LDC 2.2 (RELATIONSHIP OF BUILDINGS TO STREETS AND)"
+        ]
+      },
+      {
+        "id": "q14",
+        "type": "realistic",
+        "question": "What stormwater runoff peak flow limits apply to new development discharges?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.3 (Street Drainage)",
+          "DCM 8.1.0 (GENERAL)",
+          "DCM 1.2.2 (General)",
+          "LDC 25-7-67 (MODIFIED DRAINAGE STANDARDS FOR RESIDENT)"
+        ]
+      },
+      {
+        "id": "q15",
+        "type": "realistic",
+        "question": "What analysis is required to establish an erosion hazard zone?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-7-32 (EROSION HAZARD ZONE ANALYSIS REQUIREMENT)",
+          "DCM Appendix E [preamble] ()",
+          "DCM Appendix E [preamble] ()",
+          "DCM Appendix E [preamble] ()",
+          "DCM Appendix E [preamble] ()"
+        ]
+      },
+      {
+        "id": "q16",
+        "type": "citation",
+        "question": "What does LDC section 25-8-92 establish?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-8-92 (CRITICAL WATER QUALITY ZONES ESTABLISHED)",
+          "LDC 25-8-92 (CRITICAL WATER QUALITY ZONES ESTABLISHED)",
+          "LDC 25-8-92 (CRITICAL WATER QUALITY ZONES ESTABLISHED)",
+          "LDC 25-8-92 (CRITICAL WATER QUALITY ZONES ESTABLISHED)",
+          "TCM Section 7 [preamble] ()"
+        ]
+      },
+      {
+        "id": "q17",
+        "type": "citation",
+        "question": "Definitions in section 25-1-21 of the Land Development Code",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-1-21 (DEFINITIONS)"
+        ]
+      },
+      {
+        "id": "q18",
+        "type": "citation",
+        "question": "Drainage Criteria Manual 1.2.2 general drainage policy requirements",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.1.0 (GENERAL)"
+        ]
+      }
+    ]
+  },
+  "dense/no_instruction": {
+    "mode": "dense",
+    "hit_at_1": 0.5,
+    "hit_at_5": 0.889,
+    "recall_at_5": 0.647,
+    "mrr": 0.678,
+    "hit_at_5_by_type": {
+      "realistic": 0.933,
+      "citation": 0.667
+    },
+    "median_latency_ms": 4.2,
+    "misses": [
+      {
+        "id": "q01",
+        "question": "What is the maximum impervious cover allowed in an SF-3 family residence zoning district?",
+        "gold": [
+          [
+            "LDC",
+            "25-2-492"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-2-556"
+          ],
+          [
+            "LDC",
+            "25-2-57"
+          ],
+          [
+            "LDC",
+            "25-2-770"
+          ],
+          [
+            "LDC",
+            "25-8-64"
+          ],
+          [
+            "LDC",
+            "25-8-392"
+          ]
+        ]
+      },
+      {
+        "id": "q16",
+        "question": "What does LDC section 25-8-92 establish?",
+        "gold": [
+          [
+            "LDC",
+            "25-8-92"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-9-164"
+          ],
+          [
+            "LDC",
+            "25-2-1601"
+          ],
+          [
+            "LDC",
+            "25-1-1"
+          ],
+          [
+            "LDC",
+            "25-2-33"
+          ],
+          [
+            "TCM",
+            "Section 7 [preamble]"
+          ]
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "id": "q01",
+        "type": "realistic",
+        "question": "What is the maximum impervious cover allowed in an SF-3 family residence zoning district?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-2-556 (ADDITIONAL IMPERVIOUS COVER IN SINGLE-FA)",
+          "LDC 25-2-57 (FAMILY RESIDENCE (SF-3) DISTRICT DESIGNA)",
+          "LDC 25-2-770 (CONSERVATION SINGLE FAMILY RESIDENTIAL U)",
+          "LDC 25-8-64 (IMPERVIOUS COVER ASSUMPTIONS)",
+          "LDC 25-8-392 (UPLANDS ZONE)"
+        ]
+      },
+      {
+        "id": "q02",
+        "type": "realistic",
+        "question": "How is impervious cover measured and what counts toward it?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-1-23 (IMPERVIOUS COVER MEASUREMENT)",
+          "LDC 25-8-63 (IMPERVIOUS COVER CALCULATIONS)",
+          "LDC 25-8-61 (APPLICABILITY)",
+          "LDC 25-8-64 (IMPERVIOUS COVER ASSUMPTIONS)",
+          "LDC 25-8-63 (IMPERVIOUS COVER CALCULATIONS)"
+        ]
+      },
+      {
+        "id": "q03",
+        "type": "realistic",
+        "question": "When is a traffic impact analysis required for a proposed development?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "LDC 25-6-111 (TRAFFIC IMPACT ANALYSIS DESCRIBED)",
+          "LDC 25-6-113 (TRAFFIC IMPACT ANALYSIS REQUIRED)",
+          "LDC 25-6-115 (STANDARDS FOR TRAFFIC IMPACT ANALYSIS)",
+          "TCM 10.4.1.1.1 (Project Information)",
+          "LDC 25-6-142 (APPLICATION MODIFICATION BASED ON TRAFFI)"
+        ]
+      },
+      {
+        "id": "q04",
+        "type": "realistic",
+        "question": "What development is prohibited or restricted within the 25-year floodplain?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-7-92 (ENCROACHMENT ON FLOODPLAIN PROHIBITED)",
+          "LDC 25-7-3 (OBSTRUCTION OF WATERWAYS PROHIBITED)",
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-8-452 (WATER QUALITY TRANSITION ZONE)"
+        ]
+      },
+      {
+        "id": "q05",
+        "type": "realistic",
+        "question": "How is the 25-year floodplain determined and delineated?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-7-7 (DETERMINATION OF THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-7-6 (DETERMINATION OF THE 100-YEAR FLOODPLAIN)",
+          "LDC 25-7-33 (FLOODPLAIN MAPS, DELINEATION, AND DEPICT)",
+          "LDC 25-7-33 (FLOODPLAIN MAPS, DELINEATION, AND DEPICT)"
+        ]
+      },
+      {
+        "id": "q06",
+        "type": "realistic",
+        "question": "How is required detention pond storage volume determined?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 8.4.0 (DETENTION POND STORAGE DETERMINATION)",
+          "DCM 8.3.2 (Performance Criteria for SWM Ponds)",
+          "DCM 1.2.2 (General)",
+          "DCM 8.5.0 (DETENTION BASIN MAINTENANCE AND EQUIPMEN)",
+          "DCM 2.2.1 (Design Assumptions for Storm Runoff Anal)"
+        ]
+      },
+      {
+        "id": "q07",
+        "type": "realistic",
+        "question": "What are the maintenance and equipment access requirements for detention basins?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 8.5.0 (DETENTION BASIN MAINTENANCE AND EQUIPMEN)",
+          "LDC 25-7-153 (DETENTION BASIN MAINTENANCE AND INSPECTI)",
+          "LDC 25-7-153 (DETENTION BASIN MAINTENANCE AND INSPECTI)",
+          "DCM 1.2.2 (General)",
+          "DCM 8.4.0 (DETENTION POND STORAGE DETERMINATION)"
+        ]
+      },
+      {
+        "id": "q08",
+        "type": "realistic",
+        "question": "What development restrictions apply in a critical water quality zone?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-8-261 (CRITICAL WATER QUALITY ZONE DEVELOPMENT)",
+          "LDC 25-8-261 (CRITICAL WATER QUALITY ZONE DEVELOPMENT)",
+          "LDC 25-8-261 (CRITICAL WATER QUALITY ZONE DEVELOPMENT)",
+          "LDC 25-8-452 (WATER QUALITY TRANSITION ZONE)",
+          "LDC 25-8-422 (WATER QUALITY TRANSITION ZONE)"
+        ]
+      },
+      {
+        "id": "q09",
+        "type": "realistic",
+        "question": "What water quality control standards must proposed development meet?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "LDC 25-8-151 (INNOVATIVE MANAGEMENT PRACTICES)",
+          "LDC 25-8-213 (WATER QUALITY CONTROL STANDARDS)",
+          "LDC 25-8-213 (WATER QUALITY CONTROL STANDARDS)",
+          "LDC 25-8-212 (PREVIOUS WAIVERS AND SPECIAL EXCEPTIONS)",
+          "LDC 25-8-211 (WATER QUALITY CONTROL REQUIREMENT)"
+        ]
+      },
+      {
+        "id": "q10",
+        "type": "realistic",
+        "question": "What are the design requirements for a driveway approach serving a new development?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-6-264 (DRIVEWAY APPROACH DESIGN)",
+          "TCM 7.7.0 (DRIVEWAY PERMITTING)",
+          "TCM Section 7 [preamble] ()",
+          "LDC 25-6-295 (REMOVING EXISTING CURB OPENINGS OR DRIVE)",
+          "TCM 7.5.0 (DRIVEWAY GEOMETRIC DESIGN CRITERIA)"
+        ]
+      },
+      {
+        "id": "q11",
+        "type": "realistic",
+        "question": "When must sidewalks be installed as part of a site plan?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-6-352 (SIDEWALK INSTALLATION WITH SITE PLANS)",
+          "LDC 25-6-351 (SIDEWALK INSTALLATION IN SUBDIVISIONS)",
+          "LDC 25-6-354 (PAYMENT INSTEAD OF SIDEWALK INSTALLATION)",
+          "LDC 25-6-354 (PAYMENT INSTEAD OF SIDEWALK INSTALLATION)",
+          "LDC 25-6-353 (SIDEWALK INSTALLATION WITH BUILDING OR R)"
+        ]
+      },
+      {
+        "id": "q12",
+        "type": "realistic",
+        "question": "What compatibility height limits apply near residential property?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-2-1061 (COMPATIBILITY HEIGHT LIMITS)",
+          "LDC 25-2-1062 (COMPATIBILITY BUFFERS AND SETBACKS)",
+          "LDC 25-2-652 (DENSITY BONUS 90 (DB90) COMBINING DISTRI)",
+          "LDC 25-2-652 (DENSITY BONUS 90 (DB90) COMBINING DISTRI)",
+          "LDC 25-2-655 (DENSITY BONUS CREATIVE SPACES (DBCS) COM)"
+        ]
+      },
+      {
+        "id": "q13",
+        "type": "realistic",
+        "question": "What are the requirements for off-street parking design and pedestrian paths from parking areas?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "TCM 9.1.0 (GENERAL)",
+          "TCM 9.3.0 (PARKING DESIGN (OFF-STREET))",
+          "TCM 9.4.1 (OFF-STREET GENERAL LOADING REQUIREMENTS)",
+          "TCM 9.3.3.2 (Pedestrian Parking Paths General Criteri)",
+          "TCM 9.2.2 (GENERAL DESIGN CRITERIA)"
+        ]
+      },
+      {
+        "id": "q14",
+        "type": "realistic",
+        "question": "What stormwater runoff peak flow limits apply to new development discharges?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "DCM 1.2.3 (Street Drainage)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.2 (General)",
+          "DCM 8.1.0 (GENERAL)",
+          "DCM 1.2.2 (General)"
+        ]
+      },
+      {
+        "id": "q15",
+        "type": "realistic",
+        "question": "What analysis is required to establish an erosion hazard zone?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "DCM Appendix E [preamble] ()",
+          "LDC 25-7-32 (EROSION HAZARD ZONE ANALYSIS REQUIREMENT)",
+          "DCM Appendix E [preamble] ()",
+          "DCM Appendix E [preamble] ()",
+          "DCM Appendix E [preamble] ()"
+        ]
+      },
+      {
+        "id": "q16",
+        "type": "citation",
+        "question": "What does LDC section 25-8-92 establish?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-9-164 (CONSTRUCTION OF ARTICLE)",
+          "LDC 25-2-1601 (APPLICABILITY)",
+          "LDC 25-1-1 (IMPLEMENTATION OF COMPREHENSIVE PLAN)",
+          "LDC 25-2-33 (HIERARCHY OF BASE DISTRICTS)",
+          "TCM Section 7 [preamble] ()"
+        ]
+      },
+      {
+        "id": "q17",
+        "type": "citation",
+        "question": "Definitions in section 25-1-21 of the Land Development Code",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "LDC 25-1-281 (APPLICABILITY)",
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-1-21 (DEFINITIONS)"
+        ]
+      },
+      {
+        "id": "q18",
+        "type": "citation",
+        "question": "Drainage Criteria Manual 1.2.2 general drainage policy requirements",
+        "gold_hit_rank": 5,
+        "retrieved": [
+          "DCM 1.1.0 (GENERAL)",
+          "DCM 1.2.1 (Application)",
+          "DCM 1.2.7 (City Ordinances)",
+          "DCM 1.2.4 (Drainage System)",
+          "DCM 1.2.2 (General)"
+        ]
+      }
+    ]
+  },
+  "bm25/no_instruction": {
+    "mode": "bm25",
+    "hit_at_1": 0.278,
+    "hit_at_5": 0.667,
+    "recall_at_5": 0.467,
+    "mrr": 0.454,
+    "hit_at_5_by_type": {
+      "realistic": 0.667,
+      "citation": 0.667
+    },
+    "median_latency_ms": 2.2,
+    "misses": [
+      {
+        "id": "q01",
+        "question": "What is the maximum impervious cover allowed in an SF-3 family residence zoning district?",
+        "gold": [
+          [
+            "LDC",
+            "25-2-492"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-2-1407"
+          ],
+          [
+            "LDC",
+            "25-8-366"
+          ],
+          [
+            "LDC",
+            "25-2-556"
+          ],
+          [
+            "LDC",
+            "25-2-57"
+          ],
+          [
+            "LDC",
+            "25-2-779"
+          ]
+        ]
+      },
+      {
+        "id": "q03",
+        "question": "When is a traffic impact analysis required for a proposed development?",
+        "gold": [
+          [
+            "LDC",
+            "25-6-113"
+          ],
+          [
+            "TCM",
+            "10.2.0"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-6-23"
+          ],
+          [
+            "LDC",
+            "25-6-101"
+          ],
+          [
+            "LDC",
+            "25-6-117"
+          ],
+          [
+            "LDC",
+            "25-6-111"
+          ],
+          [
+            "LDC",
+            "25-6-112"
+          ]
+        ]
+      },
+      {
+        "id": "q05",
+        "question": "How is the 25-year floodplain determined and delineated?",
+        "gold": [
+          [
+            "DCM",
+            "1.2.6"
+          ],
+          [
+            "LDC",
+            "25-7-33"
+          ],
+          [
+            "LDC",
+            "25-7-7"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-7-2"
+          ],
+          [
+            "LDC",
+            "25-7-96"
+          ],
+          [
+            "LDC",
+            "25-7-96"
+          ],
+          [
+            "LDC",
+            "25-7-2"
+          ],
+          [
+            "LDC",
+            "25-8-263"
+          ]
+        ]
+      },
+      {
+        "id": "q08",
+        "question": "What development restrictions apply in a critical water quality zone?",
+        "gold": [
+          [
+            "LDC",
+            "25-8-261"
+          ],
+          [
+            "LDC",
+            "25-8-92"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-8-422"
+          ],
+          [
+            "LDC",
+            "25-8-452"
+          ],
+          [
+            "LDC",
+            "25-8-482"
+          ],
+          [
+            "LDC",
+            "25-8-363"
+          ],
+          [
+            "LDC",
+            "25-8-361"
+          ]
+        ]
+      },
+      {
+        "id": "q10",
+        "question": "What are the design requirements for a driveway approach serving a new development?",
+        "gold": [
+          [
+            "LDC",
+            "25-6-264"
+          ],
+          [
+            "TCM",
+            "7.4.1"
+          ],
+          [
+            "TCM",
+            "7.5.1.1"
+          ],
+          [
+            "TCM",
+            "7.5.1.2"
+          ]
+        ],
+        "got": [
+          [
+            "LDC",
+            "25-6-295"
+          ],
+          [
+            "TCM",
+            "7.7.0"
+          ],
+          [
+            "TCM",
+            "Section 7 [preamble]"
+          ],
+          [
+            "LDC",
+            "25-6-263"
+          ],
+          [
+            "LDC",
+            "25-6-292"
+          ]
+        ]
+      },
+      {
+        "id": "q16",
+        "question": "What does LDC section 25-8-92 establish?",
+        "gold": [
+          [
+            "LDC",
+            "25-8-92"
+          ]
+        ],
+        "got": [
+          [
+            "TCM",
+            "10.2.0"
+          ],
+          [
+            "TCM",
+            "10.5.0"
+          ],
+          [
+            "TCM",
+            "10.4.5"
+          ],
+          [
+            "TCM",
+            "9.6.0"
+          ],
+          [
+            "TCM",
+            "10.4.3.2"
+          ]
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "id": "q01",
+        "type": "realistic",
+        "question": "What is the maximum impervious cover allowed in an SF-3 family residence zoning district?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-2-1407 (AFFORDABLE HOUSING)",
+          "LDC 25-8-366 (IMPERVIOUS COVER RESTRICTIONS FOR EDUCAT)",
+          "LDC 25-2-556 (ADDITIONAL IMPERVIOUS COVER IN SINGLE-FA)",
+          "LDC 25-2-57 (FAMILY RESIDENCE (SF-3) DISTRICT DESIGNA)",
+          "LDC 25-2-779 (SMALL LOT SINGLE-FAMILY RESIDENTIAL USE)"
+        ]
+      },
+      {
+        "id": "q02",
+        "type": "realistic",
+        "question": "How is impervious cover measured and what counts toward it?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "TCM 9.2.0 (PARKING DESIGN (ON-STREET))",
+          "LDC 25-8-64 (IMPERVIOUS COVER ASSUMPTIONS)",
+          "LDC 25-2-551 (LAKE AUSTIN (LA) DISTRICT REGULATIONS)",
+          "LDC 25-2-551 (LAKE AUSTIN (LA) DISTRICT REGULATIONS)",
+          "LDC 25-6-419 (EXCLUDING IMPERVIOUS COVER OF A JOINT-US)"
+        ]
+      },
+      {
+        "id": "q03",
+        "type": "realistic",
+        "question": "When is a traffic impact analysis required for a proposed development?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-6-23 (PROPORTIONALITY OF REQUIRED INFRASTRUCTU)",
+          "LDC 25-6-101 (MITIGATION OF TRANSPORTATION IMPACTS)",
+          "LDC 25-6-117 (WAIVER AUTHORIZED)",
+          "LDC 25-6-111 (TRAFFIC IMPACT ANALYSIS DESCRIBED)",
+          "LDC 25-6-112 (NEIGHBORHOOD TRAFFIC ANALYSIS DESCRIBED)"
+        ]
+      },
+      {
+        "id": "q04",
+        "type": "realistic",
+        "question": "What development is prohibited or restricted within the 25-year floodplain?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-7-92 (ENCROACHMENT ON FLOODPLAIN PROHIBITED)",
+          "LDC 25-7-95 (REQUIREMENTS FOR PARKING AREAS)",
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)"
+        ]
+      },
+      {
+        "id": "q05",
+        "type": "realistic",
+        "question": "How is the 25-year floodplain determined and delineated?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-7-96 (REQUIREMENTS IN THE 25-YEAR FLOODPLAIN)",
+          "LDC 25-7-2 (DEFINITIONS)",
+          "LDC 25-8-263 (FLOODPLAIN MODIFICATION)"
+        ]
+      },
+      {
+        "id": "q06",
+        "type": "realistic",
+        "question": "How is required detention pond storage volume determined?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "DCM 8.3.2 (Performance Criteria for SWM Ponds)",
+          "DCM 8.4.0 (DETENTION POND STORAGE DETERMINATION)",
+          "DCM 2.2.1 (Design Assumptions for Storm Runoff Anal)",
+          "DCM 1.2.2 (General)",
+          "LDC 25-8-231 (WATER QUALITY CONTROL MAINTENANCE AND IN)"
+        ]
+      },
+      {
+        "id": "q07",
+        "type": "realistic",
+        "question": "What are the maintenance and equipment access requirements for detention basins?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "DCM 1.2.4 (Drainage System)",
+          "DCM 8.5.0 (DETENTION BASIN MAINTENANCE AND EQUIPMEN)",
+          "LDC 25-8-63 (IMPERVIOUS COVER CALCULATIONS)",
+          "DCM 1.2.4 (Drainage System)",
+          "LDC 25-2-6 (CIVIC USES DESCRIBED)"
+        ]
+      },
+      {
+        "id": "q08",
+        "type": "realistic",
+        "question": "What development restrictions apply in a critical water quality zone?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-8-422 (WATER QUALITY TRANSITION ZONE)",
+          "LDC 25-8-452 (WATER QUALITY TRANSITION ZONE)",
+          "LDC 25-8-482 (WATER QUALITY TRANSITION ZONE)",
+          "LDC 25-8-363 (BLASTING PROHIBITED)",
+          "LDC 25-8-361 (WASTEWATER RESTRICTIONS)"
+        ]
+      },
+      {
+        "id": "q09",
+        "type": "realistic",
+        "question": "What water quality control standards must proposed development meet?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-8-213 (WATER QUALITY CONTROL STANDARDS)",
+          "LDC 25-8-213 (WATER QUALITY CONTROL STANDARDS)",
+          "LDC 25-8-231 (WATER QUALITY CONTROL MAINTENANCE AND IN)",
+          "LDC 25-8-215 (COST RECOVERY PROGRAM)",
+          "LDC 25-8-212 (PREVIOUS WAIVERS AND SPECIAL EXCEPTIONS)"
+        ]
+      },
+      {
+        "id": "q10",
+        "type": "realistic",
+        "question": "What are the design requirements for a driveway approach serving a new development?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "LDC 25-6-295 (REMOVING EXISTING CURB OPENINGS OR DRIVE)",
+          "TCM 7.7.0 (DRIVEWAY PERMITTING)",
+          "TCM Section 7 [preamble] ()",
+          "LDC 25-6-263 (CONSTRUCTION PERMIT FOR DRIVEWAY APPROAC)",
+          "LDC 25-6-292 (DESIGN AND CONSTRUCTION STANDARDS)"
+        ]
+      },
+      {
+        "id": "q11",
+        "type": "realistic",
+        "question": "When must sidewalks be installed as part of a site plan?",
+        "gold_hit_rank": 3,
+        "retrieved": [
+          "LDC 25-6-351 (SIDEWALK INSTALLATION IN SUBDIVISIONS)",
+          "TCM 9.8.1 (BIKE PARKING LOCATIONS)",
+          "LDC 25-6-352 (SIDEWALK INSTALLATION WITH SITE PLANS)",
+          "LDC 25-7-66 (SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMEN)",
+          "LDC 2.2 (RELATIONSHIP OF BUILDINGS TO STREETS AND)"
+        ]
+      },
+      {
+        "id": "q12",
+        "type": "realistic",
+        "question": "What compatibility height limits apply near residential property?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-2-1061 (COMPATIBILITY HEIGHT LIMITS)",
+          "LDC 25-2-1564 (COMPATIBILITY STANDARDS)",
+          "LDC 25-2-1062 (COMPATIBILITY BUFFERS AND SETBACKS)",
+          "LDC 25-2-652 (DENSITY BONUS 90 (DB90) COMBINING DISTRI)",
+          "LDC 25-2-1052 (EXCEPTIONS)"
+        ]
+      },
+      {
+        "id": "q13",
+        "type": "realistic",
+        "question": "What are the requirements for off-street parking design and pedestrian paths from parking areas?",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "TCM 9.4.1 (OFF-STREET GENERAL LOADING REQUIREMENTS)",
+          "TCM 9.3.3.3 (Design Strategies)",
+          "TCM 9.1.0 (GENERAL)",
+          "TCM 9.3.3.2 (Pedestrian Parking Paths General Criteri)",
+          "TCM 9.3.3.3.2 (Pavement Markings)"
+        ]
+      },
+      {
+        "id": "q14",
+        "type": "realistic",
+        "question": "What stormwater runoff peak flow limits apply to new development discharges?",
+        "gold_hit_rank": 3,
+        "retrieved": [
+          "LDC 25-8-185 (OVERLAND FLOW)",
+          "DCM 8.1.0 (GENERAL)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.2 (General)",
+          "DCM 8.3.1 (General)"
+        ]
+      },
+      {
+        "id": "q15",
+        "type": "realistic",
+        "question": "What analysis is required to establish an erosion hazard zone?",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "LDC 25-7-32 (EROSION HAZARD ZONE ANALYSIS REQUIREMENT)",
+          "DCM Appendix E [preamble] ()",
+          "LDC 25-7-32 (EROSION HAZARD ZONE ANALYSIS REQUIREMENT)",
+          "DCM Appendix E [preamble] ()",
+          "DCM Appendix E [preamble] ()"
+        ]
+      },
+      {
+        "id": "q16",
+        "type": "citation",
+        "question": "What does LDC section 25-8-92 establish?",
+        "gold_hit_rank": null,
+        "retrieved": [
+          "TCM 10.2.0 (TRAFFIC IMPACT ANALYSIS DETERMINATION)",
+          "TCM 10.5.0 (ZONING TRANSPORTATION ANALYSIS)",
+          "TCM 10.4.5 (PROPORTIONALITY OF TRANSPORTATION IMPROV)",
+          "TCM 9.6.0 (CALCULATION OF PARKING REQUIREMENTS)",
+          "TCM 10.4.3.2 (Neighborhood Traffic Analysis)"
+        ]
+      },
+      {
+        "id": "q17",
+        "type": "citation",
+        "question": "Definitions in section 25-1-21 of the Land Development Code",
+        "gold_hit_rank": 2,
+        "retrieved": [
+          "LDC 1.4 (CONFLICTING PROVISIONS)",
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-9-346 (EXEMPTION FOR CITY-SUPPORTED COMMUNITY G)",
+          "LDC 25-1-21 (DEFINITIONS)",
+          "LDC 25-1-21 (DEFINITIONS)"
+        ]
+      },
+      {
+        "id": "q18",
+        "type": "citation",
+        "question": "Drainage Criteria Manual 1.2.2 general drainage policy requirements",
+        "gold_hit_rank": 1,
+        "retrieved": [
+          "DCM 1.2.2 (General)",
+          "DCM 1.1.0 (GENERAL)",
+          "DCM 1.2.2 (General)",
+          "DCM 1.2.0 (CITY OF AUSTIN DRAINAGE POLICY)",
+          "DCM 1.2.2 (General)"
+        ]
+      }
+    ]
+  }
+}

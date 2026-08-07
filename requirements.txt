@@ -1,0 +1,14 @@
+pandas>=2.0
+numpy
+pyarrow
+shapely>=2.0
+geopandas>=0.14
+pyproj
+python-docx
+chromadb>=0.5
+sentence-transformers>=3.0
+rank_bm25
+usaddress
+rapidfuzz
+requests
+pytest
