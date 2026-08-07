@@ -58,10 +58,7 @@ knows where their code goes and what they can import from.
 ```
 
 **Getting started:** clone, `pip install -r requirements.txt`, follow
-`data/README.md` to download the raw data into `data/raw/`, then run
-preprocessing and the indexer (commands in the tree above). Run
-`python -m pytest tests/` to confirm your setup works. `TASKS_1-3.md`
-documents everything the existing code does and the results it achieves.
+`data/README.md` to download the raw data into `data/raw/`.
 
 
 
