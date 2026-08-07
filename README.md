@@ -38,9 +38,9 @@ knows where their code goes and what they can import from.
 │   ├── test_preprocessing.py     #   Task 1 (implemented)
 │   ├── test_rag.py               #   Task 2 (implemented)
 │   ├── test_tools.py             #   Task 3 (implemented)
-│   └── test_<yours>.py           #   add tests for rest of the steps
+│   └── test_<yours>.py           #   tests for rest of the steps
 │
-├── evaluation/                   # benchmarks & measured metrics 
+├── evaluation/                   # benchmarks & measured metrics for full framework
 │   ├── retrieval/                #   Task 2 retrieval quality (implemented)
 │   ├── tools/                    #   Task 3 latency (implemented)
 │   └── ...                       #   Task 7 adds the full-framework evaluation here:
@@ -63,32 +63,7 @@ preprocessing and the indexer (commands in the tree above). Run
 `python -m pytest tests/` to confirm your setup works. `TASKS_1-3.md`
 documents everything the existing code does and the results it achieves.
 
-**Key interfaces for downstream workstreams** (Tasks 4–8 build on these):
 
-- `src.rag.retriever.get_retriever()` → `.retrieve(query, k, doc_ids=...,
-  chapters=...)` returns passages with full citation metadata;
-  `.get_section(source, section_number)` for exact citation verification.
-- `src.tools.zoning.zoning_lookup(address)`, `src.tools.geocode.geocode(...)`,
-  `src.tools.spatial.floodplain_check(lat, lon)` / `watershed_lookup(lat, lon)`,
-  `src.tools.nearby.nearby_*(lat, lon)` — all return JSON-serializable dicts
-  with an explicit `status` field (`found | fuzzy_match | multiple_records |
-  ambiguous | boundary | not_found`); treat any non-`found` status as
-  "needs verification", never as an answer.
-- `data/processed/source_manifest.json` — the approved-source list for
-  guardrails (Task 5).
-
-**Conventions:**
-
-- Run everything as a module from the repo root (`python -m src...`,
-  `python -m evaluation...`); imports are absolute (`from src... import ...`).
-- Paths and shared parameters come from `src/config.py` — extend it rather
-  than hardcoding.
-- Generated artifacts go to `data/processed/`, `data/index/`, or `reports/`;
-  never commit anything under `data/` except its README (enforced by
-  `.gitignore`).
-- Each workstream adds correctness tests in `tests/` and, where it has
-  measurable behavior, an evaluation script in `evaluation/` that writes its
-  results to `reports/`.
 
 ## How the System Works
 
