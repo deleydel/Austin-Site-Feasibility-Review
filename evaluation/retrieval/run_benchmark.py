@@ -1,6 +1,6 @@
 """Task 2 sanity benchmark: Hit@5, Recall@5, MRR over the question set,
 with ablations (hybrid vs dense-only vs BM25-only; BGE query instruction
-on vs off). Writes evaluation/results/retrieval_benchmark.md.
+on vs off). Writes evaluation/retrieval/results/retrieval_benchmark.md.
 
 This checks that Tasks 1-2 work; full project evaluation is a separate
 workstream.
@@ -129,9 +129,9 @@ def main() -> None:
                  "full-framework evaluation (groundedness, citation "
                  "correctness, guardrails) is a separate workstream.")
 
-    out = config.REPORTS_DIR / "retrieval_benchmark.md"
+    out = config.RETRIEVAL_RESULTS / "retrieval_benchmark.md"
     out.write_text("\n".join(lines) + "\n")
-    (config.REPORTS_DIR / "retrieval_benchmark.json").write_text(
+    (config.RETRIEVAL_RESULTS / "retrieval_benchmark.json").write_text(
         json.dumps(results, indent=2))
     print("\n".join(lines[:20]))
     print(f"\nwrote {out}")

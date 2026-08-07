@@ -23,7 +23,7 @@ def _md_stats(title: str, stats: dict) -> str:
 
 def main() -> None:
     config.DATA_PROCESSED.mkdir(parents=True, exist_ok=True)
-    config.REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    config.PREPROCESSING_RESULTS.mkdir(parents=True, exist_ok=True)
     all_stats: dict[str, dict] = {}
     t0 = time.time()
 
@@ -78,7 +78,7 @@ def main() -> None:
         report.append(_md_stats(title, stats))
     report.append(f"\nTotal preprocessing time: {time.time() - t0:.1f}s\n")
 
-    out = config.REPORTS_DIR / "data_quality_report.md"
+    out = config.PREPROCESSING_RESULTS / "data_quality_report.md"
     out.write_text("\n".join(report))
     (config.DATA_PROCESSED / "quality_stats.json").write_text(
         json.dumps(all_stats, indent=2, default=str)

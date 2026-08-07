@@ -81,11 +81,11 @@ vector index are committed, so nothing needs regenerating.
   `python -m evaluation...`); imports are absolute (`from src... import ...`).
 - Paths and shared parameters come from `src/config.py` — extend it rather
   than hardcoding.
-- Generated artifacts go to `data/processed/`, `data/index/`, or `evaluation/results/`
+- Generated artifacts go to `data/processed/`, `data/index/`, or `evaluation/<area>/results/`
   (all committed); `data/raw/` stays out of git (enforced by `.gitignore`).
 - Each workstream adds correctness tests in `tests/` and, where it has
   measurable behavior, an evaluation script in `evaluation/` that writes its
-  results to `evaluation/results/`.
+  results to its own `evaluation/<area>/results/`.
 
 ## How the System Works
 

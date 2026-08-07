@@ -1,6 +1,6 @@
 """Task 3 performance evaluation: observed latency of every structured-data
 tool on this machine (warm caches). Figures are measured observations, not
-guarantees. Writes evaluation/results/tool_latency_ms.json.
+guarantees. Writes evaluation/tools/results/tool_latency_ms.json.
 
 Run:  python -m evaluation.tools.run_latency
 """
@@ -48,8 +48,8 @@ def main() -> None:
             "repeats": REPEATS,
         }
 
-    out = config.REPORTS_DIR / "tool_latency_ms.json"
-    config.REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    out = config.TOOLS_RESULTS / "tool_latency_ms.json"
+    config.TOOLS_RESULTS.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(results, indent=2))
     print(json.dumps(results, indent=2))
     print(f"wrote {out}")
