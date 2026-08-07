@@ -23,7 +23,7 @@ knows where their code goes and what they can import from.
 │   ├── rag/                      # Task 2: DOCX -> chunks -> vector index -> hybrid retriever
 │   ├── tools/                    # Task 3: zoning / geocode / floodplain / watershed / nearby
 │   │
-│   │  # ── planned (create when you start your workstream) ──
+│   │  # ── planned ──
 │   ├── agents/                   # Task 4: LangGraph state, review nodes, tool routing, synthesis
 │   │                             #   calls src.rag.retriever + src.tools.* — see interfaces below
 │   ├── guardrails/               # Task 5: scope validation, source whitelist, citation checker,
@@ -38,9 +38,9 @@ knows where their code goes and what they can import from.
 │   ├── test_preprocessing.py     #   Task 1 (implemented)
 │   ├── test_rag.py               #   Task 2 (implemented)
 │   ├── test_tools.py             #   Task 3 (implemented)
-│   └── test_<yours>.py           #   add tests for your workstream here
+│   └── test_<yours>.py           #   add tests for rest of the steps
 │
-├── evaluation/                   # benchmarks & measured metrics (results go to reports/)
+├── evaluation/                   # benchmarks & measured metrics 
 │   ├── retrieval/                #   Task 2 retrieval quality (implemented)
 │   ├── tools/                    #   Task 3 latency (implemented)
 │   └── ...                       #   Task 7 adds the full-framework evaluation here:
@@ -49,7 +49,7 @@ knows where their code goes and what they can import from.
 │
 ├── reports/                      # generated evidence committed to git (small md/json only)
 │
-├── docs/                         # Task 9 (planned): slides, demo script, submission materials
+├── material/                         # Task 9 (planned): presentation slides, video demo & presentation link
 │
 └── data/                         # NOT in git (too large for GitHub) — only data/README.md committed
     ├── raw/                      #   original DOCX/CSV/GeoJSON — download link in data/README.md
