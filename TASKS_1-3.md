@@ -62,7 +62,7 @@ report.
 - `data/processed/source_manifest.json` records provenance, snapshot date, and
   limitations per source (seed for the guardrail team's approved-source list).
 
-**Results** (full detail: `evaluation/preprocessing/results/data_quality_report.md`):
+**Results**:
 
 | Dataset | Rows in → out | Notable findings |
 | --- | --- | --- |
