@@ -1,6 +1,6 @@
 """Task 3 performance evaluation: observed latency of every structured-data
 tool on this machine (warm caches). Figures are measured observations, not
-guarantees. Writes reports/tool_latency_ms.json.
+guarantees. Writes evaluation/results/tool_latency_ms.json.
 
 Run:  python -m evaluation.tools.run_latency
 """

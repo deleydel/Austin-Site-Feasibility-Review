@@ -47,8 +47,6 @@ knows where their code goes and what they can import from.
 │                                 #   benchmark questions, site scenarios, groundedness,
 │                                 #   citation correctness, guardrail tests, end-to-end timing
 │
-├── reports/                      # generated evidence committed to git (small md/json only)
-│
 ├── docs/                         # Task 9 (planned): slides, demo script, submission materials
 │
 └── data/
@@ -83,11 +81,11 @@ vector index are committed, so nothing needs regenerating.
   `python -m evaluation...`); imports are absolute (`from src... import ...`).
 - Paths and shared parameters come from `src/config.py` — extend it rather
   than hardcoding.
-- Generated artifacts go to `data/processed/`, `data/index/`, or `reports/`
+- Generated artifacts go to `data/processed/`, `data/index/`, or `evaluation/results/`
   (all committed); `data/raw/` stays out of git (enforced by `.gitignore`).
 - Each workstream adds correctness tests in `tests/` and, where it has
   measurable behavior, an evaluation script in `evaluation/` that writes its
-  results to `reports/`.
+  results to `evaluation/results/`.
 
 ## How the System Works
 

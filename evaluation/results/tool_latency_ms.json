@@ -1,17 +1,17 @@
 {
   "zoning_lookup": {
-    "median_ms": 8.2,
+    "median_ms": 8.3,
     "max_ms": 8.5,
     "repeats": 5
   },
   "geocode_local": {
-    "median_ms": 4.4,
-    "max_ms": 5.0,
+    "median_ms": 4.5,
+    "max_ms": 4.8,
     "repeats": 5
   },
   "floodplain_check": {
     "median_ms": 0.5,
-    "max_ms": 0.6,
+    "max_ms": 0.7,
     "repeats": 5
   },
   "watershed_lookup": {
@@ -20,18 +20,18 @@
     "repeats": 5
   },
   "nearby_permits": {
-    "median_ms": 16.6,
-    "max_ms": 17.5,
+    "median_ms": 16.1,
+    "max_ms": 17.1,
     "repeats": 5
   },
   "nearby_site_plans": {
-    "median_ms": 4.9,
-    "max_ms": 5.6,
+    "median_ms": 5.3,
+    "max_ms": 5.9,
     "repeats": 5
   },
   "nearby_plan_review": {
-    "median_ms": 79.5,
-    "max_ms": 81.0,
+    "median_ms": 85.0,
+    "max_ms": 89.1,
     "repeats": 5
   }
 }

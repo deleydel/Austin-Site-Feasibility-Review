@@ -3,7 +3,7 @@
 Implementation of workstreams **1 (data preprocessing)**, **2 (regulatory
 RAG)**, and **3 (structured-data tools)**. Correctness tests live in `tests/`,
 development performance evaluation (retrieval benchmark, tool latency) in
-`evaluation/`, and generated evidence in `reports/` — these verify Tasks 1–3
+`evaluation/`, and generated evidence in `evaluation/results/` — these verify Tasks 1–3
 work. Full-framework evaluation (groundedness, citation correctness,
 guardrails, report completeness) belongs to the evaluation workstream and is
 not covered here.
@@ -17,8 +17,8 @@ pip install -r requirements.txt
 python -m src.preprocessing.run_all             # Task 1: clean data -> data/processed/
 python -m src.rag.indexer                       # Task 2: parse DOCX, chunk, embed, index
 python -m pytest tests/ -v                      # correctness tests (45)
-python -m evaluation.retrieval.run_benchmark    # Task 2 retrieval metrics -> reports/
-python -m evaluation.tools.run_latency          # Task 3 latency -> reports/
+python -m evaluation.retrieval.run_benchmark    # Task 2 retrieval metrics -> evaluation/results/
+python -m evaluation.tools.run_latency          # Task 3 latency -> evaluation/results/
 ```
 
 ---
@@ -36,7 +36,7 @@ python -m evaluation.tools.run_latency          # Task 3 latency -> reports/
 | Tool latency (median) | 0.2 – 80 ms per call |
 | Full regeneration from raw data | verified end-to-end (processed/index deleted first) |
 
-Details for each number are below; raw outputs are in `reports/`.
+Details for each number are below; raw outputs are in `evaluation/results/`.
 
 ---
 
@@ -62,7 +62,7 @@ report.
 - `data/processed/source_manifest.json` records provenance, snapshot date, and
   limitations per source (seed for the guardrail team's approved-source list).
 
-**Results** (full detail: `reports/data_quality_report.md`):
+**Results** (full detail: `evaluation/results/data_quality_report.md`):
 
 | Dataset | Rows in → out | Notable findings |
 | --- | --- | --- |
@@ -112,7 +112,7 @@ report.
 
 **Retrieval benchmark** — 18 questions (15 realistic site-development + 3
 direct-citation), multiple acceptable gold sections per question, k = 5
-(full detail incl. per-question retrievals: `reports/retrieval_benchmark.md`):
+(full detail incl. per-question retrievals: `evaluation/results/retrieval_benchmark.md`):
 
 | Configuration | Hit@1 | Hit@5 | Recall@5 | MRR | Median latency |
 | --- | --- | --- | --- | --- | --- |
@@ -157,7 +157,7 @@ guessed, and every uncertain case is surfaced instead of resolved silently.
 | `nearby_permits` / `nearby_site_plan_cases` / `nearby_plan_review_cases` | radius search in EPSG:2277 feet | allow-listed output fields (no PII); VOID/test excluded; labeled historical context, **not approval precedent** |
 
 **Measured latency** (this machine, warm caches, median of 5 —
-`reports/tool_latency_ms.json`; observations, not guarantees):
+`evaluation/results/tool_latency_ms.json`; observations, not guarantees):
 
 | Tool | Median | Max |
 | --- | --- | --- |
@@ -188,4 +188,4 @@ guessed, and every uncertain case is surfaced instead of resolved silently.
 
 `evaluation/` — retrieval benchmark (Hit@1/Hit@5/Recall@5/MRR with
 hybrid/dense/BM25 × instruction on/off ablations) and tool-latency
-measurement. Both write their results to `reports/`.
+measurement. Both write their results to `evaluation/results/`.

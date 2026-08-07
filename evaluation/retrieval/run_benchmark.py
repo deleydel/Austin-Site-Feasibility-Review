@@ -1,6 +1,6 @@
 """Task 2 sanity benchmark: Hit@5, Recall@5, MRR over the question set,
 with ablations (hybrid vs dense-only vs BM25-only; BGE query instruction
-on vs off). Writes reports/retrieval_benchmark.md.
+on vs off). Writes evaluation/results/retrieval_benchmark.md.
 
 This checks that Tasks 1-2 work; full project evaluation is a separate
 workstream.

@@ -7,7 +7,10 @@ RAW_REGULATIONS = DATA_DIR / "raw" / "regulations"
 RAW_STRUCTURED = DATA_DIR / "raw" / "structured"
 DATA_PROCESSED = DATA_DIR / "processed"
 INDEX_DIR = DATA_DIR / "index"
-REPORTS_DIR = PROJECT_ROOT / "reports"
+# Generated evaluation/QA evidence. Deliberately NOT named "reports" — the
+# system's end product is a feasibility *report*, and the two must not be
+# confused.
+REPORTS_DIR = PROJECT_ROOT / "evaluation" / "results"
 
 # Raw source files
 ZONING_CSV = RAW_STRUCTURED / "Zoning_By_Address_20260807.csv"

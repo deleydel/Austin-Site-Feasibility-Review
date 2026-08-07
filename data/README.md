@@ -47,6 +47,6 @@ after the first preprocessing run.
 python -m src.preprocessing.run_all        # -> data/processed/
 python -m src.rag.indexer                  # -> data/index/ + chunk/section JSON
 python -m pytest tests/                    # correctness tests (45)
-python -m evaluation.retrieval.run_benchmark   # RAG metrics -> reports/
-python -m evaluation.tools.run_latency         # tool latency -> reports/
+python -m evaluation.retrieval.run_benchmark   # RAG metrics -> evaluation/results/
+python -m evaluation.tools.run_latency         # tool latency -> evaluation/results/
 ```
