@@ -1,10 +1,14 @@
-# Data directory (contents not committed to git)
+# Data directory
 
-Raw inputs are too large for GitHub (Plan_Review_Cases ~123 MB and the
-floodplain GeoJSON ~128 MB exceed GitHub's 100 MB per-file hard limit), and
-`processed/` + `index/` are fully regenerated from them.
+`processed/` (cleaned datasets) and `index/` (vector index) **are committed**,
+so after cloning you can immediately use the structured-data tools and the
+regulatory retriever and run the tests — no regeneration needed.
 
-## Getting the data
+Only `raw/` is excluded from git: Plan_Review_Cases (~123 MB) and the
+floodplain GeoJSON (~128 MB) exceed GitHub's 100 MB per-file hard limit. You
+only need `raw/` if you want to re-run preprocessing or re-build the index.
+
+## Getting the raw data (optional for most workstreams)
 
 Download `austin_raw_data.zip` from the team Google Drive:
 
@@ -15,8 +19,8 @@ matches:
 
 ```
 data/
-├── README.md                     # this file (the only committed item)
-├── raw/                          # original source files — never modified
+├── README.md                     # this file
+├── raw/                          # original source files (NOT in git) — never modified
 │   ├── regulations/              # Municode DOCX exports
 │   │   ├── TITLE_25.___LAND_DEVELOPMENT..docx
 │   │   ├── DRAIANAGE.docx
@@ -28,8 +32,8 @@ data/
 │       ├── Plan_Review_Cases_20260807.csv
 │       ├── Watershed_Boundaries_20260807.geojson
 │       └── Greater_Austin_Fully_Developed_Floodplain_20260807.geojson
-├── processed/                    # Task 1 output (generated)
-└── index/                        # Task 2 output (generated)
+├── processed/                    # Task 1 output (committed)
+└── index/                        # Task 2 output (committed)
 ```
 
 Original sources: Municode (LDC Title 25, Drainage Criteria Manual,
@@ -37,7 +41,7 @@ Transportation Criteria Manual) and data.austintexas.gov — full provenance,
 URLs, and known limitations are recorded in `processed/source_manifest.json`
 after the first preprocessing run.
 
-## Regenerate everything
+## Regenerate everything (requires raw/)
 
 ```bash
 python -m src.preprocessing.run_all        # -> data/processed/

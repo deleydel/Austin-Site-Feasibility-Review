@@ -1,0 +1,42 @@
+{
+  "paragraph_audits": {
+    "LDC": {
+      "mapped_to_section": 10952,
+      "document_metadata": 1427,
+      "history_note": 1149,
+      "table_caption": 0,
+      "intentionally_excluded": 1519,
+      "unresolved": 0,
+      "sections": 1164
+    },
+    "DCM": {
+      "mapped_to_section": 455,
+      "document_metadata": 45,
+      "history_note": 30,
+      "table_caption": 11,
+      "intentionally_excluded": 80,
+      "unresolved": 0,
+      "sections": 42
+    },
+    "TCM": {
+      "mapped_to_section": 685,
+      "document_metadata": 153,
+      "history_note": 2,
+      "table_caption": 28,
+      "intentionally_excluded": 201,
+      "unresolved": 0,
+      "sections": 150
+    }
+  },
+  "chunking": {
+    "sections_in": 1356,
+    "sections_empty_skipped": 20,
+    "chunks_out": 1940,
+    "max_chunk_tokens": 448,
+    "mean_chunk_tokens": 253.5,
+    "chunks_over_512": 0,
+    "chunks_over_450": 0
+  },
+  "chunks_indexed": 1940,
+  "build_seconds": 17.5
+}

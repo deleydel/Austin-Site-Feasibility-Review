@@ -1,0 +1,96 @@
+{
+  "generated": "2026-08-07",
+  "snapshot_date": "2026-08-07",
+  "sources": [
+    {
+      "id": "ldc_title_25",
+      "name": "Austin Land Development Code, Title 25",
+      "publisher": "City of Austin / Municode",
+      "url": "https://library.municode.com/tx/austin/codes/land_development_code",
+      "file": "TITLE_25.___LAND_DEVELOPMENT..docx",
+      "type": "regulatory_docx",
+      "coverage": "Chapters 25-1, 25-2, 25-5, 25-6, 25-7, 25-8, 25-9",
+      "limitations": "Snapshot export; ordinances adopted after the export date are not reflected."
+    },
+    {
+      "id": "dcm",
+      "name": "Austin Drainage Criteria Manual",
+      "publisher": "City of Austin / Municode",
+      "url": "https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
+      "file": "DRAIANAGE.docx",
+      "type": "regulatory_docx",
+      "coverage": "Sections 1, 2, 8 and Appendix E",
+      "limitations": "Partial manual; other DCM sections are out of scope for this system."
+    },
+    {
+      "id": "tcm",
+      "name": "Austin Transportation Criteria Manual",
+      "publisher": "City of Austin / Municode",
+      "url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
+      "file": "TRANSPORTATION.docx",
+      "type": "regulatory_docx",
+      "coverage": "Sections 1, 7, 9, 10",
+      "limitations": "Partial manual; other TCM sections are out of scope for this system."
+    },
+    {
+      "id": "zoning_by_address",
+      "name": "Zoning by Address",
+      "publisher": "City of Austin Open Data Portal (data.austintexas.gov)",
+      "url": "https://data.austintexas.gov/ (search: Zoning by Address)",
+      "file": "Zoning_By_Address_20260807.csv",
+      "type": "structured_csv",
+      "snapshot_date": "2026-08-07",
+      "limitations": "Preliminary reported zoning only; not an official zoning determination. No coordinates; matching is by address string."
+    },
+    {
+      "id": "issued_construction_permits",
+      "name": "Issued Construction Permits",
+      "publisher": "City of Austin Open Data Portal",
+      "url": "https://data.austintexas.gov/Building-and-Development/Issued-Construction-Permits/3syk-w9eu",
+      "file": "IssuedConstructionPermits.csv",
+      "type": "structured_csv",
+      "snapshot_date": "2026-08-07",
+      "limitations": "Issued permits 2021+ only. Historical proximity context; not approval precedent."
+    },
+    {
+      "id": "site_plan_cases",
+      "name": "Site Plan Cases",
+      "publisher": "City of Austin Open Data Portal",
+      "url": "https://data.austintexas.gov/ (search: Site Plan Cases)",
+      "file": "Site_Plan_Cases_20260807.csv",
+      "type": "structured_csv",
+      "snapshot_date": "2026-08-07",
+      "limitations": "Some records lack coordinates. Applicant/owner contact fields removed during preprocessing (privacy)."
+    },
+    {
+      "id": "plan_review_cases",
+      "name": "Plan Review Cases",
+      "publisher": "City of Austin Open Data Portal",
+      "url": "https://data.austintexas.gov/ (search: Plan Review Cases)",
+      "file": "Plan_Review_Cases_20260807.csv",
+      "type": "structured_csv",
+      "snapshot_date": "2026-08-07",
+      "limitations": "Contains VOID/test records (retained but flagged exclude_from_search). Contact fields removed (privacy)."
+    },
+    {
+      "id": "watershed_boundaries",
+      "name": "Watershed Boundaries",
+      "publisher": "City of Austin Open Data Portal",
+      "url": "https://data.austintexas.gov/ (search: Watershed Boundaries)",
+      "file": "Watershed_Boundaries_20260807.geojson",
+      "type": "geojson",
+      "snapshot_date": "2026-08-07",
+      "limitations": "76 named watersheds within the Austin planning area."
+    },
+    {
+      "id": "fully_developed_floodplain",
+      "name": "Greater Austin Fully Developed Floodplain",
+      "publisher": "City of Austin Open Data Portal",
+      "url": "https://data.austintexas.gov/ (search: Greater Austin Fully Developed Floodplain)",
+      "file": "Greater_Austin_Fully_Developed_Floodplain_20260807.geojson",
+      "type": "geojson",
+      "snapshot_date": "2026-08-07",
+      "limitations": "City of Austin fully developed floodplain model (Atlas 14); not the FEMA effective floodplain. Preliminary screening only."
+    }
+  ]
+}
