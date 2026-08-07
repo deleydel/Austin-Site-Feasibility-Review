@@ -8,7 +8,7 @@ floodplain GeoJSON ~128 MB exceed GitHub's 100 MB per-file hard limit), and
 
 Download `austin_raw_data.zip` from the team Google Drive:
 
-> **Google Drive link:** _<(https://drive.google.com/file/d/1BCKckddsYS7d_sqof1Fvi6uUoeJ4GUhP/view?usp=sharing)>_
+> **Google Drive link:** [austin_raw_data.zip](https://drive.google.com/file/d/1BCKckddsYS7d_sqof1Fvi6uUoeJ4GUhP/view?usp=sharing)
 
 Unzip it inside this `data/` directory (it extracts to `raw/…`) so the layout
 matches:
