@@ -47,7 +47,7 @@ knows where their code goes and what they can import from.
 │                                 #   benchmark questions, site scenarios, groundedness,
 │                                 #   citation correctness, guardrail tests, end-to-end timing
 │
-├── docs/                         # Task 9 (planned): slides, demo script, submission materials
+├── docs/                         # Task 9 (planned): presentation slides, video demo & presentation link
 │
 └── data/
     ├── raw/                      #   original DOCX/CSV/GeoJSON — NOT in git (over GitHub size
