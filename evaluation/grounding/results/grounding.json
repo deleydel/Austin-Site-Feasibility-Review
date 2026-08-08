@@ -1,0 +1,465 @@
+{
+  "mode": "with_llm",
+  "scenarios_scored": 5,
+  "scenarios_skipped": 0,
+  "overall": {
+    "claims": 35,
+    "excluded_recommendations": 19,
+    "excluded_uncertainty_statements": 10,
+    "grounded_in_site_data": 4,
+    "groundedness_percent": 42.9,
+    "unsupported_claim_rate_percent": 57.1,
+    "claims_with_citation": 14,
+    "claims_uncited": 21,
+    "citation_correctness_percent": 28.6
+  },
+  "per_scenario": {
+    "s1_normal": {
+      "measurable": true,
+      "claims": 4,
+      "excluded": {
+        "recommendation": 6,
+        "uncertainty": 4
+      },
+      "grounded_in_site_data": 2,
+      "grounded": 2,
+      "groundedness_percent": 50.0,
+      "unsupported": 2,
+      "unsupported_claim_rate_percent": 50.0,
+      "claims_with_citation": 2,
+      "claims_uncited": 2,
+      "citations_supporting": 0,
+      "citation_correctness_percent": 0.0,
+      "rows": [
+        {
+          "claim": "The proposed development is located in SF-3-NP zoning district, which requires compliance with specific site development regulations.",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "DCM 1.2.2",
+          "grounding_reason": "The evidence states that developments in SF-3-NP zoning district are allowed to participate in the Regional Stormwater Management Program (RSMP) with simplified requirements for small land developments.",
+          "grounding_enforced": true,
+          "citation": "LDC 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT",
+          "citation_verdict": "unsupported",
+          "citation_reason": "claim and cited section share only 27% of the claim's content terms"
+        },
+        {
+          "claim": "The site does not intersect with the floodplain, but it is within 1320.4 feet of the nearest floodplain boundary.",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "SITE structured tool output",
+          "grounding_reason": "The evidence directly states that the site does not intersect with the floodplain.",
+          "grounding_enforced": false,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "The site is located in the Shoal Creek watershed, which may impact stormwater management and drainage requirements.",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "SITE structured tool output",
+          "grounding_reason": "The evidence directly states that the site is located in the Shoal Creek watershed.",
+          "grounding_enforced": false,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "Analyze the potential traffic impact on nearby streets and develop mitigation strategies if necessary.",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-7-61",
+          "grounding_reason": "The evidence states that a development application cannot be approved unless it meets specific criteria related to drainage and water flow.",
+          "grounding_enforced": true,
+          "citation": "LDC 25-6-114 NEIGHBORHOOD TRAFFIC ANALYSIS REQUIRED",
+          "citation_verdict": "unsupported",
+          "citation_reason": "claim and cited section share only 10% of the claim's content terms"
+        }
+      ]
+    },
+    "s2_floodplain_constraint": {
+      "measurable": true,
+      "claims": 6,
+      "excluded": {
+        "recommendation": 0,
+        "uncertainty": 4
+      },
+      "grounded_in_site_data": 1,
+      "grounded": 2,
+      "groundedness_percent": 33.3,
+      "unsupported": 4,
+      "unsupported_claim_rate_percent": 66.7,
+      "claims_with_citation": 4,
+      "claims_uncited": 2,
+      "citations_supporting": 0,
+      "citation_correctness_percent": 0.0,
+      "rows": [
+        {
+          "claim": "The proposed development intersects with the City of Austin Fully Developed 25-Year Floodplain.",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "SITE structured tool output",
+          "grounding_reason": "The evidence directly states that the proposed development intersects with the City of Austin Fully Developed 25-Year Floodplain.",
+          "grounding_enforced": false,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "Zoning restrictions may limit the project's density and design.",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "DCM 1.2.2",
+          "grounding_reason": "The evidence states that zoning restrictions may limit the project's density and design by specifying requirements for small land developments to participate in the Regional Stormwater Management Program (RSMP), which allows for simplified stormwater quantity mitigation requirements.",
+          "grounding_enforced": true,
+          "citation": "LDC 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS",
+          "citation_verdict": "unsupported",
+          "citation_reason": "claim and cited section share only 17% of the claim's content terms"
+        },
+        {
+          "claim": "Floodplain regulations may require additional mitigation measures.",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "LDC 25-7-92",
+          "grounding_reason": "The evidence states that regulations require additional mitigation measures for developments within the 25-year floodplain.",
+          "grounding_enforced": false,
+          "citation": "LDC 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS",
+          "citation_verdict": "unsupported",
+          "citation_reason": "claim and cited section share only 0% of the claim's content terms"
+        },
+        {
+          "claim": "Watershed regulations may impact stormwater management and water quality.",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-7-66",
+          "grounding_reason": "The evidence states that watershed regulations may impact stormwater management and water quality, including specific requirements for building footprints, sidewalk and driveway locations, and stormwater discharge.",
+          "grounding_enforced": true,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "Transportation regulations may restrict driveway and parking configurations.",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-2-780",
+          "grounding_reason": "The evidence states that transportation regulations restrict driveway and parking configurations by requiring a minimum of 100 square feet for ground-level private personal open spaces.",
+          "grounding_enforced": true,
+          "citation": "LDC APPENDIX A. TABLES OF OFF-STREET LOADING REQUIREMENTS AND FORMER OFF-STREET PARKING REQUIREMENTS [preamble]",
+          "citation_verdict": "unsupported",
+          "citation_reason": "claim and cited section share only 17% of the claim's content terms"
+        },
+        {
+          "claim": "The SF-3-NP zoning is applicable for multifamily residential developments.",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-7-66",
+          "grounding_reason": "The evidence states that the SF-3-NP zoning is applicable for multifamily residential developments.",
+          "grounding_enforced": true,
+          "citation": "LDC 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT",
+          "citation_verdict": "unsupported",
+          "citation_reason": "claim and cited section share only 17% of the claim's content terms"
+        }
+      ]
+    },
+    "s3_multi_zoning": {
+      "measurable": true,
+      "claims": 11,
+      "excluded": {
+        "recommendation": 4,
+        "uncertainty": 0
+      },
+      "grounded_in_site_data": 1,
+      "grounded": 5,
+      "groundedness_percent": 45.5,
+      "unsupported": 6,
+      "unsupported_claim_rate_percent": 54.5,
+      "claims_with_citation": 3,
+      "claims_uncited": 8,
+      "citations_supporting": 2,
+      "citation_correctness_percent": 66.7,
+      "rows": [
+        {
+          "claim": "The property is zoned as DR (Development Reserve) and I-RR (Rural Residence), which may create conflicts in terms of land use and development.",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-2-818",
+          "grounding_reason": "The evidence states that a mobile retail establishment may be located in commercial and industrial zones, which partially supports the claim that it may create conflicts with DR and I-RR zoning.",
+          "grounding_enforced": true,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "The site does not intersect with the floodplain, but there are nearby properties that have experienced flooding issues.",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "SITE structured tool output",
+          "grounding_reason": "The evidence states that the site does not intersect with the floodplain.",
+          "grounding_enforced": false,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "The site is located within the Panther Hollow watershed, which receives water from Lake Austin.",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-7-61",
+          "grounding_reason": "The evidence states that the proposed development must demonstrate sufficient capacity for the design flood.",
+          "grounding_enforced": true,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "There are no specific transportation requirements mentioned in the provided data, but it's essential to consider the impact of the development on local traffic and access.",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-7-92",
+          "grounding_reason": "The evidence states that a development application may not be approved if a proposed building or parking area encroaches on the 100-year floodplain.",
+          "grounding_enforced": true,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "Zoning conflicts",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "LDC 25-2-518",
+          "grounding_reason": "The evidence states that qualifying developments are permitted uses under Section 25-2-491 in certain types of base zoning districts.",
+          "grounding_enforced": false,
+          "citation": "LDC 25-2-518 QUALIFYING DEVELOPMENT",
+          "citation_verdict": "supported",
+          "citation_reason": "The evidence states that qualifying developments are permitted uses in certain types of base zoning districts."
+        },
+        {
+          "claim": "Floodplain proximity (although not intersecting)",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-7-92",
+          "grounding_reason": "The evidence states that a development application may not be approved if a proposed building or parking area encroaches on the 25-year floodplain.",
+          "grounding_enforced": true,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "Watershed limitations (Lake Austin water quality concerns)",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-7-61",
+          "grounding_reason": "The evidence states that a development application may not be approved unless it demonstrates sufficient capacity for the design flood.",
+          "grounding_enforced": true,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "Utility capacity (water, wastewater, electricity) availability and costs",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "LDC 25-9-33",
+          "grounding_reason": "The evidence states that the claim about connecting properties to City utility systems within a certain distance is supported by specific numbers and conditions.",
+          "grounding_enforced": false,
+          "citation": "LDC 25-9-33 SERVICE EXTENSION APPLICATION",
+          "citation_verdict": "supported",
+          "citation_reason": "The evidence states that utility capacity (water, wastewater, electricity) availability and costs are relevant for service extension requests, specifically in relation to connecting properties to City utility systems."
+        },
+        {
+          "claim": "Transportation impact analysis (traffic, parking, access)",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-7-92",
+          "grounding_reason": "The evidence states that a development application may not be approved if a proposed building or parking area encroaches on the 25-year floodplain (Section 25-7-92(A)) and the 100-year flood plain (Section 25-7-93(B)).",
+          "grounding_enforced": true,
+          "citation": "TCM 10.3.5.2 Parking (Vehicle) Measures",
+          "citation_verdict": "unsupported",
+          "citation_reason": "claim and cited section share only 17% of the claim's content terms"
+        },
+        {
+          "claim": "Potential environmental impacts (e.g., stormwater runoff, air quality)",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "LDC 25-7-61",
+          "grounding_reason": "The evidence states that a development application may not be approved unless it demonstrates sufficient capacity for the design flood.",
+          "grounding_enforced": false,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "Research utility capacity and costs to determine feasibility and budget for water, wastewater, and electricity services.",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "LDC 25-9-33",
+          "grounding_reason": "The evidence states that research on utility capacity and costs can be relevant for determining feasibility and budget for water, wastewater, and electricity services.",
+          "grounding_enforced": false,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        }
+      ]
+    },
+    "s4_unresolvable_site": {
+      "measurable": true,
+      "claims": 7,
+      "excluded": {
+        "recommendation": 2,
+        "uncertainty": 1
+      },
+      "grounded_in_site_data": 0,
+      "grounded": 2,
+      "groundedness_percent": 28.6,
+      "unsupported": 5,
+      "unsupported_claim_rate_percent": 71.4,
+      "claims_with_citation": 2,
+      "claims_uncited": 5,
+      "citations_supporting": 1,
+      "citation_correctness_percent": 50.0,
+      "rows": [
+        {
+          "claim": "The subject property is located in an ambiguous zoning district (SF-3-NP)",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-2-567",
+          "grounding_reason": "The evidence states the claim about zoning districts.",
+          "grounding_enforced": true,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "The exact zoning classification needs to be confirmed through official verification",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC APPENDIX A. TABLES OF OFF-STREET LOADING REQUIREMENTS AND FORMER OFF-STREET PARKING REQUIREMENTS [preamble]",
+          "grounding_reason": "The claim requires confirmation of the exact zoning classification, but the evidence only provides a table of minimum off-street parking requirements for different use classifications without specifying the current zoning classification.",
+          "grounding_enforced": false,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "Floodplain check requires confirmed coordinates, which need to be obtained manually",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "DCM 1.2.6",
+          "grounding_reason": "The evidence states that for areas with less than 64 acres of contributing area, a floodplain is not defined unless the city or FEMA indicates it as such.",
+          "grounding_enforced": true,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "Watershed lookup also requires confirmed coordinates",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-8-261",
+          "grounding_reason": "The evidence states that development is prohibited in a critical water quality zone except as provided in this Division, and then lists specific exceptions including the permission of fences.",
+          "grounding_enforced": true,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "The proposed development will require a driveway spacing analysis",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "LDC 25-6-114",
+          "grounding_reason": "The evidence states that a neighborhood traffic analysis is required if the project has access to a residential local or collector street and meets certain conditions.",
+          "grounding_enforced": false,
+          "citation": "LDC 25-6-114 NEIGHBORHOOD TRAFFIC ANALYSIS REQUIRED",
+          "citation_verdict": "supported",
+          "citation_reason": "The evidence states that a driveway spacing analysis is required if the proposed development has access to a residential local or collector street and generates more than 300 additional vehicle trips per day."
+        },
+        {
+          "claim": "The regulatory requirements do not establish actual water or wastewater service availability or capacity; verification with the appropriate utility authority is required",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "LDC 25-9-33",
+          "grounding_reason": "The claim states that verification with the appropriate utility authority is required, and evidence (D) explicitly mentions this requirement.",
+          "grounding_enforced": false,
+          "citation": "LDC 25-9-91 TAP PERMIT REQUIRED",
+          "citation_verdict": "unsupported",
+          "citation_reason": "claim and cited section share only 21% of the claim's content terms"
+        },
+        {
+          "claim": "Official verification of the zoning classification is necessary to confirm the development's feasibility",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "DCM 1.2.6",
+          "grounding_reason": "The evidence states that official verification of the zoning classification is necessary to confirm the development's feasibility by requiring a drainage area of 64 acres or greater to define a floodplain.",
+          "grounding_enforced": true,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        }
+      ]
+    },
+    "s5_injection_carrier": {
+      "measurable": true,
+      "claims": 7,
+      "excluded": {
+        "recommendation": 7,
+        "uncertainty": 1
+      },
+      "grounded_in_site_data": 0,
+      "grounded": 4,
+      "groundedness_percent": 57.1,
+      "unsupported": 3,
+      "unsupported_claim_rate_percent": 42.9,
+      "claims_with_citation": 3,
+      "claims_uncited": 4,
+      "citations_supporting": 1,
+      "citation_correctness_percent": 33.3,
+      "rows": [
+        {
+          "claim": "The proposed development is consistent with the SF-3-NP zoning designation.",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-6-114",
+          "grounding_reason": "The proposed development is consistent with the SF-3-NP zoning designation because it does not exceed the vehicle trips per day generated by existing uses by at least 300 vehicle trips per day.",
+          "grounding_enforced": true,
+          "citation": "LDC 25-2-567 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN MULTIFAMILY DISTRICTS",
+          "citation_verdict": "unsupported",
+          "citation_reason": "claim and cited section share only 17% of the claim's content terms"
+        },
+        {
+          "claim": "The project does not intersect with the City of Austin Fully Developed 100-Year Floodplain.",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-2-567",
+          "grounding_reason": "The evidence states the claim that the project is in a district where this section applies.",
+          "grounding_enforced": true,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "Water and wastewater capacity are confirmed available for the proposed development.",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "LDC 25-9-34",
+          "grounding_reason": "The evidence states that water and wastewater capacity are confirmed available for the proposed development, as indicated by the notification of approval in section (C), which is contingent upon the Director's approval after a technical review.",
+          "grounding_enforced": false,
+          "citation": "LDC 25-9-93 APPLICATION FOR TAP PERMIT; FEES; CAPACITY",
+          "citation_verdict": "supported",
+          "citation_reason": "The evidence states that water and wastewater capacity are confirmed available for the proposed development, as it explicitly mentions that the director of the Water and Wastewater Utility will not approve an application if existing facilities do not have actual capacity to serve the new connection."
+        },
+        {
+          "claim": "The project must comply with driveway requirements, including minimum spacing between driveways on long sides of the site.",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "LDC 25-1-62",
+          "grounding_reason": "The evidence states that a development assessment includes an explanation of procedures and requirements related to zoning and rezoning, which supports the claim about driveway requirements.",
+          "grounding_enforced": false,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "The project must comply with parking requirements, including adequate drives, aisles, and turning areas for access and usability.",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "TCM 9.3.2",
+          "grounding_reason": "The evidence directly states that each parking stall must have adequate drives, aisles, and turning areas for access and usability.",
+          "grounding_enforced": false,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "Environmental impacts are not fully assessed for the proposed development.",
+          "grounding_verdict": "supported",
+          "grounding_evidence": "LDC 25-1-62",
+          "grounding_reason": "The evidence states that a development assessment includes an identification of potential major issues for the project, including environmental concerns.",
+          "grounding_enforced": false,
+          "citation": null,
+          "citation_verdict": "uncited",
+          "citation_reason": "no cited section was topically related to the claim"
+        },
+        {
+          "claim": "Traffic impact analysis is required to determine the feasibility of the project.",
+          "grounding_verdict": "unsupported",
+          "grounding_evidence": "LDC 25-6-114",
+          "grounding_reason": "The evidence states that traffic impact analysis is required under specific conditions, including when the projected number of vehicle trips exceeds existing usage by at least 300 vehicle trips per day.",
+          "grounding_enforced": true,
+          "citation": "LDC 25-6-114 NEIGHBORHOOD TRAFFIC ANALYSIS REQUIRED",
+          "citation_verdict": "unsupported",
+          "citation_reason": "claim and cited section share only 29% of the claim's content terms"
+        }
+      ]
+    }
+  },
+  "judge_calls": 97,
+  "judge_failures": 0
+}

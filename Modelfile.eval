@@ -1,0 +1,9 @@
+FROM llama3.2
+# The Task 4 synthesis prompt serialises the whole workflow state and runs to
+# roughly 28,700 tokens. llama3.2 defaults to a 2,048-token context, at which
+# the model sees only the tail of that JSON and describes it instead of the
+# site. Evaluation therefore runs against this context-extended variant.
+#
+#   ollama create llama3.2-eval32k -f Modelfile.eval
+PARAMETER num_ctx 32768
+PARAMETER temperature 0

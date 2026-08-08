@@ -38,14 +38,21 @@ for evaluation, Streamlit frontend, and presentation deliverables.
 │   ├── test_agents.py            #   Task 4 (implemented)
 │   ├── test_guardrails.py        #   Task 5 (implemented)
 │   ├── test_report.py            #   Task 6 (implemented)
+│   ├── test_evaluation.py        #   Task 7 harness tests (implemented, offline)
 │   └── test_<yours>.py           #   tests for other tasks
 │
-├── evaluation/                   # benchmarks & measured metrics
-│   ├── retrieval/                #   Task 2 retrieval quality (implemented)
-│   ├── tools/                    #   Task 3 latency (implemented)
-│   └── ...                       #   Task 7 adds the full-framework evaluation here:
-│                                 #   benchmark questions, site scenarios, groundedness,
-│                                 #   citation correctness, guardrail tests, end-to-end timing
+├── evaluation/                   # benchmarks & measured metrics (Task 7)
+│   ├── run_all.py                #   runs every stage -> results/EVALUATION.md scorecard
+│   ├── benchmarks/               #   held-out questions, site scenarios, adversarial cases
+│   ├── judge/                    #   local LLM judge + code-side verdict enforcement
+│   ├── scenarios/                #   graph runs, cached states, end-to-end timing
+│   ├── retrieval/                #   Task 2 sanity benchmark + Task 7 held-out set
+│   ├── tools/                    #   Task 3 latency + structured-data accuracy
+│   ├── grounding/                #   groundedness, unsupported claims, citation support
+│   ├── guardrails/               #   six-category adversarial compliance
+│   ├── report/                   #   completeness, export integrity, consistency
+│   ├── manual/                   #   hand-scored sample + judge-agreement rate
+│   └── results/                  #   EVALUATION.md + evaluation_results.json
 │
 ├── docs/                         # Task 9 (planned): presentation slides, video demo & presentation link
 │
@@ -74,6 +81,9 @@ vector index are committed, so nothing needs regenerating.
   "needs verification", never as an answer.
 - `data/processed/source_manifest.json` — the approved-source list for
   guardrails (Task 5).
+- `evaluation/results/evaluation_results.json` — every measured metric in one
+  machine-readable file (Task 7), for anything that needs to display the
+  numbers. `evaluation/results/EVALUATION.md` is the same data as a scorecard.
 - `src.guardrails.apply_guardrails(state)` — validates scope, citations,
   unsupported claims, and privacy; writes a guarded `final_report`.
 - `src.report.build_report_document(final_report)` /

@@ -17,6 +17,26 @@ TOOLS_RESULTS = EVAL_DIR / "tools" / "results"
 # Downloadable feasibility reports produced by Task 6 export.
 REPORT_OUTPUT_DIR = DATA_PROCESSED / "feasibility_reports"
 
+# Task 7 evaluation framework
+BENCHMARKS_DIR = EVAL_DIR / "benchmarks"
+JUDGE_RESULTS = EVAL_DIR / "judge" / "results"
+SCENARIO_RESULTS = EVAL_DIR / "scenarios" / "results"
+SCENARIO_STATES = SCENARIO_RESULTS / "states"
+GROUNDING_RESULTS = EVAL_DIR / "grounding" / "results"
+GUARDRAIL_RESULTS = EVAL_DIR / "guardrails" / "results"
+REPORT_CHECK_RESULTS = EVAL_DIR / "report" / "results"
+MANUAL_REVIEW_DIR = EVAL_DIR / "manual"
+SUMMARY_RESULTS = EVAL_DIR / "results"
+
+# LLM judge (local Ollama; no API key so the whole team can re-run)
+JUDGE_MODEL = "llama3.2"
+JUDGE_BASE_URL = "http://localhost:11434"
+JUDGE_SEED = 7
+# llama3.2 defaults to a 2048-token context. Regulatory sections are long, so
+# without an explicit window the model silently truncates the evidence it is
+# asked to judge and returns confident but uninformed verdicts.
+JUDGE_NUM_CTX = 8192
+
 # Raw source files
 ZONING_CSV = RAW_STRUCTURED / "Zoning_By_Address_20260807.csv"
 PERMITS_CSV = RAW_STRUCTURED / "IssuedConstructionPermits.csv"

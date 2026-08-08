@@ -1,0 +1,318 @@
+{
+  "description": "Task 7 held-out regulatory benchmark. Disjoint from evaluation/retrieval/benchmark_questions.json: no gold section is shared with Task 2's set. Same schema, so evaluation/retrieval/run_benchmark.py::evaluate scores it unchanged. Gold labels are (doc_id, section_number); any one match counts as a hit. Realistic questions also carry a 'paraphrase': the same question in lay developer language avoiding the code's own vocabulary, scored separately to measure how much retrieval depends on matching regulatory terminology.",
+  "questions": [
+    {
+      "id": "h01",
+      "type": "realistic",
+      "question": "Which developments are exempt from the site plan requirement?",
+      "gold": [
+        [
+          "LDC",
+          "25-5-2"
+        ]
+      ],
+      "paraphrase": "Do I need to file a site plan for a small four-unit build?"
+    },
+    {
+      "id": "h02",
+      "type": "realistic",
+      "question": "How long is a released site plan valid before it expires, and can the expiration date be extended?",
+      "gold": [
+        [
+          "LDC",
+          "25-5-81"
+        ],
+        [
+          "LDC",
+          "25-5-62"
+        ],
+        [
+          "LDC",
+          "25-5-63"
+        ]
+      ],
+      "paraphrase": "How long do I have to start work after my plans get the go-ahead, and can I get more time?"
+    },
+    {
+      "id": "h03",
+      "type": "realistic",
+      "question": "Can a lot be reduced below the minimum lot size requirements, and what exceptions apply?",
+      "gold": [
+        [
+          "LDC",
+          "25-2-512"
+        ]
+      ],
+      "paraphrase": "Can I make my lot smaller and still build on it?"
+    },
+    {
+      "id": "h04",
+      "type": "realistic",
+      "question": "What are the maximum cut and fill depths allowed when grading a development site?",
+      "gold": [
+        [
+          "LDC",
+          "25-8-341"
+        ],
+        [
+          "LDC",
+          "25-8-342"
+        ]
+      ],
+      "paraphrase": "How much can I dig out or build up the ground on my land?"
+    },
+    {
+      "id": "h05",
+      "type": "realistic",
+      "question": "What construction restrictions apply on slopes with a steep gradient?",
+      "gold": [
+        [
+          "LDC",
+          "25-2-1123"
+        ],
+        [
+          "LDC",
+          "25-8-301"
+        ]
+      ],
+      "paraphrase": "My land is steep. What limits are there on building there?"
+    },
+    {
+      "id": "h06",
+      "type": "realistic",
+      "question": "What parkland dedication or fee is required for a multi-family development?",
+      "gold": [
+        [
+          "LDC",
+          "25-1-603"
+        ],
+        [
+          "LDC",
+          "25-1-608"
+        ],
+        [
+          "LDC",
+          "25-1-604"
+        ]
+      ],
+      "paraphrase": "Do apartment projects have to give up land for parks or pay something instead?"
+    },
+    {
+      "id": "h07",
+      "type": "realistic",
+      "question": "When must a development provide an off-street loading facility?",
+      "gold": [
+        [
+          "LDC",
+          "25-6-531"
+        ],
+        [
+          "LDC",
+          "25-6-532"
+        ]
+      ],
+      "paraphrase": "Does my new building need somewhere for trucks to unload?"
+    },
+    {
+      "id": "h08",
+      "type": "realistic",
+      "question": "Is a permit required to remove a protected tree, and who may apply for one?",
+      "gold": [
+        [
+          "LDC",
+          "25-8-621"
+        ],
+        [
+          "LDC",
+          "25-8-622"
+        ]
+      ],
+      "paraphrase": "There is a big old tree in the way. Can I take it down?"
+    },
+    {
+      "id": "h09",
+      "type": "realistic",
+      "question": "What wetland protection requirements apply to a development site?",
+      "gold": [
+        [
+          "LDC",
+          "25-8-282"
+        ]
+      ],
+      "paraphrase": "There is boggy marshy ground on part of my land. Does that stop me building?"
+    },
+    {
+      "id": "h10",
+      "type": "realistic",
+      "question": "When is a service extension request required to connect a property to City water or wastewater?",
+      "gold": [
+        [
+          "LDC",
+          "25-9-33"
+        ]
+      ],
+      "paraphrase": "The water line is a long way from my property. What do I have to do to get hooked up?"
+    },
+    {
+      "id": "h11",
+      "type": "realistic",
+      "question": "What must a wastewater report address?",
+      "gold": [
+        [
+          "LDC",
+          "25-8-124"
+        ]
+      ],
+      "paraphrase": "What goes in the sewage paperwork I have to hand in?"
+    },
+    {
+      "id": "h12",
+      "type": "realistic",
+      "question": "Must a property owner dedicate drainage easements or rights-of-way when developing?",
+      "gold": [
+        [
+          "LDC",
+          "25-7-152"
+        ]
+      ],
+      "paraphrase": "Do I have to give the city a strip of my land for stormwater?"
+    },
+    {
+      "id": "h13",
+      "type": "realistic",
+      "question": "What does the city consider when deciding whether to approve a driveway approach construction permit?",
+      "gold": [
+        [
+          "LDC",
+          "25-6-263"
+        ]
+      ],
+      "paraphrase": "What will the city look at before letting me put in a new driveway?"
+    },
+    {
+      "id": "h14",
+      "type": "realistic",
+      "question": "When is a Transportation Demand Management plan required for a development?",
+      "gold": [
+        [
+          "TCM",
+          "10.3.2"
+        ],
+        [
+          "TCM",
+          "10.2.1"
+        ]
+      ],
+      "paraphrase": "Will my project have to do anything about cutting down car trips?"
+    },
+    {
+      "id": "h15",
+      "type": "realistic",
+      "question": "What are the location requirements for short-term and long-term bicycle parking?",
+      "gold": [
+        [
+          "TCM",
+          "9.8.2"
+        ],
+        [
+          "TCM",
+          "9.8.3"
+        ],
+        [
+          "TCM",
+          "9.8.0"
+        ]
+      ],
+      "paraphrase": "Where do I have to put bike racks and how close to the door?"
+    },
+    {
+      "id": "h16",
+      "type": "realistic",
+      "question": "How is the runoff curve number selected for the NRCS runoff calculation method?",
+      "gold": [
+        [
+          "DCM",
+          "2.5.2"
+        ]
+      ],
+      "paraphrase": "How do I pick the number that represents how much rain runs off my land?"
+    },
+    {
+      "id": "h17",
+      "type": "realistic",
+      "question": "What safety criteria must a stormwater management pond meet?",
+      "gold": [
+        [
+          "DCM",
+          "8.3.3"
+        ],
+        [
+          "DCM",
+          "8.3.2"
+        ]
+      ],
+      "paraphrase": "What do I have to do to make a stormwater pond safe?"
+    },
+    {
+      "id": "h18",
+      "type": "realistic",
+      "question": "How many driveways is a site allowed based on its street frontage?",
+      "gold": [
+        [
+          "TCM",
+          "7.6.1"
+        ],
+        [
+          "TCM",
+          "7.6.2"
+        ]
+      ],
+      "paraphrase": "How many entrances can I have off the street?"
+    },
+    {
+      "id": "h19",
+      "type": "realistic",
+      "question": "Is off-street motor vehicle parking required for a new development in Austin?",
+      "gold": [
+        [
+          "LDC",
+          "25-6-471"
+        ]
+      ],
+      "paraphrase": "How many car parking spaces do I have to build?"
+    },
+    {
+      "id": "h20",
+      "type": "citation",
+      "question": "What does LDC section 25-5-81 provide?",
+      "gold": [
+        [
+          "LDC",
+          "25-5-81"
+        ]
+      ]
+    },
+    {
+      "id": "h21",
+      "type": "citation",
+      "question": "Transportation Criteria Manual 9.8.3 long term bicycle parking requirements",
+      "gold": [
+        [
+          "TCM",
+          "9.8.3"
+        ]
+      ]
+    },
+    {
+      "id": "h22",
+      "type": "citation",
+      "question": "Drainage Criteria Manual section 8.3.3 safety criteria for stormwater management ponds",
+      "gold": [
+        [
+          "DCM",
+          "8.3.3"
+        ]
+      ]
+    }
+  ]
+}

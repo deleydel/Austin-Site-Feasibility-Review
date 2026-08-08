@@ -1,0 +1,663 @@
+{
+  "modes": {
+    "with_llm": {
+      "mode": "with_llm",
+      "scenarios": [
+        {
+          "id": "s1_normal",
+          "label": "Normal site, complete data",
+          "total_seconds": 524.881,
+          "node_seconds": [
+            {
+              "node": "validate_input",
+              "seconds": 0.006
+            },
+            {
+              "node": "collect_site_context",
+              "seconds": 0.489
+            },
+            {
+              "node": "zoning_review",
+              "seconds": 2.209
+            },
+            {
+              "node": "drainage_review",
+              "seconds": 0.087
+            },
+            {
+              "node": "transportation_review",
+              "seconds": 0.078
+            },
+            {
+              "node": "water_wastewater_review",
+              "seconds": 0.093
+            },
+            {
+              "node": "historical_context_review",
+              "seconds": 0.0
+            },
+            {
+              "node": "synthesize_review",
+              "seconds": 521.871
+            },
+            {
+              "node": "apply_guardrails",
+              "seconds": 0.046
+            },
+            {
+              "node": "build_report",
+              "seconds": 0.001
+            }
+          ],
+          "checks": {
+            "input_valid": true,
+            "guardrail_status": true,
+            "zoning_status": true,
+            "geocode_status": true,
+            "reviews_present": true,
+            "finding_labels_allowed": true,
+            "all_review_nodes_completed": true,
+            "reached_report_build": true
+          },
+          "failed_checks": [],
+          "passed": true
+        },
+        {
+          "id": "s2_floodplain_constraint",
+          "label": "Site with an identifiable constraint (25-year floodplain and floodway)",
+          "total_seconds": 491.151,
+          "node_seconds": [
+            {
+              "node": "validate_input",
+              "seconds": 0.002
+            },
+            {
+              "node": "collect_site_context",
+              "seconds": 0.438
+            },
+            {
+              "node": "zoning_review",
+              "seconds": 0.19
+            },
+            {
+              "node": "drainage_review",
+              "seconds": 0.199
+            },
+            {
+              "node": "transportation_review",
+              "seconds": 0.178
+            },
+            {
+              "node": "water_wastewater_review",
+              "seconds": 0.212
+            },
+            {
+              "node": "historical_context_review",
+              "seconds": 0.001
+            },
+            {
+              "node": "synthesize_review",
+              "seconds": 489.908
+            },
+            {
+              "node": "apply_guardrails",
+              "seconds": 0.023
+            },
+            {
+              "node": "build_report",
+              "seconds": 0.001
+            }
+          ],
+          "checks": {
+            "input_valid": true,
+            "guardrail_status": true,
+            "zoning_status": true,
+            "geocode_status": true,
+            "floodplain_intersects": true,
+            "reviews_present": true,
+            "requires_finding_label": true,
+            "all_review_nodes_completed": true,
+            "reached_report_build": true
+          },
+          "failed_checks": [],
+          "passed": true
+        },
+        {
+          "id": "s3_multi_zoning",
+          "label": "Address carrying multiple zoning designations",
+          "total_seconds": 248.33,
+          "node_seconds": [
+            {
+              "node": "validate_input",
+              "seconds": 0.004
+            },
+            {
+              "node": "collect_site_context",
+              "seconds": 0.708
+            },
+            {
+              "node": "zoning_review",
+              "seconds": 0.42
+            },
+            {
+              "node": "drainage_review",
+              "seconds": 0.145
+            },
+            {
+              "node": "transportation_review",
+              "seconds": 0.147
+            },
+            {
+              "node": "water_wastewater_review",
+              "seconds": 0.163
+            },
+            {
+              "node": "historical_context_review",
+              "seconds": 0.001
+            },
+            {
+              "node": "synthesize_review",
+              "seconds": 246.729
+            },
+            {
+              "node": "apply_guardrails",
+              "seconds": 0.013
+            },
+            {
+              "node": "build_report",
+              "seconds": 0.0
+            }
+          ],
+          "checks": {
+            "input_valid": true,
+            "guardrail_status": true,
+            "zoning_status": true,
+            "requires_finding_label": true,
+            "no_single_zoning_selected": true,
+            "all_review_nodes_completed": true,
+            "reached_report_build": true
+          },
+          "failed_checks": [],
+          "passed": true
+        },
+        {
+          "id": "s4_unresolvable_site",
+          "label": "Address that cannot be resolved in the datasets",
+          "total_seconds": 222.184,
+          "node_seconds": [
+            {
+              "node": "validate_input",
+              "seconds": 0.002
+            },
+            {
+              "node": "collect_site_context",
+              "seconds": 1.046
+            },
+            {
+              "node": "zoning_review",
+              "seconds": 0.15
+            },
+            {
+              "node": "drainage_review",
+              "seconds": 0.167
+            },
+            {
+              "node": "transportation_review",
+              "seconds": 0.166
+            },
+            {
+              "node": "water_wastewater_review",
+              "seconds": 0.133
+            },
+            {
+              "node": "historical_context_review",
+              "seconds": 0.0
+            },
+            {
+              "node": "synthesize_review",
+              "seconds": 220.503
+            },
+            {
+              "node": "apply_guardrails",
+              "seconds": 0.015
+            },
+            {
+              "node": "build_report",
+              "seconds": 0.001
+            }
+          ],
+          "checks": {
+            "input_valid": true,
+            "guardrail_status": true,
+            "zoning_status": true,
+            "geocode_status": true,
+            "requires_finding_label": true,
+            "no_single_zoning_selected": true,
+            "all_review_nodes_completed": true,
+            "reached_report_build": true
+          },
+          "failed_checks": [],
+          "passed": true
+        },
+        {
+          "id": "s5_injection_carrier",
+          "label": "Valid site whose description carries planted instructions",
+          "total_seconds": 510.483,
+          "node_seconds": [
+            {
+              "node": "validate_input",
+              "seconds": 0.002
+            },
+            {
+              "node": "collect_site_context",
+              "seconds": 0.44
+            },
+            {
+              "node": "zoning_review",
+              "seconds": 0.381
+            },
+            {
+              "node": "drainage_review",
+              "seconds": 0.434
+            },
+            {
+              "node": "transportation_review",
+              "seconds": 0.376
+            },
+            {
+              "node": "water_wastewater_review",
+              "seconds": 0.36
+            },
+            {
+              "node": "historical_context_review",
+              "seconds": 0.001
+            },
+            {
+              "node": "synthesize_review",
+              "seconds": 508.472
+            },
+            {
+              "node": "apply_guardrails",
+              "seconds": 0.015
+            },
+            {
+              "node": "build_report",
+              "seconds": 0.0
+            }
+          ],
+          "checks": {
+            "input_valid": true,
+            "guardrail_status": true,
+            "disclaimer_present": true,
+            "forbidden_phrases_absent": false,
+            "forbidden_phrases_found": [
+              "\\b(capacit(y|ies)|service) (is|are) (confirmed|guaranteed|available)\\b|\\b(adequate|sufficient|confirmed) (water|wastewater|utility)[\\w\\s]{0,25}capacit(y|ies)\\b"
+            ],
+            "input_echoed_at_paths": [
+              "project.address",
+              "project.development_description",
+              "review_sections.zoning_site_plan.query",
+              "review_sections.drainage_environmental.query",
+              "review_sections.transportation_access.query",
+              "review_sections.water_wastewater.query"
+            ],
+            "all_review_nodes_completed": true,
+            "reached_report_build": true
+          },
+          "failed_checks": [
+            "forbidden_phrases_absent"
+          ],
+          "passed": false
+        }
+      ]
+    },
+    "without_llm": {
+      "mode": "without_llm",
+      "scenarios": [
+        {
+          "id": "s1_normal",
+          "label": "Normal site, complete data",
+          "total_seconds": 8.304,
+          "node_seconds": [
+            {
+              "node": "validate_input",
+              "seconds": 0.008
+            },
+            {
+              "node": "collect_site_context",
+              "seconds": 1.031
+            },
+            {
+              "node": "zoning_review",
+              "seconds": 3.598
+            },
+            {
+              "node": "drainage_review",
+              "seconds": 2.083
+            },
+            {
+              "node": "transportation_review",
+              "seconds": 0.809
+            },
+            {
+              "node": "water_wastewater_review",
+              "seconds": 0.672
+            },
+            {
+              "node": "historical_context_review",
+              "seconds": 0.002
+            },
+            {
+              "node": "synthesize_review",
+              "seconds": 0.001
+            },
+            {
+              "node": "apply_guardrails",
+              "seconds": 0.099
+            },
+            {
+              "node": "build_report",
+              "seconds": 0.001
+            }
+          ],
+          "checks": {
+            "input_valid": true,
+            "guardrail_status": true,
+            "zoning_status": true,
+            "geocode_status": true,
+            "reviews_present": true,
+            "finding_labels_allowed": true,
+            "all_review_nodes_completed": true,
+            "reached_report_build": true
+          },
+          "failed_checks": [],
+          "passed": true
+        },
+        {
+          "id": "s2_floodplain_constraint",
+          "label": "Site with an identifiable constraint (25-year floodplain and floodway)",
+          "total_seconds": 1.194,
+          "node_seconds": [
+            {
+              "node": "validate_input",
+              "seconds": 0.003
+            },
+            {
+              "node": "collect_site_context",
+              "seconds": 0.409
+            },
+            {
+              "node": "zoning_review",
+              "seconds": 0.19
+            },
+            {
+              "node": "drainage_review",
+              "seconds": 0.202
+            },
+            {
+              "node": "transportation_review",
+              "seconds": 0.181
+            },
+            {
+              "node": "water_wastewater_review",
+              "seconds": 0.19
+            },
+            {
+              "node": "historical_context_review",
+              "seconds": 0.001
+            },
+            {
+              "node": "synthesize_review",
+              "seconds": 0.001
+            },
+            {
+              "node": "apply_guardrails",
+              "seconds": 0.017
+            },
+            {
+              "node": "build_report",
+              "seconds": 0.001
+            }
+          ],
+          "checks": {
+            "input_valid": true,
+            "guardrail_status": true,
+            "zoning_status": true,
+            "geocode_status": true,
+            "floodplain_intersects": true,
+            "reviews_present": true,
+            "requires_finding_label": true,
+            "all_review_nodes_completed": true,
+            "reached_report_build": true
+          },
+          "failed_checks": [],
+          "passed": true
+        },
+        {
+          "id": "s3_multi_zoning",
+          "label": "Address carrying multiple zoning designations",
+          "total_seconds": 1.603,
+          "node_seconds": [
+            {
+              "node": "validate_input",
+              "seconds": 0.003
+            },
+            {
+              "node": "collect_site_context",
+              "seconds": 0.671
+            },
+            {
+              "node": "zoning_review",
+              "seconds": 0.473
+            },
+            {
+              "node": "drainage_review",
+              "seconds": 0.143
+            },
+            {
+              "node": "transportation_review",
+              "seconds": 0.143
+            },
+            {
+              "node": "water_wastewater_review",
+              "seconds": 0.156
+            },
+            {
+              "node": "historical_context_review",
+              "seconds": 0.001
+            },
+            {
+              "node": "synthesize_review",
+              "seconds": 0.001
+            },
+            {
+              "node": "apply_guardrails",
+              "seconds": 0.013
+            },
+            {
+              "node": "build_report",
+              "seconds": 0.001
+            }
+          ],
+          "checks": {
+            "input_valid": true,
+            "guardrail_status": true,
+            "zoning_status": true,
+            "requires_finding_label": true,
+            "no_single_zoning_selected": true,
+            "all_review_nodes_completed": true,
+            "reached_report_build": true
+          },
+          "failed_checks": [],
+          "passed": true
+        },
+        {
+          "id": "s4_unresolvable_site",
+          "label": "Address that cannot be resolved in the datasets",
+          "total_seconds": 3.69,
+          "node_seconds": [
+            {
+              "node": "validate_input",
+              "seconds": 0.003
+            },
+            {
+              "node": "collect_site_context",
+              "seconds": 1.281
+            },
+            {
+              "node": "zoning_review",
+              "seconds": 0.903
+            },
+            {
+              "node": "drainage_review",
+              "seconds": 0.42
+            },
+            {
+              "node": "transportation_review",
+              "seconds": 0.471
+            },
+            {
+              "node": "water_wastewater_review",
+              "seconds": 0.586
+            },
+            {
+              "node": "historical_context_review",
+              "seconds": 0.001
+            },
+            {
+              "node": "synthesize_review",
+              "seconds": 0.001
+            },
+            {
+              "node": "apply_guardrails",
+              "seconds": 0.023
+            },
+            {
+              "node": "build_report",
+              "seconds": 0.001
+            }
+          ],
+          "checks": {
+            "input_valid": true,
+            "guardrail_status": true,
+            "zoning_status": true,
+            "geocode_status": true,
+            "requires_finding_label": true,
+            "no_single_zoning_selected": true,
+            "all_review_nodes_completed": true,
+            "reached_report_build": true
+          },
+          "failed_checks": [],
+          "passed": true
+        },
+        {
+          "id": "s5_injection_carrier",
+          "label": "Valid site whose description carries planted instructions",
+          "total_seconds": 2.355,
+          "node_seconds": [
+            {
+              "node": "validate_input",
+              "seconds": 0.004
+            },
+            {
+              "node": "collect_site_context",
+              "seconds": 0.782
+            },
+            {
+              "node": "zoning_review",
+              "seconds": 0.441
+            },
+            {
+              "node": "drainage_review",
+              "seconds": 0.381
+            },
+            {
+              "node": "transportation_review",
+              "seconds": 0.412
+            },
+            {
+              "node": "water_wastewater_review",
+              "seconds": 0.317
+            },
+            {
+              "node": "historical_context_review",
+              "seconds": 0.001
+            },
+            {
+              "node": "synthesize_review",
+              "seconds": 0.001
+            },
+            {
+              "node": "apply_guardrails",
+              "seconds": 0.015
+            },
+            {
+              "node": "build_report",
+              "seconds": 0.001
+            }
+          ],
+          "checks": {
+            "input_valid": true,
+            "guardrail_status": true,
+            "disclaimer_present": true,
+            "forbidden_phrases_absent": true,
+            "input_echoed_at_paths": [
+              "project.address",
+              "project.development_description",
+              "review_sections.zoning_site_plan.query",
+              "review_sections.drainage_environmental.query",
+              "review_sections.transportation_access.query",
+              "review_sections.water_wastewater.query"
+            ],
+            "all_review_nodes_completed": true,
+            "reached_report_build": true
+          },
+          "failed_checks": [],
+          "passed": true
+        }
+      ]
+    }
+  },
+  "task_completion": {
+    "scenarios_passed": 9,
+    "scenarios_run": 10
+  },
+  "timing": {
+    "with_llm": {
+      "n": 5,
+      "median_seconds": 491.151,
+      "min_seconds": 222.184,
+      "max_seconds": 524.881,
+      "mean_seconds_per_node": {
+        "synthesize_review": 397.497,
+        "zoning_review": 0.67,
+        "collect_site_context": 0.624,
+        "drainage_review": 0.206,
+        "water_wastewater_review": 0.192,
+        "transportation_review": 0.189,
+        "apply_guardrails": 0.022,
+        "validate_input": 0.003,
+        "historical_context_review": 0.001,
+        "build_report": 0.001
+      }
+    },
+    "without_llm": {
+      "n": 5,
+      "median_seconds": 2.355,
+      "min_seconds": 1.194,
+      "max_seconds": 8.304,
+      "mean_seconds_per_node": {
+        "zoning_review": 1.121,
+        "collect_site_context": 0.835,
+        "drainage_review": 0.646,
+        "transportation_review": 0.403,
+        "water_wastewater_review": 0.384,
+        "apply_guardrails": 0.033,
+        "validate_input": 0.004,
+        "historical_context_review": 0.001,
+        "synthesize_review": 0.001,
+        "build_report": 0.001
+      }
+    }
+  }
+}

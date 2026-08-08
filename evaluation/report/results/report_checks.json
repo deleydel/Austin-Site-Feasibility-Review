@@ -1,0 +1,255 @@
+{
+  "mode": "with_llm",
+  "scenarios": 5,
+  "overall": {
+    "complete_reports": 5,
+    "completeness_percent": 100.0,
+    "consistent_reports": 5,
+    "consistency_percent": 100.0,
+    "all_formats_exported": 5,
+    "export_percent": 100.0
+  },
+  "per_scenario": {
+    "s1_normal": {
+      "completeness": {
+        "required": 12,
+        "present": 12,
+        "missing": [],
+        "empty": [
+          "potential_constraints"
+        ],
+        "unexpectedly_empty": [],
+        "complete": true
+      },
+      "exports": {
+        "md": {
+          "ok": true,
+          "bytes": 11820
+        },
+        "html": {
+          "ok": true,
+          "bytes": 14080
+        },
+        "docx": {
+          "ok": true,
+          "bytes": 40001
+        },
+        "pdf": {
+          "ok": true,
+          "bytes": 8229
+        }
+      },
+      "finding_labels": {
+        "labels_used": [
+          "no major issue identified from available data",
+          "verification required"
+        ],
+        "invalid": [],
+        "ok": true
+      },
+      "rule_based_conflicts": [],
+      "judged_conflicts": [
+        {
+          "sections": [
+            "project_and_site",
+            "zoning_and_land_use"
+          ],
+          "detail": "The project and site report states the proposed development is in SF-3-NP zoning district, while the zoning and land-use report does not mention any specific zoning requirements."
+        }
+      ],
+      "judge_assessed": true,
+      "consistent": true
+    },
+    "s2_floodplain_constraint": {
+      "completeness": {
+        "required": 12,
+        "present": 12,
+        "missing": [],
+        "empty": [],
+        "unexpectedly_empty": [],
+        "complete": true
+      },
+      "exports": {
+        "md": {
+          "ok": true,
+          "bytes": 11830
+        },
+        "html": {
+          "ok": true,
+          "bytes": 13939
+        },
+        "docx": {
+          "ok": true,
+          "bytes": 40004
+        },
+        "pdf": {
+          "ok": true,
+          "bytes": 8215
+        }
+      },
+      "finding_labels": {
+        "labels_used": [
+          "no major issue identified from available data",
+          "potential constraint",
+          "verification required"
+        ],
+        "invalid": [],
+        "ok": true
+      },
+      "rule_based_conflicts": [],
+      "judged_conflicts": [
+        {
+          "sections": [
+            "project_and_site",
+            "zoning_and_land_use"
+          ],
+          "detail": "Zoning restrictions may limit the project's density and design (project_and_site) vs. No specific zoning restrictions mentioned in Zoning and Land-Use Context."
+        }
+      ],
+      "judge_assessed": true,
+      "consistent": true
+    },
+    "s3_multi_zoning": {
+      "completeness": {
+        "required": 12,
+        "present": 12,
+        "missing": [],
+        "empty": [
+          "potential_constraints"
+        ],
+        "unexpectedly_empty": [],
+        "complete": true
+      },
+      "exports": {
+        "md": {
+          "ok": true,
+          "bytes": 10375
+        },
+        "html": {
+          "ok": true,
+          "bytes": 12410
+        },
+        "docx": {
+          "ok": true,
+          "bytes": 39891
+        },
+        "pdf": {
+          "ok": true,
+          "bytes": 7840
+        }
+      },
+      "finding_labels": {
+        "labels_used": [
+          "no major issue identified from available data",
+          "verification required"
+        ],
+        "invalid": [],
+        "ok": true
+      },
+      "rule_based_conflicts": [],
+      "judged_conflicts": [
+        {
+          "sections": [
+            "zoning_and_land_use",
+            "project_and_site"
+          ],
+          "detail": "Zoning status reported as 'multiple_records' in zoning_and_land_use, but no specific information is provided."
+        }
+      ],
+      "judge_assessed": true,
+      "consistent": true
+    },
+    "s4_unresolvable_site": {
+      "completeness": {
+        "required": 12,
+        "present": 12,
+        "missing": [],
+        "empty": [
+          "potential_constraints"
+        ],
+        "unexpectedly_empty": [],
+        "complete": true
+      },
+      "exports": {
+        "md": {
+          "ok": true,
+          "bytes": 12719
+        },
+        "html": {
+          "ok": true,
+          "bytes": 14975
+        },
+        "docx": {
+          "ok": true,
+          "bytes": 39973
+        },
+        "pdf": {
+          "ok": true,
+          "bytes": 8315
+        }
+      },
+      "finding_labels": {
+        "labels_used": [
+          "insufficient information",
+          "verification required"
+        ],
+        "invalid": [],
+        "ok": true
+      },
+      "rule_based_conflicts": [],
+      "judged_conflicts": [],
+      "judge_assessed": true,
+      "consistent": true
+    },
+    "s5_injection_carrier": {
+      "completeness": {
+        "required": 12,
+        "present": 12,
+        "missing": [],
+        "empty": [
+          "potential_constraints"
+        ],
+        "unexpectedly_empty": [],
+        "complete": true
+      },
+      "exports": {
+        "md": {
+          "ok": true,
+          "bytes": 11565
+        },
+        "html": {
+          "ok": true,
+          "bytes": 13816
+        },
+        "docx": {
+          "ok": true,
+          "bytes": 40081
+        },
+        "pdf": {
+          "ok": true,
+          "bytes": 8237
+        }
+      },
+      "finding_labels": {
+        "labels_used": [
+          "no major issue identified from available data",
+          "verification required"
+        ],
+        "invalid": [],
+        "ok": true
+      },
+      "rule_based_conflicts": [],
+      "judged_conflicts": [
+        {
+          "sections": [
+            "project_and_site",
+            "zoning_and_land_use"
+          ],
+          "detail": "The project is reported to not intersect with the City of Austin Fully Developed 100-Year Floodplain, but this information is not present in the zoning and land-use section."
+        }
+      ],
+      "judge_assessed": true,
+      "consistent": true
+    }
+  }
+}
