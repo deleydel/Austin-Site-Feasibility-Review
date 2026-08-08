@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Preliminary Development Feasibility Report</title>
+  <style>
+    body { font-family: Georgia, 'Times New Roman', serif; margin: 2rem auto; max-width: 820px; line-height: 1.5; color: #1a1a1a; background: #faf8f5; padding: 0 1.25rem 3rem; }
+    h1, h2, h3 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #16324f; }
+    h1 { border-bottom: 3px solid #c45c26; padding-bottom: 0.4rem; }
+    h2 { margin-top: 1.8rem; border-bottom: 1px solid #d8d2c8; padding-bottom: 0.25rem; }
+    ul { padding-left: 1.2rem; }
+    .disclaimer { background: #fff4e8; border-left: 4px solid #c45c26; padding: 0.75rem 1rem; margin-top: 1.5rem; }
+  </style>
+</head>
+<body>
+<h1>Preliminary Development Feasibility Report</h1>
+<p>Generated: 2026-08-08</p>
+<p>Status: validated</p>
+<h2>Project and Site Description</h2>
+<ul>
+<li>Address: 5508 Merrywing Circle, Austin, TX</li>
+<li>Proposed land use: Commercial retail</li>
+<li>Development description: Proposed single-story retail building with associated parking.</li>
+<li>Units: None</li>
+<li>Site area (acres): 1.2</li>
+<li>Reported zoning: None (status: multiple_records)</li>
+<li>Floodplain intersection: False</li>
+<li>Watershed: Panther Hollow</li>
+</ul>
+<h3>Synthesis</h3>
+<p>Based on the provided site data and regulatory evidence, here is a summary of major feasibility considerations, constraints, unknowns, and recommended next steps:</p>
+<p><strong>Major Feasibility Considerations:</strong></p>
+<ol>
+<li>Zoning: The property is zoned as DR (Development Reserve) and I-RR (Rural Residence), which may create conflicts in terms of land use and development.</li>
+<li>Floodplain: The site does not intersect with the floodplain, but there are nearby properties that have experienced flooding issues.</li>
+<li>Watershed: The site is located within the Panther Hollow watershed, which receives water from Lake Austin.</li>
+<li>Transportation: There are no specific transportation requirements mentioned in the provided data, but it&#x27;s essential to consider the impact of the development on local traffic and access.</li>
+</ol>
+<p><strong>Constraints:</strong></p>
+<ol>
+<li>Zoning conflicts</li>
+<li>Floodplain proximity (although not intersecting)</li>
+<li>Watershed limitations (Lake Austin water quality concerns)</li>
+</ol>
+<p><strong>Unknowns:</strong></p>
+<ol>
+<li>Utility capacity (water, wastewater, electricity) availability and costs</li>
+<li>Transportation impact analysis (traffic, parking, access)</li>
+<li>Potential environmental impacts (e.g., stormwater runoff, air quality)</li>
+</ol>
+<p><strong>Recommended Next Steps:</strong></p>
+<ol>
+<li>Verify zoning designations and ensure compliance with land use regulations.</li>
+<li>Conduct a floodplain analysis to determine the potential risks and mitigation strategies.</li>
+<li>Engage with local authorities to discuss transportation impact analysis and potential solutions.</li>
+<li>Research utility capacity and costs to determine feasibility and budget for water, wastewater, and electricity services.</li>
+<li>Consult with environmental experts to assess potential environmental impacts and develop mitigation strategies.</li>
+</ol>
+<p>Please note that this summary is based on the provided data and may not be comprehensive or up-to-date. Further research and analysis are necessary to fully understand the feasibility of the proposed development.</p>
+<h2>Sources Consulted</h2>
+<ul>
+<li><strong>Austin Land Development Code, Title 25</strong> — https://library.municode.com/tx/austin/codes/land_development_code</li>
+</ul>
+<p>  - Limitation: Snapshot export; ordinances adopted after the export date are not reflected.</p>
+<ul>
+<li><strong>Austin Drainage Criteria Manual</strong> — https://library.municode.com/tx/austin/codes/drainage_criteria_manual</li>
+</ul>
+<p>  - Limitation: Partial manual; other DCM sections are out of scope for this system.</p>
+<ul>
+<li><strong>Austin Transportation Criteria Manual</strong> — https://library.municode.com/tx/austin/codes/transportation_criteria_manual</li>
+</ul>
+<p>  - Limitation: Partial manual; other TCM sections are out of scope for this system.</p>
+<ul>
+<li><strong>Zoning by Address</strong> — https://data.austintexas.gov/ (search: Zoning by Address)</li>
+</ul>
+<p>  - Limitation: Preliminary reported zoning only; not an official zoning determination. No coordinates; matching is by address string.</p>
+<ul>
+<li><strong>Issued Construction Permits</strong> — https://data.austintexas.gov/Building-and-Development/Issued-Construction-Permits/3syk-w9eu</li>
+</ul>
+<p>  - Limitation: Issued permits 2021+ only. Historical proximity context; not approval precedent.</p>
+<ul>
+<li><strong>Site Plan Cases</strong> — https://data.austintexas.gov/ (search: Site Plan Cases)</li>
+</ul>
+<p>  - Limitation: Some records lack coordinates. Applicant/owner contact fields removed during preprocessing (privacy).</p>
+<ul>
+<li><strong>Plan Review Cases</strong> — https://data.austintexas.gov/ (search: Plan Review Cases)</li>
+</ul>
+<p>  - Limitation: Contains VOID/test records (retained but flagged exclude_from_search). Contact fields removed (privacy).</p>
+<ul>
+<li><strong>Watershed Boundaries</strong> — https://data.austintexas.gov/ (search: Watershed Boundaries)</li>
+</ul>
+<p>  - Limitation: 76 named watersheds within the Austin planning area.</p>
+<ul>
+<li><strong>Greater Austin Fully Developed Floodplain</strong> — https://data.austintexas.gov/ (search: Greater Austin Fully Developed Floodplain)</li>
+</ul>
+<p>  - Limitation: City of Austin fully developed floodplain model (Atlas 14); not the FEMA effective floodplain. Preliminary screening only.</p>
+<h2>Zoning and Land-Use Context</h2>
+<p>Retrieved regulatory references:</p>
+<ul>
+<li>LDC § 2.4 TIER TWO REQUIREMENTS</li>
+<li>LDC § 25-2-518 QUALIFYING DEVELOPMENT</li>
+<li>LDC § 2.4 TIER TWO REQUIREMENTS</li>
+<li>LDC § 25-2-818 MOBILE RETAIL ESTABLISHMENTS</li>
+<li>LDC § 25-2-91 PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS</li>
+</ul>
+<h2>Site-Plan Considerations</h2>
+<p>Site-plan applicability depends on proposed use, zoning, and project characteristics; confirm with Development Services.</p>
+<p>Retrieved regulatory references:</p>
+<ul>
+<li>LDC § 2.4 TIER TWO REQUIREMENTS</li>
+<li>LDC § 25-2-518 QUALIFYING DEVELOPMENT</li>
+<li>LDC § 2.4 TIER TWO REQUIREMENTS</li>
+<li>LDC § 25-2-818 MOBILE RETAIL ESTABLISHMENTS</li>
+<li>LDC § 25-2-91 PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS</li>
+</ul>
+<h2>Drainage, Flood, and Environmental Considerations</h2>
+<p>Retrieved regulatory references:</p>
+<ul>
+<li>LDC § 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA</li>
+<li>LDC § 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED</li>
+<li>LDC § 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS</li>
+<li>LDC § 25-7-93 GENERAL EXCEPTIONS</li>
+<li>LDC § 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS</li>
+</ul>
+<h2>Transportation and Access Considerations</h2>
+<p>Retrieved regulatory references:</p>
+<ul>
+<li>LDC § 25-6-472 PARKING FACILITY STANDARDS</li>
+<li>TCM § 10.3.5.2 Parking (Vehicle) Measures</li>
+<li>TCM § 9.4.1 OFF-STREET GENERAL LOADING REQUIREMENTS</li>
+<li>TCM § 9.3.2 GENERAL DESIGN CRITERIA</li>
+<li>LDC § 25-6-1 DEFINITIONS</li>
+</ul>
+<h2>General Water and Wastewater Considerations</h2>
+<p>Regulatory requirements do not establish actual water or wastewater service availability or capacity. Verification with the appropriate utility authority is required.</p>
+<p>Regulatory requirements do not establish actual water or wastewater service availability or capacity. Verification with the appropriate utility authority is required.</p>
+<p>Retrieved regulatory references:</p>
+<ul>
+<li>LDC § 25-9-33 SERVICE EXTENSION APPLICATION</li>
+<li>LDC § 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE</li>
+<li>LDC § 25-9-410 APPLICABILITY</li>
+<li>LDC § 25-9-31 APPLICABILITY</li>
+<li>LDC § 25-9-91 TAP PERMIT REQUIRED</li>
+</ul>
+<h2>Historical Permit and Case Context</h2>
+<p>Nearby permits and cases are historical context only. They must not be treated as evidence that the proposed development requires professional verification. [Claim removed or revised: unsupported definitive statement; professional verification required.]</p>
+<p>Summary: {&#x27;permit_count&#x27;: 6, &#x27;site_plan_count&#x27;: 0, &#x27;plan_review_count&#x27;: 9}</p>
+<h2>Potential Constraints</h2>
+<ul>
+<li>No major constraint labeled from available screening data; professional verification is still required.</li>
+</ul>
+<h2>Missing Information and Required Verification</h2>
+<ul>
+<li>Verification required (zoning): Zoning lookup status is &#x27;multiple_records&#x27;; official verification is required before design decisions.</li>
+<li>Verification required (historical_context): Nearby permits and cases are historical context only and must not be treated as approval precedent.</li>
+<li>Verification required (citations): One or more retrieved citations could not be verified against the approved regulatory index.</li>
+<li>Warning: Zoning could not be confirmed exactly and requires verification.</li>
+<li>Warning: 2 citation(s) failed verification and were excluded from supported regulatory citations.</li>
+</ul>
+<h2>Source Citations</h2>
+<ol>
+<li>LDC — § 25-2-518 QUALIFYING DEVELOPMENT (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+<li>LDC — § 25-2-818 MOBILE RETAIL ESTABLISHMENTS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+<li>LDC — § 25-2-91 PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+<li>LDC — § 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+<li>LDC — § 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+<li>LDC — § 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+<li>LDC — § 25-7-93 GENERAL EXCEPTIONS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+<li>LDC — § 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+<li>LDC — § 25-6-472 PARKING FACILITY STANDARDS (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+<li>TCM — § 10.3.5.2 Parking (Vehicle) Measures (Section 10) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual</li>
+<li>TCM — § 9.4.1 OFF-STREET GENERAL LOADING REQUIREMENTS (Section 9) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual</li>
+<li>TCM — § 9.3.2 GENERAL DESIGN CRITERIA (Section 9) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual</li>
+<li>LDC — § 25-6-1 DEFINITIONS (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+<li>LDC — § 25-9-33 SERVICE EXTENSION APPLICATION (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+<li>LDC — § 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+<li>LDC — § 25-9-410 APPLICABILITY (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+<li>LDC — § 25-9-31 APPLICABILITY (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+<li>LDC — § 25-9-91 TAP PERMIT REQUIRED (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code</li>
+</ol>
+<h2>Preliminary-Review Disclaimer</h2><div class="disclaimer">
+<p>This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service.</p>
+</div>
+</body>
+</html>

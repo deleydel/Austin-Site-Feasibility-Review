@@ -1,0 +1,192 @@
+{
+  "seed": 7,
+  "per_tool": {
+    "zoning_lookup": {
+      "answerable_n": 80,
+      "answerable_correct": 80,
+      "correct_percent": 100.0,
+      "unanswerable_n": 24,
+      "unanswerable_safe": 24,
+      "safe_failure_percent": 100.0,
+      "failures": [],
+      "samples": [
+        {
+          "case": "1823 AIRPORT BLVD",
+          "answerable": true,
+          "expected": "TOD-NP",
+          "got": "found/TOD-NP"
+        },
+        {
+          "case": "309 KEMP ST",
+          "answerable": true,
+          "expected": "SF-3-NP",
+          "got": "found/SF-3-NP"
+        },
+        {
+          "case": "3407 CASCADERA DR",
+          "answerable": true,
+          "expected": "SF-3",
+          "got": "found/SF-3"
+        },
+        {
+          "case": "9953127 CAMERON RD",
+          "answerable": false,
+          "expected": "no single zoning",
+          "got": "ambiguous/None"
+        },
+        {
+          "case": "99130087 LAMPLIGHT VILLAGE AVE",
+          "answerable": false,
+          "expected": "no single zoning",
+          "got": "ambiguous/None"
+        }
+      ]
+    },
+    "geocode": {
+      "answerable_n": 50,
+      "answerable_correct": 50,
+      "correct_percent": 100.0,
+      "unanswerable_n": 3,
+      "unanswerable_safe": 3,
+      "safe_failure_percent": 100.0,
+      "failures": [],
+      "samples": [
+        {
+          "case": "6117 JANEY DR",
+          "answerable": true,
+          "expected": "30.34167,-97.74981",
+          "got": "found/30.34167027"
+        },
+        {
+          "case": "505 BARTON SPRINGS RD",
+          "answerable": true,
+          "expected": "30.25751,-97.74920",
+          "got": "found/30.25750586"
+        },
+        {
+          "case": "8412 DENALI PKWY",
+          "answerable": true,
+          "expected": "30.42776,-97.85688",
+          "got": "found/30.42775733"
+        },
+        {
+          "case": "1 NOWHERE BLVD ZZZZZ",
+          "answerable": false,
+          "expected": "not found",
+          "got": "not_found"
+        },
+        {
+          "case": "999999 IMAGINARY PKWY",
+          "answerable": false,
+          "expected": "not found",
+          "got": "not_found"
+        }
+      ]
+    },
+    "floodplain_check": {
+      "answerable_n": 50,
+      "answerable_correct": 50,
+      "correct_percent": 100.0,
+      "unanswerable_n": 0,
+      "unanswerable_safe": 0,
+      "safe_failure_percent": null,
+      "failures": [],
+      "samples": [
+        {
+          "case": "inside polygon at 30.21797,-97.73068",
+          "answerable": true,
+          "expected": "intersects",
+          "got": "True"
+        },
+        {
+          "case": "inside polygon at 30.12474,-97.82296",
+          "answerable": true,
+          "expected": "intersects",
+          "got": "True"
+        },
+        {
+          "case": "far outside at 30.71654,-97.19682",
+          "answerable": true,
+          "expected": "no intersection",
+          "got": "False"
+        }
+      ]
+    },
+    "watershed_lookup": {
+      "answerable_n": 50,
+      "answerable_correct": 50,
+      "correct_percent": 100.0,
+      "unanswerable_n": 5,
+      "unanswerable_safe": 5,
+      "safe_failure_percent": 100.0,
+      "failures": [],
+      "samples": [
+        {
+          "case": "Fort Branch at 30.29562,-97.68064",
+          "answerable": true,
+          "expected": "Fort Branch",
+          "got": "found/Fort Branch"
+        },
+        {
+          "case": "Taylor Slough North at 30.32202,-97.76194",
+          "answerable": true,
+          "expected": "Taylor Slough North",
+          "got": "found/Taylor Slough North"
+        },
+        {
+          "case": "South Brushy Creek at 30.50142,-97.79456",
+          "answerable": true,
+          "expected": "South Brushy Creek",
+          "got": "found/South Brushy Creek"
+        },
+        {
+          "case": "outside coverage at 31.14936,-96.69319",
+          "answerable": false,
+          "expected": "no watershed",
+          "got": "not_found"
+        },
+        {
+          "case": "outside coverage at 31.14891,-96.67721",
+          "answerable": false,
+          "expected": "no watershed",
+          "got": "not_found"
+        }
+      ]
+    },
+    "nearby_searches": {
+      "answerable_n": 34,
+      "answerable_correct": 34,
+      "correct_percent": 100.0,
+      "unanswerable_n": 0,
+      "unanswerable_safe": 0,
+      "safe_failure_percent": null,
+      "failures": [],
+      "samples": [
+        {
+          "case": "nearby_permits at 30.34167,-97.74981",
+          "answerable": true,
+          "expected": "43 record(s) within 800 ft; the tool returns at most 20 (result cap), nearest first",
+          "got": "20 record(s), sorted by distance, all within 800 ft"
+        },
+        {
+          "case": "nearby_site_plan_cases at 30.34167,-97.74981",
+          "answerable": true,
+          "expected": "1 record(s) within 800 ft",
+          "got": "1 record(s), sorted by distance, all within 800 ft"
+        },
+        {
+          "case": "nearby_site_plan_cases at 30.23583,-97.70050",
+          "answerable": true,
+          "expected": "5 record(s) within 800 ft",
+          "got": "5 record(s), sorted by distance, all within 800 ft"
+        }
+      ]
+    }
+  },
+  "overall": {
+    "answerable_n": 264,
+    "correct_percent": 100.0,
+    "unanswerable_n": 32,
+    "safe_failure_percent": 100.0
+  }
+}

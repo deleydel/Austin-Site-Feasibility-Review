@@ -40,8 +40,11 @@ def generate_llm_synthesis(state: AgentState) -> str | None:
     if not os.getenv("OPENAI_API_KEY"):
         return None
 
+    # Defaults are unchanged; the env vars let evaluation point the same node
+    # at a local OpenAI-compatible endpoint (Ollama) instead of OpenAI.
     model = ChatOpenAI(
-        model="gpt-5.4-mini",
+        model=os.getenv("SYNTHESIS_MODEL", "gpt-5.4-mini"),
+        base_url=os.getenv("OPENAI_BASE_URL") or None,
         temperature=0,
     )
 

@@ -1,0 +1,56 @@
+{
+  "items_in_sheet": 15,
+  "items_scored": 15,
+  "items_agreed": 11,
+  "agreement_percent": 73.3,
+  "by_stratum": {
+    "retrieval_relevance": {
+      "scored": 5,
+      "agreed": 4,
+      "disagreements": [
+        {
+          "item_id": "m04",
+          "item": "What does LDC section 25-5-81 provide?",
+          "automated": "relevant",
+          "manual": "not_relevant",
+          "note": "TCM passage offered for a question about an LDC section"
+        }
+      ],
+      "agreement_percent": 80.0
+    },
+    "structured_data": {
+      "scored": 5,
+      "agreed": 5,
+      "disagreements": [],
+      "agreement_percent": 100.0
+    },
+    "citation_support": {
+      "scored": 5,
+      "agreed": 2,
+      "disagreements": [
+        {
+          "item_id": "m11",
+          "item": "The project must comply with parking requirements, including adequate drives, aisles, and turning areas for access and usability.",
+          "automated": "uncited",
+          "manual": "unsupported",
+          "note": "no related section cited"
+        },
+        {
+          "item_id": "m12",
+          "item": "Water and wastewater capacity are confirmed available for the proposed development.",
+          "automated": "supported",
+          "manual": "unsupported",
+          "note": "25-9-93 sets out the tap permit process; it does not confirm capacity for this site"
+        },
+        {
+          "item_id": "m13",
+          "item": "The site does not intersect with the floodplain, but there are nearby properties that have experienced flooding issues.",
+          "automated": "uncited",
+          "manual": "unsupported",
+          "note": "no related section cited"
+        }
+      ],
+      "agreement_percent": 40.0
+    }
+  }
+}

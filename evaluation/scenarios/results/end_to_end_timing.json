@@ -1,0 +1,38 @@
+{
+  "with_llm": {
+    "n": 5,
+    "median_seconds": 491.151,
+    "min_seconds": 222.184,
+    "max_seconds": 524.881,
+    "mean_seconds_per_node": {
+      "synthesize_review": 397.497,
+      "zoning_review": 0.67,
+      "collect_site_context": 0.624,
+      "drainage_review": 0.206,
+      "water_wastewater_review": 0.192,
+      "transportation_review": 0.189,
+      "apply_guardrails": 0.022,
+      "validate_input": 0.003,
+      "historical_context_review": 0.001,
+      "build_report": 0.001
+    }
+  },
+  "without_llm": {
+    "n": 5,
+    "median_seconds": 2.355,
+    "min_seconds": 1.194,
+    "max_seconds": 8.304,
+    "mean_seconds_per_node": {
+      "zoning_review": 1.121,
+      "collect_site_context": 0.835,
+      "drainage_review": 0.646,
+      "transportation_review": 0.403,
+      "water_wastewater_review": 0.384,
+      "apply_guardrails": 0.033,
+      "validate_input": 0.004,
+      "historical_context_review": 0.001,
+      "synthesize_review": 0.001,
+      "build_report": 0.001
+    }
+  }
+}

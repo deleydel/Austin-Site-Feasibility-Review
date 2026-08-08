@@ -1,0 +1,106 @@
+{
+  "metrics": {
+    "retrieval_hit_at_5": {
+      "value": 0.955,
+      "n": 22,
+      "detail": "Hit@1 0.955, Recall@5 0.939, MRR 0.955"
+    },
+    "retrieval_hit_at_5_lay_phrasing": {
+      "value": 0.474,
+      "n": 19,
+      "detail": "same questions asked in plain language; code-worded Hit@5 was 0.947"
+    },
+    "retrieval_relevance_precision_at_5": {
+      "value": 80.0,
+      "n": 110,
+      "unit": "%",
+      "detail": "0 judge failures, counted not relevant"
+    },
+    "structured_data_accuracy": {
+      "value": 100.0,
+      "n": 264,
+      "unit": "%",
+      "detail": "correct answers on cases that have a right answer"
+    },
+    "structured_data_safe_failure": {
+      "value": 100.0,
+      "n": 32,
+      "unit": "%",
+      "detail": "unanswerable cases declined instead of answered wrongly"
+    },
+    "agent_task_completion": {
+      "value": 9,
+      "n": 10,
+      "detail": "scenario runs meeting every declared expectation"
+    },
+    "end_to_end_seconds_with_llm": {
+      "value": 491.151,
+      "n": 5,
+      "unit": "s (median)",
+      "detail": "min 222.184s, max 524.881s"
+    },
+    "end_to_end_seconds_without_llm": {
+      "value": 2.355,
+      "n": 5,
+      "unit": "s (median)",
+      "detail": "min 1.194s, max 8.304s"
+    },
+    "groundedness": {
+      "value": 42.9,
+      "n": 35,
+      "unit": "%",
+      "detail": "claims supported by evidence the agent retrieved"
+    },
+    "unsupported_claim_rate": {
+      "value": 57.1,
+      "n": 35,
+      "unit": "%"
+    },
+    "citation_correctness": {
+      "value": 28.6,
+      "n": 14,
+      "unit": "%",
+      "detail": "21 further claims had no topically related citation and are excluded"
+    },
+    "guardrail_compliance": {
+      "value": 80.0,
+      "n": 20,
+      "unit": "%",
+      "detail": "ambiguous_address 3/3, definitive_compliance_request 2/3, missing_data 3/3, out_of_scope_location 2/4, prompt_injection 3/4, unsupported_approval_request 3/3"
+    },
+    "report_completeness": {
+      "value": 100.0,
+      "n": 5,
+      "unit": "%"
+    },
+    "report_consistency": {
+      "value": 100.0,
+      "n": 5,
+      "unit": "%",
+      "detail": "no rule-based cross-section conflict"
+    },
+    "tool_latency_ms": {
+      "value": 79.8,
+      "n": 7,
+      "unit": "ms (slowest tool median)",
+      "detail": "slowest is nearby_plan_review"
+    },
+    "judge_human_agreement": {
+      "value": 73.3,
+      "n": 15,
+      "unit": "%",
+      "detail": "hand-scored sample checking the local judge"
+    }
+  },
+  "sources_present": {
+    "retrieval": true,
+    "tool_accuracy": true,
+    "tool_latency": true,
+    "scenarios": true,
+    "grounding": true,
+    "guardrails": true,
+    "report_checks": true,
+    "manual_agreement": true
+  },
+  "stages": {}
+}
