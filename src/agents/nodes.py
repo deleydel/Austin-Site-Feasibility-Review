@@ -6,6 +6,7 @@ from src.tools.nearby import (
     nearby_site_plan_cases,
 )
 from src.agents.state import AgentState
+from src.guardrails.scope import validate_scope
 from src.tools.geocode import geocode
 from src.tools.spatial import floodplain_check, watershed_lookup
 from src.tools.zoning import zoning_lookup
@@ -13,7 +14,7 @@ from src.rag.retriever import get_retriever
 
 
 def validate_input(state: AgentState) -> dict:
-    """Validate the minimum information required to start a site review."""
+    """Validate required fields and Austin preliminary-review scope."""
 
     proposal = state.get("proposal", {})
 
@@ -36,11 +37,22 @@ def validate_input(state: AgentState) -> dict:
             "execution_trace": ["validate_input: failed"],
         }
 
+    scope = validate_scope(proposal)
+    if not scope.get("ok"):
+        return {
+            "input_valid": False,
+            "stop_reason": scope.get("reason")
+            or "Request is outside supported preliminary-review scope.",
+            "missing_information": [],
+            "warnings": list(scope.get("warnings") or []),
+            "execution_trace": ["validate_input: failed_scope"],
+        }
+
     return {
         "input_valid": True,
         "stop_reason": None,
         "missing_information": [],
-        "warnings": [],
+        "warnings": list(scope.get("warnings") or []),
         "reviews": {},
         "evidence": [],
         "citations": [],
