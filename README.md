@@ -6,13 +6,13 @@ The system supports early screening only. It does not issue an official zoning d
 
 ## Repository Structure
 
-One package per workstream. Tasks 1–3 are **implemented**; the remaining
-directories are the **planned** homes for the other workstreams, so everyone
-knows where their code goes and what they can import from.
+One package per workstream. Tasks 1–6 are **implemented**; Tasks 7–9 remain
+for evaluation, Streamlit frontend, and presentation deliverables.
 
 ```
 ├── README.md          # this file: project overview, architecture, workflow
 ├── TASKS_1-3.md       # Tasks 1–3: implementation details, decisions, measured results
+├── TASKS_5-6.md       # Tasks 5–6: guardrails, citation validation, report export
 ├── requirements.txt   # shared Python dependencies (add yours here, one file for all)
 │
 ├── src/                          # all implementation code
@@ -22,10 +22,7 @@ knows where their code goes and what they can import from.
 │   ├── preprocessing/            # Task 1: raw data -> cleaned Parquet + manifest + QA report
 │   ├── rag/                      # Task 2: DOCX -> chunks -> vector index -> hybrid retriever
 │   ├── tools/                    # Task 3: zoning / geocode / floodplain / watershed / nearby
-│   │
-│   │  # ── planned ──
 │   ├── agents/                   # Task 4: LangGraph state, review nodes, tool routing, synthesis
-│   │                             #   calls src.rag.retriever + src.tools.* — see interfaces below
 │   ├── guardrails/               # Task 5: scope validation, source whitelist, citation checker,
 │   │                             #   unsupported-claim controls, privacy filtering
 │   └── report/                   # Task 6: report schema, template, citation formatting,
@@ -38,6 +35,9 @@ knows where their code goes and what they can import from.
 │   ├── test_preprocessing.py     #   Task 1 (implemented)
 │   ├── test_rag.py               #   Task 2 (implemented)
 │   ├── test_tools.py             #   Task 3 (implemented)
+│   ├── test_agents.py            #   Task 4 (implemented)
+│   ├── test_guardrails.py        #   Task 5 (implemented)
+│   ├── test_report.py            #   Task 6 (implemented)
 │   └── test_<yours>.py           #   tests for other tasks
 │
 ├── evaluation/                   # benchmarks & measured metrics
@@ -74,6 +74,11 @@ vector index are committed, so nothing needs regenerating.
   "needs verification", never as an answer.
 - `data/processed/source_manifest.json` — the approved-source list for
   guardrails (Task 5).
+- `src.guardrails.apply_guardrails(state)` — validates scope, citations,
+  unsupported claims, and privacy; writes a guarded `final_report`.
+- `src.report.build_report_document(final_report)` /
+  `src.report.export_report(final_report, path)` — schema + DOCX/HTML/PDF/Markdown
+  export for Task 8 download.
 
 **Conventions:**
 
