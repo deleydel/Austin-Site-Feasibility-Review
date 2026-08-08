@@ -12,3 +12,4 @@ usaddress
 rapidfuzz
 requests
 pytest
+langgraph>=1.2
