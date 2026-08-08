@@ -1,7 +1,46 @@
 """Final synthesis for the Task 4 agentic workflow."""
 
+import json
+import os
+
+from langchain_openai import ChatOpenAI
+
 from src.agents.state import AgentState
 
+def build_synthesis_prompt(state: AgentState) -> str:
+    """Build a grounded prompt from the completed workflow evidence."""
+
+    payload = {
+        "proposal": state.get("proposal", {}),
+        "site_context": state.get("site_context", {}),
+        "reviews": state.get("reviews", {}),
+    }
+
+    return (
+        "You are reviewing preliminary development feasibility in Austin, Texas.\n"
+        "Use only the supplied site data and regulatory evidence.\n"
+        "Do not invent requirements, approvals, utility capacity, or facts.\n"
+        "Treat nearby permits and cases as historical context only, not precedent.\n"
+        "Clearly distinguish confirmed facts from unknowns requiring verification.\n"
+        "Summarize major feasibility considerations, constraints, unknowns, "
+        "and recommended next steps.\n\n"
+        f"WORKFLOW DATA:\n{json.dumps(payload, default=str, indent=2)}"
+    )
+
+def generate_llm_synthesis(state: AgentState) -> str | None:
+    """Generate an optional LLM synthesis when an API key is available."""
+
+    if not os.getenv("OPENAI_API_KEY"):
+        return None
+
+    model = ChatOpenAI(
+        model="gpt-5.4-mini",
+        temperature=0,
+    )
+
+    response = model.invoke(build_synthesis_prompt(state))
+
+    return str(response.content).strip()
 
 def synthesize_review(state: AgentState) -> dict:
     """Combine all completed review categories into one structured result."""
@@ -11,6 +50,7 @@ def synthesize_review(state: AgentState) -> dict:
     reviews = state.get("reviews", {})
     warnings = list(state.get("warnings", []))
     evidence = state.get("evidence", [])
+    llm_synthesis = generate_llm_synthesis(state)
 
     zoning = site_context.get("zoning", {})
     floodplain = site_context.get("floodplain", {})
@@ -35,6 +75,7 @@ def synthesize_review(state: AgentState) -> dict:
             "watershed": watershed.get("watershed"),
         },
         "review_sections": reviews,
+        "llm_synthesis": llm_synthesis,
         "warnings": warnings,
         "regulatory_evidence_count": len(evidence),
         "disclaimer": (
