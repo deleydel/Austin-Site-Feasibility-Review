@@ -28,7 +28,14 @@ def build_synthesis_prompt(state: AgentState) -> str:
     )
 
 def generate_llm_synthesis(state: AgentState) -> str | None:
-    """Generate an optional LLM synthesis when an API key is available."""
+    """Generate an optional LLM synthesis when explicitly enabled."""
+
+    if os.getenv("ENABLE_LLM_SYNTHESIS", "").lower() not in {
+        "1",
+        "true",
+        "yes",
+    }:
+        return None
 
     if not os.getenv("OPENAI_API_KEY"):
         return None
@@ -41,6 +48,7 @@ def generate_llm_synthesis(state: AgentState) -> str | None:
     response = model.invoke(build_synthesis_prompt(state))
 
     return str(response.content).strip()
+
 
 def synthesize_review(state: AgentState) -> dict:
     """Combine all completed review categories into one structured result."""
