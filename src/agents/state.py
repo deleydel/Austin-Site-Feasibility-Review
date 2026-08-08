@@ -35,3 +35,5 @@ class AgentState(TypedDict, total=False):
     execution_trace: list[str]
 
     final_report: dict[str, Any]
+    guardrail_result: dict[str, Any]
+    report_document: dict[str, Any]

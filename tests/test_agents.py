@@ -18,7 +18,10 @@ def test_invalid_input_stops_workflow():
     assert result["input_valid"] is False
     assert "address" in result["stop_reason"]
     assert "proposed_land_use" in result["stop_reason"]
-    assert result["execution_trace"] == ["validate_input: failed"]
+    assert result["execution_trace"][0] == "validate_input: failed"
+    # Invalid input still runs guardrail packaging + report build.
+    assert result["execution_trace"][-1] == "build_report: completed"
+    assert result["final_report"]["status"] == "blocked"
     assert "site_context" not in result
 
 
@@ -55,8 +58,11 @@ def test_complete_workflow():
     assert result["final_report"]["project"]["address"] == (
         "1714 Madison Avenue"
     )
+    assert result["final_report"]["status"] == "validated"
+    assert "report_document" in result
+    assert result["report_document"]["schema_complete"] is True
+    assert result["guardrail_result"]["status"] == "validated"
 
-    assert (
-        result["execution_trace"][-1]
-        == "synthesize_review: completed"
-    )
+    assert result["execution_trace"][-1] == "build_report: completed"
+    assert "apply_guardrails: completed" in result["execution_trace"]
+    assert "synthesize_review: completed" in result["execution_trace"]

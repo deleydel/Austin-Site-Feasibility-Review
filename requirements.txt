@@ -5,6 +5,7 @@ shapely>=2.0
 geopandas>=0.14
 pyproj
 python-docx
+fpdf2
 chromadb>=0.5
 sentence-transformers>=3.0
 rank_bm25

@@ -1,4 +1,4 @@
-"""Central paths and constants for Austin SiteFeasibility AI (Tasks 1-3)."""
+"""Central paths and constants for Austin SiteFeasibility AI."""
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -14,6 +14,8 @@ EVAL_DIR = PROJECT_ROOT / "evaluation"
 PREPROCESSING_RESULTS = EVAL_DIR / "preprocessing" / "results"
 RETRIEVAL_RESULTS = EVAL_DIR / "retrieval" / "results"
 TOOLS_RESULTS = EVAL_DIR / "tools" / "results"
+# Downloadable feasibility reports produced by Task 6 export.
+REPORT_OUTPUT_DIR = DATA_PROCESSED / "feasibility_reports"
 
 # Raw source files
 ZONING_CSV = RAW_STRUCTURED / "Zoning_By_Address_20260807.csv"
