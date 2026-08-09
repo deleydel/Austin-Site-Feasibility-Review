@@ -225,7 +225,7 @@ Automated evaluation should be supplemented with manual verification of selected
 ## Task Breakdown and Ownership
 
 | No. | Workstream | Required Output | Owner |
-| ---: | --- | --- | --- | --- |
+| ---: | --- | --- | --- |
 | 1 | Domain research, data collection, and preprocessing | Organized regulatory and structured data, cleaned fields, source manifest, and data-quality summary | Delaram Hassanlou |
 | 2 | Regulatory RAG development | DOCX loader, section-aware chunking, embeddings, vector database, metadata-preserving retriever, and retrieval tests | Delaram Hassanlou |
 | 3 | Structured-data tool development | Address normalization, zoning lookup, geocoding, floodplain and watershed intersections, nearby-permit search, and case-history search | Delaram Hassanlou |
