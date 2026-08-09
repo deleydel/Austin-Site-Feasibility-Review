@@ -91,21 +91,14 @@ flowchart TD
 
 The implemented review sequence is:
 
-Validate required input and preliminary geographic scope.
-
-Normalize and geocode the address, or use supplied coordinates when available.
-
-Retrieve zoning, floodplain, watershed, nearby permits, site-plan cases, and plan-review cases.
-
-Run specialized zoning/site-plan, drainage/environmental, transportation/access, water/wastewater, and historical-context review nodes.
-
-Retrieve regulatory passages with hybrid dense and BM25 search while preserving source metadata.
-
-Assemble a synthesis. LLM synthesis is optional and disabled unless explicitly configured.
-
-Apply scope, source, citation, unsupported-claim, and privacy checks.
-
-Display the result in Streamlit and export Markdown, HTML, DOCX, or PDF reports.
+1. Validate required input and preliminary geographic scope.
+2. Normalize and geocode the address, or use supplied coordinates when available.
+3. Retrieve zoning, floodplain, watershed, nearby permits, site-plan cases, and plan-review cases.
+4. Run specialized zoning/site-plan, drainage/environmental, transportation/access, water/wastewater, and historical-context review nodes.
+5. Retrieve regulatory passages with hybrid dense and BM25 search while preserving source metadata.
+6. Assemble a synthesis. LLM synthesis is optional and disabled unless explicitly configured.
+7. Apply scope, source, citation, unsupported-claim, and privacy checks.
+8. Display the result in Streamlit and export Markdown, HTML, DOCX, or PDF reports.
 
 ## Task Breakdown and Ownership
 
