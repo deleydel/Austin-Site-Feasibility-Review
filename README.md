@@ -6,8 +6,11 @@ The system supports early screening only. It does not issue an official zoning d
 
 ## Repository Structure
 
-One package per workstream. Tasks 1–8 are **implemented**; Task 9 remains
-for the presentation deliverables.
+The repository is organized by responsibility. Application code lives under `src/`, with separate packages for preprocessing, RAG, structured-data tools, agent orchestration, guardrails, and report generation. The Streamlit entry point is under `app/`. Correctness and integration checks are under `tests/`, while measured benchmarks, adversarial scenarios, evaluation scripts, and generated scorecards are under `evaluation/`.
+
+Source files that are too large for Git are excluded from `data/raw/`. Their acquisition and regeneration instructions are documented in `data/README.md`. The cleaned Parquet/GeoParquet files under `data/processed/` and the Chroma index under `data/index/` are committed for reproducible demonstration. Detailed implementation notes are split across the task documents at the repository root.
+
+Shared paths and configuration belong in `src/config.py`. Commands should be run from the repository root using module syntax, such as `python -m src.preprocessing.run_all`. New correctness tests belong in `tests/`; evaluation logic and generated evaluation evidence belong in the corresponding area under `evaluation/`.
 
 ```
 ├── README.md          # this file: project overview, architecture, workflow
@@ -65,43 +68,6 @@ for the presentation deliverables.
     └── index/                    #   vector index (committed, ready to use)
 ```
 
-**Getting started:** clone, `pip install -r requirements.txt`, then run
-`python -m pytest tests/` to confirm your setup works — the processed data and
-vector index are committed, so nothing needs regenerating. 
-
-**Key interfaces for downstream workstreams** (Tasks 4–8 build on these):
-
-- `src.rag.retriever.get_retriever()` → `.retrieve(query, k, doc_ids=...,
-  chapters=...)` returns passages with full citation metadata;
-  `.get_section(source, section_number)` for exact citation verification.
-- `src.tools.zoning.zoning_lookup(address)`, `src.tools.geocode.geocode(...)`,
-  `src.tools.spatial.floodplain_check(lat, lon)` / `watershed_lookup(lat, lon)`,
-  `src.tools.nearby.nearby_*(lat, lon)` — all return JSON-serializable dicts
-  with an explicit `status` field (`found | fuzzy_match | multiple_records |
-  ambiguous | boundary | not_found`); treat any non-`found` status as
-  "needs verification", never as an answer.
-- `data/processed/source_manifest.json` — the approved-source list for
-  guardrails (Task 5).
-- `evaluation/results/evaluation_results.json` — every measured metric in one
-  machine-readable file (Task 7), for anything that needs to display the
-  numbers. `evaluation/results/EVALUATION.md` is the same data as a scorecard.
-- `src.guardrails.apply_guardrails(state)` — validates scope, citations,
-  unsupported claims, and privacy; writes a guarded `final_report`.
-- `src.report.build_report_document(final_report)` /
-  `src.report.export_report(final_report, path)` — schema + DOCX/HTML/PDF/Markdown
-  export for Task 8 download.
-
-**Conventions:**
-
-- Run everything as a module from the repo root (`python -m src...`,
-  `python -m evaluation...`); imports are absolute (`from src... import ...`).
-- Paths and shared parameters come from `src/config.py` — extend it rather
-  than hardcoding.
-- Generated artifacts go to `data/processed/`, `data/index/`, or `evaluation/<area>/results/`
-  (all committed); `data/raw/` stays out of git (enforced by `.gitignore`).
-- Each workstream adds correctness tests in `tests/` and, where it has
-  measurable behavior, an evaluation script in `evaluation/` that writes its
-  results to its own `evaluation/<area>/results/`.
 
 ## How the System Works
 
@@ -235,6 +201,85 @@ Automated evaluation should be supplemented with manual verification of selected
 | 7 | Evaluation and testing | Benchmark questions, site scenarios, automated metrics, manual validation, guardrail tests, and evaluation results | Mariem Guitouni |
 | 8 | Streamlit frontend and integration | Input form, progress display, findings and citations, error states, complete backend integration, and report download | Ali Sura Ozdemir |
 | 9 | Demo, presentation, and submission | Modular codebase, README, dependency file, four required slides, recorded presentation, demo script, and final submission package | All team members |
+
+
+## Implemented Technology Stack
+
+| Layer | Implemented Components | Purpose |
+| --- | --- | --- |
+| Data | CSV, DOCX, GeoJSON, Parquet, GeoParquet | Source documents and processed municipal data |
+| Vector store | ChromaDB | Persistent regulatory embedding index |
+| Retrieval | BAAI `bge-base-en-v1.5`, BM25, weighted reciprocal-rank fusion | Semantic and lexical regulatory retrieval |
+| Structured tools | Pandas, GeoPandas, Shapely, PyProj, RapidFuzz, usaddress | Address, zoning, spatial, and nearby-record queries |
+| Orchestration | LangGraph | Ordered review workflow and shared state |
+| Generative model | Configurable OpenAI Chat Completions model | Optional final synthesis |
+| Application | Python and Streamlit | User input, findings, citations, and downloads |
+| Reporting | python-docx and fpdf2 | Markdown, HTML, DOCX, and PDF export |
+| Evaluation | pytest plus custom retrieval, grounding, guardrail, and scenario evaluators | Correctness and measured prototype performance |
+
+
+
+## Setup
+
+Python 3.11 is recommended. The first run requires internet access to download the BGE embedding model unless it is already cached. The processed datasets and vector index are included, but the embedding model itself is not stored in Git.
+
+```bash
+git clone https://github.com/deleydel/Austin-Site-Feasibility-Review.git
+cd Austin-Site-Feasibility-Review
+
+python3.11 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+On Windows PowerShell, activate the environment with:
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+The initial model download can be completed explicitly with:
+
+```bash
+python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('BAAI/bge-base-en-v1.5')"
+```
+
+Then run the application:
+
+```bash
+streamlit run app/streamlit_app.py
+```
+
+### Optional LLM synthesis
+
+The workflow runs without an API key, but the final synthesis is deterministic unless LLM synthesis is enabled. To use the configured OpenAI model, set:
+
+```bash
+export OPENAI_API_KEY="your-key"
+export ENABLE_LLM_SYNTHESIS="true"
+export SYNTHESIS_MODEL="gpt-5.4-mini"
+```
+
+Do not commit API keys or `.env` files. On Windows PowerShell, use `$env:VARIABLE_NAME="value"`.
+
+## Testing
+
+Run the complete test suite from the repository root:
+
+```bash
+python -m pytest tests/ -q
+```
+
+The current suite contains 99 checks. Tests that initialize the regulatory retriever require the BGE model to be available locally; a fresh environment downloads it on first use. To test without network access, cache the model first and then set the Hugging Face offline environment variables.
+
+Run the evaluation scorecard with:
+
+```bash
+python -m evaluation.run_all
+```
+
+Evaluation outputs are written under `evaluation/results/` and the individual evaluation workstream folders. Regenerate them whenever retrieval, prompts, agent logic, guardrails, or report generation changes.
 
 ## Minimum Definition of Success
 
