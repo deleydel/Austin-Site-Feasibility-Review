@@ -41,7 +41,6 @@ for the presentation deliverables.
 │   ├── test_report.py            #   Task 6 (implemented)
 │   ├── test_evaluation.py        #   Task 7 harness tests (implemented, offline)
 │   ├── test_app.py               #   Task 8 (implemented)
-│   └── test_<yours>.py           #   tests for other tasks
 │
 ├── evaluation/                   # benchmarks & measured metrics (Task 7)
 │   ├── run_all.py                #   runs every stage -> results/EVALUATION.md scorecard
