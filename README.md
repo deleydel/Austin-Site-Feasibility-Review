@@ -76,7 +76,7 @@ The system uses two complementary forms of data.
 - **Regulatory data** consists of the Austin Land Development Code, Drainage Criteria Manual, and Transportation Criteria Manual. These documents are chunked, embedded, and stored in a vector database for Retrieval-Augmented Generation (RAG).
 - **Structured data** consists of zoning records, permits, site-plan cases, plan-review cases, floodplain polygons, and watershed boundaries. These datasets are queried with deterministic Python, Pandas, GeoPandas, and spatial-search functions.
 
-RAG retrieves and explains regulatory language. Structured-data tools retrieve exact site facts and historical records. The agents call both types of tools and combine their outputs. RAG is therefore not a separate step that runs only once before the agents. It is a capability called by the specialized agents whenever regulatory evidence is required.
+RAG is a capability used inside the review workflow rather than a separate one-time step. Each specialized review node can retrieve regulatory evidence relevant to its topic. Structured-data functions provide site-specific facts, while the retriever provides applicable regulatory passages.
 
 ```mermaid
 flowchart TD
@@ -89,104 +89,23 @@ flowchart TD
     F --> G["Report formatting and download"]
 ```
 
-### 1. User Input
+The implemented review sequence is:
 
-The Streamlit interface collects the following information:
+Validate required input and preliminary geographic scope.
 
-- Austin street address
-- proposed land use
-- development description
-- approximate number of units
-- approximate site area
-- optional latitude and longitude
+Normalize and geocode the address, or use supplied coordinates when available.
 
-### 2. Input Validation and Site Context
+Retrieve zoning, floodplain, watershed, nearby permits, site-plan cases, and plan-review cases.
 
-The system verifies that the request is within the supported Austin preliminary-review scope. It normalizes and geocodes the address, with manual coordinates available as a fallback. Structured-data tools then retrieve:
+Run specialized zoning/site-plan, drainage/environmental, transportation/access, water/wastewater, and historical-context review nodes.
 
-- preliminary reported zoning
-- base zoning category
-- floodplain intersection
-- watershed
-- nearby issued building permits
-- site-plan cases
-- plan-review cases
+Retrieve regulatory passages with hybrid dense and BM25 search while preserving source metadata.
 
-These outputs are factual inputs to the agentic workflow. Missing or ambiguous matches are explicitly recorded and are not replaced with model-generated assumptions.
+Assemble a synthesis. LLM synthesis is optional and disabled unless explicitly configured.
 
-### 3. Agentic Review Workflow
+Apply scope, source, citation, unsupported-claim, and privacy checks.
 
-The workflow is implemented as a LangGraph state graph. A shared state carries the proposal, site context, retrieved evidence, citations, findings, warnings, and missing information between nodes.
-
-The workflow contains the following review nodes:
-
-1. **Input and site-validation node** validates scope, required fields, address matching, and coordinates.
-2. **Site-context node** calls the zoning, floodplain, watershed, permit, site-plan, and plan-review tools.
-3. **Zoning and site-plan node** uses the reported zoning and proposal to retrieve relevant provisions from Land Development Code Chapters 25-1, 25-2, and 25-5.
-4. **Drainage and environmental node** uses floodplain and watershed results to retrieve relevant provisions from Land Development Code Chapters 25-7 and 25-8, Drainage Criteria Manual Sections 1, 2, and 8, and Appendix E.
-5. **Transportation and access node** uses the proposal and available site context to retrieve relevant provisions from Land Development Code Chapter 25-6 and Transportation Criteria Manual Sections 1, 7, 9, and 10.
-6. **Water and wastewater node** retrieves general requirements from Land Development Code Chapter 25-9 while clearly distinguishing regulatory requirements from unknown service availability or capacity.
-7. **Historical-context node** interprets nearby permits, site-plan cases, and plan-review cases without treating them as approval precedent.
-8. **Final synthesis node** combines the structured outputs of all review nodes into a coherent preliminary feasibility assessment.
-
-The specialized nodes may call the regulatory retriever multiple times using queries tailored to the proposed use and retrieved site conditions. Every retrieved passage retains its source name, chapter or manual section, legal section number, title, and source URL.
-
-### 4. Guardrail and Citation Validation
-
-Guardrails operate before, during, and after agent execution. The implemented controls should:
-
-- restrict the system to preliminary reviews for sites in Austin
-- accept regulatory claims only from an approved source list
-- require a supporting citation for every regulatory conclusion
-- verify that each citation supports the associated claim
-- treat retrieved documents and dataset content as evidence, not agent instructions
-- return `insufficient information` when evidence is unavailable
-- label zoning Open Data results as preliminary and require official verification
-- prevent nearby permits and historical cases from being described as proof of future approval
-- prevent definitive statements of feasibility, compliance, approval, or utility availability
-- distinguish factual evidence, model inference, and required professional verification
-- exclude unnecessary personal contact information from generated outputs
-- classify findings as `potential constraint`, `verification required`, `insufficient information`, or `no major issue identified from available data`
-
-If a generated claim fails citation or policy validation, the system must remove it, revise it, or label it as requiring verification before presenting the report.
-
-### 5. Final Synthesis and Report Export
-
-The final synthesis node is part of the agentic workflow. It uses an LLM to organize the validated outputs into a structured report containing:
-
-- project and site description
-- sources consulted
-- zoning and land-use context
-- site-plan considerations
-- drainage, flood, and environmental considerations
-- transportation and access considerations
-- general water and wastewater considerations
-- historical permit and case context
-- potential constraints
-- missing information and required verification
-- source citations
-- preliminary-review disclaimer
-
-After validation, ordinary Python code places the structured report content into a consistent template and exports a downloadable DOCX, HTML, or PDF. The LLM generates the report content; the report formatter handles layout and file creation.
-
-## Evaluation Plan
-
-Evaluation should use 15–20 benchmark regulatory questions and at least three representative Austin site scenarios, including a normal site, a site with an identifiable constraint, and a case with missing or ambiguous information.
-
-The evaluation should cover:
-
-- **Retrieval Hit@5:** whether the expected regulatory source appears in the five highest-ranked chunks
-- **Retrieval relevance:** whether retrieved passages directly address the question
-- **Citation correctness:** whether each citation supports the claim attached to it
-- **Groundedness:** the proportion of factual and regulatory claims supported by retrieved evidence
-- **Unsupported-claim rate:** the proportion of factual claims lacking adequate support
-- **Structured-data accuracy:** correctness of address matching, zoning lookup, floodplain intersection, watershed identification, and nearby-record retrieval
-- **Agent task completion:** whether every applicable review category is completed and returned in the required schema
-- **Report completeness and consistency:** whether required report sections are present and findings do not conflict across sections
-- **Guardrail compliance:** performance on out-of-scope locations, missing data, ambiguous addresses, prompt-injection attempts, unsupported approval requests, and requests for definitive compliance conclusions
-- **End-to-end response time:** time required to complete the site review and generate the report
-
-Automated evaluation should be supplemented with manual verification of selected regulatory answers, structured-data matches, citations, and final reports. Only observed metrics should be reported in the presentation.
+Display the result in Streamlit and export Markdown, HTML, DOCX, or PDF reports.
 
 ## Task Breakdown and Ownership
 
