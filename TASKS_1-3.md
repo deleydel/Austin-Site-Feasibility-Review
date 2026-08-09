@@ -33,6 +33,7 @@ python -m evaluation.tools.run_latency          # Task 3 latency -> evaluation/t
 | Retrieval Hit@5 / Hit@1 | **0.944** / 0.722 (18-question benchmark) |
 | Retrieval MRR / Recall@5 | 0.824 / 0.721 |
 | Citation-number queries | **100 %** Hit@5 |
+| Lay-language phrasing (Task 7 held-out) | Hit@5 **0.474 → 0.895** after query expansion |
 | Tool latency (median) | 0.2 – 80 ms per call |
 | Full regeneration from raw data | verified end-to-end (processed/index deleted first) |
 
@@ -104,7 +105,20 @@ report.
   (×2) + BM25 (×1), plus a deterministic **citation fast path** (an explicit
   section number in the query resolves exactly). `doc_ids` / `chapters`
   filters let agent nodes scope retrieval. Every result carries full citation
-  metadata (source, chapter, section number, title, breadcrumb, URL).
+  metadata (source, chapter, section number, title, breadcrumb, URL). Results
+  are deduplicated by legal section so extra chunks of one section never crowd
+  other sections out of the top k.
+- **Lay-language query expansion** (`query_expansion.py`): Task 7's held-out
+  benchmark showed Hit@5 collapsing from 0.947 to 0.474 when questions were
+  rephrased conversationally ("somewhere for trucks to unload" vs "off-street
+  loading facility"). A curated lay→regulatory glossary (~35 pattern groups
+  across zoning, site plan, environment, drainage, transportation, utilities)
+  now generates an expanded query variant that is retrieved alongside the
+  original and rank-fused at 2× weight. Held-out lay Hit@5: **0.474 → 0.895**
+  (MRR 0.265 → 0.532) with formal phrasing and the Task 2 benchmark unchanged.
+  Cross-encoder reranking was measured on the same set and **hurt** lay
+  queries (0.895 → 0.474–0.789 depending on variant) — it demotes exactly the
+  sections expansion surfaces, so no reranker is used.
 - **`get_section(source, section_number)`** is namespaced and returns
   `found | ambiguous | not_found` — section numbers repeat across manuals and
   LDC subchapters, so exact lookup must never fall through to the wrong

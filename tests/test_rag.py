@@ -85,3 +85,31 @@ def test_get_section_ambiguous_within_doc(retriever):
     r = retriever.get_section("LDC", "1.1")   # repeats across subchapters
     assert r["status"] == "ambiguous"
     assert len(r["matches"]) > 1
+
+
+def test_query_expansion_maps_lay_to_regulatory_terms():
+    from src.rag.query_expansion import expand_query, expansion_terms
+    terms = expansion_terms("Can I take down this big old tree in my backyard?")
+    assert "protected" in terms and "heritage" in terms
+    variants = expand_query("Where do the delivery trucks unload?")
+    assert len(variants) == 2 and "loading" in variants[1]
+    # formally worded queries pass through unexpanded when nothing matches
+    assert expand_query("critical water quality zone requirements") == [
+        "critical water quality zone requirements"
+    ]
+
+
+def test_lay_phrasing_retrieves_regulatory_section(retriever):
+    """A conversational query with zero regulatory vocabulary must still
+    surface the governing section."""
+    res = retriever.retrieve(
+        "There is boggy marshy ground on part of my land. "
+        "Does that stop me building?", k=10)
+    got = {(x["doc_id"], x["section_number"]) for x in res}
+    assert ("LDC", "25-8-282") in got     # WETLAND PROTECTION
+
+
+def test_results_deduplicated_by_section(retriever):
+    res = retriever.retrieve("site development regulations", k=5)
+    keys = [(x["doc_id"], x["section_number"]) for x in res]
+    assert len(keys) == len(set(keys))

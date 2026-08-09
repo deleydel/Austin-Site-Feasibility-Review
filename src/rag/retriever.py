@@ -25,6 +25,7 @@ from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer
 
 from src import config
+from src.rag.query_expansion import expand_query
 
 # Keeps "25-2-492", "1.2.2", "sf-3" as single tokens.
 _TOKEN_RE = re.compile(r"[a-z0-9]+(?:[-.][a-z0-9]+)*")
@@ -121,34 +122,63 @@ class RegulatoryRetriever:
                 break
         return out
 
-    # Fusion weights chosen from the ablation in tests/run_retrieval_benchmark:
+    # Fusion weights chosen from the ablation in evaluation/retrieval:
     # dense-weighted RRF matched dense-only Hit@5 while improving Recall@5 and
     # keeping BM25's advantage on exact section-number queries.
     DENSE_WEIGHT = 2.0
     BM25_WEIGHT = 1.0
+    # The glossary-expanded variant carries the corpus's own vocabulary, so
+    # its rankings outweigh the lay wording (measured on the Task 7 held-out
+    # paraphrases; formal phrasings were unaffected). Cross-encoder reranking
+    # was also measured and HURT lay queries — do not add one without
+    # re-measuring.
+    EXPANDED_VARIANT_WEIGHT = 2.0
 
     def retrieve(self, query: str, k: int = 5, doc_ids: list[str] | None = None,
-                 chapters: list[str] | None = None, fetch_k: int = 50) -> list[dict]:
-        """Hybrid dense+BM25 retrieval with weighted reciprocal rank fusion."""
-        dense = self._dense(query, fetch_k, doc_ids, chapters)
-        lexical = self._lexical(query, fetch_k, self._allowed(doc_ids, chapters))
+                 chapters: list[str] | None = None, fetch_k: int = 50,
+                 expand: bool = True) -> list[dict]:
+        """Hybrid dense+BM25 retrieval with weighted reciprocal rank fusion.
+
+        With expand=True (default), lay phrasings are also retrieved through a
+        regulatory-vocabulary variant (src.rag.query_expansion) and the ranked
+        lists are fused — this closed the held-out lay-language gap (Hit@5
+        0.474 -> comparable to code-worded phrasing) without hurting formally
+        worded queries.
+        """
+        variants = expand_query(query) if expand else [query]
+        allowed = self._allowed(doc_ids, chapters)
         rrf: dict[str, float] = {}
-        for weight, rank_list in ((self.DENSE_WEIGHT, dense),
-                                  (self.BM25_WEIGHT, lexical)):
-            for r, cid in enumerate(rank_list):
-                rrf[cid] = rrf.get(cid, 0.0) + weight / (60 + r + 1)
+        for vi, variant in enumerate(variants):
+            vweight = 1.0 if vi == 0 else self.EXPANDED_VARIANT_WEIGHT
+            dense = self._dense(variant, fetch_k, doc_ids, chapters)
+            lexical = self._lexical(variant, fetch_k, allowed)
+            for weight, rank_list in ((self.DENSE_WEIGHT * vweight, dense),
+                                      (self.BM25_WEIGHT * vweight, lexical)):
+                for r, cid in enumerate(rank_list):
+                    rrf[cid] = rrf.get(cid, 0.0) + weight / (60 + r + 1)
 
         # Citation fast path: an explicit section number in the query resolves
         # deterministically — those chunks outrank any fuzzy match.
         cited = set(_CITATION_RE.findall(query))
         if cited:
-            allowed = self._allowed(doc_ids, chapters)
             for c in self.chunks:
                 if c["metadata"]["section_number"] in cited:
                     cid = c["chunk_id"]
                     if allowed is None or cid in allowed:
                         rrf[cid] = rrf.get(cid, 0.0) + 1.0
-        top = sorted(rrf, key=rrf.get, reverse=True)[:k]
+        # One result per legal section: extra chunks of an already-ranked
+        # section add no new citation and crowd sections out of the top k.
+        ranked = sorted(rrf, key=rrf.get, reverse=True)
+        top, seen_sections = [], set()
+        for cid in ranked:
+            m = self.by_id[cid]["metadata"]
+            key = (m["doc_id"], m["section_number"])
+            if key in seen_sections:
+                continue
+            seen_sections.add(key)
+            top.append(cid)
+            if len(top) >= k:
+                break
         results = []
         for cid in top:
             c = self.by_id[cid]

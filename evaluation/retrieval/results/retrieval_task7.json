@@ -3,15 +3,15 @@
   "k": 5,
   "ranking": {
     "mode": "hybrid",
-    "hit_at_1": 0.955,
+    "hit_at_1": 0.909,
     "hit_at_5": 0.955,
     "recall_at_5": 0.939,
-    "mrr": 0.955,
+    "mrr": 0.924,
     "hit_at_5_by_type": {
       "realistic": 0.947,
       "citation": 1.0
     },
-    "median_latency_ms": 74.9,
+    "median_latency_ms": 17.8,
     "misses": [
       {
         "id": "h14",
@@ -58,10 +58,10 @@
         "gold_hit_rank": 1,
         "retrieved": [
           "LDC 25-5-2 (SITE PLAN EXEMPTIONS)",
-          "LDC 25-5-2 (SITE PLAN EXEMPTIONS)",
+          "LDC 25-5-1 (SITE PLAN REQUIRED)",
           "LDC 1.2 (APPLICABILITY)",
           "LDC 25-2-721 (WATERFRONT OVERLAY (WO) COMBINING DISTRI)",
-          "LDC 25-5-1 (SITE PLAN REQUIRED)"
+          "LDC 25-1-187 (DEVELOPMENT NOT PERMITTED DURING APPEAL)"
         ]
       },
       {
@@ -72,8 +72,8 @@
         "retrieved": [
           "LDC 25-5-63 (EXTENSION OF RELEASED SITE PLAN BY THE L)",
           "LDC 25-5-82 (EXPIRATION OF A SITE PLAN APPROVED BEFOR)",
-          "LDC 25-8-517 (EXPIRATION OF PRIOR APPROVALS)",
           "LDC 25-5-62 (EXTENSION OF RELEASED SITE PLAN BY DIREC)",
+          "LDC 25-8-517 (EXPIRATION OF PRIOR APPROVALS)",
           "LDC 25-5-81 (SITE PLAN EXPIRATION)"
         ]
       },
@@ -86,8 +86,8 @@
           "LDC 25-2-512 (LOT SIZE MINIMUM)",
           "LDC 25-2-779 (SMALL LOT SINGLE-FAMILY RESIDENTIAL USE)",
           "LDC 25-2-943 (SUBSTANDARD LOT)",
-          "LDC 25-2-943 (SUBSTANDARD LOT)",
-          "LDC 25-2-779 (SMALL LOT SINGLE-FAMILY RESIDENTIAL USE)"
+          "LDC 25-2-772 (SINGLE-FAMILY ATTACHED RESIDENTIAL USE)",
+          "LDC 25-2-770 (CONSERVATION SINGLE FAMILY RESIDENTIAL U)"
         ]
       },
       {
@@ -98,9 +98,9 @@
         "retrieved": [
           "LDC 25-8-342 (FILL REQUIREMENTS)",
           "LDC 25-8-341 (CUT REQUIREMENTS)",
-          "LDC 25-8-342 (FILL REQUIREMENTS)",
-          "LDC 25-8-341 (CUT REQUIREMENTS)",
-          "LDC 25-8-301 (CONSTRUCTION OF A ROADWAY OR DRIVEWAY)"
+          "LDC 25-8-301 (CONSTRUCTION OF A ROADWAY OR DRIVEWAY)",
+          "LDC 25-2-1123 (CONSTRUCTION ON SLOPES)",
+          "LDC 25-8-302 (CONSTRUCTION OF A BUILDING OR PARKING AR)"
         ]
       },
       {
@@ -113,7 +113,7 @@
           "LDC 25-8-302 (CONSTRUCTION OF A BUILDING OR PARKING AR)",
           "LDC 25-2-1123 (CONSTRUCTION ON SLOPES)",
           "LDC 25-8-303 (SUBDIVISION NOTES)",
-          "LDC 25-8-304 (APPLICABILITY)"
+          "DCM 1.2.4 (Drainage System)"
         ]
       },
       {
@@ -125,8 +125,8 @@
           "LDC 25-1-603 (MULTI-FAMILY DEDICATION OF PARKLAND)",
           "LDC 25-1-608 (MULTI-FAMILY PARKLAND DEDICATION FEE)",
           "LDC 25-1-609 (FEE PAYMENT AND EXPENDITURE)",
-          "LDC 25-1-603 (MULTI-FAMILY DEDICATION OF PARKLAND)",
-          "LDC 25-1-608 (MULTI-FAMILY PARKLAND DEDICATION FEE)"
+          "LDC 25-1-606 (SINGLE-FAMILY FEE IN LIEU OF PARKLAND DE)",
+          "LDC 25-1-602 (SINGLE-FAMILY DEDICATION OF PARKLAND)"
         ]
       },
       {
@@ -149,10 +149,10 @@
         "gold_hit_rank": 1,
         "retrieved": [
           "LDC 25-8-621 (PERMIT REQUIRED FOR REMOVAL OF PROTECTED)",
-          "LDC 25-8-624 (APPROVAL CRITERIA)",
+          "LDC 25-8-641 (REMOVAL PROHIBITED)",
           "LDC 25-8-622 (APPLICATION FOR REMOVAL)",
-          "LDC 25-8-625 (ACTION ON APPLICATION)",
-          "LDC 25-8-626 (EFFECTIVE DATE AND EXPIRATION OF APPROVA)"
+          "LDC 25-8-626 (EFFECTIVE DATE AND EXPIRATION OF APPROVA)",
+          "LDC 25-8-624 (APPROVAL CRITERIA)"
         ]
       },
       {
@@ -177,7 +177,7 @@
           "LDC 25-9-33 (SERVICE EXTENSION APPLICATION)",
           "LDC 25-9-35 (APPROVAL OF A SERVICE EXTENSION REQUEST)",
           "LDC 25-9-39 (EXPIRATION OF SERVICE EXTENSION REQUEST )",
-          "LDC 25-9-39 (EXPIRATION OF SERVICE EXTENSION REQUEST )",
+          "LDC 25-9-31 (APPLICABILITY)",
           "LDC 25-9-41 (DEVELOPMENT COMPLIANCE)"
         ]
       },
@@ -189,9 +189,9 @@
         "retrieved": [
           "LDC 25-8-124 (WASTEWATER REPORT)",
           "LDC 25-9-95 (TAP PERMIT NOT TRANSFERABLE)",
-          "LDC 25-9-33 (SERVICE EXTENSION APPLICATION)",
+          "LDC 25-8-122 (HYDROGEOLOGIC REPORT)",
           "LDC 25-9-93 (APPLICATION FOR TAP PERMIT; FEES; CAPACI)",
-          "LDC 25-9-386 (APPROVAL REQUIRED FOR SYSTEM DESIGN AND )"
+          "LDC 25-9-33 (SERVICE EXTENSION APPLICATION)"
         ]
       },
       {
@@ -201,8 +201,8 @@
         "gold_hit_rank": 1,
         "retrieved": [
           "LDC 25-7-152 (DEDICATION OF EASEMENTS AND RIGHTS-OF-WA)",
-          "LDC 25-7-152 (DEDICATION OF EASEMENTS AND RIGHTS-OF-WA)",
           "LDC 25-7-151 (STORMWATER CONVEYANCE AND DRAINAGE FACIL)",
+          "LDC 25-7-67 (MODIFIED DRAINAGE STANDARDS FOR RESIDENT)",
           "DCM 1.2.4 (Drainage System)",
           "LDC 25-7-31 (REQUIREMENT FOR DRAINAGE STUDIES)"
         ]
@@ -214,10 +214,10 @@
         "gold_hit_rank": 1,
         "retrieved": [
           "LDC 25-6-263 (CONSTRUCTION PERMIT FOR DRIVEWAY APPROAC)",
-          "LDC 25-6-263 (CONSTRUCTION PERMIT FOR DRIVEWAY APPROAC)",
           "LDC 25-6-264 (DRIVEWAY APPROACH DESIGN)",
           "TCM 7.7.0 (DRIVEWAY PERMITTING)",
-          "LDC 25-6-295 (REMOVING EXISTING CURB OPENINGS OR DRIVE)"
+          "LDC 25-6-295 (REMOVING EXISTING CURB OPENINGS OR DRIVE)",
+          "LDC 25-6-2 (DRIVEWAY APPROACHES DESCRIBED)"
         ]
       },
       {
@@ -250,13 +250,13 @@
         "id": "h16",
         "type": "realistic",
         "question": "How is the runoff curve number selected for the NRCS runoff calculation method?",
-        "gold_hit_rank": 1,
+        "gold_hit_rank": 3,
         "retrieved": [
-          "DCM 2.5.2 (Natural Resources Conservation Service R)",
           "DCM 2.1.0 (GENERAL)",
           "DCM 2.5.0 (THE NATURAL RESOURCES CONSERVATION SERVI)",
+          "DCM 2.5.2 (Natural Resources Conservation Service R)",
           "DCM 2.5.3 (Time of Concentration)",
-          "DCM 2.5.2 (Natural Resources Conservation Service R)"
+          "DCM 2.4.3 (Rainfall Intensity (I))"
         ]
       },
       {
@@ -266,10 +266,10 @@
         "gold_hit_rank": 1,
         "retrieved": [
           "DCM 8.3.3 (Safety Criteria for SWM Ponds)",
-          "DCM 8.3.3 (Safety Criteria for SWM Ponds)",
           "DCM 8.3.1 (General)",
-          "DCM 8.3.3 (Safety Criteria for SWM Ponds)",
-          "DCM 8.3.2 (Performance Criteria for SWM Ponds)"
+          "DCM 8.3.2 (Performance Criteria for SWM Ponds)",
+          "DCM 1.2.2 (General)",
+          "DCM 8.4.0 (DETENTION POND STORAGE DETERMINATION)"
         ]
       },
       {
@@ -279,10 +279,10 @@
         "gold_hit_rank": 1,
         "retrieved": [
           "TCM 7.6.1 (PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS)",
-          "TCM 7.6.1.1 (Multi-Unit Residential Development acces)",
-          "TCM 7.6.1.1 (Multi-Unit Residential Development acces)",
           "TCM 7.6.2 (DRIVEWAY PLACEMENT)",
-          "TCM 7.6.2 (DRIVEWAY PLACEMENT)"
+          "TCM 7.6.1.1 (Multi-Unit Residential Development acces)",
+          "TCM 7.3.0 (DRIVEWAY ACCESS TYPES)",
+          "TCM 7.4.1 (STANDARD DRIVEWAY)"
         ]
       },
       {
@@ -294,8 +294,8 @@
           "LDC 25-6-471 (OFF-STREET PARKING)",
           "LDC APPENDIX A. TABLES OF OFF-STREET LOADING REQUIREMENTS AND FORMER OFF-STREET PARKING REQUIREMENTS [preamble] ()",
           "LDC 25-6-591 (PARKING PROVISIONS FOR DEVELOPMENT IN TH)",
-          "LDC APPENDIX A. TABLES OF OFF-STREET LOADING REQUIREMENTS AND FORMER OFF-STREET PARKING REQUIREMENTS [preamble] ()",
-          "LDC 25-6-471 (OFF-STREET PARKING)"
+          "LDC 25-6-531 (OFF-STREET LOADING FACILITY REQUIRED)",
+          "LDC 25-6-472 (PARKING FACILITY STANDARDS)"
         ]
       },
       {
@@ -318,10 +318,10 @@
         "gold_hit_rank": 1,
         "retrieved": [
           "TCM 9.8.3 (LONG TERM BICYCLE PARKING)",
-          "TCM 9.8.3 (LONG TERM BICYCLE PARKING)",
           "TCM 9.8.0 (BICYCLE PARKING)",
           "TCM 9.8.1 (BIKE PARKING LOCATIONS)",
-          "TCM 9.8.4 (BIKE PARKING EQUIPMENT AND INSTALLATION )"
+          "TCM 9.8.4 (BIKE PARKING EQUIPMENT AND INSTALLATION )",
+          "TCM 9.8.2 (SHORT-TERM BICYCLE PARKING)"
         ]
       },
       {
@@ -331,10 +331,10 @@
         "gold_hit_rank": 1,
         "retrieved": [
           "DCM 8.3.3 (Safety Criteria for SWM Ponds)",
-          "DCM 8.3.3 (Safety Criteria for SWM Ponds)",
-          "DCM 8.3.3 (Safety Criteria for SWM Ponds)",
-          "DCM 8.3.3 (Safety Criteria for SWM Ponds)",
-          "DCM 8.3.3 (Safety Criteria for SWM Ponds)"
+          "DCM 8.3.1 (General)",
+          "DCM 8.3.2 (Performance Criteria for SWM Ponds)",
+          "DCM 8.5.0 (DETENTION BASIN MAINTENANCE AND EQUIPMEN)",
+          "DCM 8.4.0 (DETENTION POND STORAGE DETERMINATION)"
         ]
       }
     ]
@@ -343,14 +343,14 @@
     "n_questions": 19,
     "code_worded": {
       "mode": "hybrid",
-      "hit_at_1": 0.947,
+      "hit_at_1": 0.895,
       "hit_at_5": 0.947,
       "recall_at_5": 0.93,
-      "mrr": 0.947,
+      "mrr": 0.912,
       "hit_at_5_by_type": {
         "realistic": 0.947
       },
-      "median_latency_ms": 101.7,
+      "median_latency_ms": 19.1,
       "misses": [
         {
           "id": "h14",
@@ -397,10 +397,10 @@
           "gold_hit_rank": 1,
           "retrieved": [
             "LDC 25-5-2 (SITE PLAN EXEMPTIONS)",
-            "LDC 25-5-2 (SITE PLAN EXEMPTIONS)",
+            "LDC 25-5-1 (SITE PLAN REQUIRED)",
             "LDC 1.2 (APPLICABILITY)",
             "LDC 25-2-721 (WATERFRONT OVERLAY (WO) COMBINING DISTRI)",
-            "LDC 25-5-1 (SITE PLAN REQUIRED)"
+            "LDC 25-1-187 (DEVELOPMENT NOT PERMITTED DURING APPEAL)"
           ]
         },
         {
@@ -411,8 +411,8 @@
           "retrieved": [
             "LDC 25-5-63 (EXTENSION OF RELEASED SITE PLAN BY THE L)",
             "LDC 25-5-82 (EXPIRATION OF A SITE PLAN APPROVED BEFOR)",
-            "LDC 25-8-517 (EXPIRATION OF PRIOR APPROVALS)",
             "LDC 25-5-62 (EXTENSION OF RELEASED SITE PLAN BY DIREC)",
+            "LDC 25-8-517 (EXPIRATION OF PRIOR APPROVALS)",
             "LDC 25-5-81 (SITE PLAN EXPIRATION)"
           ]
         },
@@ -425,8 +425,8 @@
             "LDC 25-2-512 (LOT SIZE MINIMUM)",
             "LDC 25-2-779 (SMALL LOT SINGLE-FAMILY RESIDENTIAL USE)",
             "LDC 25-2-943 (SUBSTANDARD LOT)",
-            "LDC 25-2-943 (SUBSTANDARD LOT)",
-            "LDC 25-2-779 (SMALL LOT SINGLE-FAMILY RESIDENTIAL USE)"
+            "LDC 25-2-772 (SINGLE-FAMILY ATTACHED RESIDENTIAL USE)",
+            "LDC 25-2-770 (CONSERVATION SINGLE FAMILY RESIDENTIAL U)"
           ]
         },
         {
@@ -437,9 +437,9 @@
           "retrieved": [
             "LDC 25-8-342 (FILL REQUIREMENTS)",
             "LDC 25-8-341 (CUT REQUIREMENTS)",
-            "LDC 25-8-342 (FILL REQUIREMENTS)",
-            "LDC 25-8-341 (CUT REQUIREMENTS)",
-            "LDC 25-8-301 (CONSTRUCTION OF A ROADWAY OR DRIVEWAY)"
+            "LDC 25-8-301 (CONSTRUCTION OF A ROADWAY OR DRIVEWAY)",
+            "LDC 25-2-1123 (CONSTRUCTION ON SLOPES)",
+            "LDC 25-8-302 (CONSTRUCTION OF A BUILDING OR PARKING AR)"
           ]
         },
         {
@@ -452,7 +452,7 @@
             "LDC 25-8-302 (CONSTRUCTION OF A BUILDING OR PARKING AR)",
             "LDC 25-2-1123 (CONSTRUCTION ON SLOPES)",
             "LDC 25-8-303 (SUBDIVISION NOTES)",
-            "LDC 25-8-304 (APPLICABILITY)"
+            "DCM 1.2.4 (Drainage System)"
           ]
         },
         {
@@ -464,8 +464,8 @@
             "LDC 25-1-603 (MULTI-FAMILY DEDICATION OF PARKLAND)",
             "LDC 25-1-608 (MULTI-FAMILY PARKLAND DEDICATION FEE)",
             "LDC 25-1-609 (FEE PAYMENT AND EXPENDITURE)",
-            "LDC 25-1-603 (MULTI-FAMILY DEDICATION OF PARKLAND)",
-            "LDC 25-1-608 (MULTI-FAMILY PARKLAND DEDICATION FEE)"
+            "LDC 25-1-606 (SINGLE-FAMILY FEE IN LIEU OF PARKLAND DE)",
+            "LDC 25-1-602 (SINGLE-FAMILY DEDICATION OF PARKLAND)"
           ]
         },
         {
@@ -488,10 +488,10 @@
           "gold_hit_rank": 1,
           "retrieved": [
             "LDC 25-8-621 (PERMIT REQUIRED FOR REMOVAL OF PROTECTED)",
-            "LDC 25-8-624 (APPROVAL CRITERIA)",
+            "LDC 25-8-641 (REMOVAL PROHIBITED)",
             "LDC 25-8-622 (APPLICATION FOR REMOVAL)",
-            "LDC 25-8-625 (ACTION ON APPLICATION)",
-            "LDC 25-8-626 (EFFECTIVE DATE AND EXPIRATION OF APPROVA)"
+            "LDC 25-8-626 (EFFECTIVE DATE AND EXPIRATION OF APPROVA)",
+            "LDC 25-8-624 (APPROVAL CRITERIA)"
           ]
         },
         {
@@ -516,7 +516,7 @@
             "LDC 25-9-33 (SERVICE EXTENSION APPLICATION)",
             "LDC 25-9-35 (APPROVAL OF A SERVICE EXTENSION REQUEST)",
             "LDC 25-9-39 (EXPIRATION OF SERVICE EXTENSION REQUEST )",
-            "LDC 25-9-39 (EXPIRATION OF SERVICE EXTENSION REQUEST )",
+            "LDC 25-9-31 (APPLICABILITY)",
             "LDC 25-9-41 (DEVELOPMENT COMPLIANCE)"
           ]
         },
@@ -528,9 +528,9 @@
           "retrieved": [
             "LDC 25-8-124 (WASTEWATER REPORT)",
             "LDC 25-9-95 (TAP PERMIT NOT TRANSFERABLE)",
-            "LDC 25-9-33 (SERVICE EXTENSION APPLICATION)",
+            "LDC 25-8-122 (HYDROGEOLOGIC REPORT)",
             "LDC 25-9-93 (APPLICATION FOR TAP PERMIT; FEES; CAPACI)",
-            "LDC 25-9-386 (APPROVAL REQUIRED FOR SYSTEM DESIGN AND )"
+            "LDC 25-9-33 (SERVICE EXTENSION APPLICATION)"
           ]
         },
         {
@@ -540,8 +540,8 @@
           "gold_hit_rank": 1,
           "retrieved": [
             "LDC 25-7-152 (DEDICATION OF EASEMENTS AND RIGHTS-OF-WA)",
-            "LDC 25-7-152 (DEDICATION OF EASEMENTS AND RIGHTS-OF-WA)",
             "LDC 25-7-151 (STORMWATER CONVEYANCE AND DRAINAGE FACIL)",
+            "LDC 25-7-67 (MODIFIED DRAINAGE STANDARDS FOR RESIDENT)",
             "DCM 1.2.4 (Drainage System)",
             "LDC 25-7-31 (REQUIREMENT FOR DRAINAGE STUDIES)"
           ]
@@ -553,10 +553,10 @@
           "gold_hit_rank": 1,
           "retrieved": [
             "LDC 25-6-263 (CONSTRUCTION PERMIT FOR DRIVEWAY APPROAC)",
-            "LDC 25-6-263 (CONSTRUCTION PERMIT FOR DRIVEWAY APPROAC)",
             "LDC 25-6-264 (DRIVEWAY APPROACH DESIGN)",
             "TCM 7.7.0 (DRIVEWAY PERMITTING)",
-            "LDC 25-6-295 (REMOVING EXISTING CURB OPENINGS OR DRIVE)"
+            "LDC 25-6-295 (REMOVING EXISTING CURB OPENINGS OR DRIVE)",
+            "LDC 25-6-2 (DRIVEWAY APPROACHES DESCRIBED)"
           ]
         },
         {
@@ -589,13 +589,13 @@
           "id": "h16",
           "type": "realistic",
           "question": "How is the runoff curve number selected for the NRCS runoff calculation method?",
-          "gold_hit_rank": 1,
+          "gold_hit_rank": 3,
           "retrieved": [
-            "DCM 2.5.2 (Natural Resources Conservation Service R)",
             "DCM 2.1.0 (GENERAL)",
             "DCM 2.5.0 (THE NATURAL RESOURCES CONSERVATION SERVI)",
+            "DCM 2.5.2 (Natural Resources Conservation Service R)",
             "DCM 2.5.3 (Time of Concentration)",
-            "DCM 2.5.2 (Natural Resources Conservation Service R)"
+            "DCM 2.4.3 (Rainfall Intensity (I))"
           ]
         },
         {
@@ -605,10 +605,10 @@
           "gold_hit_rank": 1,
           "retrieved": [
             "DCM 8.3.3 (Safety Criteria for SWM Ponds)",
-            "DCM 8.3.3 (Safety Criteria for SWM Ponds)",
             "DCM 8.3.1 (General)",
-            "DCM 8.3.3 (Safety Criteria for SWM Ponds)",
-            "DCM 8.3.2 (Performance Criteria for SWM Ponds)"
+            "DCM 8.3.2 (Performance Criteria for SWM Ponds)",
+            "DCM 1.2.2 (General)",
+            "DCM 8.4.0 (DETENTION POND STORAGE DETERMINATION)"
           ]
         },
         {
@@ -618,10 +618,10 @@
           "gold_hit_rank": 1,
           "retrieved": [
             "TCM 7.6.1 (PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS)",
-            "TCM 7.6.1.1 (Multi-Unit Residential Development acces)",
-            "TCM 7.6.1.1 (Multi-Unit Residential Development acces)",
             "TCM 7.6.2 (DRIVEWAY PLACEMENT)",
-            "TCM 7.6.2 (DRIVEWAY PLACEMENT)"
+            "TCM 7.6.1.1 (Multi-Unit Residential Development acces)",
+            "TCM 7.3.0 (DRIVEWAY ACCESS TYPES)",
+            "TCM 7.4.1 (STANDARD DRIVEWAY)"
           ]
         },
         {
@@ -633,203 +633,23 @@
             "LDC 25-6-471 (OFF-STREET PARKING)",
             "LDC APPENDIX A. TABLES OF OFF-STREET LOADING REQUIREMENTS AND FORMER OFF-STREET PARKING REQUIREMENTS [preamble] ()",
             "LDC 25-6-591 (PARKING PROVISIONS FOR DEVELOPMENT IN TH)",
-            "LDC APPENDIX A. TABLES OF OFF-STREET LOADING REQUIREMENTS AND FORMER OFF-STREET PARKING REQUIREMENTS [preamble] ()",
-            "LDC 25-6-471 (OFF-STREET PARKING)"
+            "LDC 25-6-531 (OFF-STREET LOADING FACILITY REQUIRED)",
+            "LDC 25-6-472 (PARKING FACILITY STANDARDS)"
           ]
         }
       ]
     },
     "lay_worded": {
       "mode": "hybrid",
-      "hit_at_1": 0.158,
-      "hit_at_5": 0.474,
-      "recall_at_5": 0.377,
-      "mrr": 0.265,
+      "hit_at_1": 0.263,
+      "hit_at_5": 0.895,
+      "recall_at_5": 0.728,
+      "mrr": 0.532,
       "hit_at_5_by_type": {
-        "realistic": 0.474
+        "realistic": 0.895
       },
-      "median_latency_ms": 126.1,
+      "median_latency_ms": 21.6,
       "misses": [
-        {
-          "id": "h03",
-          "question": "Can I make my lot smaller and still build on it?",
-          "gold": [
-            [
-              "LDC",
-              "25-2-512"
-            ]
-          ],
-          "got": [
-            [
-              "LDC",
-              "25-2-943"
-            ],
-            [
-              "LDC",
-              "25-2-779"
-            ],
-            [
-              "LDC",
-              "25-2-943"
-            ],
-            [
-              "LDC",
-              "25-1-21"
-            ],
-            [
-              "LDC",
-              "25-2-779"
-            ]
-          ]
-        },
-        {
-          "id": "h04",
-          "question": "How much can I dig out or build up the ground on my land?",
-          "gold": [
-            [
-              "LDC",
-              "25-8-341"
-            ],
-            [
-              "LDC",
-              "25-8-342"
-            ]
-          ],
-          "got": [
-            [
-              "LDC",
-              "2.7"
-            ],
-            [
-              "LDC",
-              "25-2-754"
-            ],
-            [
-              "LDC",
-              "2.1"
-            ],
-            [
-              "LDC",
-              "25-8-301"
-            ],
-            [
-              "LDC",
-              "25-2-1569"
-            ]
-          ]
-        },
-        {
-          "id": "h06",
-          "question": "Do apartment projects have to give up land for parks or pay something instead?",
-          "gold": [
-            [
-              "LDC",
-              "25-1-603"
-            ],
-            [
-              "LDC",
-              "25-1-604"
-            ],
-            [
-              "LDC",
-              "25-1-608"
-            ]
-          ],
-          "got": [
-            [
-              "LDC",
-              "25-6-354"
-            ],
-            [
-              "LDC",
-              "25-1-607"
-            ],
-            [
-              "LDC",
-              "25-6-656"
-            ],
-            [
-              "LDC",
-              "25-1-606"
-            ],
-            [
-              "LDC",
-              "25-6-354"
-            ]
-          ]
-        },
-        {
-          "id": "h07",
-          "question": "Does my new building need somewhere for trucks to unload?",
-          "gold": [
-            [
-              "LDC",
-              "25-6-531"
-            ],
-            [
-              "LDC",
-              "25-6-532"
-            ]
-          ],
-          "got": [
-            [
-              "TCM",
-              "9.4.1"
-            ],
-            [
-              "TCM",
-              "9.4.0"
-            ],
-            [
-              "LDC",
-              "25-6-353"
-            ],
-            [
-              "LDC",
-              "25-6-472"
-            ],
-            [
-              "TCM",
-              "7.3.2"
-            ]
-          ]
-        },
-        {
-          "id": "h08",
-          "question": "There is a big old tree in the way. Can I take it down?",
-          "gold": [
-            [
-              "LDC",
-              "25-8-621"
-            ],
-            [
-              "LDC",
-              "25-8-622"
-            ]
-          ],
-          "got": [
-            [
-              "LDC",
-              "25-8-647"
-            ],
-            [
-              "LDC",
-              "25-8-625"
-            ],
-            [
-              "LDC",
-              "25-8-624"
-            ],
-            [
-              "LDC",
-              "25-8-642"
-            ],
-            [
-              "LDC",
-              "25-8-641"
-            ]
-          ]
-        },
         {
           "id": "h09",
           "question": "There is boggy marshy ground on part of my land. Does that stop me building?",
@@ -842,11 +662,7 @@
           "got": [
             [
               "LDC",
-              "2.7"
-            ],
-            [
-              "LDC",
-              "25-8-392"
+              "25-8-281"
             ],
             [
               "LDC",
@@ -858,39 +674,11 @@
             ],
             [
               "LDC",
-              "25-2-1126"
-            ]
-          ]
-        },
-        {
-          "id": "h10",
-          "question": "The water line is a long way from my property. What do I have to do to get hooked up?",
-          "gold": [
-            [
-              "LDC",
-              "25-9-33"
-            ]
-          ],
-          "got": [
-            [
-              "LDC",
-              "25-9-412"
+              "25-8-392"
             ],
             [
               "LDC",
-              "25-9-32"
-            ],
-            [
-              "LDC",
-              "25-9-93"
-            ],
-            [
-              "LDC",
-              "25-9-344"
-            ],
-            [
-              "LDC",
-              "25-9-96"
+              "25-2-1025"
             ]
           ]
         },
@@ -914,87 +702,19 @@
             ],
             [
               "LDC",
-              "25-6-114"
+              "25-6-667"
             ],
             [
               "TCM",
               "10.3.5.4"
             ],
             [
-              "LDC",
-              "25-6-667"
-            ],
-            [
-              "LDC",
-              "25-6-113"
-            ]
-          ]
-        },
-        {
-          "id": "h18",
-          "question": "How many entrances can I have off the street?",
-          "gold": [
-            [
               "TCM",
-              "7.6.1"
+              "10.4.3.1"
             ],
             [
               "TCM",
-              "7.6.2"
-            ]
-          ],
-          "got": [
-            [
-              "TCM",
-              "7.6.6"
-            ],
-            [
-              "LDC",
-              "2.4"
-            ],
-            [
-              "LDC",
-              "25-6-174"
-            ],
-            [
-              "LDC",
-              "25-6-591"
-            ],
-            [
-              "LDC",
-              "2.2"
-            ]
-          ]
-        },
-        {
-          "id": "h19",
-          "question": "How many car parking spaces do I have to build?",
-          "gold": [
-            [
-              "LDC",
-              "25-6-471"
-            ]
-          ],
-          "got": [
-            [
-              "LDC",
-              "25-6-475"
-            ],
-            [
-              "LDC",
-              "25-2-1569"
-            ],
-            [
-              "LDC",
-              "25-2-1007"
-            ],
-            [
-              "TCM",
-              "9.3.4.3.1"
-            ],
-            [
-              "LDC",
-              "25-2-1504"
+              "10.3.5.1"
             ]
           ]
         }
@@ -1010,98 +730,98 @@
             "LDC 25-5-3 (SMALL PROJECTS)",
             "LDC 25-5-4 (NOTICE OF APPLICATION)",
             "LDC 4.2 (MIXED USE ZONING DISTRICTS)",
-            "LDC 25-5-2 (SITE PLAN EXEMPTIONS)"
+            "LDC 25-2-981 (APPLICABILITY; EXCEPTIONS)"
           ]
         },
         {
           "id": "h02",
           "type": "realistic",
           "question": "How long do I have to start work after my plans get the go-ahead, and can I get more time?",
-          "gold_hit_rank": 5,
+          "gold_hit_rank": 2,
           "retrieved": [
             "LDC 25-1-89 (EXTENSION OF REVIEW PERIOD FOR PRELIMINA)",
-            "LDC 25-1-312 (SUBSTANTIAL COMPLETION NOTICE)",
-            "LDC 25-1-152 (POSTPONEMENT AND CONTINUATION OF PUBLIC )",
-            "LDC 25-1-313 (FINAL INSPECTION)",
-            "LDC 25-5-62 (EXTENSION OF RELEASED SITE PLAN BY DIREC)"
+            "LDC 25-5-62 (EXTENSION OF RELEASED SITE PLAN BY DIREC)",
+            "LDC 25-1-90 (EXTENSION OF UPDATE DEADLINE)",
+            "LDC 25-5-148 (CONDITIONAL USE SITE PLAN UPDATE AND EXP)",
+            "LDC 25-1-82 (NON-SUBDIVISION APPLICATION REQUIREMENTS)"
           ]
         },
         {
           "id": "h03",
           "type": "realistic",
           "question": "Can I make my lot smaller and still build on it?",
-          "gold_hit_rank": null,
+          "gold_hit_rank": 4,
           "retrieved": [
             "LDC 25-2-943 (SUBSTANDARD LOT)",
-            "LDC 25-2-779 (SMALL LOT SINGLE-FAMILY RESIDENTIAL USE)",
-            "LDC 25-2-943 (SUBSTANDARD LOT)",
             "LDC 25-1-21 (DEFINITIONS)",
-            "LDC 25-2-779 (SMALL LOT SINGLE-FAMILY RESIDENTIAL USE)"
+            "LDC 25-2-779 (SMALL LOT SINGLE-FAMILY RESIDENTIAL USE)",
+            "LDC 25-2-512 (LOT SIZE MINIMUM)",
+            "LDC 25-2-1557 (COMMERCIAL USE REGULATIONS)"
           ]
         },
         {
           "id": "h04",
           "type": "realistic",
           "question": "How much can I dig out or build up the ground on my land?",
-          "gold_hit_rank": null,
+          "gold_hit_rank": 2,
           "retrieved": [
-            "LDC 2.7 (PRIVATE COMMON OPEN SPACE AND PEDESTRIAN)",
-            "LDC 25-2-754 (USE REGULATIONS)",
-            "LDC 2.1 (MAXIMUM DEVELOPMENT PERMITTED)",
             "LDC 25-8-301 (CONSTRUCTION OF A ROADWAY OR DRIVEWAY)",
-            "LDC 25-2-1569 (LANDSCAPING)"
+            "LDC 25-8-342 (FILL REQUIREMENTS)",
+            "LDC 25-2-1123 (CONSTRUCTION ON SLOPES)",
+            "LDC 25-8-302 (CONSTRUCTION OF A BUILDING OR PARKING AR)",
+            "LDC 25-5-3 (SMALL PROJECTS)"
           ]
         },
         {
           "id": "h05",
           "type": "realistic",
           "question": "My land is steep. What limits are there on building there?",
-          "gold_hit_rank": 4,
+          "gold_hit_rank": 2,
           "retrieved": [
-            "LDC 25-8-392 (UPLANDS ZONE)",
             "LDC 25-8-302 (CONSTRUCTION OF A BUILDING OR PARKING AR)",
-            "LDC 25-2-1124 (BUILDING HEIGHT)",
             "LDC 25-8-301 (CONSTRUCTION OF A ROADWAY OR DRIVEWAY)",
-            "LDC 25-2-721 (WATERFRONT OVERLAY (WO) COMBINING DISTRI)"
+            "LDC 25-2-1123 (CONSTRUCTION ON SLOPES)",
+            "LDC 25-2-1122 (FLOOR-TO-AREA RATIO OF A NONRESIDENTIAL )",
+            "LDC 25-8-303 (SUBDIVISION NOTES)"
           ]
         },
         {
           "id": "h06",
           "type": "realistic",
           "question": "Do apartment projects have to give up land for parks or pay something instead?",
-          "gold_hit_rank": null,
+          "gold_hit_rank": 5,
           "retrieved": [
-            "LDC 25-6-354 (PAYMENT INSTEAD OF SIDEWALK INSTALLATION)",
-            "LDC 25-1-607 (SINGLE-FAMILY PARKLAND DEVELOPMENT FEE)",
-            "LDC 25-6-656 (BICYCLE PARKING FUND)",
             "LDC 25-1-606 (SINGLE-FAMILY FEE IN LIEU OF PARKLAND DE)",
-            "LDC 25-6-354 (PAYMENT INSTEAD OF SIDEWALK INSTALLATION)"
+            "LDC 25-1-607 (SINGLE-FAMILY PARKLAND DEVELOPMENT FEE)",
+            "LDC 25-6-354 (PAYMENT INSTEAD OF SIDEWALK INSTALLATION)",
+            "LDC 25-1-609 (FEE PAYMENT AND EXPENDITURE)",
+            "LDC 25-1-608 (MULTI-FAMILY PARKLAND DEDICATION FEE)"
           ]
         },
         {
           "id": "h07",
           "type": "realistic",
           "question": "Does my new building need somewhere for trucks to unload?",
-          "gold_hit_rank": null,
+          "gold_hit_rank": 2,
           "retrieved": [
             "TCM 9.4.1 (OFF-STREET GENERAL LOADING REQUIREMENTS)",
+            "LDC 25-6-532 (OFF-STREET LOADING STANDARDS)",
+            "LDC 25-6-531 (OFF-STREET LOADING FACILITY REQUIRED)",
             "TCM 9.4.0 (LOADING ZONES)",
-            "LDC 25-6-353 (SIDEWALK INSTALLATION WITH BUILDING OR R)",
-            "LDC 25-6-472 (PARKING FACILITY STANDARDS)",
-            "TCM 7.3.2 (MAJOR DRIVEWAY)"
+            "LDC 25-6-472 (PARKING FACILITY STANDARDS)"
           ]
         },
         {
           "id": "h08",
           "type": "realistic",
           "question": "There is a big old tree in the way. Can I take it down?",
-          "gold_hit_rank": null,
+          "gold_hit_rank": 3,
           "retrieved": [
+            "LDC 25-8-641 (REMOVAL PROHIBITED)",
             "LDC 25-8-647 (ACTION ON APPLICATION)",
-            "LDC 25-8-625 (ACTION ON APPLICATION)",
-            "LDC 25-8-624 (APPROVAL CRITERIA)",
+            "LDC 25-8-621 (PERMIT REQUIRED FOR REMOVAL OF PROTECTED)",
             "LDC 25-8-642 (ADMINISTRATIVE VARIANCE)",
-            "LDC 25-8-641 (REMOVAL PROHIBITED)"
+            "LDC 25-8-645 (APPLICATION FOR VARIANCE)"
           ]
         },
         {
@@ -1110,50 +830,50 @@
           "question": "There is boggy marshy ground on part of my land. Does that stop me building?",
           "gold_hit_rank": null,
           "retrieved": [
-            "LDC 2.7 (PRIVATE COMMON OPEN SPACE AND PEDESTRIAN)",
-            "LDC 25-8-392 (UPLANDS ZONE)",
+            "LDC 25-8-281 (CRITICAL ENVIRONMENTAL FEATURES)",
             "LDC 25-8-302 (CONSTRUCTION OF A BUILDING OR PARKING AR)",
             "LDC 25-8-323 (TEMPORARY STORAGE AREAS; TOPSOIL PROTECT)",
-            "LDC 25-2-1126 (BUILDING MATERIALS)"
+            "LDC 25-8-392 (UPLANDS ZONE)",
+            "LDC 25-2-1025 (NATURAL AREA)"
           ]
         },
         {
           "id": "h10",
           "type": "realistic",
           "question": "The water line is a long way from my property. What do I have to do to get hooked up?",
-          "gold_hit_rank": null,
+          "gold_hit_rank": 2,
           "retrieved": [
-            "LDC 25-9-412 (RECLAIMED WATER CONNECTION REQUIREMENTS)",
             "LDC 25-9-32 (DEFINITIONS)",
-            "LDC 25-9-93 (APPLICATION FOR TAP PERMIT; FEES; CAPACI)",
-            "LDC 25-9-344 (WATER IMPACT FEE EXEMPTIONS FOR RECENTLY)",
-            "LDC 25-9-96 (CONNECTION DELAY)"
+            "LDC 25-9-33 (SERVICE EXTENSION APPLICATION)",
+            "LDC 25-9-96 (CONNECTION DELAY)",
+            "LDC 25-9-31 (APPLICABILITY)",
+            "LDC 25-9-93 (APPLICATION FOR TAP PERMIT; FEES; CAPACI)"
           ]
         },
         {
           "id": "h11",
           "type": "realistic",
           "question": "What goes in the sewage paperwork I have to hand in?",
-          "gold_hit_rank": 4,
+          "gold_hit_rank": 3,
           "retrieved": [
-            "LDC 25-2-1224 (SEWAGE DISPOSAL)",
             "LDC 25-8-361 (WASTEWATER RESTRICTIONS)",
-            "LDC 25-2-1265 (TECHNICAL REQUIREMENTS)",
+            "LDC 25-2-1224 (SEWAGE DISPOSAL)",
             "LDC 25-8-124 (WASTEWATER REPORT)",
-            "LDC 25-9-36 (ENVIRONMENTAL ASSESSMENTS)"
+            "LDC 25-9-93 (APPLICATION FOR TAP PERMIT; FEES; CAPACI)",
+            "LDC 25-9-225 (ADMINISTRATIVE APPROVAL OF AN OUT-OF-DIS)"
           ]
         },
         {
           "id": "h12",
           "type": "realistic",
           "question": "Do I have to give the city a strip of my land for stormwater?",
-          "gold_hit_rank": 3,
+          "gold_hit_rank": 2,
           "retrieved": [
             "LDC 25-7-66 (SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMEN)",
-            "LDC 25-7-151 (STORMWATER CONVEYANCE AND DRAINAGE FACIL)",
             "LDC 25-7-152 (DEDICATION OF EASEMENTS AND RIGHTS-OF-WA)",
+            "LDC 25-7-151 (STORMWATER CONVEYANCE AND DRAINAGE FACIL)",
             "LDC 25-7-67 (MODIFIED DRAINAGE STANDARDS FOR RESIDENT)",
-            "LDC 25-9-162 (REQUEST FOR UTILITY SERVICE AFTER CITY C)"
+            "LDC 25-2-1007 (PARKING LOTS)"
           ]
         },
         {
@@ -1164,9 +884,9 @@
           "retrieved": [
             "LDC 25-6-295 (REMOVING EXISTING CURB OPENINGS OR DRIVE)",
             "LDC 25-6-263 (CONSTRUCTION PERMIT FOR DRIVEWAY APPROAC)",
-            "TCM 7.6.1 (PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS)",
             "TCM 7.6.2 (DRIVEWAY PLACEMENT)",
-            "TCM 7.5.0 (DRIVEWAY GEOMETRIC DESIGN CRITERIA)"
+            "TCM 7.6.1 (PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS)",
+            "TCM 7.6.4 (JOINT USE DRIVEWAYS)"
           ]
         },
         {
@@ -1176,10 +896,10 @@
           "gold_hit_rank": null,
           "retrieved": [
             "TCM 10.3.4.2 (TDM Plan Requirement and Associated Trip)",
-            "LDC 25-6-114 (NEIGHBORHOOD TRAFFIC ANALYSIS REQUIRED)",
-            "TCM 10.3.5.4 (Sustainable Mode Improvement Measures)",
             "LDC 25-6-667 (MOBILITY RELATED REDUCTIONS)",
-            "LDC 25-6-113 (TRAFFIC IMPACT ANALYSIS REQUIRED)"
+            "TCM 10.3.5.4 (Sustainable Mode Improvement Measures)",
+            "TCM 10.4.3.1 (Trip Reductions from TDM Plan)",
+            "TCM 10.3.5.1 (Contextual Trip Reduction)"
           ]
         },
         {
@@ -1190,9 +910,9 @@
           "retrieved": [
             "TCM 9.8.1 (BIKE PARKING LOCATIONS)",
             "TCM 9.8.3 (LONG TERM BICYCLE PARKING)",
-            "TCM 9.8.1 (BIKE PARKING LOCATIONS)",
+            "TCM 9.8.4 (BIKE PARKING EQUIPMENT AND INSTALLATION )",
             "TCM 9.2.3 (ON-STREET PARKING PLACEMENT)",
-            "TCM 9.8.4 (BIKE PARKING EQUIPMENT AND INSTALLATION )"
+            "TCM 9.8.2 (SHORT-TERM BICYCLE PARKING)"
           ]
         },
         {
@@ -1202,10 +922,10 @@
           "gold_hit_rank": 1,
           "retrieved": [
             "DCM 2.5.2 (Natural Resources Conservation Service R)",
-            "DCM 2.5.2 (Natural Resources Conservation Service R)",
-            "DCM 2.5.2 (Natural Resources Conservation Service R)",
+            "DCM 2.1.0 (GENERAL)",
+            "LDC 25-7-8 (COMPUTATION OF STORMWATER RUNOFF)",
             "DCM 2.4.4 (Drainage Area (A))",
-            "DCM 2.4.3 (Rainfall Intensity (I))"
+            "DCM 2.4.1 (Runoff Coefficient (C))"
           ]
         },
         {
@@ -1215,36 +935,36 @@
           "gold_hit_rank": 1,
           "retrieved": [
             "DCM 8.3.3 (Safety Criteria for SWM Ponds)",
-            "DCM 8.3.3 (Safety Criteria for SWM Ponds)",
-            "LDC 25-8-231 (WATER QUALITY CONTROL MAINTENANCE AND IN)",
             "DCM 1.2.2 (General)",
-            "DCM 8.3.2 (Performance Criteria for SWM Ponds)"
+            "DCM 8.3.2 (Performance Criteria for SWM Ponds)",
+            "DCM 8.4.0 (DETENTION POND STORAGE DETERMINATION)",
+            "LDC 25-8-231 (WATER QUALITY CONTROL MAINTENANCE AND IN)"
           ]
         },
         {
           "id": "h18",
           "type": "realistic",
           "question": "How many entrances can I have off the street?",
-          "gold_hit_rank": null,
+          "gold_hit_rank": 1,
           "retrieved": [
-            "TCM 7.6.6 (TEMPORARY CONSTRUCTION ENTRANCES)",
-            "LDC 2.4 (BUILDING ENTRYWAYS)",
-            "LDC 25-6-174 (PARTIAL CONSTRUCTION OF BOUNDARY STREETS)",
-            "LDC 25-6-591 (PARKING PROVISIONS FOR DEVELOPMENT IN TH)",
-            "LDC 2.2 (RELATIONSHIP OF BUILDINGS TO STREETS AND)"
+            "TCM 7.6.1 (PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS)",
+            "LDC 25-2-779 (SMALL LOT SINGLE-FAMILY RESIDENTIAL USE)",
+            "LDC 25-6-295 (REMOVING EXISTING CURB OPENINGS OR DRIVE)",
+            "LDC 25-2-762 (SITE ACCESS)",
+            "TCM 7.6.1.1 (Multi-Unit Residential Development acces)"
           ]
         },
         {
           "id": "h19",
           "type": "realistic",
           "question": "How many car parking spaces do I have to build?",
-          "gold_hit_rank": null,
+          "gold_hit_rank": 1,
           "retrieved": [
+            "LDC 25-6-471 (OFF-STREET PARKING)",
+            "LDC APPENDIX A. TABLES OF OFF-STREET LOADING REQUIREMENTS AND FORMER OFF-STREET PARKING REQUIREMENTS [preamble] ()",
             "LDC 25-6-475 (PARKING FOR COMPACT CARS)",
-            "LDC 25-2-1569 (LANDSCAPING)",
-            "LDC 25-2-1007 (PARKING LOTS)",
-            "TCM 9.3.4.3.1 (Throat Storage Length)",
-            "LDC 25-2-1504 (NEIGHBORHOOD MIXED USE BUILDING REGULATI)"
+            "LDC 25-6-591 (PARKING PROVISIONS FOR DEVELOPMENT IN TH)",
+            "LDC 25-2-1007 (PARKING LOTS)"
           ]
         }
       ]
@@ -1252,8 +972,8 @@
   },
   "relevance": {
     "passages_judged": 110,
-    "passages_relevant": 88,
-    "precision_at_5_percent": 80.0,
+    "passages_relevant": 82,
+    "precision_at_5_percent": 74.5,
     "judge_failures": 0,
     "per_question": [
       {
@@ -1266,15 +986,15 @@
             "section_number": "25-5-2",
             "section_title": "SITE PLAN EXEMPTIONS",
             "relevant": true,
-            "reason": "The passage states that a site plan is not required for construction or alteration of four or fewer residential units under specific conditions.",
+            "reason": "The passage states the conditions under which a site plan is not required, directly addressing the question of exemptions from the site plan requirement.",
             "judge_failed": false
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-5-2",
-            "section_title": "SITE PLAN EXEMPTIONS",
-            "relevant": true,
-            "reason": "The passage states rule (C) and part of rule (D), which provide exemptions from the site plan requirement.",
+            "section_number": "25-5-1",
+            "section_title": "SITE PLAN REQUIRED",
+            "relevant": false,
+            "reason": "The passage does not mention any exemptions from the site plan requirement.",
             "judge_failed": false
           },
           {
@@ -1295,10 +1015,10 @@
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-5-1",
-            "section_title": "SITE PLAN REQUIRED",
-            "relevant": false,
-            "reason": "The passage does not mention any exemptions from the site plan requirement.",
+            "section_number": "25-1-187",
+            "section_title": "DEVELOPMENT NOT PERMITTED DURING APPEAL",
+            "relevant": true,
+            "reason": "The passage states that development under a site plan may not occur during the time period during which an appeal of the site plan may be initiated.",
             "judge_failed": false
           }
         ]
@@ -1321,15 +1041,7 @@
             "section_number": "25-5-82",
             "section_title": "EXPIRATION OF A SITE PLAN APPROVED BEFORE JANUARY 1, 1988",
             "relevant": true,
-            "reason": "The passage states that a site plan approved before January 1, 1988 expires except in certain circumstances described in Subsections (C) and (D), which provide conditions under which the expiration date can be extended.",
-            "judge_failed": false
-          },
-          {
-            "doc_id": "LDC",
-            "section_number": "25-8-517",
-            "section_title": "EXPIRATION OF PRIOR APPROVALS",
-            "relevant": false,
-            "reason": "The passage does not state how long a released site plan is valid or if its expiration date can be extended.",
+            "reason": "The passage states that a site plan approved before January 1, 1988 expires except in certain circumstances described in Subsections (C) and (D), which include the possibility of an extended expiration date.",
             "judge_failed": false
           },
           {
@@ -1338,6 +1050,14 @@
             "section_title": "EXTENSION OF RELEASED SITE PLAN BY DIRECTOR",
             "relevant": true,
             "reason": "The passage states that the director may extend the expiration date of a released administrative site plan one time for a period of one year if certain conditions are met.",
+            "judge_failed": false
+          },
+          {
+            "doc_id": "LDC",
+            "section_number": "25-8-517",
+            "section_title": "EXPIRATION OF PRIOR APPROVALS",
+            "relevant": false,
+            "reason": "The passage does not state how long a released site plan is valid or if its expiration date can be extended.",
             "judge_failed": false
           },
           {
@@ -1360,7 +1080,7 @@
             "section_number": "25-2-512",
             "section_title": "LOT SIZE MINIMUM",
             "relevant": true,
-            "reason": "The passage states an exception to the minimum lot size requirements in Subsection (B) that allows for reduced lot sizes under specific conditions.",
+            "reason": "The passage states an exception to the minimum lot size requirements in Subsection (B) and provides conditions under which the remainder of a lot can be reduced below the minimum size.",
             "judge_failed": false
           },
           {
@@ -1381,18 +1101,18 @@
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-2-943",
-            "section_title": "SUBSTANDARD LOT",
+            "section_number": "25-2-772",
+            "section_title": "SINGLE-FAMILY ATTACHED RESIDENTIAL USE",
             "relevant": true,
-            "reason": "The passage states a condition that applies to substandard lots aggregated with other property after August 6, 2007.",
+            "reason": "The passage states the minimum lot area requirement of 3,000 square feet and provides an exception for cul-de-sac or curved streets where the minimum lot width is 20 feet.",
             "judge_failed": false
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-2-779",
-            "section_title": "SMALL LOT SINGLE-FAMILY RESIDENTIAL USE",
+            "section_number": "25-2-770",
+            "section_title": "CONSERVATION SINGLE FAMILY RESIDENTIAL USE",
             "relevant": true,
-            "reason": "The passage states the minimum lot size requirements and provides conditions under which a lot can be reduced below these sizes.",
+            "reason": "The passage states that properties used for conservation single family residential use must be subdivided to create two or more residential lots of no less than 3,600 square feet and no more than 5,750 square feet in area.",
             "judge_failed": false
           }
         ]
@@ -1400,7 +1120,7 @@
       {
         "id": "h04",
         "question": "What are the maximum cut and fill depths allowed when grading a development site?",
-        "precision_at_5": 0.8,
+        "precision_at_5": 0.6,
         "passages": [
           {
             "doc_id": "LDC",
@@ -1420,26 +1140,26 @@
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-8-342",
-            "section_title": "FILL REQUIREMENTS",
-            "relevant": true,
-            "reason": "The passage states that fill is limited to no more than eight feet in depth, which directly addresses the maximum cut and fill depths allowed when grading a development site.",
-            "judge_failed": false
-          },
-          {
-            "doc_id": "LDC",
-            "section_number": "25-8-341",
-            "section_title": "CUT REQUIREMENTS",
-            "relevant": true,
-            "reason": "The passage states the maximum cut depth allowed under specific conditions related to street or driveway construction.",
-            "judge_failed": false
-          },
-          {
-            "doc_id": "LDC",
             "section_number": "25-8-301",
             "section_title": "CONSTRUCTION OF A ROADWAY OR DRIVEWAY",
             "relevant": false,
             "reason": "The passage does not mention cut and fill depths, but rather construction on slopes with gradients over 15 percent.",
+            "judge_failed": false
+          },
+          {
+            "doc_id": "LDC",
+            "section_number": "25-2-1123",
+            "section_title": "CONSTRUCTION ON SLOPES",
+            "relevant": true,
+            "reason": "The passage states rule (C) that may not exceed a depth of eight feet for structural excavation on slopes with a gradient of 15 percent or more.",
+            "judge_failed": false
+          },
+          {
+            "doc_id": "LDC",
+            "section_number": "25-8-302",
+            "section_title": "CONSTRUCTION OF A BUILDING OR PARKING AREA",
+            "relevant": false,
+            "reason": "The passage does not mention maximum cut and fill depths allowed when grading a development site.",
             "judge_failed": false
           }
         ]
@@ -1447,14 +1167,14 @@
       {
         "id": "h05",
         "question": "What construction restrictions apply on slopes with a steep gradient?",
-        "precision_at_5": 0.8,
+        "precision_at_5": 1.0,
         "passages": [
           {
             "doc_id": "LDC",
             "section_number": "25-8-301",
             "section_title": "CONSTRUCTION OF A ROADWAY OR DRIVEWAY",
             "relevant": true,
-            "reason": "The passage states a condition for constructing on slopes with gradients over 15 percent.",
+            "reason": "The passage states a condition for constructing on slopes with a gradient of more than 15 percent.",
             "judge_failed": false
           },
           {
@@ -1470,7 +1190,7 @@
             "section_number": "25-2-1123",
             "section_title": "CONSTRUCTION ON SLOPES",
             "relevant": true,
-            "reason": "The passage provides specific construction restrictions for slopes with a steep gradient, including requirements for pier and beam techniques, vertical wall extensions, and terracing.",
+            "reason": "The passage states rule (B) that applies to structures uphill of slopes with a gradient of 15 percent or more.",
             "judge_failed": false
           },
           {
@@ -1482,11 +1202,11 @@
             "judge_failed": false
           },
           {
-            "doc_id": "LDC",
-            "section_number": "25-8-304",
-            "section_title": "APPLICABILITY",
-            "relevant": false,
-            "reason": "The passage does not mention construction restrictions on slopes with a steep gradient, but rather specifies an exception to its applicability.",
+            "doc_id": "DCM",
+            "section_number": "1.2.4",
+            "section_title": "Drainage System",
+            "relevant": true,
+            "reason": "The passage states condition b. that the angle of intersection between the outfall flow path and the channel flow path is not greater than 45-degrees, which applies to slopes with a steep gradient.",
             "judge_failed": false
           }
         ]
@@ -1494,7 +1214,7 @@
       {
         "id": "h06",
         "question": "What parkland dedication or fee is required for a multi-family development?",
-        "precision_at_5": 1.0,
+        "precision_at_5": 0.6,
         "passages": [
           {
             "doc_id": "LDC",
@@ -1522,18 +1242,18 @@
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-1-603",
-            "section_title": "MULTI-FAMILY DEDICATION OF PARKLAND",
-            "relevant": true,
-            "reason": "The passage states a rule for calculating the required parkland dedication based on multi-family units and hotel/motel rooms.",
+            "section_number": "25-1-606",
+            "section_title": "SINGLE-FAMILY FEE IN LIEU OF PARKLAND DEDICATION",
+            "relevant": false,
+            "reason": "The passage does not mention multi-family development, it only discusses single-family development.",
             "judge_failed": false
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-1-608",
-            "section_title": "MULTI-FAMILY PARKLAND DEDICATION FEE",
-            "relevant": true,
-            "reason": "The passage provides a formula for calculating the parkland dedication fee required for multi-family development.",
+            "section_number": "25-1-602",
+            "section_title": "SINGLE-FAMILY DEDICATION OF PARKLAND",
+            "relevant": false,
+            "reason": "The passage does not mention parkland dedication or fee for multi-family development, it only discusses single-family developments.",
             "judge_failed": false
           }
         ]
@@ -1580,7 +1300,7 @@
             "section_number": "25-6-472",
             "section_title": "PARKING FACILITY STANDARDS",
             "relevant": true,
-            "reason": "The passage states that a parking facility must be maintained for the duration of the use or existence of the building requiring the facility.",
+            "reason": "The passage states that a parking facility must comply with the requirements in Section 25-6-471 (Off-Street Parking) and Appendix A (Tables of Off-Street Loading Requirements and Former Off-Street Parking Requirements), as applicable.",
             "judge_failed": false
           }
         ]
@@ -1600,10 +1320,10 @@
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-8-624",
-            "section_title": "APPROVAL CRITERIA",
+            "section_number": "25-8-641",
+            "section_title": "REMOVAL PROHIBITED",
             "relevant": true,
-            "reason": "The passage states that a permit may be required to remove a protected tree under specific conditions and provides criteria for approval.",
+            "reason": "The passage states that a permit is required to remove a protected tree and specifies who may apply for one under certain conditions.",
             "judge_failed": false
           },
           {
@@ -1616,18 +1336,18 @@
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-8-625",
-            "section_title": "ACTION ON APPLICATION",
-            "relevant": true,
-            "reason": "The passage states that an application to remove a tree not associated with a pending application is automatically granted if the Planning and Development Review Department does not take action before the applicable deadline.",
-            "judge_failed": false
-          },
-          {
-            "doc_id": "LDC",
             "section_number": "25-8-626",
             "section_title": "EFFECTIVE DATE AND EXPIRATION OF APPROVAL",
             "relevant": true,
             "reason": "The passage states that approval of an application to remove a protected tree is effective immediately and provides conditions under which the approval expires.",
+            "judge_failed": false
+          },
+          {
+            "doc_id": "LDC",
+            "section_number": "25-8-624",
+            "section_title": "APPROVAL CRITERIA",
+            "relevant": true,
+            "reason": "The passage states that a permit may be required to remove a protected tree under specific conditions and provides criteria for approval.",
             "judge_failed": false
           }
         ]
@@ -1642,7 +1362,7 @@
             "section_number": "25-8-282",
             "section_title": "WETLAND PROTECTION",
             "relevant": true,
-            "reason": "The passage states a specific exemption for wetlands located within a certain area and provides general requirements for protection methods.",
+            "reason": "The passage states a specific exemption for wetlands located within a certain area and provides general protection methods that may be required.",
             "judge_failed": false
           },
           {
@@ -1658,7 +1378,7 @@
             "section_number": "25-8-261",
             "section_title": "CRITICAL WATER QUALITY ZONE DEVELOPMENT",
             "relevant": true,
-            "reason": "The passage states wetland protection requirements for development sites, including distance from shorelines and maintenance plans.",
+            "reason": "The passage states wetland protection requirements for development sites, including distance from shorelines and maintenance plans for athletic fields.",
             "judge_failed": false
           },
           {
@@ -1666,7 +1386,7 @@
             "section_number": "1.2.4",
             "section_title": "Drainage System",
             "relevant": true,
-            "reason": "The passage defines residential and commercial development, which are terms that apply to wetland protection requirements.",
+            "reason": "The passage defines residential development and lists requirements that apply to all City maintained SCMs for residential development.",
             "judge_failed": false
           },
           {
@@ -1710,10 +1430,10 @@
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-9-39",
-            "section_title": "EXPIRATION OF SERVICE EXTENSION REQUEST APPROVAL",
+            "section_number": "25-9-31",
+            "section_title": "APPLICABILITY",
             "relevant": true,
-            "reason": "The passage states that a service extension request is required to connect a property to City water or wastewater if construction of the service extension has not begun before the second anniversary of its approval and has not been completed and accepted for operation and maintenance by the City within three years.",
+            "reason": "The passage states condition (2) that outlines a scenario in which a service extension request may not be required to connect a property to City water or wastewater.",
             "judge_failed": false
           },
           {
@@ -1729,7 +1449,7 @@
       {
         "id": "h11",
         "question": "What must a wastewater report address?",
-        "precision_at_5": 0.6,
+        "precision_at_5": 0.8,
         "passages": [
           {
             "doc_id": "LDC",
@@ -1749,10 +1469,10 @@
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-9-33",
-            "section_title": "SERVICE EXTENSION APPLICATION",
-            "relevant": false,
-            "reason": "The passage does not address what a wastewater report must address, it discusses requirements for service extension applications and annexation.",
+            "section_number": "25-8-122",
+            "section_title": "HYDROGEOLOGIC REPORT",
+            "relevant": true,
+            "reason": "The passage addresses all four conditions that must be met by a hydrogeologic report.",
             "judge_failed": false
           },
           {
@@ -1765,10 +1485,10 @@
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-9-386",
-            "section_title": "APPROVAL REQUIRED FOR SYSTEM DESIGN AND OPERATION",
+            "section_number": "25-9-33",
+            "section_title": "SERVICE EXTENSION APPLICATION",
             "relevant": true,
-            "reason": "The passage mentions 'drawings of the final installed onsite reclaimed water system' which addresses what a wastewater report must address.",
+            "reason": "The passage addresses what information must be included in an application for approval of a service extension, which relates to the requirements of a wastewater report.",
             "judge_failed": false
           }
         ]
@@ -1776,22 +1496,14 @@
       {
         "id": "h12",
         "question": "Must a property owner dedicate drainage easements or rights-of-way when developing?",
-        "precision_at_5": 1.0,
+        "precision_at_5": 0.8,
         "passages": [
           {
             "doc_id": "LDC",
             "section_number": "25-7-152",
             "section_title": "DEDICATION OF EASEMENTS AND RIGHTS-OF-WAY",
             "relevant": true,
-            "reason": "The passage states rule (A) that requires property owners to dedicate an easement or right-of-way for drainage facilities.",
-            "judge_failed": false
-          },
-          {
-            "doc_id": "LDC",
-            "section_number": "25-7-152",
-            "section_title": "DEDICATION OF EASEMENTS AND RIGHTS-OF-WAY",
-            "relevant": true,
-            "reason": "The passage defines conditions under which easements or rights-of-way are exempt from dedication.",
+            "reason": "The passage states that the owner of real property proposed to be developed shall dedicate an easement or right-of-way for a drainage facility.",
             "judge_failed": false
           },
           {
@@ -1800,6 +1512,14 @@
             "section_title": "STORMWATER CONVEYANCE AND DRAINAGE FACILITIES",
             "relevant": true,
             "reason": "The passage states that the owner proposing to develop the property includes the responsibility to dedicate or obtain the dedication of any right-of-way or easement necessary to accommodate the required construction or improvement of the storm drainage facility.",
+            "judge_failed": false
+          },
+          {
+            "doc_id": "LDC",
+            "section_number": "25-7-67",
+            "section_title": "MODIFIED DRAINAGE STANDARDS FOR RESIDENTIAL INFILL",
+            "relevant": false,
+            "reason": "The passage does not address whether a property owner must dedicate drainage easements or rights-of-way when developing.",
             "judge_failed": false
           },
           {
@@ -1823,7 +1543,7 @@
       {
         "id": "h13",
         "question": "What does the city consider when deciding whether to approve a driveway approach construction permit?",
-        "precision_at_5": 0.8,
+        "precision_at_5": 1.0,
         "passages": [
           {
             "doc_id": "LDC",
@@ -1831,14 +1551,6 @@
             "section_title": "CONSTRUCTION PERMIT FOR DRIVEWAY APPROACH",
             "relevant": true,
             "reason": "The passage states part of the answer by listing specific factors that the city manager shall consider when determining the effect of a proposed driveway.",
-            "judge_failed": false
-          },
-          {
-            "doc_id": "LDC",
-            "section_number": "25-6-263",
-            "section_title": "CONSTRUCTION PERMIT FOR DRIVEWAY APPROACH",
-            "relevant": true,
-            "reason": "The passage states that the city manager must approve the construction of a type 2 driveway approach for angle or head-in parking requiring pedestrian way maneuverability.",
             "judge_failed": false
           },
           {
@@ -1853,8 +1565,8 @@
             "doc_id": "TCM",
             "section_number": "7.7.0",
             "section_title": "DRIVEWAY PERMITTING",
-            "relevant": false,
-            "reason": "The passage does not state what the city considers when deciding whether to approve a driveway approach construction permit, it only mentions that a right-of-way construction permit must be granted for the driveway approach to be built.",
+            "relevant": true,
+            "reason": "The passage states that a right-of-way construction permit must be granted for the driveway approach to be built.",
             "judge_failed": false
           },
           {
@@ -1863,6 +1575,14 @@
             "section_title": "REMOVING EXISTING CURB OPENINGS OR DRIVEWAY APPROACHES",
             "relevant": true,
             "reason": "The passage states conditions and requirements for constructing a new driveway approach, which are factors the city would consider when deciding whether to approve such a permit.",
+            "judge_failed": false
+          },
+          {
+            "doc_id": "LDC",
+            "section_number": "25-6-2",
+            "section_title": "DRIVEWAY APPROACHES DESCRIBED",
+            "relevant": true,
+            "reason": "The passage defines types of driveway approaches that may be considered by the city in deciding whether to approve a driveway approach construction permit.",
             "judge_failed": false
           }
         ]
@@ -1893,7 +1613,7 @@
             "section_number": "10.4.1.1.3",
             "section_title": "Trip Generation",
             "relevant": true,
-            "reason": "The passage states that a TDM plan is required for a development when a zoning change is requested, which implies a condition under which a TDM plan is necessary.",
+            "reason": "The passage states that a TDM plan is required for site development and provides conditions under which it is required.",
             "judge_failed": false
           },
           {
@@ -1901,7 +1621,7 @@
             "section_number": "9.5.0",
             "section_title": "SHARED-USE PARKING",
             "relevant": true,
-            "reason": "The passage states that a TDM plan is required for site development and provides an exception to this rule.",
+            "reason": "The passage states that a TDM plan is required for shared-use parking and provides an exception to this rule.",
             "judge_failed": false
           },
           {
@@ -1924,7 +1644,7 @@
             "section_number": "9.8.3",
             "section_title": "LONG TERM BICYCLE PARKING",
             "relevant": true,
-            "reason": "The passage provides location requirements for long-term bicycle parking, which includes criteria such as proximity to building entryways and accessibility features.",
+            "reason": "The passage provides location requirements for long-term bicycle parking, which includes criteria such as proximity to building entryways, accessibility, and weather protection.",
             "judge_failed": false
           },
           {
@@ -1940,7 +1660,7 @@
             "section_number": "9.8.0",
             "section_title": "BICYCLE PARKING",
             "relevant": false,
-            "reason": "The passage does not mention specific location requirements for short-term and long-term bicycle parking.",
+            "reason": "The passage does not mention location requirements for short-term and long-term bicycle parking.",
             "judge_failed": false
           },
           {
@@ -1968,14 +1688,6 @@
         "passages": [
           {
             "doc_id": "DCM",
-            "section_number": "2.5.2",
-            "section_title": "Natural Resources Conservation Service Runoff Curve Numbers",
-            "relevant": true,
-            "reason": "The passage defines the runoff curve number and its relationship to antecedent soil moisture conditions, which helps determine how it is selected for the NRCS runoff calculation method.",
-            "judge_failed": false
-          },
-          {
-            "doc_id": "DCM",
             "section_number": "2.1.0",
             "section_title": "GENERAL",
             "relevant": true,
@@ -1992,6 +1704,14 @@
           },
           {
             "doc_id": "DCM",
+            "section_number": "2.5.2",
+            "section_title": "Natural Resources Conservation Service Runoff Curve Numbers",
+            "relevant": true,
+            "reason": "The passage defines the runoff curve number and its relationship to antecedent soil moisture conditions, which is relevant to selecting the curve number for NRCS runoff calculation method.",
+            "judge_failed": false
+          },
+          {
+            "doc_id": "DCM",
             "section_number": "2.5.3",
             "section_title": "Time of Concentration",
             "relevant": false,
@@ -2000,10 +1720,10 @@
           },
           {
             "doc_id": "DCM",
-            "section_number": "2.5.2",
-            "section_title": "Natural Resources Conservation Service Runoff Curve Numbers",
+            "section_number": "2.4.3",
+            "section_title": "Rainfall Intensity (I)",
             "relevant": false,
-            "reason": "The passage does not provide information on how to select the runoff curve number for the NRCS runoff calculation method.",
+            "reason": "The passage does not mention how the runoff curve number is selected for the NRCS runoff calculation method.",
             "judge_failed": false
           }
         ]
@@ -2011,7 +1731,7 @@
       {
         "id": "h17",
         "question": "What safety criteria must a stormwater management pond meet?",
-        "precision_at_5": 0.8,
+        "precision_at_5": 0.6,
         "passages": [
           {
             "doc_id": "DCM",
@@ -2019,14 +1739,6 @@
             "section_title": "Safety Criteria for SWM Ponds",
             "relevant": true,
             "reason": "The passage states safety criteria for stormwater management ponds, including design requirements for spillways, outfalls, embankments, and appurtenant structures.",
-            "judge_failed": false
-          },
-          {
-            "doc_id": "DCM",
-            "section_number": "8.3.3",
-            "section_title": "Safety Criteria for SWM Ponds",
-            "relevant": true,
-            "reason": "The passage states rules for pipes discharging into public storm drain systems and outfalls into SWM ponds, which are conditions that must be met by a stormwater management pond.",
             "judge_failed": false
           },
           {
@@ -2039,18 +1751,26 @@
           },
           {
             "doc_id": "DCM",
-            "section_number": "8.3.3",
-            "section_title": "Safety Criteria for SWM Ponds",
-            "relevant": true,
-            "reason": "The passage states safety criteria for stormwater management ponds, specifically that any hydraulic structure with a height of 6 feet or more must be designed to safely pass the minimum design flood hydrograph expressed as a percentage of the probable maximum flood.",
-            "judge_failed": false
-          },
-          {
-            "doc_id": "DCM",
             "section_number": "8.3.2",
             "section_title": "Performance Criteria for SWM Ponds",
             "relevant": true,
             "reason": "The passage states that stormwater management ponds must be designed to reduce post-development peak rates of discharge to existing pre-development peak rates of discharge for certain storm events.",
+            "judge_failed": false
+          },
+          {
+            "doc_id": "DCM",
+            "section_number": "1.2.2",
+            "section_title": "General",
+            "relevant": true,
+            "reason": "The passage states conditions for stormwater management ponds to meet, specifically regarding peak water surface elevation and 100-year runoff.",
+            "judge_failed": false
+          },
+          {
+            "doc_id": "DCM",
+            "section_number": "8.4.0",
+            "section_title": "DETENTION POND STORAGE DETERMINATION",
+            "relevant": false,
+            "reason": "The passage does not mention any safety criteria for stormwater management ponds.",
             "judge_failed": false
           }
         ]
@@ -2058,7 +1778,7 @@
       {
         "id": "h18",
         "question": "How many driveways is a site allowed based on its street frontage?",
-        "precision_at_5": 0.6,
+        "precision_at_5": 0.4,
         "passages": [
           {
             "doc_id": "TCM",
@@ -2066,6 +1786,14 @@
             "section_title": "PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS",
             "relevant": true,
             "reason": "The passage states the allowed number of driveways based on property frontage available.",
+            "judge_failed": false
+          },
+          {
+            "doc_id": "TCM",
+            "section_number": "7.6.2",
+            "section_title": "DRIVEWAY PLACEMENT",
+            "relevant": false,
+            "reason": "The passage does not mention the number of driveways allowed based on street frontage.",
             "judge_failed": false
           },
           {
@@ -2078,26 +1806,18 @@
           },
           {
             "doc_id": "TCM",
-            "section_number": "7.6.1.1",
-            "section_title": "Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets",
-            "relevant": true,
-            "reason": "The passage states the criteria for allowing three driveways on a corner lot fronting a Level 1 street.",
-            "judge_failed": false
-          },
-          {
-            "doc_id": "TCM",
-            "section_number": "7.6.2",
-            "section_title": "DRIVEWAY PLACEMENT",
+            "section_number": "7.3.0",
+            "section_title": "DRIVEWAY ACCESS TYPES",
             "relevant": false,
             "reason": "The passage does not mention the number of driveways allowed based on street frontage.",
             "judge_failed": false
           },
           {
             "doc_id": "TCM",
-            "section_number": "7.6.2",
-            "section_title": "DRIVEWAY PLACEMENT",
+            "section_number": "7.4.1",
+            "section_title": "STANDARD DRIVEWAY",
             "relevant": false,
-            "reason": "The passage does not mention the number of driveways allowed based on street frontage.",
+            "reason": "The passage defines a standard driveway but does not provide information on the number of driveways allowed based on street frontage.",
             "judge_failed": false
           }
         ]
@@ -2133,18 +1853,18 @@
           },
           {
             "doc_id": "LDC",
-            "section_number": "APPENDIX A. TABLES OF OFF-STREET LOADING REQUIREMENTS AND FORMER OFF-STREET PARKING REQUIREMENTS [preamble]",
-            "section_title": "",
-            "relevant": false,
-            "reason": "The passage does not mention off-street motor vehicle parking for any use classification.",
+            "section_number": "25-6-531",
+            "section_title": "OFF-STREET LOADING FACILITY REQUIRED",
+            "relevant": true,
+            "reason": "The passage states that an off-street loading facility is required for certain new developments and additions, which implies that off-street motor vehicle parking may also be required.",
             "judge_failed": false
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-6-471",
-            "section_title": "OFF-STREET PARKING",
-            "relevant": true,
-            "reason": "The passage states that an accessible space parking requirement applies to sites with more than one use or for adjacent sites served by a common parking facility.",
+            "section_number": "25-6-472",
+            "section_title": "PARKING FACILITY STANDARDS",
+            "relevant": false,
+            "reason": "The passage does not mention off-street motor vehicle parking requirements for new developments in Austin.",
             "judge_failed": false
           }
         ]
@@ -2159,7 +1879,7 @@
             "section_number": "25-5-81",
             "section_title": "SITE PLAN EXPIRATION",
             "relevant": true,
-            "reason": "The passage states the expiration date of a site plan and provides conditions under which it does not expire.",
+            "reason": "The passage states that a site plan expires three years after its approval, with certain conditions and exceptions.",
             "judge_failed": false
           },
           {
@@ -2183,7 +1903,7 @@
             "section_number": "10.4.4",
             "section_title": "DETERMINATION OF MITIGATIONS",
             "relevant": true,
-            "reason": "The passage defines system improvements and their requirements, which addresses what LDC section 25-5-81 provides.",
+            "reason": "The passage provides information on system improvements and their requirements, which relates to LDC section 25-5-81.",
             "judge_failed": false
           },
           {
@@ -2191,7 +1911,7 @@
             "section_number": "10.4.5",
             "section_title": "PROPORTIONALITY OF TRANSPORTATION IMPROVEMENTS",
             "relevant": true,
-            "reason": "The passage states that the City shall determine Rough Proportionality in accordance with state law and the LDC by comparing the required system infrastructure facilities' supply to the demand created by the new development.",
+            "reason": "The passage defines the rough proportionality determination process in LDC section 25-5-81.",
             "judge_failed": false
           }
         ]
@@ -2199,7 +1919,7 @@
       {
         "id": "h21",
         "question": "Transportation Criteria Manual 9.8.3 long term bicycle parking requirements",
-        "precision_at_5": 0.8,
+        "precision_at_5": 0.4,
         "passages": [
           {
             "doc_id": "TCM",
@@ -2207,14 +1927,6 @@
             "section_title": "LONG TERM BICYCLE PARKING",
             "relevant": true,
             "reason": "The passage provides specific requirements and conditions for long-term bicycle parking, including location criteria, accessibility standards, and design specifications that directly address the question about long term bicycle parking requirements.",
-            "judge_failed": false
-          },
-          {
-            "doc_id": "TCM",
-            "section_number": "9.8.3",
-            "section_title": "LONG TERM BICYCLE PARKING",
-            "relevant": true,
-            "reason": "The passage states rule 5, which specifies that bicycle parking must be located in a well-lit area with a minimum average illumination level of 200 lux.",
             "judge_failed": false
           },
           {
@@ -2237,8 +1949,16 @@
             "doc_id": "TCM",
             "section_number": "9.8.4",
             "section_title": "BIKE PARKING EQUIPMENT AND INSTALLATION REQUIREMENTS",
-            "relevant": true,
-            "reason": "The passage states the requirement for bike racks to support bicycles at two points, including the frame of the bicycle.",
+            "relevant": false,
+            "reason": "The passage does not mention long-term bicycle parking requirements, it only discusses general guidelines and installation requirements.",
+            "judge_failed": false
+          },
+          {
+            "doc_id": "TCM",
+            "section_number": "9.8.2",
+            "section_title": "SHORT-TERM BICYCLE PARKING",
+            "relevant": false,
+            "reason": "The passage does not mention long-term bicycle parking requirements, which are the focus of the question.",
             "judge_failed": false
           }
         ]
@@ -2246,46 +1966,46 @@
       {
         "id": "h22",
         "question": "Drainage Criteria Manual section 8.3.3 safety criteria for stormwater management ponds",
-        "precision_at_5": 1.0,
+        "precision_at_5": 0.8,
         "passages": [
           {
             "doc_id": "DCM",
             "section_number": "8.3.3",
             "section_title": "Safety Criteria for SWM Ponds",
             "relevant": true,
-            "reason": "The passage states freeboard requirements for stormwater management ponds, which directly relates to the safety criteria specified in section 8.3.3 of the Drainage Criteria Manual.",
+            "reason": "The passage provides specific safety criteria for stormwater management ponds, including freeboard requirements and design standards for spillways, outfalls, embankments, and appurtenant structures.",
             "judge_failed": false
           },
           {
             "doc_id": "DCM",
-            "section_number": "8.3.3",
-            "section_title": "Safety Criteria for SWM Ponds",
+            "section_number": "8.3.1",
+            "section_title": "General",
             "relevant": true,
-            "reason": "The passage states a rule regarding the minimum diameter of pipes discharging into public storm drain systems, which is relevant to answering the question about safety criteria for stormwater management ponds.",
+            "reason": "The passage states that the performance and safety criteria apply to all ponds that provide management of peak rates of stormwater runoff regardless of type.",
             "judge_failed": false
           },
           {
             "doc_id": "DCM",
-            "section_number": "8.3.3",
-            "section_title": "Safety Criteria for SWM Ponds",
+            "section_number": "8.3.2",
+            "section_title": "Performance Criteria for SWM Ponds",
             "relevant": true,
-            "reason": "The passage states the safety criteria for stormwater management ponds, including earthen embankment design and hydraulic calculations, which are relevant to answering the question about drainage criteria manual section 8.3.3.",
+            "reason": "The passage states the maximum retention time for flood detention ponds and provides conditions under which it does not apply.",
             "judge_failed": false
           },
           {
             "doc_id": "DCM",
-            "section_number": "8.3.3",
-            "section_title": "Safety Criteria for SWM Ponds",
-            "relevant": true,
-            "reason": "The passage states a condition for SWM ponds that are considered dams, specifically regarding the vegetation and maintenance requirements.",
+            "section_number": "8.5.0",
+            "section_title": "DETENTION BASIN MAINTENANCE AND EQUIPMENT ACCESS REQUIREMENTS",
+            "relevant": false,
+            "reason": "The passage discusses maintenance and equipment access requirements for detention basins, which is a separate topic from stormwater management ponds' safety criteria.",
             "judge_failed": false
           },
           {
             "doc_id": "DCM",
-            "section_number": "8.3.3",
-            "section_title": "Safety Criteria for SWM Ponds",
+            "section_number": "8.4.0",
+            "section_title": "DETENTION POND STORAGE DETERMINATION",
             "relevant": true,
-            "reason": "The passage states the condition that defines what constitutes a dam and must be designed to safely pass the minimum design flood hydrograph expressed as a percentage of the probable maximum flood (PMF).",
+            "reason": "The passage states that a flow routing analysis using detailed hydrographs must be applied for all detention pond designs, which relates to the safety criteria for stormwater management ponds.",
             "judge_failed": false
           }
         ]
