@@ -122,6 +122,39 @@ def collect_site_context(state: AgentState) -> dict:
         + ["collect_site_context: completed"],
     }
 
+def detect_zoning_use_conflict(
+    reported_zoning: str,
+    proposed_land_use: str,
+    units: int | None = None,
+) -> dict:
+    """Flag obvious zoning/use combinations that require verification."""
+
+    zoning_upper = str(reported_zoning or "").upper()
+    use_lower = str(proposed_land_use or "").lower()
+
+    if zoning_upper.startswith("SF-3") and "multifamily" in use_lower:
+        unit_text = (
+            f" for the proposed {units}-unit development"
+            if units is not None
+            else ""
+        )
+
+        return {
+            "potential_conflict": True,
+            "conflict_detail": (
+                f"Reported zoning is {reported_zoning}, while the proposed "
+                f"land use is multifamily residential{unit_text}. "
+                "This combination presents a potential zoning/use conflict "
+                "that requires verification against the applicable Austin "
+                "Land Development Code requirements. No approval or "
+                "prohibition determination is made here."
+            ),
+        }
+
+    return {
+        "potential_conflict": False,
+        "conflict_detail": None,
+    }
 
 def zoning_review(state: AgentState) -> dict:
     """Retrieve zoning and site-plan regulations relevant to the proposal."""
@@ -134,6 +167,13 @@ def zoning_review(state: AgentState) -> dict:
 
     zoning = site_context.get("zoning", {})
     reported_zoning = zoning.get("zoning", "unknown zoning")
+    units = proposal.get("units")
+
+    conflict = detect_zoning_use_conflict(
+        reported_zoning,
+        proposed_land_use,
+        units,
+    )
 
     query = (
         f"Austin development requirements for {proposed_land_use}. "
@@ -156,9 +196,11 @@ def zoning_review(state: AgentState) -> dict:
     )
 
     review = {
-        "query": query,
-        "reported_zoning": reported_zoning,
-        "retrieved_passages": results,
+    "query": query,
+    "reported_zoning": reported_zoning,
+    "potential_conflict": conflict["potential_conflict"],
+    "conflict_detail": conflict["conflict_detail"],
+    "retrieved_passages": results,
     }
 
     reviews = dict(state.get("reviews", {}))
