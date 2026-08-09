@@ -66,3 +66,26 @@ def test_complete_workflow():
     assert result["execution_trace"][-1] == "build_report: completed"
     assert "apply_guardrails: completed" in result["execution_trace"]
     assert "synthesize_review: completed" in result["execution_trace"]
+
+
+def test_sf3_multifamily_flags_potential_zoning_conflict():
+    """SF-3 zoning plus multifamily proposal should require verification."""
+
+    result = review_graph.invoke(
+        {
+            "proposal": {
+                "address": "1714 Madison Avenue",
+                "proposed_land_use": "Multifamily residential",
+                "development_description": (
+                    "Proposed 40-unit multifamily residential development"
+                ),
+                "units": 40,
+            }
+        }
+    )
+
+    zoning_review = result["reviews"]["zoning_site_plan"]
+
+    assert zoning_review["potential_conflict"] is True
+    assert "SF-3-NP" in zoning_review["conflict_detail"]
+    assert "verification" in zoning_review["conflict_detail"].lower()

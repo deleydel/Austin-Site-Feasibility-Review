@@ -17,15 +17,27 @@ def build_synthesis_prompt(state: AgentState) -> str:
     }
 
     return (
-        "You are reviewing preliminary development feasibility in Austin, Texas.\n"
-        "Use only the supplied site data and regulatory evidence.\n"
-        "Do not invent requirements, approvals, utility capacity, or facts.\n"
-        "Treat nearby permits and cases as historical context only, not precedent.\n"
-        "Clearly distinguish confirmed facts from unknowns requiring verification.\n"
-        "Summarize major feasibility considerations, constraints, unknowns, "
-        "and recommended next steps.\n\n"
-        f"WORKFLOW DATA:\n{json.dumps(payload, default=str, indent=2)}"
-    )
+    "You are reviewing preliminary development feasibility in Austin, Texas.\n"
+    "Use ONLY the supplied site data and retrieved regulatory evidence.\n"
+    "Do not use outside knowledge or invent regulatory requirements.\n"
+    "Every regulatory claim must be directly supported by a supplied "
+    "retrieved passage.\n"
+    "Do not state numeric requirements such as minimum site area, density, "
+    "housing percentages, setbacks, height, parking, frontage, impervious "
+    "cover, or other thresholds unless that exact requirement appears in "
+    "the supplied evidence.\n"
+    "If the evidence does not establish a requirement, say that it requires "
+    "verification instead of guessing.\n"
+    "Do not infer that a use is allowed or prohibited solely from the zoning "
+    "district name.\n"
+    "If zoning_site_plan.potential_conflict is true, explicitly identify it "
+    "as a potential zoning/use conflict requiring verification.\n"
+    "Treat nearby permits and cases as historical context only, not precedent.\n"
+    "Distinguish confirmed site facts, evidence-supported regulatory "
+    "considerations, potential conflicts, and unknowns requiring verification.\n"
+    "Do not issue an approval, denial, or definitive compliance determination.\n\n"
+    f"WORKFLOW DATA:\n{json.dumps(payload, default=str, indent=2)}"
+)
 
 def generate_llm_synthesis(state: AgentState) -> str | None:
     """Generate an optional LLM synthesis when explicitly enabled."""
