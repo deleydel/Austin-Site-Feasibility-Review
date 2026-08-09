@@ -411,8 +411,8 @@ def historical_context_review(state: AgentState) -> dict:
         },
         "note": (
             "Nearby permits and cases are historical context only. "
-            "They must not be treated as evidence that the proposed "
-            "development will be approved."
+            "They are not approval precedent and do not indicate future "
+            "permitting outcomes for the proposed development."
         ),
     }
 

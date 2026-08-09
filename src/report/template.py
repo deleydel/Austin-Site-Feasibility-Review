@@ -58,10 +58,6 @@ def render_report_markdown(document: dict[str, Any]) -> str:
         f"- Development description: {project.get('development_description', 'n/a')}",
         f"- Units: {project.get('units', 'n/a')}",
         f"- Site area (acres): {project.get('site_area_acres', 'n/a')}",
-        f"- Reported zoning: {site.get('reported_zoning', 'n/a')} "
-        f"(status: {site.get('zoning_status', 'n/a')})",
-        f"- Floodplain intersection: {site.get('floodplain_intersection', 'n/a')}",
-        f"- Watershed: {site.get('watershed', 'n/a')}",
         "",
     ]
     if project_section.get("llm_synthesis"):
@@ -83,8 +79,24 @@ def render_report_markdown(document: dict[str, Any]) -> str:
             lines.append(f"  - Limitation: {lim}")
     lines.append("")
 
+    zoning = sections.get("zoning_and_land_use") or {}
+    lines += [f"## {zoning.get('heading', 'Zoning and Land-Use Context')}", ""]
+    if zoning.get("reported_zoning"):
+        lines.append(
+            f"- Preliminary reported zoning: {zoning.get('reported_zoning')} "
+            f"(status: {zoning.get('zoning_status', 'n/a')})"
+        )
+    else:
+        lines.append(
+            f"- No single zoning designation stated "
+            f"(lookup status: {zoning.get('zoning_status', 'n/a')})"
+        )
+    if zoning.get("zoning_note"):
+        lines.append(f"- {zoning['zoning_note']}")
+    lines.append("")
+    _append_review(lines, zoning.get("review") or {})
+
     for key in (
-        "zoning_and_land_use",
         "site_plan_considerations",
         "drainage_flood_environmental",
         "transportation_access",
@@ -93,28 +105,16 @@ def render_report_markdown(document: dict[str, Any]) -> str:
     ):
         section = sections.get(key) or {}
         lines += [f"## {section.get('heading', key)}", ""]
+        if key == "drainage_flood_environmental":
+            lines.append(
+                f"- Floodplain intersection: "
+                f"{section.get('floodplain_intersection', 'n/a')}"
+            )
+            lines.append(f"- Watershed: {section.get('watershed', 'n/a')}")
+            lines.append("")
         if section.get("note"):
             lines += [str(section["note"]), ""]
-        review = section.get("review") or {}
-        if review.get("note"):
-            lines += [str(review["note"]), ""]
-        if review.get("summary"):
-            lines += [f"Summary: {_format_summary(review['summary'])}", ""]
-        passages = review.get("passages") or []
-        if passages:
-            lines.append("Retrieved regulatory references:")
-            for p in passages[:8]:
-                lines.append(
-                    f"- {p.get('doc_id', '')} § {p.get('section_number', '')} "
-                    f"{p.get('section_title', '')}"
-                )
-            lines.append("")
-        elif key == "zoning_and_land_use":
-            lines += [
-                f"Reported zoning: {section.get('reported_zoning', 'n/a')} "
-                f"(status: {section.get('zoning_status', 'n/a')})",
-                "",
-            ]
+        _append_review(lines, section.get("review") or {})
 
     constraints = sections.get("potential_constraints") or {}
     lines += [f"## {constraints.get('heading', 'Potential Constraints')}", ""]
@@ -137,9 +137,14 @@ def render_report_markdown(document: dict[str, Any]) -> str:
         f"## {missing.get('heading', 'Missing Information and Required Verification')}",
         "",
     ]
-    for item in missing.get("missing_information") or []:
+    missing_items = missing.get("missing_information") or []
+    verification_items = missing.get("required_verification") or []
+    warning_items = missing.get("warnings") or []
+    if not missing_items and not verification_items and not warning_items:
+        lines.append("- No additional missing-information items were recorded.")
+    for item in missing_items:
         lines.append(f"- Missing: {item}")
-    for item in missing.get("required_verification") or []:
+    for item in verification_items:
         if isinstance(item, dict):
             lines.append(
                 f"- Verification required ({item.get('category', '')}): "
@@ -147,7 +152,7 @@ def render_report_markdown(document: dict[str, Any]) -> str:
             )
         else:
             lines.append(f"- Verification required: {item}")
-    for warning in missing.get("warnings") or []:
+    for warning in warning_items:
         lines.append(f"- Warning: {warning}")
     lines.append("")
 
@@ -169,3 +174,19 @@ def render_report_markdown(document: dict[str, Any]) -> str:
         "",
     ]
     return "\n".join(lines)
+
+
+def _append_review(lines: list[str], review: dict[str, Any]) -> None:
+    if review.get("note"):
+        lines.extend([str(review["note"]), ""])
+    if review.get("summary"):
+        lines.extend([f"Summary: {_format_summary(review['summary'])}", ""])
+    passages = review.get("passages") or []
+    if passages:
+        lines.append("Regulatory references for this section:")
+        for p in passages[:8]:
+            lines.append(
+                f"- {p.get('doc_id', '')} § {p.get('section_number', '')} "
+                f"{p.get('section_title', '')}"
+            )
+        lines.append("")

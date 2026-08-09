@@ -1,10 +1,9 @@
 """Does a cited section actually support the claim attached to it?
 
-Task 5's ``verify_citations`` establishes that a cited section *exists* in the
-regulatory index. A hallucinated claim carrying a real section number passes
-that check unchanged, so citation correctness is unmeasured. This module adds
-the missing half and is used by the Task 7 metrics; ``src/guardrails`` is not
-modified.
+Task 5's ``verify_citations`` now checks both section existence and a
+deterministic claim/context support score. This Task 7 module still performs
+the fuller judge-backed support assessment used for reported citation
+correctness metrics.
 
 Order of work is deliberate: the authoritative section text is resolved first,
 then cheap deterministic checks run, and the model is asked last and never gets

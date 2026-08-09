@@ -16,7 +16,12 @@ LLM_ENV = {
     "ENABLE_LLM_SYNTHESIS": "true",
     "OPENAI_API_KEY": "ollama",
     "OPENAI_BASE_URL": f"{config.JUDGE_BASE_URL}/v1",
-    "SYNTHESIS_MODEL": os.getenv("SYNTHESIS_MODEL", "llama3.2-eval32k"),
+    # Prefer an explicitly configured model; otherwise use the same local
+    # judge model name from config (llama3.2). The old default
+    # "llama3.2-eval32k" is only present on machines that created that alias.
+    "SYNTHESIS_MODEL": os.getenv(
+        "SYNTHESIS_MODEL", getattr(config, "JUDGE_MODEL", "llama3.2")
+    ),
 }
 
 
