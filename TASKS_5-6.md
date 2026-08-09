@@ -51,10 +51,11 @@ export ENABLE_LLM_SYNTHESIS=true
 
 | What | Result |
 | --- | --- |
-| Correctness tests (Tasks 5–6) | **13 / 13 pass** |
+| Correctness tests (Tasks 5–6) | **19 / 19 pass** |
 | Workflow integration | `synthesize_review → apply_guardrails → build_report → END` |
-| Live smoke (Madison Ave multifamily) | `status=validated`, **20** citations verified, **0** rejected |
-| Unsupported-claim control | over-strong claims revised / labeled for verification |
+| Scope hardening | Rejects non-Austin cities (e.g. Round Rock) and foreign addresses (e.g. Paris) |
+| Citation verification | Section must **exist and support** the claim/context (term-overlap check) |
+| Report quality | Section-scoped citations, no ambiguous single-zoning claim, stable historical disclaimer |
 | Export formats | DOCX, HTML, PDF, Markdown |
 
 ---
@@ -78,9 +79,15 @@ scrubs contact information, and classifies findings with cautious labels.
 **Key rules:**
 
 - Scope validation also runs early inside Task 4 `validate_input`.
+- Addresses are parsed for city/state/country; any non-Austin city or foreign
+  country is blocked (not only a hard-coded major-city list).
 - Zoning Open Data results remain preliminary (`verification required`).
-- Nearby permits / cases are labeled historical context, not approval precedent.
-- Regulatory conclusions without a verified citation are not treated as supported.
+  Ambiguous / multi-record zoning never populates a single `reported_zoning`.
+- Nearby permits / cases use a fixed historical-context note (not approval
+  precedent). Claim sanitization is negation-aware so that cautionary wording
+  is not corrupted.
+- Citations must be on the approved source list, resolve in the section index,
+  **and** pass a claim/context support check against section text.
 - Finding labels are restricted to:
   - `potential constraint`
   - `verification required`

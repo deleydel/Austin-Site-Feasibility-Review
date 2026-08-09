@@ -22,6 +22,9 @@ def _sample_final_report() -> dict:
         "site_summary": {
             "reported_zoning": "SF-3-NP",
             "zoning_status": "found",
+            "zoning_note": (
+                "Preliminary Open Data zoning only; not an official determination."
+            ),
             "floodplain_intersection": False,
             "watershed": "Waller Creek",
         },
@@ -65,7 +68,11 @@ def _sample_final_report() -> dict:
                     "site_plan_count": 1,
                     "plan_review_count": 0,
                 },
-                "note": "Historical context only.",
+                "note": (
+                    "Nearby permits and cases are historical context only. "
+                    "They are not approval precedent and do not indicate future "
+                    "permitting outcomes for the proposed development."
+                ),
             },
         },
         "findings": [
@@ -93,6 +100,7 @@ def _sample_final_report() -> dict:
                 "source_url": "https://example.com/ldc",
                 "supports_claim": True,
                 "verification_status": "found",
+                "review_category": "zoning_site_plan",
             }
         ],
         "warnings": ["Address does not explicitly mention Austin or Texas"],
@@ -100,7 +108,9 @@ def _sample_final_report() -> dict:
         "regulatory_evidence_count": 1,
         "unsupported_claims": [],
         "disclaimer": (
-            "This is a preliminary site-feasibility screening only."
+            "This is a preliminary site-feasibility screening only. "
+            "Nearby permits and cases are historical context only and are not "
+            "approval precedent."
         ),
     }
 
@@ -133,6 +143,11 @@ def test_format_citation_and_markdown():
     assert "Source Citations" in md
     assert "Preliminary-Review Disclaimer" in md
     assert "1714 Madison Avenue" in md
+    assert "approval precedent" in md
+    assert "Preliminary Open Data zoning" in md
+    # Zoning citations should not be repeated under site-plan when chapter is 25-2.
+    site_plan = document["sections"]["site_plan_considerations"]["review"]["passages"]
+    assert all(p.get("chapter") != "Chapter 25-2" for p in site_plan)
 
 
 def test_export_html_docx_pdf(tmp_path: Path):

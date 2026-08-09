@@ -48,7 +48,11 @@ def generate_llm_synthesis(state: AgentState) -> str | None:
         temperature=0,
     )
 
-    response = model.invoke(build_synthesis_prompt(state))
+    try:
+        response = model.invoke(build_synthesis_prompt(state))
+    except Exception:  # noqa: BLE001 - synthesis is optional
+        # Do not fail the whole review when the local/remote model is down.
+        return None
 
     return str(response.content).strip()
 
@@ -61,7 +65,17 @@ def synthesize_review(state: AgentState) -> dict:
     reviews = state.get("reviews", {})
     warnings = list(state.get("warnings", []))
     evidence = state.get("evidence", [])
+
+    llm_enabled = os.getenv("ENABLE_LLM_SYNTHESIS", "").lower() in {
+        "1",
+        "true",
+        "yes",
+    }
     llm_synthesis = generate_llm_synthesis(state)
+    if llm_enabled and llm_synthesis is None and os.getenv("OPENAI_API_KEY"):
+        warnings.append(
+            "LLM synthesis unavailable; continuing with structured findings only."
+        )
 
     zoning = site_context.get("zoning", {})
     floodplain = site_context.get("floodplain", {})
