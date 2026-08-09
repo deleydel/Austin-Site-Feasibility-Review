@@ -6,13 +6,14 @@ The system supports early screening only. It does not issue an official zoning d
 
 ## Repository Structure
 
-One package per workstream. Tasks 1–6 are **implemented**; Tasks 7–9 remain
-for evaluation, Streamlit frontend, and presentation deliverables.
+One package per workstream. Tasks 1–8 are **implemented**; Task 9 remains
+for the presentation deliverables.
 
 ```
 ├── README.md          # this file: project overview, architecture, workflow
 ├── TASKS_1-3.md       # Tasks 1–3: implementation details, decisions, measured results
 ├── TASKS_5-6.md       # Tasks 5–6: guardrails, citation validation, report export
+├── TASKS_8.md         # Task 8: Streamlit frontend
 ├── requirements.txt   # shared Python dependencies (add yours here, one file for all)
 │
 ├── src/                          # all implementation code
@@ -28,7 +29,7 @@ for evaluation, Streamlit frontend, and presentation deliverables.
 │   └── report/                   # Task 6: report schema, template, citation formatting,
 │                                 #   DOCX/HTML/PDF export
 │
-├── app/                          # Task 8 (planned): Streamlit frontend — input form, progress,
+├── app/                          # Task 8: Streamlit frontend — input form, progress,
 │                                 #   findings + citations display, report download
 │
 ├── tests/                        # pytest correctness tests, one file per workstream
@@ -39,6 +40,7 @@ for evaluation, Streamlit frontend, and presentation deliverables.
 │   ├── test_guardrails.py        #   Task 5 (implemented)
 │   ├── test_report.py            #   Task 6 (implemented)
 │   ├── test_evaluation.py        #   Task 7 harness tests (implemented, offline)
+│   ├── test_app.py               #   Task 8 (implemented)
 │   └── test_<yours>.py           #   tests for other tasks
 │
 ├── evaluation/                   # benchmarks & measured metrics (Task 7)

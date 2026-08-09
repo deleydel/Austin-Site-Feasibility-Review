@@ -109,6 +109,15 @@ def _write_docx(document: dict[str, Any], path: Path) -> None:
         f"Status: {document.get('status', '')}"
     )
 
+    def add_bold_runs(paragraph, text: str) -> None:
+        """Add text to a paragraph, rendering **bold** markdown as real bold runs."""
+
+        for i, part in enumerate(re.split(r"\*\*(.+?)\*\*", text)):
+            if not part:
+                continue
+            run = paragraph.add_run(part)
+            run.bold = bool(i % 2)
+
     md = render_report_markdown(document)
     for raw_line in md.splitlines():
         line = raw_line.rstrip()
@@ -116,14 +125,21 @@ def _write_docx(document: dict[str, Any], path: Path) -> None:
             continue
         if line.startswith("# "):
             continue  # already added as document title
+        if line.startswith("Generated:") or line.startswith("Status:"):
+            continue  # already added above
         if line.startswith("## "):
             doc.add_heading(line[3:].strip(), level=1)
         elif line.startswith("### "):
             doc.add_heading(line[4:].strip(), level=2)
         elif line.startswith("- "):
-            doc.add_paragraph(line[2:].strip(), style="List Bullet")
+            p = doc.add_paragraph(style="List Bullet")
+            add_bold_runs(p, line[2:].strip())
         elif re.match(r"^\d+\.\s", line):
-            doc.add_paragraph(re.sub(r"^\d+\.\s*", "", line), style="List Number")
+            p = doc.add_paragraph(style="List Number")
+            add_bold_runs(p, re.sub(r"^\d+\.\s*", "", line))
+        elif "**" in line:
+            p = doc.add_paragraph()
+            add_bold_runs(p, line)
         else:
             doc.add_paragraph(line)
 
@@ -138,7 +154,21 @@ def _write_pdf(document: dict[str, Any], path: Path) -> None:
 
     def write_line(text: str, height: float = 5) -> None:
         pdf.set_x(pdf.l_margin)
-        pdf.multi_cell(usable, height, _pdf_safe(text))
+        pdf.multi_cell(usable, height, _pdf_safe(text), align="L")
+
+    def write_bold_runs(text: str, height: float = 5, indent: float = 0) -> None:
+        """Render a line with **bold** markdown segments as real bold runs."""
+
+        pdf.set_x(pdf.l_margin + indent)
+        parts = re.split(r"\*\*(.+?)\*\*", _pdf_safe(text))
+        base_size = pdf.font_size_pt
+        for i, part in enumerate(parts):
+            if not part:
+                continue
+            pdf.set_font("Helvetica", "B" if i % 2 else "", base_size)
+            pdf.write(height, part)
+        pdf.set_font("Helvetica", size=base_size)
+        pdf.ln(height)
 
     pdf.set_font("Helvetica", "B", 16)
     title = str(
@@ -159,6 +189,8 @@ def _write_pdf(document: dict[str, Any], path: Path) -> None:
         line = raw_line.strip()
         if not line or line.startswith("# "):
             continue
+        if line.startswith("Generated:") or line.startswith("Status:"):
+            continue
         if line.startswith("## "):
             pdf.ln(2)
             pdf.set_font("Helvetica", "B", 13)
@@ -168,6 +200,9 @@ def _write_pdf(document: dict[str, Any], path: Path) -> None:
             pdf.set_font("Helvetica", "B", 11)
             write_line(line[4:].strip(), 6)
             pdf.set_font("Helvetica", size=11)
+        elif "**" in line:
+            indent = 4 if line.startswith("- ") else 0
+            write_bold_runs(line, 5, indent=indent)
         else:
             write_line(line, 5)
 

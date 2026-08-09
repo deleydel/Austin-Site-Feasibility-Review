@@ -15,3 +15,4 @@ requests
 pytest
 langgraph>=1.2
 langchain-openai>=1.4
+streamlit>=1.38
