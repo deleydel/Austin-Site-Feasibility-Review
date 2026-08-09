@@ -24,19 +24,19 @@
       "exports": {
         "md": {
           "ok": true,
-          "bytes": 11820
+          "bytes": 12065
         },
         "html": {
           "ok": true,
-          "bytes": 14080
+          "bytes": 14308
         },
         "docx": {
           "ok": true,
-          "bytes": 40001
+          "bytes": 40212
         },
         "pdf": {
           "ok": true,
-          "bytes": 8229
+          "bytes": 8344
         }
       },
       "finding_labels": {
@@ -51,10 +51,10 @@
       "judged_conflicts": [
         {
           "sections": [
-            "project_and_site",
-            "zoning_and_land_use"
+            "zoning_and_land_use",
+            "project_and_site"
           ],
-          "detail": "The project and site report states the proposed development is in SF-3-NP zoning district, while the zoning and land-use report does not mention any specific zoning requirements."
+          "detail": "The property is zoned as SF-3-NP, which requires a minimum site area of 1 acre and at least 40% of the dwelling units to be single-family residential."
         }
       ],
       "judge_assessed": true,
@@ -72,19 +72,19 @@
       "exports": {
         "md": {
           "ok": true,
-          "bytes": 11830
+          "bytes": 11895
         },
         "html": {
           "ok": true,
-          "bytes": 13939
+          "bytes": 13867
         },
         "docx": {
           "ok": true,
-          "bytes": 40004
+          "bytes": 40179
         },
         "pdf": {
           "ok": true,
-          "bytes": 8215
+          "bytes": 7995
         }
       },
       "finding_labels": {
@@ -103,7 +103,7 @@
             "project_and_site",
             "zoning_and_land_use"
           ],
-          "detail": "Zoning restrictions may limit the project's density and design (project_and_site) vs. No specific zoning restrictions mentioned in Zoning and Land-Use Context."
+          "detail": "The proposed development is zoned as SF-3-NP, which requires compliance with site development regulations for a family residence (SF-3) district."
         }
       ],
       "judge_assessed": true,
@@ -123,19 +123,19 @@
       "exports": {
         "md": {
           "ok": true,
-          "bytes": 10375
+          "bytes": 11080
         },
         "html": {
           "ok": true,
-          "bytes": 12410
+          "bytes": 13067
         },
         "docx": {
           "ok": true,
-          "bytes": 39891
+          "bytes": 40121
         },
         "pdf": {
           "ok": true,
-          "bytes": 7840
+          "bytes": 7817
         }
       },
       "finding_labels": {
@@ -151,9 +151,9 @@
         {
           "sections": [
             "zoning_and_land_use",
-            "project_and_site"
+            "drainage_flood_environmental"
           ],
-          "detail": "Zoning status reported as 'multiple_records' in zoning_and_land_use, but no specific information is provided."
+          "detail": "Floodplain intersection reported as false in zoning_and_land_use, but no floodplain intersection identified in drainage_flood_environmental."
         }
       ],
       "judge_assessed": true,
@@ -173,19 +173,19 @@
       "exports": {
         "md": {
           "ok": true,
-          "bytes": 12719
+          "bytes": 11830
         },
         "html": {
           "ok": true,
-          "bytes": 14975
+          "bytes": 14096
         },
         "docx": {
           "ok": true,
-          "bytes": 39973
+          "bytes": 40075
         },
         "pdf": {
           "ok": true,
-          "bytes": 8315
+          "bytes": 8166
         }
       },
       "finding_labels": {
@@ -215,19 +215,19 @@
       "exports": {
         "md": {
           "ok": true,
-          "bytes": 11565
+          "bytes": 11163
         },
         "html": {
           "ok": true,
-          "bytes": 13816
+          "bytes": 13123
         },
         "docx": {
           "ok": true,
-          "bytes": 40081
+          "bytes": 40003
         },
         "pdf": {
           "ok": true,
-          "bytes": 8237
+          "bytes": 7860
         }
       },
       "finding_labels": {
@@ -245,7 +245,7 @@
             "project_and_site",
             "zoning_and_land_use"
           ],
-          "detail": "The project is reported to not intersect with the City of Austin Fully Developed 100-Year Floodplain, but this information is not present in the zoning and land-use section."
+          "detail": "Water and Wastewater Capacity is reported as unknown in both sections."
         }
       ],
       "judge_assessed": true,

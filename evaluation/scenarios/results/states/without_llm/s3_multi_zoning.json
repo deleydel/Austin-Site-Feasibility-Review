@@ -10,7 +10,7 @@
   "missing_information": [],
   "warnings": [
     "Zoning could not be confirmed exactly and requires verification.",
-    "2 citation(s) failed verification and were excluded from supported regulatory citations."
+    "1 citation(s) failed verification and were excluded from supported regulatory citations."
   ],
   "reviews": {
     "zoning_site_plan": {
@@ -56,25 +56,6 @@
           "n_chunks": 2
         },
         {
-          "chunk_id": "LDC:300:3",
-          "text": "| Open Space | Provides open space at least 10% above the requirements of Section 2.3.1.A. (Minimum Requirements). Alternatively, within the urban roadway boundary established in Figure 2 of Subchapter E of Chapter 25-2 (Design Standards and Mixed Use), provide for proportional enhancements to existing or planned trails, parks, or other recreational common open space in consultation with the Director of the Parks and Recreation Department. |\n| Great Streets | Complies with City's Great Streets Program, or a successor program. Applicable only to commercial, retail, or mixed-use development that is not subject to the requirements of Chapter 25-2, Subchapter E (Design Standards and Mixed Use). |\n| Community Amenities | Provides community or public amenities, which may include spaces for community meetings, community gardens or urban farms, day care facilities, non-profit organizations, or other uses that fulfill an identified community need. |\n|  | Provides publicly accessible multi-use trail and greenway along creek or waterway. |\n| Transportation | Provides bicycle facilities that connect to existing or planned bicycle routes or provides other multi-modal transportation features not required by code. |\n| Building Design | Exceeds the minimum points required by the Building Design Options of Section 3.3.2. of Chapter 25-2, Subchapter E (Design Standards and Mixed Use). |\n| Parking Structure Frontage | In a commercial or mixed-use development, at least 75 percent of the building frontage of all parking structures is designed for pedestrian-oriented uses as defined in Section 25-2-691(C) (Waterfront Overlay District Uses) in ground floor spaces. |\n| Affordable Housing | Provides for affordable housing or participation in programs to achieve affordable housing. |\n| Historic Preservation | Preserves historic structures, landmarks, or other features to a degree exceeding applicable legal requirements. |",
-          "score_rrf": 0.03981,
-          "in_dense_top": true,
-          "in_bm25_top": true,
-          "doc_id": "LDC",
-          "source_name": "Austin Land Development Code (Title 25)",
-          "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-          "chapter": "Chapter 25-2",
-          "chapter_title": "ZONING",
-          "article": "ARTICLE 2. SPECIAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart B. Planned Unit Development Standards",
-          "section_number": "2.4",
-          "section_title": "TIER TWO REQUIREMENTS",
-          "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. SPECIAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart B. Planned Unit Development Standards > \u00a7 2.4 TIER TWO REQUIREMENTS",
-          "is_preamble": false,
-          "chunk_index": 3,
-          "n_chunks": 5
-        },
-        {
           "chunk_id": "LDC:481:1",
           "text": "(g)\tif at one location more than two hours, a written agreement from a business within 150 feet of the location to allow employees of the mobile retail establishment to use flushable restrooms or other facilities approved by the health authority during hours of operation;\n(h)\ta fee, as established by separate ordinance; and\n(i)\tany other information reasonably required by the director of the Planning and Development Review Department to enforce this section.\n(3)\tA site plan, site plan exemption, or temporary use permit is not required for the operation of a mobile food establishment.\n(E)\tItems and Services to be Sold. An operator may only sell non-food retail items or services. Mobile retail establishments may only sell items or services permitted under a general retail sales (convenience) use, pet services use, and personal services use. All sales items and supplies must be stored within the mobile unit.\n(F)\tZoning. A mobile retail establishment shall comply with the regulations in this section.\n(1)\tA mobile retail establishment is permitted in all commercial and industrial zoning districts except in a neighborhood office (NO), limited office (LO), or general office (GO) zoning district.\n(2)\tUnless located in a central business district (CBD) zoning district, a mobile retail establishment may not be located less than fifty feet from a lot with a building that contains both a residential and commercial use.\n(3)\tA mobile retail establishment may not be less than fifty feet from property:\n(a)\tin an SF-5 or more restrictive district; or\n(b)\ton which a residential use permitted in an SF-5 or more restrictive district is located.\n(4)\tA person may not operate a mobile retail establishment between the hours of 11:00 p.m. and 6:00 a.m.",
           "score_rrf": 0.03912,
@@ -111,6 +92,25 @@
           "is_preamble": false,
           "chunk_index": 0,
           "n_chunks": 1
+        },
+        {
+          "chunk_id": "LDC:350:0",
+          "text": "(A)\tThis section applies in a central business (CBD) district.\n(B)\tNotwithstanding any other provision of this chapter, the requirements of Article 10 (Compatibility Standards) do not apply.\n(C)\tThis subsection applies to a convention center use.\n(1)\tcouncil approval is required for a site plan for a convention center use. Approval of a site plan:\n(a)\testablishes the site development regulations; and\n(b)\twaives regulations that are inconsistent with the site plan, if any.\n(2)\tA public hearing is required for each site plan considered under this subsection.\n(3)\tThe director shall give notice of a public hearing required by this subsection in accordance with Section 25-1-132(C) (Notice of Public Hearing).\n(D)\tCommercial off-street parking is a permitted use when it constitutes less than 50 percent of the parking spaces in a parking structure.",
+          "score_rrf": 0.03888,
+          "in_dense_top": true,
+          "in_bm25_top": true,
+          "doc_id": "LDC",
+          "source_name": "Austin Land Development Code (Title 25)",
+          "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
+          "chapter": "Chapter 25-2",
+          "chapter_title": "ZONING",
+          "article": "ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements",
+          "section_number": "25-2-581",
+          "section_title": "CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
+          "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements > \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
+          "is_preamble": false,
+          "chunk_index": 0,
+          "n_chunks": 1
         }
       ]
     },
@@ -138,7 +138,7 @@
         {
           "chunk_id": "LDC:915:0",
           "text": "(A)\tThis section establishes requirements that apply in the central business area.\n(B)\tIn this section, central business area means the area bounded by Interstate Highway 35, Riverside Drive, Barton Springs Road, Lamar Boulevard, and 15th Street.\n(C)\tA development application with a proposed building or parking area that encroaches on the 100-year floodplain may be approved if:\n(1)\tthe floor slab of a proposed building is at least two feet above the 100-year floodplain;\n(2)\tnormal access to that building is by direct connection with an area above the regulatory flood datum, as defined in Chapter 25-12, Article 3 (Flood Hazard Areas);\n(3)\tdevelopment associated with construction of the building compensates for any floodplain volume displaced by that construction; and\n(4)\tthe applicant demonstrates by means of a study certified by a Texas registered professional engineer that the construction of the building and development activities associated with that building improves the drainage system by exceeding the minimum requirements of Sections 25-7-3 (Obstruction of Waterways Prohibited), 25-7-4 (Duty to Maintain Unobstructed Waterways), and 25-7-5 (Standing Water Declared a Nuisance).\n(D)\tThe director may waive a requirement of Subsection (C) if:\n(1)\tthe applicant submits:\n(a)\ta written request identifying the requirement to be waived; and\n(b)\ta justification for the waiver prepared by a Texas registered engineer certifying that waiving the requirement will not result in additional adverse flooding of other property; and\n(2)\tthe director determines that:\n(a)\tthe waiver is required by unique site conditions;\n(b)\tthe waiver is a minimum departure from the requirements of Subsection (C); and\n(c)\twaiving the requirement will not result in additional adverse flooding of other property.",
-          "score_rrf": 0.04574,
+          "score_rrf": 0.13491,
           "in_dense_top": true,
           "in_bm25_top": true,
           "doc_id": "LDC",
@@ -155,28 +155,9 @@
           "n_chunks": 2
         },
         {
-          "chunk_id": "LDC:913:0",
-          "text": "(A)\tExcept as provided in Section 25-7-96 (Exceptions in the 25-Year Floodplain), a development application may not be approved if a proposed building or parking area encroaches on the 25-year floodplain.\n(B)\tExcept as provided in Sections 25-7-93 (General Exceptions), 25-7-94 (Exceptions in Central Business Area), and 25-7-95 (Exceptions for Parking Areas), a development application may not be approved if a proposed building or parking area encroaches on the 100-year flood plain.\n(C)\tThe director may grant a variance to Subsection (A) or (B) if the director determines that:\n(1)\tthe finished floor elevation of a proposed building is at least two feet above the 100-year floodplain;\n(2)\tnormal access to a proposed building is by direct connection with an area above the regulatory flood datum, as prescribed by Chapter 25-12, Article 1 (Building Code);\n(3)\ta proposed building complies with the requirements in Chapter 25-12, Article 3 (Flood Hazard Areas);\n(4)\tthe development compensates for the floodplain volume displaced by the development;\n(5)\tthe development improves the drainage system by exceeding the requirements of Section 25-7-61 (Criteria for Approval of Development Applications), as demonstrated by a report provided by the applicant and certified by an engineer registered in Texas;\n(6)\tthe variance is required by unique site conditions; and\n(7)\tdevelopment permitted by the variance does not result in additional adverse flooding impact on other property.\n(D)\tThe director shall prepare written findings to support the grant or denial of a variance request under this section.",
-          "score_rrf": 0.04265,
-          "in_dense_top": true,
-          "in_bm25_top": true,
-          "doc_id": "LDC",
-          "source_name": "Austin Land Development Code (Title 25)",
-          "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-          "chapter": "Chapter 25-7",
-          "chapter_title": "DRAINAGE",
-          "article": "ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION",
-          "section_number": "25-7-92",
-          "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-          "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-          "is_preamble": false,
-          "chunk_index": 0,
-          "n_chunks": 1
-        },
-        {
           "chunk_id": "LDC:910:1",
           "text": "(a)\tfinished floor elevations;\n(b)\tdriveway and sidewalk locations;\n(c)\tbuilding footprint; and\n(d)\tlocation of all stormwater discharge.\n(2)\tThe requirements of Paragraph (C)(1) do not apply to development of a single-family residential use on a platted lot if impervious cover will not exceed 45%, as calculated based on gross site area.\n(3)\tFor development of a single-family residential subdivision:\n(a)\tthe construction plans for subdivision infrastructure must include a concept plan identifying building footprints and the location of sidewalks and driveways for each lot within the subdivision; and\n(b)\ta grading plan for each lot, consistent with the subdivision construction plans, if applicable, must be provided at the time of development and building permit review.\n(D)\tThe requirements of this section do not:\n(1)\taffect implementation of the Regional Stormwater Management Program, as prescribed by the Drainage Criteria Manual; or\n(2)\tprohibit the director from waiving detention requirements, as prescribed in the Drainage Criteria Manual, if an applicant provides offsite improvements that result in an overall improvement of flooding conditions within the affected watershed.\nNote(s)\u2014Part 3 of Ordinance No. 20141214-096 states, \"The City Manager is directed to adopt administrative rules that are determined to be necessary for implementation of this ordinance. The requirements of this ordinance control in the event of a conflict with the Drainage Criteria Manual, including but not limited to \u00a7 1.2.2(G), the Environmental Criteria Manual, or other administrative rules.\"\nPart 6 of Ordinance No. 20171214-096 states, \"This ordinance expires on December 14, 2019.\"",
-          "score_rrf": 0.04227,
+          "score_rrf": 0.1331,
           "in_dense_top": true,
           "in_bm25_top": true,
           "doc_id": "LDC",
@@ -193,9 +174,9 @@
           "n_chunks": 2
         },
         {
-          "chunk_id": "LDC:914:0",
-          "text": "(A)\tA development application with a proposed building or parking area that encroaches on the 100-year floodplain may be approved if the encroachment is:\n(1)\ta parking area that is smaller than 5,000 square feet or an unoccupied structure that has an area of less than 1,000 square feet, and the director determines that the proposed development:\n(a)\twill not have an adverse effect on the 100-year floodplain or surrounding properties; and\n(b)\totherwise complies with the requirements of this title;\n(2)\ta new building for residential use that replaces an existing legally constructed building for residential use on the same property and that does not increase the number of legal dwelling units on the property;\n(3)\ta new building for commercial use that replaces an existing legally constructed building for commercial use on the same property; and\n(a)\tdoes not increase the building square footage on the property;\n(b)\tdoes not include the following uses as they are defined in the International Building Code:\n(i)\tE (Educational);\n(ii)\tF (Factory);\n(iii)\tH (High Hazard); or\n(iv)\tI (Institutional); and\n(c)\tdoes not increase the flood level of parking spaces within the 100-year floodplain unless additional parking is required by another section of this title;\n(4)\ta building authorized by a waterway development permit issued under Chapter 9-10 before September 25, 1983; or\n(5)\ta building in the 100-year floodplain of:\n(a)\tLady Bird Lake;\n(b)\tthe Colorado River downstream from Longhorn Dam;\n(c)\tLake Austin; or\n(d)\tLake Travis.\n(B)\tTo be approved under this section, development must:",
-          "score_rrf": 0.03997,
+          "chunk_id": "LDC:913:0",
+          "text": "(A)\tExcept as provided in Section 25-7-96 (Exceptions in the 25-Year Floodplain), a development application may not be approved if a proposed building or parking area encroaches on the 25-year floodplain.\n(B)\tExcept as provided in Sections 25-7-93 (General Exceptions), 25-7-94 (Exceptions in Central Business Area), and 25-7-95 (Exceptions for Parking Areas), a development application may not be approved if a proposed building or parking area encroaches on the 100-year flood plain.\n(C)\tThe director may grant a variance to Subsection (A) or (B) if the director determines that:\n(1)\tthe finished floor elevation of a proposed building is at least two feet above the 100-year floodplain;\n(2)\tnormal access to a proposed building is by direct connection with an area above the regulatory flood datum, as prescribed by Chapter 25-12, Article 1 (Building Code);\n(3)\ta proposed building complies with the requirements in Chapter 25-12, Article 3 (Flood Hazard Areas);\n(4)\tthe development compensates for the floodplain volume displaced by the development;\n(5)\tthe development improves the drainage system by exceeding the requirements of Section 25-7-61 (Criteria for Approval of Development Applications), as demonstrated by a report provided by the applicant and certified by an engineer registered in Texas;\n(6)\tthe variance is required by unique site conditions; and\n(7)\tdevelopment permitted by the variance does not result in additional adverse flooding impact on other property.\n(D)\tThe director shall prepare written findings to support the grant or denial of a variance request under this section.",
+          "score_rrf": 0.12528,
           "in_dense_top": true,
           "in_bm25_top": true,
           "doc_id": "LDC",
@@ -204,17 +185,17 @@
           "chapter": "Chapter 25-7",
           "chapter_title": "DRAINAGE",
           "article": "ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION",
-          "section_number": "25-7-93",
-          "section_title": "GENERAL EXCEPTIONS",
-          "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-93 GENERAL EXCEPTIONS",
+          "section_number": "25-7-92",
+          "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
+          "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED",
           "is_preamble": false,
           "chunk_index": 0,
-          "n_chunks": 2
+          "n_chunks": 1
         },
         {
           "chunk_id": "LDC:905:0",
           "text": "(A)\tA development application may not be approved unless:\n(1)\tthe proposed development application demonstrates sufficient capacity for the design flood, as determined under the Drainage Criteria Manual;\n(2)\teach proposed improvement is sufficiently strong to resist:\n(a)\texternal pressure caused by earth or building; and\n(b)\tinternal pressure or abrasion caused by water or debris;\n(3)\tthe proposed grades will not permit water to gather in a pool that may become stagnant, excluding variable pools in creek beds as a result of natural channel design;\n(4)\ttemporary and permanent measures to control erosion are sufficient to minimize siltation of the waterway, as determined under the Environmental Criteria Manual; and\n(5)\tthe proposed development:\n(a)\twill not result in additional adverse flooding impact on other property;\n(b)\tto the greatest extent feasible, preserves the natural and traditional character of the land and the waterway located within the 100-year floodplain;\n(c)\texcept as provided by Subsection (B), includes on-site control of the two-year peak flow, as determined under the Drainage Criteria Manual and the Environmental Criteria Manual;\n(d)\twill not result in additional erosion impacts on other property; and\n(e)\tlocates all proposed improvements outside the erosion hazard zone, unless protective works are provided as prescribed in the Drainage Criteria Manual.\n(B)\tA proposed development may provide off-site control of the two-year peak flow, if the off-site control will not cause:\n(1)\tan adverse water quality impact from increased in-stream peak flow; or\n(2)\tstreambank erosion.",
-          "score_rrf": 0.03932,
+          "score_rrf": 0.1176,
           "in_dense_top": true,
           "in_bm25_top": true,
           "doc_id": "LDC",
@@ -229,6 +210,25 @@
           "is_preamble": false,
           "chunk_index": 0,
           "n_chunks": 1
+        },
+        {
+          "chunk_id": "DCM:1171:0",
+          "text": "A.\tCity of Austin.\n1.\tFor purposes of this Drainage Criteria Manual, a drainage area of 64 acres or greater is required within a contributing watershed to create a \"floodplain\". For areas of flow with less than 64 acres of contributing area, no floodplain shall be defined unless the City or FEMA currently indicates the area as a floodplain. In all cases where a floodplain delineation is required, its determination shall be based on the projected full development of all properties contributing to the point of consideration. It is the responsibility of the design engineer to determine, based on the most accurate information available, what the floodplain delineation is.\n2.\tThe design engineer may elect to utilize a floodplain delineation previously approved by the Director of the Watershed Protection Department, assuming the same is still applicable under present requirements and criteria. In so doing the engineer does not remove himself from the responsibility for the delineation's accuracy.\nB.\tFederal Emergency Management Agency.\n1.\tThe Federal Emergency Management Agency (FEMA) maintains Flood Insurance Rate Maps (FIRM's) that depict floodplain boundaries. The floodplain boundaries depicted on FIRM's are based on existing conditions of development in the contributing area at the time the floodplain study that delineated the floodplain was completed.\n2.\tFEMA reviews and approves or denies all revisions or amendments to FIRM's. FEMA revises or amends FIRM's by approval of a Letter of Map Change (LOMC). FEMA establishes the process and fees necessary for review of an application for a LOMC.",
+          "score_rrf": 0.11507,
+          "in_dense_top": true,
+          "in_bm25_top": true,
+          "doc_id": "DCM",
+          "source_name": "Austin Drainage Criteria Manual",
+          "source_url": "https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
+          "chapter": "Section 1",
+          "chapter_title": "DRAINAGE POLICY",
+          "article": "",
+          "section_number": "1.2.6",
+          "section_title": "Floodplain Delineations",
+          "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.6 Floodplain Delineations",
+          "is_preamble": false,
+          "chunk_index": 0,
+          "n_chunks": 4
         }
       ]
     },
@@ -236,47 +236,28 @@
       "query": "Austin transportation and site access requirements for Commercial retail. Development description: Proposed single-story retail building with associated parking.. Approximate units: unknown. Identify applicable transportation, driveway, access, parking, circulation, and traffic requirements.",
       "retrieved_passages": [
         {
-          "chunk_id": "LDC:848:0",
-          "text": "(A)\tExcept as provided in Section 25-6-473 (Modification of Parking Requirement), a parking facility for a use must comply with the requirements in Section 25-6-471 (Off-Street Parking) and Appendix A (Tables of Off-Street Loading Requirements and Former Off-Street Parking Requirements), as applicable.\n(B)\tA parking facility must:\n(1)\tbe maintained for the duration of the use or existence of the building requiring the facility; and\n(2)\tbe used exclusively for the temporary parking of passenger automobiles, motor vehicles, or light trucks not exceeding one ton in capacity.\n(C)\tA parking facility requirement is based on gross floor area of a building or use served by the facility. For the purpose of calculating parking requirements, gross floor area does not include enclosed or covered areas used for off-street parking or loading, bicycle storage rooms or shower facilities.\n(D)\tThe parking facility requirement for a general retail service use in a shopping center is based on the gross floor area of the entire shopping center, including portions not used for a general retail use. The parking requirement for a use in a shopping center other than a general retail service use is based on the rate for the use.\n(E)\tExcept in the central business district (CBD) or a downtown mixed use (DMU) zoning district, an outdoor seating area for a restaurant (general) or a cocktail lounge use must be included with the gross floor area to determine the parking requirement.\n(F)\tIf a calculation under Appendix A (Tables of Off-Street Loading Requirements and Former Off-Street Parking Requirements) results in a fractional requirement, a fraction of 0.5 or greater is rounded to the next larger whole number.",
-          "score_rrf": 0.04456,
-          "in_dense_top": true,
-          "in_bm25_top": true,
-          "doc_id": "LDC",
-          "source_name": "Austin Land Development Code (Title 25)",
-          "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-          "chapter": "Chapter 25-6",
-          "chapter_title": "TRANSPORTATION",
-          "article": "ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations",
-          "section_number": "25-6-472",
-          "section_title": "PARKING FACILITY STANDARDS",
-          "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS",
-          "is_preamble": false,
-          "chunk_index": 0,
-          "n_chunks": 2
-        },
-        {
-          "chunk_id": "TCM:1323:1",
-          "text": "| TDM ID | Measure Description | Implementation Criteria | Pre-Occupancy Requirements | Post-Occupancy Requirements |\n| P-1 | Reduced Parking Supply | \u2022 Provide fewer parking spaces than the required Standard Parking Supply Ratios on site. | Site inspection to confirm on-site parking supply | Submission of photos that confirm that the parking supply remains unchanged. |\n| P-2 | Unbundled Parking | \u2022 All resident/tenant parking is offered as an optional amenity that is priced separately from the cost of associated building leases or housing-unit purchases; and | \u2022 Copies of all informational materials about parking cash out and current rates for all residents/tenant-employees at the site; and | \u2022 Copies of all informational materials about parking cash out and current rates for all residents/tenant-employees at the site; and |\n|  |  | \u2022 Supporting documentation required to be included for the proposed rate/credit for debt service on parking spaces and/or IRS limits on pre-tax parking purchases; and | \u2022 Copy of residential/office lease and parking contract. | \u2022 Copy of residential/office lease and parking contract. |\n|  |  | \u2022 Supporting documentation required to be included for the rates as compared to the area parking rates for visitors. |  |  |\n| P-3 | Daily Tenant Parking Rates | \u2022 All criteria for P-2 are met; and | Copies of all informational materials about parking rates for all tenant parking options. | Copies of all informational materials about parking rates for all tenant parking options. |\n| P-3 | Daily Tenant Parking Rates | \u2022 All unbundled parking is priced at an hourly or daily rate, no monthly or annual permits are offered; and | Copies of all informational materials about parking rates for all tenant parking options. | Copies of all informational materials about parking rates for all tenant parking options. |",
-          "score_rrf": 0.04425,
+          "chunk_id": "TCM:1261:0",
+          "text": "Adequate storage space shall be provided for queueing on-site in order to prevent queues spilling into the right-of-way. Queuing area requirements for drive-through facilities are as follows:\nA.\tQueuing spaces or queuing areas shall be designed in accordance with the following criteria for uses and as required by LDC.\nB.\tQueue spaces or queuing areas may not interfere with parking spaces, parking aisles, loading areas, internal circulation, or driveway access.\nC.\tEach queue space shall consist of a rectangular area not less than 10 ft. wide and 25 ft. long with a vertical clearance as specified in the Building Criteria Manual. Queue spaces are not interchangeable with parking spaces.\nD.\tA 12 ft. by-pass lane may be required adjacent to queue lines to allow vehicles an opportunity to circumvent the drive-through activity and exit the site.\nE.\tQueue areas and drive-through facilities shall be clearly identified with the appropriate signing and marking.\nF.\tQueuing areas for service station islands and fuel dispensing pumps shall be designed according to Figure 9-10. The minimum queuing requirement dimension is measured from the ends of the service island or protective bollards. By-pass lane(s) are required to provide on-site circulation. Parallel adjacent islands with three or more pumps on each island shall maintain a circulation aisle between queuing spaces or other obstructions. Specific requirements may vary based upon individual site design. Consult with the City Transportation Engineer or applicable Director for specific requirements prior to site design.\n[caption] Figure 9-10 \u2014 Service Station Queuing & Internal Circulation Layout\nG.\tRefer to Figure 9-11 for calculation of queue length required for a drive through facility.\nH.\tRefer to Figure 9-12 for layout of queuing area and internal circulation routes on a site providing a drive through facility.",
+          "score_rrf": 0.12877,
           "in_dense_top": true,
           "in_bm25_top": true,
           "doc_id": "TCM",
           "source_name": "Austin Transportation Criteria Manual",
           "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-          "chapter": "Section 10",
-          "chapter_title": "TRAFFIC IMPACT ANALYSIS",
+          "chapter": "Section 9",
+          "chapter_title": "PARKING AND LOADING",
           "article": "",
-          "section_number": "10.3.5.2",
-          "section_title": "Parking (Vehicle) Measures",
-          "breadcrumb": "Austin Transportation Criteria Manual > Section 10 TRAFFIC IMPACT ANALYSIS > 10.3.5.2 Parking (Vehicle) Measures",
+          "section_number": "9.3.4.1",
+          "section_title": "Queuing",
+          "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.4.1 Queuing",
           "is_preamble": false,
-          "chunk_index": 1,
-          "n_chunks": 3
+          "chunk_index": 0,
+          "n_chunks": 2
         },
         {
           "chunk_id": "TCM:1267:1",
           "text": "D.\tManeuvering areas for loading facilities shall not conflict with parking spaces or with the maneuvering areas for parking stalls. Public right-of-way shall not be used for maneuvering. All maneuvering shall be contained on-site.\nE.\tRear-loading freight docks are preferred to side-loading docks. For such rear-loading docks, truck circulation patterns and dock positions should be designed for left-side, back-in maneuvers to allow for better driver visibility. The apron space should be adequate to allow the truck to back and pull-out in one maneuver. Where semitractor/trailer combinations are expected, the critical maneuvering and circulation areas shall be designed to accommodate trucks with a WB-62 design, except for the Downtown Austin Area as defined in Figure A-2, where a WB-40 truck design may be used. SU-40 truck design may be used for design via an administrative variance if loading is restricted to this type of vehicle or smaller.\nF.\tLand uses where fuel is dispensed must provide an adequate maneuvering and unloading area for fuel delivery vehicles. Such facilities or areas shall be designed to enable trucks to deliver fuel without interfering with on-site parking, queuing areas, internal circulation, or driveway access.\nG.\tFor sites meeting the requirements for off-street loading in LDC with greater than 100,000 square feet of gross floor area, one of the following shall apply:\n1.\tAn analysis shall be performed by an engineer licensed in the State of Texas as part of a Transportation Impact Analysis, per Section 10, if required per LDC, to determine the number of required loading spaces based on arrival schedules for deliveries to the site. The amount of loading spaces provided shall ensure that adequate spaces exist for the peak loading times.\n2.\tIf a Transportation Impact Analysis is not required, then loading spaces shall be provided per the LDC.\nH.\tLoading spaces may be shared by multiple land uses or a single building as a common loading space if the City Transportation Engineer or applicable director determines that the loading space can adequately serve each use.",
-          "score_rrf": 0.0435,
+          "score_rrf": 0.12856,
           "in_dense_top": true,
           "in_bm25_top": true,
           "doc_id": "TCM",
@@ -295,7 +276,7 @@
         {
           "chunk_id": "TCM:1251:1",
           "text": "F.\tEach parking stall shall be independently accessible and shall have a vertical clearance as specified in the Building Criteria Manual.\nG.\tTandem parking stalls (one car behind another, so that one car must be moved before the other can be accessed) are allowed for residential uses and for commercial uses that operate exclusively as a valet service following requirements of Chapter 13-5 of the City Code. Tandem parking is also allowed for additional parking provided in excess of the required parking, after reductions applied, for employees only working the same shift and shall be signed and marked as employee parking only. Both stalls in tandem must be standard size per Table 9-2; no compact or accessible tandem stalls are permitted. When tandem parking stalls are provided for residential uses, the following must be included as a note on the site plan:\n1.\tThe stalls must be reserved and assigned to dwelling units which are required to have two or more parking stalls per unit (i.e. units with two or more bedrooms).\n2.\tAt least one of the stalls must be located within an enclosed garage or carport for residential uses with four or fewer dwelling units.\n3.\tWhen the residential use includes 10 or more parking stalls, except in the downtown area as defined in Figure A-2 and for structured parking garages, at least 10% of the total parking stalls on the site must be unassigned stalls which are available for the use of visitors, shall not be in tandem, and do not count towards the total parking required after all parking reductions are applied.\nH.\tEach parking and loading stall shall have adequate drives, aisles and turning and maneuvering areas for access and usability.",
-          "score_rrf": 0.04274,
+          "score_rrf": 0.12359,
           "in_dense_top": true,
           "in_bm25_top": true,
           "doc_id": "TCM",
@@ -312,9 +293,9 @@
           "n_chunks": 7
         },
         {
-          "chunk_id": "LDC:764:1",
-          "text": "(a)\thospital services (general);\n(b)\thospital services (limited); or\n(c)\tmedical offices, if the building or structure is a walk-in clinic being used for the consultation, diagnosis, therapeutic, preventative, or medical care for minor illnesses and injuries.\n(8)\tMOTION PICTURE THEATER is a building or structure, the primary purpose of which is the commercial presentation of motion pictures to an audience.\n(9)\tPEDESTRIAN ENTRANCE means a functional entrance or door that is publicly accessible and designed for pedestrian use.\n(10)\tREGIONAL SHOPPING MALL means a single building containing over 600,000 square feet of gross leasable area and enclosing two or more stores with main entrances from a covered common pedestrian area. Typical uses include general retail sales (general), general retail sales (convenience), food sales, personal services, and restaurants.\n(11)\tSHOPPING CENTER is a group of architecturally unified commercial establishments built on a site that is planned, developed, owned, and managed as an operating unit. Typical uses in a shopping center include general retail sales (general), general retail sales (convenience), food sales, personal services, and restaurants.\n(12)\tSITE IMPROVEMENT means an improvement or facility for the primary use, operation, safety, or other benefit of a development for which the developer or property owner is solely responsible under applicable development regulations.\n(13)\tSYSTEM IMPROVEMENT means an improvement or facility that is not a site improvement.\n(14)\tTRANSPORTATION PLAN means the Austin Metropolitan Area Transportation Plan, or its successor plan, and other multi-modal transportation plans referenced in the Imagine Austin Comprehensive Plan, including the CAMPO Mobility Plan, Sidewalk Master Plan, Bicycle Plan, Urban Trails Plan, and adopted corridor plans.\n(15)\tTRANSPORTATION SYSTEM means an individual component of the overall transportation network designed for the movement of people and goods, including arterials and collector streets, sidewalks, trails, and other multi-modal transportation facilities identified in the Transportation Plan.",
-          "score_rrf": 0.0411,
+          "chunk_id": "LDC:848:0",
+          "text": "(A)\tExcept as provided in Section 25-6-473 (Modification of Parking Requirement), a parking facility for a use must comply with the requirements in Section 25-6-471 (Off-Street Parking) and Appendix A (Tables of Off-Street Loading Requirements and Former Off-Street Parking Requirements), as applicable.\n(B)\tA parking facility must:\n(1)\tbe maintained for the duration of the use or existence of the building requiring the facility; and\n(2)\tbe used exclusively for the temporary parking of passenger automobiles, motor vehicles, or light trucks not exceeding one ton in capacity.\n(C)\tA parking facility requirement is based on gross floor area of a building or use served by the facility. For the purpose of calculating parking requirements, gross floor area does not include enclosed or covered areas used for off-street parking or loading, bicycle storage rooms or shower facilities.\n(D)\tThe parking facility requirement for a general retail service use in a shopping center is based on the gross floor area of the entire shopping center, including portions not used for a general retail use. The parking requirement for a use in a shopping center other than a general retail service use is based on the rate for the use.\n(E)\tExcept in the central business district (CBD) or a downtown mixed use (DMU) zoning district, an outdoor seating area for a restaurant (general) or a cocktail lounge use must be included with the gross floor area to determine the parking requirement.\n(F)\tIf a calculation under Appendix A (Tables of Off-Street Loading Requirements and Former Off-Street Parking Requirements) results in a fractional requirement, a fraction of 0.5 or greater is rounded to the next larger whole number.",
+          "score_rrf": 0.12234,
           "in_dense_top": true,
           "in_bm25_top": true,
           "doc_id": "LDC",
@@ -322,13 +303,32 @@
           "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
           "chapter": "Chapter 25-6",
           "chapter_title": "TRANSPORTATION",
-          "article": "ARTICLE 1. GENERAL PROVISIONS",
-          "section_number": "25-6-1",
-          "section_title": "DEFINITIONS",
-          "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 1. GENERAL PROVISIONS > \u00a7 25-6-1 DEFINITIONS",
+          "article": "ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations",
+          "section_number": "25-6-472",
+          "section_title": "PARKING FACILITY STANDARDS",
+          "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS",
           "is_preamble": false,
-          "chunk_index": 1,
+          "chunk_index": 0,
           "n_chunks": 2
+        },
+        {
+          "chunk_id": "LDC:819:0",
+          "text": "(A)\tThe design, construction, alteration, or repair of a sidewalk, driveway approach, pavement, appurtenance on public property, or other facility to provide access to adjoining property must comply with the Transportation Criteria Manual.\n(B)\tThe design, construction, alteration, or repair of a curb or gutter must comply with the Drainage Criteria Manual and the Transportation Criteria Manual.\n(C)\tAccess to a lot from an alley must be approved by the city manager.",
+          "score_rrf": 0.12207,
+          "in_dense_top": true,
+          "in_bm25_top": true,
+          "doc_id": "LDC",
+          "source_name": "Austin Land Development Code (Title 25)",
+          "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
+          "chapter": "Chapter 25-6",
+          "chapter_title": "TRANSPORTATION",
+          "article": "ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements",
+          "section_number": "25-6-292",
+          "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
+          "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS",
+          "is_preamble": false,
+          "chunk_index": 0,
+          "n_chunks": 1
         }
       ]
     },
@@ -631,19 +631,6 @@
           },
           {
             "distance_ft": 705.0,
-            "permit_number": "2026-092191 PR",
-            "case_type": "Plan Review",
-            "sub_type": "R- 434 Addition & Alterations",
-            "work_class": "Addition and Remodel",
-            "project_name": "5308 EAGLE TRACE TRL",
-            "folder_description": "Retroactive addition of SFR",
-            "status_current": "In Review",
-            "status_date": "2026-08-06T15:40:02",
-            "applied_date": "2026-07-17T00:00:00",
-            "web_link": "https://abc.austintexas.gov/web/permit/public-search-other?t_detail=1&t_selected_folderrsn=13739391"
-          },
-          {
-            "distance_ft": 705.0,
             "permit_number": "2025-160812 PR",
             "case_type": "Plan Review",
             "sub_type": "R- 329 Res Structures Other Than Bldg",
@@ -655,6 +642,19 @@
             "applied_date": "2025-12-19T00:00:00",
             "number_of_units": 1.0,
             "web_link": "https://abc.austintexas.gov/web/permit/public-search-other?t_detail=1&t_selected_folderrsn=13631340"
+          },
+          {
+            "distance_ft": 705.0,
+            "permit_number": "2026-092191 PR",
+            "case_type": "Plan Review",
+            "sub_type": "R- 434 Addition & Alterations",
+            "work_class": "Addition and Remodel",
+            "project_name": "5308 EAGLE TRACE TRL",
+            "folder_description": "Retroactive addition of SFR",
+            "status_current": "In Review",
+            "status_date": "2026-08-06T15:40:02",
+            "applied_date": "2026-07-17T00:00:00",
+            "web_link": "https://abc.austintexas.gov/web/permit/public-search-other?t_detail=1&t_selected_folderrsn=13739391"
           },
           {
             "distance_ft": 741.9,
@@ -750,25 +750,6 @@
       "n_chunks": 2
     },
     {
-      "chunk_id": "LDC:300:3",
-      "text": "| Open Space | Provides open space at least 10% above the requirements of Section 2.3.1.A. (Minimum Requirements). Alternatively, within the urban roadway boundary established in Figure 2 of Subchapter E of Chapter 25-2 (Design Standards and Mixed Use), provide for proportional enhancements to existing or planned trails, parks, or other recreational common open space in consultation with the Director of the Parks and Recreation Department. |\n| Great Streets | Complies with City's Great Streets Program, or a successor program. Applicable only to commercial, retail, or mixed-use development that is not subject to the requirements of Chapter 25-2, Subchapter E (Design Standards and Mixed Use). |\n| Community Amenities | Provides community or public amenities, which may include spaces for community meetings, community gardens or urban farms, day care facilities, non-profit organizations, or other uses that fulfill an identified community need. |\n|  | Provides publicly accessible multi-use trail and greenway along creek or waterway. |\n| Transportation | Provides bicycle facilities that connect to existing or planned bicycle routes or provides other multi-modal transportation features not required by code. |\n| Building Design | Exceeds the minimum points required by the Building Design Options of Section 3.3.2. of Chapter 25-2, Subchapter E (Design Standards and Mixed Use). |\n| Parking Structure Frontage | In a commercial or mixed-use development, at least 75 percent of the building frontage of all parking structures is designed for pedestrian-oriented uses as defined in Section 25-2-691(C) (Waterfront Overlay District Uses) in ground floor spaces. |\n| Affordable Housing | Provides for affordable housing or participation in programs to achieve affordable housing. |\n| Historic Preservation | Preserves historic structures, landmarks, or other features to a degree exceeding applicable legal requirements. |",
-      "score_rrf": 0.03981,
-      "in_dense_top": true,
-      "in_bm25_top": true,
-      "doc_id": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-2",
-      "chapter_title": "ZONING",
-      "article": "ARTICLE 2. SPECIAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart B. Planned Unit Development Standards",
-      "section_number": "2.4",
-      "section_title": "TIER TWO REQUIREMENTS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. SPECIAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart B. Planned Unit Development Standards > \u00a7 2.4 TIER TWO REQUIREMENTS",
-      "is_preamble": false,
-      "chunk_index": 3,
-      "n_chunks": 5
-    },
-    {
       "chunk_id": "LDC:481:1",
       "text": "(g)\tif at one location more than two hours, a written agreement from a business within 150 feet of the location to allow employees of the mobile retail establishment to use flushable restrooms or other facilities approved by the health authority during hours of operation;\n(h)\ta fee, as established by separate ordinance; and\n(i)\tany other information reasonably required by the director of the Planning and Development Review Department to enforce this section.\n(3)\tA site plan, site plan exemption, or temporary use permit is not required for the operation of a mobile food establishment.\n(E)\tItems and Services to be Sold. An operator may only sell non-food retail items or services. Mobile retail establishments may only sell items or services permitted under a general retail sales (convenience) use, pet services use, and personal services use. All sales items and supplies must be stored within the mobile unit.\n(F)\tZoning. A mobile retail establishment shall comply with the regulations in this section.\n(1)\tA mobile retail establishment is permitted in all commercial and industrial zoning districts except in a neighborhood office (NO), limited office (LO), or general office (GO) zoning district.\n(2)\tUnless located in a central business district (CBD) zoning district, a mobile retail establishment may not be located less than fifty feet from a lot with a building that contains both a residential and commercial use.\n(3)\tA mobile retail establishment may not be less than fifty feet from property:\n(a)\tin an SF-5 or more restrictive district; or\n(b)\ton which a residential use permitted in an SF-5 or more restrictive district is located.\n(4)\tA person may not operate a mobile retail establishment between the hours of 11:00 p.m. and 6:00 a.m.",
       "score_rrf": 0.03912,
@@ -807,9 +788,28 @@
       "n_chunks": 1
     },
     {
+      "chunk_id": "LDC:350:0",
+      "text": "(A)\tThis section applies in a central business (CBD) district.\n(B)\tNotwithstanding any other provision of this chapter, the requirements of Article 10 (Compatibility Standards) do not apply.\n(C)\tThis subsection applies to a convention center use.\n(1)\tcouncil approval is required for a site plan for a convention center use. Approval of a site plan:\n(a)\testablishes the site development regulations; and\n(b)\twaives regulations that are inconsistent with the site plan, if any.\n(2)\tA public hearing is required for each site plan considered under this subsection.\n(3)\tThe director shall give notice of a public hearing required by this subsection in accordance with Section 25-1-132(C) (Notice of Public Hearing).\n(D)\tCommercial off-street parking is a permitted use when it constitutes less than 50 percent of the parking spaces in a parking structure.",
+      "score_rrf": 0.03888,
+      "in_dense_top": true,
+      "in_bm25_top": true,
+      "doc_id": "LDC",
+      "source_name": "Austin Land Development Code (Title 25)",
+      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
+      "chapter": "Chapter 25-2",
+      "chapter_title": "ZONING",
+      "article": "ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements",
+      "section_number": "25-2-581",
+      "section_title": "CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
+      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements > \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
+      "is_preamble": false,
+      "chunk_index": 0,
+      "n_chunks": 1
+    },
+    {
       "chunk_id": "LDC:915:0",
       "text": "(A)\tThis section establishes requirements that apply in the central business area.\n(B)\tIn this section, central business area means the area bounded by Interstate Highway 35, Riverside Drive, Barton Springs Road, Lamar Boulevard, and 15th Street.\n(C)\tA development application with a proposed building or parking area that encroaches on the 100-year floodplain may be approved if:\n(1)\tthe floor slab of a proposed building is at least two feet above the 100-year floodplain;\n(2)\tnormal access to that building is by direct connection with an area above the regulatory flood datum, as defined in Chapter 25-12, Article 3 (Flood Hazard Areas);\n(3)\tdevelopment associated with construction of the building compensates for any floodplain volume displaced by that construction; and\n(4)\tthe applicant demonstrates by means of a study certified by a Texas registered professional engineer that the construction of the building and development activities associated with that building improves the drainage system by exceeding the minimum requirements of Sections 25-7-3 (Obstruction of Waterways Prohibited), 25-7-4 (Duty to Maintain Unobstructed Waterways), and 25-7-5 (Standing Water Declared a Nuisance).\n(D)\tThe director may waive a requirement of Subsection (C) if:\n(1)\tthe applicant submits:\n(a)\ta written request identifying the requirement to be waived; and\n(b)\ta justification for the waiver prepared by a Texas registered engineer certifying that waiving the requirement will not result in additional adverse flooding of other property; and\n(2)\tthe director determines that:\n(a)\tthe waiver is required by unique site conditions;\n(b)\tthe waiver is a minimum departure from the requirements of Subsection (C); and\n(c)\twaiving the requirement will not result in additional adverse flooding of other property.",
-      "score_rrf": 0.04574,
+      "score_rrf": 0.13491,
       "in_dense_top": true,
       "in_bm25_top": true,
       "doc_id": "LDC",
@@ -826,28 +826,9 @@
       "n_chunks": 2
     },
     {
-      "chunk_id": "LDC:913:0",
-      "text": "(A)\tExcept as provided in Section 25-7-96 (Exceptions in the 25-Year Floodplain), a development application may not be approved if a proposed building or parking area encroaches on the 25-year floodplain.\n(B)\tExcept as provided in Sections 25-7-93 (General Exceptions), 25-7-94 (Exceptions in Central Business Area), and 25-7-95 (Exceptions for Parking Areas), a development application may not be approved if a proposed building or parking area encroaches on the 100-year flood plain.\n(C)\tThe director may grant a variance to Subsection (A) or (B) if the director determines that:\n(1)\tthe finished floor elevation of a proposed building is at least two feet above the 100-year floodplain;\n(2)\tnormal access to a proposed building is by direct connection with an area above the regulatory flood datum, as prescribed by Chapter 25-12, Article 1 (Building Code);\n(3)\ta proposed building complies with the requirements in Chapter 25-12, Article 3 (Flood Hazard Areas);\n(4)\tthe development compensates for the floodplain volume displaced by the development;\n(5)\tthe development improves the drainage system by exceeding the requirements of Section 25-7-61 (Criteria for Approval of Development Applications), as demonstrated by a report provided by the applicant and certified by an engineer registered in Texas;\n(6)\tthe variance is required by unique site conditions; and\n(7)\tdevelopment permitted by the variance does not result in additional adverse flooding impact on other property.\n(D)\tThe director shall prepare written findings to support the grant or denial of a variance request under this section.",
-      "score_rrf": 0.04265,
-      "in_dense_top": true,
-      "in_bm25_top": true,
-      "doc_id": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-7",
-      "chapter_title": "DRAINAGE",
-      "article": "ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION",
-      "section_number": "25-7-92",
-      "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-      "is_preamble": false,
-      "chunk_index": 0,
-      "n_chunks": 1
-    },
-    {
       "chunk_id": "LDC:910:1",
       "text": "(a)\tfinished floor elevations;\n(b)\tdriveway and sidewalk locations;\n(c)\tbuilding footprint; and\n(d)\tlocation of all stormwater discharge.\n(2)\tThe requirements of Paragraph (C)(1) do not apply to development of a single-family residential use on a platted lot if impervious cover will not exceed 45%, as calculated based on gross site area.\n(3)\tFor development of a single-family residential subdivision:\n(a)\tthe construction plans for subdivision infrastructure must include a concept plan identifying building footprints and the location of sidewalks and driveways for each lot within the subdivision; and\n(b)\ta grading plan for each lot, consistent with the subdivision construction plans, if applicable, must be provided at the time of development and building permit review.\n(D)\tThe requirements of this section do not:\n(1)\taffect implementation of the Regional Stormwater Management Program, as prescribed by the Drainage Criteria Manual; or\n(2)\tprohibit the director from waiving detention requirements, as prescribed in the Drainage Criteria Manual, if an applicant provides offsite improvements that result in an overall improvement of flooding conditions within the affected watershed.\nNote(s)\u2014Part 3 of Ordinance No. 20141214-096 states, \"The City Manager is directed to adopt administrative rules that are determined to be necessary for implementation of this ordinance. The requirements of this ordinance control in the event of a conflict with the Drainage Criteria Manual, including but not limited to \u00a7 1.2.2(G), the Environmental Criteria Manual, or other administrative rules.\"\nPart 6 of Ordinance No. 20171214-096 states, \"This ordinance expires on December 14, 2019.\"",
-      "score_rrf": 0.04227,
+      "score_rrf": 0.1331,
       "in_dense_top": true,
       "in_bm25_top": true,
       "doc_id": "LDC",
@@ -864,9 +845,9 @@
       "n_chunks": 2
     },
     {
-      "chunk_id": "LDC:914:0",
-      "text": "(A)\tA development application with a proposed building or parking area that encroaches on the 100-year floodplain may be approved if the encroachment is:\n(1)\ta parking area that is smaller than 5,000 square feet or an unoccupied structure that has an area of less than 1,000 square feet, and the director determines that the proposed development:\n(a)\twill not have an adverse effect on the 100-year floodplain or surrounding properties; and\n(b)\totherwise complies with the requirements of this title;\n(2)\ta new building for residential use that replaces an existing legally constructed building for residential use on the same property and that does not increase the number of legal dwelling units on the property;\n(3)\ta new building for commercial use that replaces an existing legally constructed building for commercial use on the same property; and\n(a)\tdoes not increase the building square footage on the property;\n(b)\tdoes not include the following uses as they are defined in the International Building Code:\n(i)\tE (Educational);\n(ii)\tF (Factory);\n(iii)\tH (High Hazard); or\n(iv)\tI (Institutional); and\n(c)\tdoes not increase the flood level of parking spaces within the 100-year floodplain unless additional parking is required by another section of this title;\n(4)\ta building authorized by a waterway development permit issued under Chapter 9-10 before September 25, 1983; or\n(5)\ta building in the 100-year floodplain of:\n(a)\tLady Bird Lake;\n(b)\tthe Colorado River downstream from Longhorn Dam;\n(c)\tLake Austin; or\n(d)\tLake Travis.\n(B)\tTo be approved under this section, development must:",
-      "score_rrf": 0.03997,
+      "chunk_id": "LDC:913:0",
+      "text": "(A)\tExcept as provided in Section 25-7-96 (Exceptions in the 25-Year Floodplain), a development application may not be approved if a proposed building or parking area encroaches on the 25-year floodplain.\n(B)\tExcept as provided in Sections 25-7-93 (General Exceptions), 25-7-94 (Exceptions in Central Business Area), and 25-7-95 (Exceptions for Parking Areas), a development application may not be approved if a proposed building or parking area encroaches on the 100-year flood plain.\n(C)\tThe director may grant a variance to Subsection (A) or (B) if the director determines that:\n(1)\tthe finished floor elevation of a proposed building is at least two feet above the 100-year floodplain;\n(2)\tnormal access to a proposed building is by direct connection with an area above the regulatory flood datum, as prescribed by Chapter 25-12, Article 1 (Building Code);\n(3)\ta proposed building complies with the requirements in Chapter 25-12, Article 3 (Flood Hazard Areas);\n(4)\tthe development compensates for the floodplain volume displaced by the development;\n(5)\tthe development improves the drainage system by exceeding the requirements of Section 25-7-61 (Criteria for Approval of Development Applications), as demonstrated by a report provided by the applicant and certified by an engineer registered in Texas;\n(6)\tthe variance is required by unique site conditions; and\n(7)\tdevelopment permitted by the variance does not result in additional adverse flooding impact on other property.\n(D)\tThe director shall prepare written findings to support the grant or denial of a variance request under this section.",
+      "score_rrf": 0.12528,
       "in_dense_top": true,
       "in_bm25_top": true,
       "doc_id": "LDC",
@@ -875,17 +856,17 @@
       "chapter": "Chapter 25-7",
       "chapter_title": "DRAINAGE",
       "article": "ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION",
-      "section_number": "25-7-93",
-      "section_title": "GENERAL EXCEPTIONS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-93 GENERAL EXCEPTIONS",
+      "section_number": "25-7-92",
+      "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
+      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED",
       "is_preamble": false,
       "chunk_index": 0,
-      "n_chunks": 2
+      "n_chunks": 1
     },
     {
       "chunk_id": "LDC:905:0",
       "text": "(A)\tA development application may not be approved unless:\n(1)\tthe proposed development application demonstrates sufficient capacity for the design flood, as determined under the Drainage Criteria Manual;\n(2)\teach proposed improvement is sufficiently strong to resist:\n(a)\texternal pressure caused by earth or building; and\n(b)\tinternal pressure or abrasion caused by water or debris;\n(3)\tthe proposed grades will not permit water to gather in a pool that may become stagnant, excluding variable pools in creek beds as a result of natural channel design;\n(4)\ttemporary and permanent measures to control erosion are sufficient to minimize siltation of the waterway, as determined under the Environmental Criteria Manual; and\n(5)\tthe proposed development:\n(a)\twill not result in additional adverse flooding impact on other property;\n(b)\tto the greatest extent feasible, preserves the natural and traditional character of the land and the waterway located within the 100-year floodplain;\n(c)\texcept as provided by Subsection (B), includes on-site control of the two-year peak flow, as determined under the Drainage Criteria Manual and the Environmental Criteria Manual;\n(d)\twill not result in additional erosion impacts on other property; and\n(e)\tlocates all proposed improvements outside the erosion hazard zone, unless protective works are provided as prescribed in the Drainage Criteria Manual.\n(B)\tA proposed development may provide off-site control of the two-year peak flow, if the off-site control will not cause:\n(1)\tan adverse water quality impact from increased in-stream peak flow; or\n(2)\tstreambank erosion.",
-      "score_rrf": 0.03932,
+      "score_rrf": 0.1176,
       "in_dense_top": true,
       "in_bm25_top": true,
       "doc_id": "LDC",
@@ -902,47 +883,47 @@
       "n_chunks": 1
     },
     {
-      "chunk_id": "LDC:848:0",
-      "text": "(A)\tExcept as provided in Section 25-6-473 (Modification of Parking Requirement), a parking facility for a use must comply with the requirements in Section 25-6-471 (Off-Street Parking) and Appendix A (Tables of Off-Street Loading Requirements and Former Off-Street Parking Requirements), as applicable.\n(B)\tA parking facility must:\n(1)\tbe maintained for the duration of the use or existence of the building requiring the facility; and\n(2)\tbe used exclusively for the temporary parking of passenger automobiles, motor vehicles, or light trucks not exceeding one ton in capacity.\n(C)\tA parking facility requirement is based on gross floor area of a building or use served by the facility. For the purpose of calculating parking requirements, gross floor area does not include enclosed or covered areas used for off-street parking or loading, bicycle storage rooms or shower facilities.\n(D)\tThe parking facility requirement for a general retail service use in a shopping center is based on the gross floor area of the entire shopping center, including portions not used for a general retail use. The parking requirement for a use in a shopping center other than a general retail service use is based on the rate for the use.\n(E)\tExcept in the central business district (CBD) or a downtown mixed use (DMU) zoning district, an outdoor seating area for a restaurant (general) or a cocktail lounge use must be included with the gross floor area to determine the parking requirement.\n(F)\tIf a calculation under Appendix A (Tables of Off-Street Loading Requirements and Former Off-Street Parking Requirements) results in a fractional requirement, a fraction of 0.5 or greater is rounded to the next larger whole number.",
-      "score_rrf": 0.04456,
+      "chunk_id": "DCM:1171:0",
+      "text": "A.\tCity of Austin.\n1.\tFor purposes of this Drainage Criteria Manual, a drainage area of 64 acres or greater is required within a contributing watershed to create a \"floodplain\". For areas of flow with less than 64 acres of contributing area, no floodplain shall be defined unless the City or FEMA currently indicates the area as a floodplain. In all cases where a floodplain delineation is required, its determination shall be based on the projected full development of all properties contributing to the point of consideration. It is the responsibility of the design engineer to determine, based on the most accurate information available, what the floodplain delineation is.\n2.\tThe design engineer may elect to utilize a floodplain delineation previously approved by the Director of the Watershed Protection Department, assuming the same is still applicable under present requirements and criteria. In so doing the engineer does not remove himself from the responsibility for the delineation's accuracy.\nB.\tFederal Emergency Management Agency.\n1.\tThe Federal Emergency Management Agency (FEMA) maintains Flood Insurance Rate Maps (FIRM's) that depict floodplain boundaries. The floodplain boundaries depicted on FIRM's are based on existing conditions of development in the contributing area at the time the floodplain study that delineated the floodplain was completed.\n2.\tFEMA reviews and approves or denies all revisions or amendments to FIRM's. FEMA revises or amends FIRM's by approval of a Letter of Map Change (LOMC). FEMA establishes the process and fees necessary for review of an application for a LOMC.",
+      "score_rrf": 0.11507,
       "in_dense_top": true,
       "in_bm25_top": true,
-      "doc_id": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-6",
-      "chapter_title": "TRANSPORTATION",
-      "article": "ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations",
-      "section_number": "25-6-472",
-      "section_title": "PARKING FACILITY STANDARDS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS",
+      "doc_id": "DCM",
+      "source_name": "Austin Drainage Criteria Manual",
+      "source_url": "https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
+      "chapter": "Section 1",
+      "chapter_title": "DRAINAGE POLICY",
+      "article": "",
+      "section_number": "1.2.6",
+      "section_title": "Floodplain Delineations",
+      "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.6 Floodplain Delineations",
       "is_preamble": false,
       "chunk_index": 0,
-      "n_chunks": 2
+      "n_chunks": 4
     },
     {
-      "chunk_id": "TCM:1323:1",
-      "text": "| TDM ID | Measure Description | Implementation Criteria | Pre-Occupancy Requirements | Post-Occupancy Requirements |\n| P-1 | Reduced Parking Supply | \u2022 Provide fewer parking spaces than the required Standard Parking Supply Ratios on site. | Site inspection to confirm on-site parking supply | Submission of photos that confirm that the parking supply remains unchanged. |\n| P-2 | Unbundled Parking | \u2022 All resident/tenant parking is offered as an optional amenity that is priced separately from the cost of associated building leases or housing-unit purchases; and | \u2022 Copies of all informational materials about parking cash out and current rates for all residents/tenant-employees at the site; and | \u2022 Copies of all informational materials about parking cash out and current rates for all residents/tenant-employees at the site; and |\n|  |  | \u2022 Supporting documentation required to be included for the proposed rate/credit for debt service on parking spaces and/or IRS limits on pre-tax parking purchases; and | \u2022 Copy of residential/office lease and parking contract. | \u2022 Copy of residential/office lease and parking contract. |\n|  |  | \u2022 Supporting documentation required to be included for the rates as compared to the area parking rates for visitors. |  |  |\n| P-3 | Daily Tenant Parking Rates | \u2022 All criteria for P-2 are met; and | Copies of all informational materials about parking rates for all tenant parking options. | Copies of all informational materials about parking rates for all tenant parking options. |\n| P-3 | Daily Tenant Parking Rates | \u2022 All unbundled parking is priced at an hourly or daily rate, no monthly or annual permits are offered; and | Copies of all informational materials about parking rates for all tenant parking options. | Copies of all informational materials about parking rates for all tenant parking options. |",
-      "score_rrf": 0.04425,
+      "chunk_id": "TCM:1261:0",
+      "text": "Adequate storage space shall be provided for queueing on-site in order to prevent queues spilling into the right-of-way. Queuing area requirements for drive-through facilities are as follows:\nA.\tQueuing spaces or queuing areas shall be designed in accordance with the following criteria for uses and as required by LDC.\nB.\tQueue spaces or queuing areas may not interfere with parking spaces, parking aisles, loading areas, internal circulation, or driveway access.\nC.\tEach queue space shall consist of a rectangular area not less than 10 ft. wide and 25 ft. long with a vertical clearance as specified in the Building Criteria Manual. Queue spaces are not interchangeable with parking spaces.\nD.\tA 12 ft. by-pass lane may be required adjacent to queue lines to allow vehicles an opportunity to circumvent the drive-through activity and exit the site.\nE.\tQueue areas and drive-through facilities shall be clearly identified with the appropriate signing and marking.\nF.\tQueuing areas for service station islands and fuel dispensing pumps shall be designed according to Figure 9-10. The minimum queuing requirement dimension is measured from the ends of the service island or protective bollards. By-pass lane(s) are required to provide on-site circulation. Parallel adjacent islands with three or more pumps on each island shall maintain a circulation aisle between queuing spaces or other obstructions. Specific requirements may vary based upon individual site design. Consult with the City Transportation Engineer or applicable Director for specific requirements prior to site design.\n[caption] Figure 9-10 \u2014 Service Station Queuing & Internal Circulation Layout\nG.\tRefer to Figure 9-11 for calculation of queue length required for a drive through facility.\nH.\tRefer to Figure 9-12 for layout of queuing area and internal circulation routes on a site providing a drive through facility.",
+      "score_rrf": 0.12877,
       "in_dense_top": true,
       "in_bm25_top": true,
       "doc_id": "TCM",
       "source_name": "Austin Transportation Criteria Manual",
       "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-      "chapter": "Section 10",
-      "chapter_title": "TRAFFIC IMPACT ANALYSIS",
+      "chapter": "Section 9",
+      "chapter_title": "PARKING AND LOADING",
       "article": "",
-      "section_number": "10.3.5.2",
-      "section_title": "Parking (Vehicle) Measures",
-      "breadcrumb": "Austin Transportation Criteria Manual > Section 10 TRAFFIC IMPACT ANALYSIS > 10.3.5.2 Parking (Vehicle) Measures",
+      "section_number": "9.3.4.1",
+      "section_title": "Queuing",
+      "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.4.1 Queuing",
       "is_preamble": false,
-      "chunk_index": 1,
-      "n_chunks": 3
+      "chunk_index": 0,
+      "n_chunks": 2
     },
     {
       "chunk_id": "TCM:1267:1",
       "text": "D.\tManeuvering areas for loading facilities shall not conflict with parking spaces or with the maneuvering areas for parking stalls. Public right-of-way shall not be used for maneuvering. All maneuvering shall be contained on-site.\nE.\tRear-loading freight docks are preferred to side-loading docks. For such rear-loading docks, truck circulation patterns and dock positions should be designed for left-side, back-in maneuvers to allow for better driver visibility. The apron space should be adequate to allow the truck to back and pull-out in one maneuver. Where semitractor/trailer combinations are expected, the critical maneuvering and circulation areas shall be designed to accommodate trucks with a WB-62 design, except for the Downtown Austin Area as defined in Figure A-2, where a WB-40 truck design may be used. SU-40 truck design may be used for design via an administrative variance if loading is restricted to this type of vehicle or smaller.\nF.\tLand uses where fuel is dispensed must provide an adequate maneuvering and unloading area for fuel delivery vehicles. Such facilities or areas shall be designed to enable trucks to deliver fuel without interfering with on-site parking, queuing areas, internal circulation, or driveway access.\nG.\tFor sites meeting the requirements for off-street loading in LDC with greater than 100,000 square feet of gross floor area, one of the following shall apply:\n1.\tAn analysis shall be performed by an engineer licensed in the State of Texas as part of a Transportation Impact Analysis, per Section 10, if required per LDC, to determine the number of required loading spaces based on arrival schedules for deliveries to the site. The amount of loading spaces provided shall ensure that adequate spaces exist for the peak loading times.\n2.\tIf a Transportation Impact Analysis is not required, then loading spaces shall be provided per the LDC.\nH.\tLoading spaces may be shared by multiple land uses or a single building as a common loading space if the City Transportation Engineer or applicable director determines that the loading space can adequately serve each use.",
-      "score_rrf": 0.0435,
+      "score_rrf": 0.12856,
       "in_dense_top": true,
       "in_bm25_top": true,
       "doc_id": "TCM",
@@ -961,7 +942,7 @@
     {
       "chunk_id": "TCM:1251:1",
       "text": "F.\tEach parking stall shall be independently accessible and shall have a vertical clearance as specified in the Building Criteria Manual.\nG.\tTandem parking stalls (one car behind another, so that one car must be moved before the other can be accessed) are allowed for residential uses and for commercial uses that operate exclusively as a valet service following requirements of Chapter 13-5 of the City Code. Tandem parking is also allowed for additional parking provided in excess of the required parking, after reductions applied, for employees only working the same shift and shall be signed and marked as employee parking only. Both stalls in tandem must be standard size per Table 9-2; no compact or accessible tandem stalls are permitted. When tandem parking stalls are provided for residential uses, the following must be included as a note on the site plan:\n1.\tThe stalls must be reserved and assigned to dwelling units which are required to have two or more parking stalls per unit (i.e. units with two or more bedrooms).\n2.\tAt least one of the stalls must be located within an enclosed garage or carport for residential uses with four or fewer dwelling units.\n3.\tWhen the residential use includes 10 or more parking stalls, except in the downtown area as defined in Figure A-2 and for structured parking garages, at least 10% of the total parking stalls on the site must be unassigned stalls which are available for the use of visitors, shall not be in tandem, and do not count towards the total parking required after all parking reductions are applied.\nH.\tEach parking and loading stall shall have adequate drives, aisles and turning and maneuvering areas for access and usability.",
-      "score_rrf": 0.04274,
+      "score_rrf": 0.12359,
       "in_dense_top": true,
       "in_bm25_top": true,
       "doc_id": "TCM",
@@ -978,9 +959,9 @@
       "n_chunks": 7
     },
     {
-      "chunk_id": "LDC:764:1",
-      "text": "(a)\thospital services (general);\n(b)\thospital services (limited); or\n(c)\tmedical offices, if the building or structure is a walk-in clinic being used for the consultation, diagnosis, therapeutic, preventative, or medical care for minor illnesses and injuries.\n(8)\tMOTION PICTURE THEATER is a building or structure, the primary purpose of which is the commercial presentation of motion pictures to an audience.\n(9)\tPEDESTRIAN ENTRANCE means a functional entrance or door that is publicly accessible and designed for pedestrian use.\n(10)\tREGIONAL SHOPPING MALL means a single building containing over 600,000 square feet of gross leasable area and enclosing two or more stores with main entrances from a covered common pedestrian area. Typical uses include general retail sales (general), general retail sales (convenience), food sales, personal services, and restaurants.\n(11)\tSHOPPING CENTER is a group of architecturally unified commercial establishments built on a site that is planned, developed, owned, and managed as an operating unit. Typical uses in a shopping center include general retail sales (general), general retail sales (convenience), food sales, personal services, and restaurants.\n(12)\tSITE IMPROVEMENT means an improvement or facility for the primary use, operation, safety, or other benefit of a development for which the developer or property owner is solely responsible under applicable development regulations.\n(13)\tSYSTEM IMPROVEMENT means an improvement or facility that is not a site improvement.\n(14)\tTRANSPORTATION PLAN means the Austin Metropolitan Area Transportation Plan, or its successor plan, and other multi-modal transportation plans referenced in the Imagine Austin Comprehensive Plan, including the CAMPO Mobility Plan, Sidewalk Master Plan, Bicycle Plan, Urban Trails Plan, and adopted corridor plans.\n(15)\tTRANSPORTATION SYSTEM means an individual component of the overall transportation network designed for the movement of people and goods, including arterials and collector streets, sidewalks, trails, and other multi-modal transportation facilities identified in the Transportation Plan.",
-      "score_rrf": 0.0411,
+      "chunk_id": "LDC:848:0",
+      "text": "(A)\tExcept as provided in Section 25-6-473 (Modification of Parking Requirement), a parking facility for a use must comply with the requirements in Section 25-6-471 (Off-Street Parking) and Appendix A (Tables of Off-Street Loading Requirements and Former Off-Street Parking Requirements), as applicable.\n(B)\tA parking facility must:\n(1)\tbe maintained for the duration of the use or existence of the building requiring the facility; and\n(2)\tbe used exclusively for the temporary parking of passenger automobiles, motor vehicles, or light trucks not exceeding one ton in capacity.\n(C)\tA parking facility requirement is based on gross floor area of a building or use served by the facility. For the purpose of calculating parking requirements, gross floor area does not include enclosed or covered areas used for off-street parking or loading, bicycle storage rooms or shower facilities.\n(D)\tThe parking facility requirement for a general retail service use in a shopping center is based on the gross floor area of the entire shopping center, including portions not used for a general retail use. The parking requirement for a use in a shopping center other than a general retail service use is based on the rate for the use.\n(E)\tExcept in the central business district (CBD) or a downtown mixed use (DMU) zoning district, an outdoor seating area for a restaurant (general) or a cocktail lounge use must be included with the gross floor area to determine the parking requirement.\n(F)\tIf a calculation under Appendix A (Tables of Off-Street Loading Requirements and Former Off-Street Parking Requirements) results in a fractional requirement, a fraction of 0.5 or greater is rounded to the next larger whole number.",
+      "score_rrf": 0.12234,
       "in_dense_top": true,
       "in_bm25_top": true,
       "doc_id": "LDC",
@@ -988,13 +969,32 @@
       "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
       "chapter": "Chapter 25-6",
       "chapter_title": "TRANSPORTATION",
-      "article": "ARTICLE 1. GENERAL PROVISIONS",
-      "section_number": "25-6-1",
-      "section_title": "DEFINITIONS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 1. GENERAL PROVISIONS > \u00a7 25-6-1 DEFINITIONS",
+      "article": "ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations",
+      "section_number": "25-6-472",
+      "section_title": "PARKING FACILITY STANDARDS",
+      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS",
       "is_preamble": false,
-      "chunk_index": 1,
+      "chunk_index": 0,
       "n_chunks": 2
+    },
+    {
+      "chunk_id": "LDC:819:0",
+      "text": "(A)\tThe design, construction, alteration, or repair of a sidewalk, driveway approach, pavement, appurtenance on public property, or other facility to provide access to adjoining property must comply with the Transportation Criteria Manual.\n(B)\tThe design, construction, alteration, or repair of a curb or gutter must comply with the Drainage Criteria Manual and the Transportation Criteria Manual.\n(C)\tAccess to a lot from an alley must be approved by the city manager.",
+      "score_rrf": 0.12207,
+      "in_dense_top": true,
+      "in_bm25_top": true,
+      "doc_id": "LDC",
+      "source_name": "Austin Land Development Code (Title 25)",
+      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
+      "chapter": "Chapter 25-6",
+      "chapter_title": "TRANSPORTATION",
+      "article": "ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements",
+      "section_number": "25-6-292",
+      "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
+      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS",
+      "is_preamble": false,
+      "chunk_index": 0,
+      "n_chunks": 1
     },
     {
       "chunk_id": "LDC:1046:0",
@@ -1139,11 +1139,11 @@
       "source": "LDC",
       "source_name": "Austin Land Development Code (Title 25)",
       "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-7",
-      "section_number": "25-7-94",
-      "section_title": "REQUIREMENTS IN CENTRAL BUSINESS AREA",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA",
-      "chunk_id": "LDC:915:0",
+      "chapter": "Chapter 25-2",
+      "section_number": "25-2-581",
+      "section_title": "CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
+      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements > \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
+      "chunk_id": "LDC:350:0",
       "claim_support": "retrieved_passage",
       "verification_status": "found",
       "supports_claim": true,
@@ -1154,10 +1154,10 @@
       "source_name": "Austin Land Development Code (Title 25)",
       "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
       "chapter": "Chapter 25-7",
-      "section_number": "25-7-92",
-      "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-      "chunk_id": "LDC:913:0",
+      "section_number": "25-7-94",
+      "section_title": "REQUIREMENTS IN CENTRAL BUSINESS AREA",
+      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA",
+      "chunk_id": "LDC:915:0",
       "claim_support": "retrieved_passage",
       "verification_status": "found",
       "supports_claim": true,
@@ -1182,10 +1182,10 @@
       "source_name": "Austin Land Development Code (Title 25)",
       "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
       "chapter": "Chapter 25-7",
-      "section_number": "25-7-93",
-      "section_title": "GENERAL EXCEPTIONS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-93 GENERAL EXCEPTIONS",
-      "chunk_id": "LDC:914:0",
+      "section_number": "25-7-92",
+      "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
+      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED",
+      "chunk_id": "LDC:913:0",
       "claim_support": "retrieved_passage",
       "verification_status": "found",
       "supports_claim": true,
@@ -1206,14 +1206,14 @@
       "verification_detail": "Section verified in regulatory index."
     },
     {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-6",
-      "section_number": "25-6-472",
-      "section_title": "PARKING FACILITY STANDARDS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS",
-      "chunk_id": "LDC:848:0",
+      "source": "DCM",
+      "source_name": "Austin Drainage Criteria Manual",
+      "source_url": "https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
+      "chapter": "Section 1",
+      "section_number": "1.2.6",
+      "section_title": "Floodplain Delineations",
+      "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.6 Floodplain Delineations",
+      "chunk_id": "DCM:1171:0",
       "claim_support": "retrieved_passage",
       "verification_status": "found",
       "supports_claim": true,
@@ -1223,11 +1223,11 @@
       "source": "TCM",
       "source_name": "Austin Transportation Criteria Manual",
       "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-      "chapter": "Section 10",
-      "section_number": "10.3.5.2",
-      "section_title": "Parking (Vehicle) Measures",
-      "breadcrumb": "Austin Transportation Criteria Manual > Section 10 TRAFFIC IMPACT ANALYSIS > 10.3.5.2 Parking (Vehicle) Measures",
-      "chunk_id": "TCM:1323:1",
+      "chapter": "Section 9",
+      "section_number": "9.3.4.1",
+      "section_title": "Queuing",
+      "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.4.1 Queuing",
+      "chunk_id": "TCM:1261:0",
       "claim_support": "retrieved_passage",
       "verification_status": "found",
       "supports_claim": true,
@@ -1266,10 +1266,24 @@
       "source_name": "Austin Land Development Code (Title 25)",
       "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
       "chapter": "Chapter 25-6",
-      "section_number": "25-6-1",
-      "section_title": "DEFINITIONS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 1. GENERAL PROVISIONS > \u00a7 25-6-1 DEFINITIONS",
-      "chunk_id": "LDC:764:1",
+      "section_number": "25-6-472",
+      "section_title": "PARKING FACILITY STANDARDS",
+      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS",
+      "chunk_id": "LDC:848:0",
+      "claim_support": "retrieved_passage",
+      "verification_status": "found",
+      "supports_claim": true,
+      "verification_detail": "Section verified in regulatory index."
+    },
+    {
+      "source": "LDC",
+      "source_name": "Austin Land Development Code (Title 25)",
+      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
+      "chapter": "Chapter 25-6",
+      "section_number": "25-6-292",
+      "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
+      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS",
+      "chunk_id": "LDC:819:0",
       "claim_support": "retrieved_passage",
       "verification_status": "found",
       "supports_claim": true,
@@ -1613,19 +1627,6 @@
         },
         {
           "distance_ft": 705.0,
-          "permit_number": "2026-092191 PR",
-          "case_type": "Plan Review",
-          "sub_type": "R- 434 Addition & Alterations",
-          "work_class": "Addition and Remodel",
-          "project_name": "5308 EAGLE TRACE TRL",
-          "folder_description": "Retroactive addition of SFR",
-          "status_current": "In Review",
-          "status_date": "2026-08-06T15:40:02",
-          "applied_date": "2026-07-17T00:00:00",
-          "web_link": "https://abc.austintexas.gov/web/permit/public-search-other?t_detail=1&t_selected_folderrsn=13739391"
-        },
-        {
-          "distance_ft": 705.0,
           "permit_number": "2025-160812 PR",
           "case_type": "Plan Review",
           "sub_type": "R- 329 Res Structures Other Than Bldg",
@@ -1637,6 +1638,19 @@
           "applied_date": "2025-12-19T00:00:00",
           "number_of_units": 1.0,
           "web_link": "https://abc.austintexas.gov/web/permit/public-search-other?t_detail=1&t_selected_folderrsn=13631340"
+        },
+        {
+          "distance_ft": 705.0,
+          "permit_number": "2026-092191 PR",
+          "case_type": "Plan Review",
+          "sub_type": "R- 434 Addition & Alterations",
+          "work_class": "Addition and Remodel",
+          "project_name": "5308 EAGLE TRACE TRL",
+          "folder_description": "Retroactive addition of SFR",
+          "status_current": "In Review",
+          "status_date": "2026-08-06T15:40:02",
+          "applied_date": "2026-07-17T00:00:00",
+          "web_link": "https://abc.austintexas.gov/web/permit/public-search-other?t_detail=1&t_selected_folderrsn=13739391"
         },
         {
           "distance_ft": 741.9,
@@ -1797,14 +1811,6 @@
           },
           {
             "doc_id": "LDC",
-            "section_number": "2.4",
-            "section_title": "TIER TWO REQUIREMENTS",
-            "chapter": "Chapter 25-2",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. SPECIAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart B. Planned Unit Development Standards > \u00a7 2.4 TIER TWO REQUIREMENTS"
-          },
-          {
-            "doc_id": "LDC",
             "section_number": "25-2-818",
             "section_title": "MOBILE RETAIL ESTABLISHMENTS",
             "chapter": "Chapter 25-2",
@@ -1818,6 +1824,14 @@
             "chapter": "Chapter 25-2",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
             "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. ZONING DISTRICTS > Division 3. Commercial Base Districts > \u00a7 25-2-91 PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS"
+          },
+          {
+            "doc_id": "LDC",
+            "section_number": "25-2-581",
+            "section_title": "CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
+            "chapter": "Chapter 25-2",
+            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements > \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS"
           }
         ],
         "retrieved_passage_count": 5
@@ -1853,14 +1867,6 @@
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-7-92",
-            "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-            "chapter": "Chapter 25-7",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED"
-          },
-          {
-            "doc_id": "LDC",
             "section_number": "25-7-66",
             "section_title": "SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
             "chapter": "Chapter 25-7",
@@ -1869,11 +1875,11 @@
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-7-93",
-            "section_title": "GENERAL EXCEPTIONS",
+            "section_number": "25-7-92",
+            "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
             "chapter": "Chapter 25-7",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-93 GENERAL EXCEPTIONS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED"
           },
           {
             "doc_id": "LDC",
@@ -1882,6 +1888,14 @@
             "chapter": "Chapter 25-7",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
             "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS"
+          },
+          {
+            "doc_id": "DCM",
+            "section_number": "1.2.6",
+            "section_title": "Floodplain Delineations",
+            "chapter": "Section 1",
+            "source_url": "https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
+            "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.6 Floodplain Delineations"
           }
         ],
         "retrieved_passage_count": 5
@@ -1890,20 +1904,12 @@
         "query": "Austin transportation and site access requirements for Commercial retail. Development description: Proposed single-story retail building with associated parking.. Approximate units: unknown. Identify applicable transportation, driveway, access, parking, circulation, and traffic requirements.",
         "retrieved_passages": [
           {
-            "doc_id": "LDC",
-            "section_number": "25-6-472",
-            "section_title": "PARKING FACILITY STANDARDS",
-            "chapter": "Chapter 25-6",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS"
-          },
-          {
             "doc_id": "TCM",
-            "section_number": "10.3.5.2",
-            "section_title": "Parking (Vehicle) Measures",
-            "chapter": "Section 10",
+            "section_number": "9.3.4.1",
+            "section_title": "Queuing",
+            "chapter": "Section 9",
             "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 10 TRAFFIC IMPACT ANALYSIS > 10.3.5.2 Parking (Vehicle) Measures"
+            "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.4.1 Queuing"
           },
           {
             "doc_id": "TCM",
@@ -1923,11 +1929,19 @@
           },
           {
             "doc_id": "LDC",
-            "section_number": "25-6-1",
-            "section_title": "DEFINITIONS",
+            "section_number": "25-6-472",
+            "section_title": "PARKING FACILITY STANDARDS",
             "chapter": "Chapter 25-6",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 1. GENERAL PROVISIONS > \u00a7 25-6-1 DEFINITIONS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS"
+          },
+          {
+            "doc_id": "LDC",
+            "section_number": "25-6-292",
+            "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
+            "chapter": "Chapter 25-6",
+            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS"
           }
         ],
         "retrieved_passage_count": 5
@@ -2177,19 +2191,6 @@
             },
             {
               "distance_ft": 705.0,
-              "permit_number": "2026-092191 PR",
-              "case_type": "Plan Review",
-              "sub_type": "R- 434 Addition & Alterations",
-              "work_class": "Addition and Remodel",
-              "project_name": "5308 EAGLE TRACE TRL",
-              "folder_description": "Retroactive addition of SFR",
-              "status_current": "In Review",
-              "status_date": "2026-08-06T15:40:02",
-              "applied_date": "2026-07-17T00:00:00",
-              "web_link": "https://abc.austintexas.gov/web/permit/public-search-other?t_detail=1&t_selected_folderrsn=13739391"
-            },
-            {
-              "distance_ft": 705.0,
               "permit_number": "2025-160812 PR",
               "case_type": "Plan Review",
               "sub_type": "R- 329 Res Structures Other Than Bldg",
@@ -2201,6 +2202,19 @@
               "applied_date": "2025-12-19T00:00:00",
               "number_of_units": 1.0,
               "web_link": "https://abc.austintexas.gov/web/permit/public-search-other?t_detail=1&t_selected_folderrsn=13631340"
+            },
+            {
+              "distance_ft": 705.0,
+              "permit_number": "2026-092191 PR",
+              "case_type": "Plan Review",
+              "sub_type": "R- 434 Addition & Alterations",
+              "work_class": "Addition and Remodel",
+              "project_name": "5308 EAGLE TRACE TRL",
+              "folder_description": "Retroactive addition of SFR",
+              "status_current": "In Review",
+              "status_date": "2026-08-06T15:40:02",
+              "applied_date": "2026-07-17T00:00:00",
+              "web_link": "https://abc.austintexas.gov/web/permit/public-search-other?t_detail=1&t_selected_folderrsn=13739391"
             },
             {
               "distance_ft": 741.9,
@@ -2349,11 +2363,11 @@
         "source": "LDC",
         "source_name": "Austin Land Development Code (Title 25)",
         "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-7",
-        "section_number": "25-7-94",
-        "section_title": "REQUIREMENTS IN CENTRAL BUSINESS AREA",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA",
-        "chunk_id": "LDC:915:0",
+        "chapter": "Chapter 25-2",
+        "section_number": "25-2-581",
+        "section_title": "CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
+        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements > \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
+        "chunk_id": "LDC:350:0",
         "claim_support": "retrieved_passage",
         "verification_status": "found",
         "supports_claim": true,
@@ -2364,10 +2378,10 @@
         "source_name": "Austin Land Development Code (Title 25)",
         "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
         "chapter": "Chapter 25-7",
-        "section_number": "25-7-92",
-        "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-        "chunk_id": "LDC:913:0",
+        "section_number": "25-7-94",
+        "section_title": "REQUIREMENTS IN CENTRAL BUSINESS AREA",
+        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA",
+        "chunk_id": "LDC:915:0",
         "claim_support": "retrieved_passage",
         "verification_status": "found",
         "supports_claim": true,
@@ -2392,10 +2406,10 @@
         "source_name": "Austin Land Development Code (Title 25)",
         "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
         "chapter": "Chapter 25-7",
-        "section_number": "25-7-93",
-        "section_title": "GENERAL EXCEPTIONS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-93 GENERAL EXCEPTIONS",
-        "chunk_id": "LDC:914:0",
+        "section_number": "25-7-92",
+        "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
+        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED",
+        "chunk_id": "LDC:913:0",
         "claim_support": "retrieved_passage",
         "verification_status": "found",
         "supports_claim": true,
@@ -2416,14 +2430,14 @@
         "verification_detail": "Section verified in regulatory index."
       },
       {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-6",
-        "section_number": "25-6-472",
-        "section_title": "PARKING FACILITY STANDARDS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS",
-        "chunk_id": "LDC:848:0",
+        "source": "DCM",
+        "source_name": "Austin Drainage Criteria Manual",
+        "source_url": "https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
+        "chapter": "Section 1",
+        "section_number": "1.2.6",
+        "section_title": "Floodplain Delineations",
+        "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.6 Floodplain Delineations",
+        "chunk_id": "DCM:1171:0",
         "claim_support": "retrieved_passage",
         "verification_status": "found",
         "supports_claim": true,
@@ -2433,11 +2447,11 @@
         "source": "TCM",
         "source_name": "Austin Transportation Criteria Manual",
         "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-        "chapter": "Section 10",
-        "section_number": "10.3.5.2",
-        "section_title": "Parking (Vehicle) Measures",
-        "breadcrumb": "Austin Transportation Criteria Manual > Section 10 TRAFFIC IMPACT ANALYSIS > 10.3.5.2 Parking (Vehicle) Measures",
-        "chunk_id": "TCM:1323:1",
+        "chapter": "Section 9",
+        "section_number": "9.3.4.1",
+        "section_title": "Queuing",
+        "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.4.1 Queuing",
+        "chunk_id": "TCM:1261:0",
         "claim_support": "retrieved_passage",
         "verification_status": "found",
         "supports_claim": true,
@@ -2476,10 +2490,24 @@
         "source_name": "Austin Land Development Code (Title 25)",
         "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
         "chapter": "Chapter 25-6",
-        "section_number": "25-6-1",
-        "section_title": "DEFINITIONS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 1. GENERAL PROVISIONS > \u00a7 25-6-1 DEFINITIONS",
-        "chunk_id": "LDC:764:1",
+        "section_number": "25-6-472",
+        "section_title": "PARKING FACILITY STANDARDS",
+        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS",
+        "chunk_id": "LDC:848:0",
+        "claim_support": "retrieved_passage",
+        "verification_status": "found",
+        "supports_claim": true,
+        "verification_detail": "Section verified in regulatory index."
+      },
+      {
+        "source": "LDC",
+        "source_name": "Austin Land Development Code (Title 25)",
+        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
+        "chapter": "Chapter 25-6",
+        "section_number": "25-6-292",
+        "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
+        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS",
+        "chunk_id": "LDC:819:0",
         "claim_support": "retrieved_passage",
         "verification_status": "found",
         "supports_claim": true,
@@ -2570,20 +2598,6 @@
         "verification_status": "ambiguous",
         "supports_claim": false,
         "verification_detail": "Multiple sections matched; citation requires manual verification."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-2",
-        "section_number": "2.4",
-        "section_title": "TIER TWO REQUIREMENTS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. SPECIAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart B. Planned Unit Development Standards > \u00a7 2.4 TIER TWO REQUIREMENTS",
-        "chunk_id": "LDC:300:3",
-        "claim_support": "retrieved_passage",
-        "verification_status": "ambiguous",
-        "supports_claim": false,
-        "verification_detail": "Multiple sections matched; citation requires manual verification."
       }
     ],
     "llm_synthesis": null,
@@ -2596,24 +2610,24 @@
     ],
     "warnings": [
       "Zoning could not be confirmed exactly and requires verification.",
-      "2 citation(s) failed verification and were excluded from supported regulatory citations."
+      "1 citation(s) failed verification and were excluded from supported regulatory citations."
     ],
     "regulatory_evidence_count": 20,
-    "verified_citation_count": 18,
+    "verified_citation_count": 19,
     "disclaimer": "This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service."
   },
   "guardrail_result": {
     "status": "validated",
     "scope_ok": true,
     "unsupported_request": false,
-    "citations_verified": 18,
-    "citations_rejected": 2,
+    "citations_verified": 19,
+    "citations_rejected": 1,
     "unsupported_claim_count": 1,
     "finding_count": 5
   },
   "report_document": {
     "title": "Preliminary Development Feasibility Report",
-    "generated_date": "2026-08-08",
+    "generated_date": "2026-08-09",
     "status": "validated",
     "sections": {
       "project_and_site": {
@@ -2737,14 +2751,6 @@
             },
             {
               "doc_id": "LDC",
-              "section_number": "2.4",
-              "section_title": "TIER TWO REQUIREMENTS",
-              "chapter": "Chapter 25-2",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. SPECIAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart B. Planned Unit Development Standards > \u00a7 2.4 TIER TWO REQUIREMENTS"
-            },
-            {
-              "doc_id": "LDC",
               "section_number": "25-2-818",
               "section_title": "MOBILE RETAIL ESTABLISHMENTS",
               "chapter": "Chapter 25-2",
@@ -2758,6 +2764,14 @@
               "chapter": "Chapter 25-2",
               "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
               "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. ZONING DISTRICTS > Division 3. Commercial Base Districts > \u00a7 25-2-91 PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS"
+            },
+            {
+              "doc_id": "LDC",
+              "section_number": "25-2-581",
+              "section_title": "CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
+              "chapter": "Chapter 25-2",
+              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
+              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements > \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS"
             }
           ]
         }
@@ -2787,14 +2801,6 @@
             },
             {
               "doc_id": "LDC",
-              "section_number": "2.4",
-              "section_title": "TIER TWO REQUIREMENTS",
-              "chapter": "Chapter 25-2",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. SPECIAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart B. Planned Unit Development Standards > \u00a7 2.4 TIER TWO REQUIREMENTS"
-            },
-            {
-              "doc_id": "LDC",
               "section_number": "25-2-818",
               "section_title": "MOBILE RETAIL ESTABLISHMENTS",
               "chapter": "Chapter 25-2",
@@ -2808,6 +2814,14 @@
               "chapter": "Chapter 25-2",
               "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
               "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. ZONING DISTRICTS > Division 3. Commercial Base Districts > \u00a7 25-2-91 PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS"
+            },
+            {
+              "doc_id": "LDC",
+              "section_number": "25-2-581",
+              "section_title": "CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
+              "chapter": "Chapter 25-2",
+              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
+              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements > \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS"
             }
           ]
         },
@@ -2832,14 +2846,6 @@
             },
             {
               "doc_id": "LDC",
-              "section_number": "25-7-92",
-              "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-              "chapter": "Chapter 25-7",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED"
-            },
-            {
-              "doc_id": "LDC",
               "section_number": "25-7-66",
               "section_title": "SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
               "chapter": "Chapter 25-7",
@@ -2848,11 +2854,11 @@
             },
             {
               "doc_id": "LDC",
-              "section_number": "25-7-93",
-              "section_title": "GENERAL EXCEPTIONS",
+              "section_number": "25-7-92",
+              "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
               "chapter": "Chapter 25-7",
               "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-93 GENERAL EXCEPTIONS"
+              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED"
             },
             {
               "doc_id": "LDC",
@@ -2861,6 +2867,14 @@
               "chapter": "Chapter 25-7",
               "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
               "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS"
+            },
+            {
+              "doc_id": "DCM",
+              "section_number": "1.2.6",
+              "section_title": "Floodplain Delineations",
+              "chapter": "Section 1",
+              "source_url": "https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
+              "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.6 Floodplain Delineations"
             }
           ]
         }
@@ -2873,20 +2887,12 @@
           "retrieved_passage_count": 5,
           "passages": [
             {
-              "doc_id": "LDC",
-              "section_number": "25-6-472",
-              "section_title": "PARKING FACILITY STANDARDS",
-              "chapter": "Chapter 25-6",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS"
-            },
-            {
               "doc_id": "TCM",
-              "section_number": "10.3.5.2",
-              "section_title": "Parking (Vehicle) Measures",
-              "chapter": "Section 10",
+              "section_number": "9.3.4.1",
+              "section_title": "Queuing",
+              "chapter": "Section 9",
               "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-              "breadcrumb": "Austin Transportation Criteria Manual > Section 10 TRAFFIC IMPACT ANALYSIS > 10.3.5.2 Parking (Vehicle) Measures"
+              "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.4.1 Queuing"
             },
             {
               "doc_id": "TCM",
@@ -2906,11 +2912,19 @@
             },
             {
               "doc_id": "LDC",
-              "section_number": "25-6-1",
-              "section_title": "DEFINITIONS",
+              "section_number": "25-6-472",
+              "section_title": "PARKING FACILITY STANDARDS",
               "chapter": "Chapter 25-6",
               "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 1. GENERAL PROVISIONS > \u00a7 25-6-1 DEFINITIONS"
+              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS"
+            },
+            {
+              "doc_id": "LDC",
+              "section_number": "25-6-292",
+              "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
+              "chapter": "Chapter 25-6",
+              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
+              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS"
             }
           ]
         }
@@ -3030,7 +3044,7 @@
         ],
         "warnings": [
           "Zoning could not be confirmed exactly and requires verification.",
-          "2 citation(s) failed verification and were excluded from supported regulatory citations."
+          "1 citation(s) failed verification and were excluded from supported regulatory citations."
         ]
       },
       "source_citations": {
@@ -3039,16 +3053,17 @@
           "LDC \u2014 \u00a7 25-2-518 QUALIFYING DEVELOPMENT (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code",
           "LDC \u2014 \u00a7 25-2-818 MOBILE RETAIL ESTABLISHMENTS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code",
           "LDC \u2014 \u00a7 25-2-91 PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code",
+          "LDC \u2014 \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code",
           "LDC \u2014 \u00a7 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code",
           "LDC \u2014 \u00a7 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-7-93 GENERAL EXCEPTIONS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code",
+          "LDC \u2014 \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code",
           "LDC \u2014 \u00a7 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-6-472 PARKING FACILITY STANDARDS (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "TCM \u2014 \u00a7 10.3.5.2 Parking (Vehicle) Measures (Section 10) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
+          "DCM \u2014 \u00a7 1.2.6 Floodplain Delineations (Section 1) | https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
+          "TCM \u2014 \u00a7 9.3.4.1 Queuing (Section 9) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
           "TCM \u2014 \u00a7 9.4.1 OFF-STREET GENERAL LOADING REQUIREMENTS (Section 9) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
           "TCM \u2014 \u00a7 9.3.2 GENERAL DESIGN CRITERIA (Section 9) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-          "LDC \u2014 \u00a7 25-6-1 DEFINITIONS (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code",
+          "LDC \u2014 \u00a7 25-6-472 PARKING FACILITY STANDARDS (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code",
+          "LDC \u2014 \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code",
           "LDC \u2014 \u00a7 25-9-33 SERVICE EXTENSION APPLICATION (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code",
           "LDC \u2014 \u00a7 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code",
           "LDC \u2014 \u00a7 25-9-410 APPLICABILITY (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code",
@@ -3102,11 +3117,11 @@
             "source": "LDC",
             "source_name": "Austin Land Development Code (Title 25)",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-7",
-            "section_number": "25-7-94",
-            "section_title": "REQUIREMENTS IN CENTRAL BUSINESS AREA",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA",
-            "chunk_id": "LDC:915:0",
+            "chapter": "Chapter 25-2",
+            "section_number": "25-2-581",
+            "section_title": "CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements > \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
+            "chunk_id": "LDC:350:0",
             "claim_support": "retrieved_passage",
             "verification_status": "found",
             "supports_claim": true,
@@ -3117,10 +3132,10 @@
             "source_name": "Austin Land Development Code (Title 25)",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
             "chapter": "Chapter 25-7",
-            "section_number": "25-7-92",
-            "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-            "chunk_id": "LDC:913:0",
+            "section_number": "25-7-94",
+            "section_title": "REQUIREMENTS IN CENTRAL BUSINESS AREA",
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA",
+            "chunk_id": "LDC:915:0",
             "claim_support": "retrieved_passage",
             "verification_status": "found",
             "supports_claim": true,
@@ -3145,10 +3160,10 @@
             "source_name": "Austin Land Development Code (Title 25)",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
             "chapter": "Chapter 25-7",
-            "section_number": "25-7-93",
-            "section_title": "GENERAL EXCEPTIONS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-93 GENERAL EXCEPTIONS",
-            "chunk_id": "LDC:914:0",
+            "section_number": "25-7-92",
+            "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED",
+            "chunk_id": "LDC:913:0",
             "claim_support": "retrieved_passage",
             "verification_status": "found",
             "supports_claim": true,
@@ -3169,14 +3184,14 @@
             "verification_detail": "Section verified in regulatory index."
           },
           {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-6",
-            "section_number": "25-6-472",
-            "section_title": "PARKING FACILITY STANDARDS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS",
-            "chunk_id": "LDC:848:0",
+            "source": "DCM",
+            "source_name": "Austin Drainage Criteria Manual",
+            "source_url": "https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
+            "chapter": "Section 1",
+            "section_number": "1.2.6",
+            "section_title": "Floodplain Delineations",
+            "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.6 Floodplain Delineations",
+            "chunk_id": "DCM:1171:0",
             "claim_support": "retrieved_passage",
             "verification_status": "found",
             "supports_claim": true,
@@ -3186,11 +3201,11 @@
             "source": "TCM",
             "source_name": "Austin Transportation Criteria Manual",
             "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "chapter": "Section 10",
-            "section_number": "10.3.5.2",
-            "section_title": "Parking (Vehicle) Measures",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 10 TRAFFIC IMPACT ANALYSIS > 10.3.5.2 Parking (Vehicle) Measures",
-            "chunk_id": "TCM:1323:1",
+            "chapter": "Section 9",
+            "section_number": "9.3.4.1",
+            "section_title": "Queuing",
+            "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.4.1 Queuing",
+            "chunk_id": "TCM:1261:0",
             "claim_support": "retrieved_passage",
             "verification_status": "found",
             "supports_claim": true,
@@ -3229,10 +3244,24 @@
             "source_name": "Austin Land Development Code (Title 25)",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
             "chapter": "Chapter 25-6",
-            "section_number": "25-6-1",
-            "section_title": "DEFINITIONS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 1. GENERAL PROVISIONS > \u00a7 25-6-1 DEFINITIONS",
-            "chunk_id": "LDC:764:1",
+            "section_number": "25-6-472",
+            "section_title": "PARKING FACILITY STANDARDS",
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS",
+            "chunk_id": "LDC:848:0",
+            "claim_support": "retrieved_passage",
+            "verification_status": "found",
+            "supports_claim": true,
+            "verification_detail": "Section verified in regulatory index."
+          },
+          {
+            "source": "LDC",
+            "source_name": "Austin Land Development Code (Title 25)",
+            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
+            "chapter": "Chapter 25-6",
+            "section_number": "25-6-292",
+            "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS",
+            "chunk_id": "LDC:819:0",
             "claim_support": "retrieved_passage",
             "verification_status": "found",
             "supports_claim": true,
@@ -3316,7 +3345,7 @@
       }
     },
     "metrics": {
-      "verified_citation_count": 18,
+      "verified_citation_count": 19,
       "regulatory_evidence_count": 20,
       "unsupported_claim_count": 1
     },

@@ -1,6 +1,6 @@
 # Preliminary Development Feasibility Report
 
-Generated: 2026-08-08
+Generated: 2026-08-09
 Status: validated
 
 ## Project and Site Description
@@ -16,36 +16,40 @@ Status: validated
 
 ### Synthesis
 
-**Summary of Feasibility Considerations**
+**Feasibility Considerations, Constraints, Unknowns, and Recommended Next Steps**
 
-The preliminary development feasibility review for a proposed 12-unit multifamily residential development in Austin, Texas, has identified several key considerations:
+**Major Feasibility Considerations:**
 
-1. **Zoning**: The subject property is located in an ambiguous zoning district (SF-3-NP), and the exact zoning classification needs to be confirmed through official verification.
-2. **Floodplain**: The floodplain check requires confirmed coordinates, which need to be obtained manually.
-3. **Watershed**: The watershed lookup also requires confirmed coordinates.
-4. **Transportation Access**: The proposed development will require a driveway spacing analysis, and the applicant must identify the applicable site conditions for shared driveways or third driveways.
-5. **Water and Wastewater**: The regulatory requirements do not establish actual water or wastewater service availability or capacity; verification with the appropriate utility authority is required.
+1. **Zoning:** The subject property is located in an ambiguous zoning district (SF-3-NP), which requires further verification.
+2. **Floodplain:** Floodplain checks require confirmed coordinates, which are not available at this time.
+3. **Watershed:** Watershed lookup requires confirmed coordinates, which are not available at this time.
+4. **Transportation Access:** Driveway placement and spacing requirements must be considered to ensure safe and efficient access.
 
-**Constraints**
+**Constraints:**
 
-1. **Zoning Uncertainty**: The ambiguous zoning classification creates uncertainty, which may impact the development's feasibility.
-2. **Floodplain and Watershed Requirements**: The need for confirmed coordinates to complete floodplain and watershed checks adds complexity to the development process.
-3. **Transportation Access Challenges**: The driveway spacing analysis and shared driveways or third driveways requirements may pose challenges for the applicant.
+1. **Utility Capacity:** The availability of water and wastewater services is not established, requiring verification with the relevant utility authorities.
+2. **Regulatory Requirements:** Compliance with Austin's Land Development Code (LDC) and Transportation Criteria Manual (TCM) requirements must be ensured.
 
-**Unknowns**
+**Unknowns:**
 
-1. **Confirmed Coordinates**: The exact coordinates of the subject property are not available, which is required for floodplain and watershed checks.
-2. **Utility Capacity**: The regulatory requirements do not establish actual water or wastewater service availability or capacity; verification with the appropriate utility authority is required.
-3. **Zoning Verification**: Official verification of the zoning classification is necessary to confirm the development's feasibility.
+1. **Confirmed Coordinates:** Floodplain and watershed checks require confirmed coordinates to proceed.
+2. **Utility Service Availability:** Verification of water and wastewater service availability is required.
+3. **Zoning Designation:** The subject property's zoning designation requires further verification.
 
-**Recommended Next Steps**
+**Recommended Next Steps:**
 
-1. **Confirm Zoning Classification**: Obtain official verification of the zoning classification through the City of Austin's planning department.
-2. **Obtain Confirmed Coordinates**: Manually obtain confirmed coordinates for the subject property to complete floodplain and watershed checks.
-3. **Verify Utility Capacity**: Verify water and wastewater service availability and capacity with the appropriate utility authorities.
-4. **Conduct Transportation Access Analysis**: Conduct a thorough driveway spacing analysis and identify applicable site conditions for shared driveways or third driveways.
+1. **Verify Zoning Designation:** Obtain an official zoning determination for the subject property.
+2. **Confirm Coordinates:** Gather confirmed coordinates for floodplain and watershed checks.
+3. **Contact Utility Authorities:** Verify water and wastewater service availability and capacity with relevant utility authorities.
+4. **Review LDC and TCM Requirements:** Ensure compliance with Austin's Land Development Code (LDC) and Transportation Criteria Manual (TCM) requirements.
 
-By addressing these unknowns and constraints, the development team can better understand the feasibility of the proposed multifamily residential development in Austin, Texas.
+**Additional Recommendations:**
+
+1. **Hire a Professional:** Consider hiring a professional (e.g., urban planner, engineer) to assist with the development process.
+2. **Conduct Site Analysis:** Conduct a thorough site analysis to identify potential issues and opportunities.
+3. **Engage with Stakeholders:** Engage with local stakeholders, including neighbors and community groups, to ensure that their concerns are addressed.
+
+By addressing these feasibility considerations, constraints, unknowns, and recommended next steps, you can move forward with the development process while minimizing risks and ensuring compliance with relevant regulations.
 
 ## Sources Consulted
 
@@ -93,18 +97,18 @@ Retrieved regulatory references:
 Retrieved regulatory references:
 - LDC § 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS
 - DCM § 1.2.6 Floodplain Delineations
-- LDC § 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT
+- LDC § 25-7-8 COMPUTATION OF STORMWATER RUNOFF
 - DCM § 8.2.3 Watershed Floodplain Models
-- LDC § 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS
+- LDC § 25-7-67 MODIFIED DRAINAGE STANDARDS FOR RESIDENTIAL INFILL
 
 ## Transportation and Access Considerations
 
 Retrieved regulatory references:
 - TCM § 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets
-- LDC § APPENDIX A. TABLES OF OFF-STREET LOADING REQUIREMENTS AND FORMER OFF-STREET PARKING REQUIREMENTS [preamble] 
-- LDC § 25-6-114 NEIGHBORHOOD TRAFFIC ANALYSIS REQUIRED
-- TCM § 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets
-- TCM § 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets
+- TCM § 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS
+- LDC § 25-6-292 DESIGN AND CONSTRUCTION STANDARDS
+- TCM § 7.6.0 ACCESS MANAGEMENT
+- TCM § 7.6.2 DRIVEWAY PLACEMENT
 
 ## General Water and Wastewater Considerations
 
@@ -123,7 +127,7 @@ Retrieved regulatory references:
 
 Nearby permits and cases are historical context only. They must not be treated as evidence that the proposed development requires professional verification. [Claim removed or revised: unsupported definitive statement; professional verification required.]
 
-Summary: {'permit_count': 0, 'site_plan_count': 0, 'plan_review_count': 0}
+Summary: Permit count: 0, Site plan count: 0, Plan review count: 0
 
 ## Potential Constraints
 
@@ -147,14 +151,14 @@ Summary: {'permit_count': 0, 'site_plan_count': 0, 'plan_review_count': 0}
 5. LDC — § 25-2-567 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN MULTIFAMILY DISTRICTS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code
 6. LDC — § 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code
 7. DCM — § 1.2.6 Floodplain Delineations (Section 1) | https://library.municode.com/tx/austin/codes/drainage_criteria_manual
-8. LDC — § 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT (Chapter 25-8) | https://library.municode.com/tx/austin/codes/land_development_code
+8. LDC — § 25-7-8 COMPUTATION OF STORMWATER RUNOFF (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code
 9. DCM — § 8.2.3 Watershed Floodplain Models (Section 8) | https://library.municode.com/tx/austin/codes/drainage_criteria_manual
-10. LDC — § 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code
+10. LDC — § 25-7-67 MODIFIED DRAINAGE STANDARDS FOR RESIDENTIAL INFILL (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code
 11. TCM — § 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
-12. LDC — § APPENDIX A. TABLES OF OFF-STREET LOADING REQUIREMENTS AND FORMER OFF-STREET PARKING REQUIREMENTS [preamble] | https://library.municode.com/tx/austin/codes/land_development_code
-13. LDC — § 25-6-114 NEIGHBORHOOD TRAFFIC ANALYSIS REQUIRED (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code
-14. TCM — § 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
-15. TCM — § 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
+12. TCM — § 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
+13. LDC — § 25-6-292 DESIGN AND CONSTRUCTION STANDARDS (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code
+14. TCM — § 7.6.0 ACCESS MANAGEMENT (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
+15. TCM — § 7.6.2 DRIVEWAY PLACEMENT (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
 16. LDC — § 25-9-33 SERVICE EXTENSION APPLICATION (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
 17. LDC — § 25-9-412 RECLAIMED WATER CONNECTION REQUIREMENTS (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
 18. LDC — § 25-9-91 TAP PERMIT REQUIRED (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code

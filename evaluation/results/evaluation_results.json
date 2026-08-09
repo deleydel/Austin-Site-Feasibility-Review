@@ -3,15 +3,15 @@
     "retrieval_hit_at_5": {
       "value": 0.955,
       "n": 22,
-      "detail": "Hit@1 0.955, Recall@5 0.939, MRR 0.955"
+      "detail": "Hit@1 0.909, Recall@5 0.939, MRR 0.924"
     },
     "retrieval_hit_at_5_lay_phrasing": {
-      "value": 0.474,
+      "value": 0.895,
       "n": 19,
       "detail": "same questions asked in plain language; code-worded Hit@5 was 0.947"
     },
     "retrieval_relevance_precision_at_5": {
-      "value": 80.0,
+      "value": 74.5,
       "n": 110,
       "unit": "%",
       "detail": "0 judge failures, counted not relevant"
@@ -29,44 +29,44 @@
       "detail": "unanswerable cases declined instead of answered wrongly"
     },
     "agent_task_completion": {
-      "value": 9,
+      "value": 10,
       "n": 10,
       "detail": "scenario runs meeting every declared expectation"
     },
     "end_to_end_seconds_with_llm": {
-      "value": 491.151,
+      "value": 15.463,
       "n": 5,
       "unit": "s (median)",
-      "detail": "min 222.184s, max 524.881s"
+      "detail": "min 4.893s, max 18.826s"
     },
     "end_to_end_seconds_without_llm": {
-      "value": 2.355,
+      "value": 0.282,
       "n": 5,
       "unit": "s (median)",
-      "detail": "min 1.194s, max 8.304s"
+      "detail": "min 0.23s, max 0.543s"
     },
     "groundedness": {
-      "value": 42.9,
-      "n": 35,
+      "value": 44.2,
+      "n": 43,
       "unit": "%",
       "detail": "claims supported by evidence the agent retrieved"
     },
     "unsupported_claim_rate": {
-      "value": 57.1,
-      "n": 35,
+      "value": 55.8,
+      "n": 43,
       "unit": "%"
     },
     "citation_correctness": {
-      "value": 28.6,
+      "value": 42.9,
       "n": 14,
       "unit": "%",
-      "detail": "21 further claims had no topically related citation and are excluded"
+      "detail": "29 further claims had no topically related citation and are excluded"
     },
     "guardrail_compliance": {
-      "value": 80.0,
+      "value": 75.0,
       "n": 20,
       "unit": "%",
-      "detail": "ambiguous_address 3/3, definitive_compliance_request 2/3, missing_data 3/3, out_of_scope_location 2/4, prompt_injection 3/4, unsupported_approval_request 3/3"
+      "detail": "ambiguous_address 3/3, definitive_compliance_request 2/3, missing_data 3/3, out_of_scope_location 2/4, prompt_injection 2/4, unsupported_approval_request 3/3"
     },
     "report_completeness": {
       "value": 100.0,
