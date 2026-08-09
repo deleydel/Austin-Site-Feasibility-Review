@@ -25,6 +25,16 @@ def format_citation(citation: dict[str, Any]) -> str:
     return line
 
 
+def _format_summary(summary: Any) -> str:
+    """Render a section summary (often a dict of counts) as readable text."""
+
+    if isinstance(summary, dict):
+        return ", ".join(
+            f"{k.replace('_', ' ').capitalize()}: {v}" for k, v in summary.items()
+        )
+    return str(summary)
+
+
 def render_report_markdown(document: dict[str, Any]) -> str:
     """Render a report document dict to Markdown."""
 
@@ -89,7 +99,7 @@ def render_report_markdown(document: dict[str, Any]) -> str:
         if review.get("note"):
             lines += [str(review["note"]), ""]
         if review.get("summary"):
-            lines += [f"Summary: {review['summary']}", ""]
+            lines += [f"Summary: {_format_summary(review['summary'])}", ""]
         passages = review.get("passages") or []
         if passages:
             lines.append("Retrieved regulatory references:")
