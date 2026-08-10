@@ -102,16 +102,24 @@ The implemented review sequence is:
 
 ## Framework at a Glance
 
+A user submits an Austin address and a proposed development. The system first
+verifies the request is in scope, then gathers two kinds of evidence: exact
+site facts from cleaned municipal datasets (zoning, floodplain, watershed,
+nearby permit history) and applicable regulatory text retrieved from the
+indexed Austin codes. Specialized review nodes combine both, guardrails
+validate every claim and citation, and the result is exported as a cautious,
+source-cited feasibility report.
+
 | Part | Where | What it does |
 | --- | --- | --- |
-| Data preprocessing (Task 1) | `src/preprocessing/` | Cleans municipal CSV/GeoJSON into Parquet, drops PII, writes the source manifest and data-quality report |
-| Regulatory RAG (Task 2) | `src/rag/` | Parses the LDC/DCM/TCM DOCX into section-aware chunks, embeds them (BGE + ChromaDB), and serves hybrid dense+BM25 retrieval with lay-language query expansion and exact section lookup |
-| Structured-data tools (Task 3) | `src/tools/` | Deterministic zoning, geocoding, floodplain, watershed, and nearby-record lookups with explicit safety statuses |
-| Agentic workflow (Task 4) | `src/agents/` | LangGraph review graph: input validation, site context, specialized review nodes, deterministic zoning-conflict check, optional LLM synthesis |
-| Guardrails (Task 5) | `src/guardrails/` | Scope validation, approved-source and citation verification, unsupported-claim sanitization, privacy filtering |
-| Report generation (Task 6) | `src/report/` | Structured report schema, template, and Markdown/HTML/DOCX/PDF export |
-| Evaluation (Task 7) | `evaluation/` | Retrieval, grounding, guardrail, scenario, and report benchmarks with a local LLM judge; results in `evaluation/results/` |
-| Frontend (Task 8) | `app/` | Streamlit form, progress display, findings, citations, and report downloads |
+| Data preprocessing (Task 1) | `src/preprocessing/` | Cleans six municipal datasets (CSV/GeoJSON) into query-ready Parquet: deduplication audits, personally identifying fields removed, geometries repaired and reprojected for accurate distance math, and a source manifest recording provenance and limitations of every dataset |
+| Regulatory RAG (Task 2) | `src/rag/` | Parses the Land Development Code, Drainage Criteria Manual, and Transportation Criteria Manual into chunks that never cross a legal-section boundary, embeds them (BGE + ChromaDB), and answers queries with hybrid semantic+keyword retrieval; a query-expansion layer translates conversational phrasing into regulatory vocabulary, and every passage returned carries its full legal citation |
+| Structured-data tools (Task 3) | `src/tools/` | Deterministic lookups for zoning, geocoding, floodplain intersection, watershed, and nearby permit/case history; every answer carries an explicit status, and uncertain cases return candidates for confirmation instead of a guess |
+| Agentic workflow (Task 4) | `src/agents/` | A LangGraph state graph that runs the review in order — input validation, site context, then zoning, drainage, transportation, utilities, and historical-context review nodes — each calling the tools and retriever it needs; a deterministic check flags zoning/use conflicts, and an optional LLM pass synthesizes the narrative |
+| Guardrails (Task 5) | `src/guardrails/` | Enforces Austin-only scope, restricts claims to an approved source list, verifies that citations support their claims, neutralizes definitive or unsupported statements, and filters private contact information before anything reaches the report |
+| Report generation (Task 6) | `src/report/` | Places validated findings into a fixed report schema with per-section citations and a preliminary-review disclaimer, exporting Markdown, HTML, DOCX, and PDF |
+| Evaluation (Task 7) | `evaluation/` | Automated benchmarks for retrieval quality, groundedness, guardrail compliance, end-to-end scenarios, and report integrity, scored with a locally run LLM judge that is itself calibrated before its verdicts are used; results in `evaluation/results/` |
+| Frontend (Task 8) | `app/` | Streamlit interface: proposal form, live progress, findings with citations, and report downloads |
 
 ## Results Summary
 
