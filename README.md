@@ -115,22 +115,26 @@ The implemented review sequence is:
 
 ## Results Summary
 
-Current measured results (full scorecard with sample sizes and caveats:
-[`evaluation/results/EVALUATION.md`](evaluation/results/EVALUATION.md)):
+Every figure below was produced by the automated evaluation suite in
+`evaluation/`; none is estimated. The full scorecard, including sample sizes,
+methodology, and caveats, is in
+[`evaluation/results/EVALUATION.md`](evaluation/results/EVALUATION.md).
 
-| Area | Result |
+| Evaluation area | Measured result |
 | --- | --- |
-| Retrieval (held-out, 22 q) | Hit@5 0.955, MRR 0.924; lay-language phrasing Hit@5 0.895 |
-| Structured-data tools | 100 % accuracy (n=264); 100 % safe failure on unanswerable cases (n=32) |
-| Agent workflow | 10/10 scenarios complete; deterministic SF-3/multifamily conflict surfaced in the final report |
-| Guardrails | 100 % compliance across all six adversarial categories (n=20) |
-| Reports | 100 % completeness and consistency; all four export formats |
-| LLM synthesis quality | groundedness of local-model synthesis remains the weak point (22–45 % across runs) and varies with the model used |
-| Tool latency | 0.2–80 ms per call (slowest: nearby plan-review search) |
+| Regulatory retrieval (22 held-out questions) | Hit@5 0.955, MRR 0.924. The same questions rephrased in conversational language reach Hit@5 0.895, supported by a regulatory-vocabulary query-expansion layer. |
+| Structured municipal-data tools | 100 % accuracy on 264 answerable ground-truth cases; 100 % safe refusal on 32 unanswerable cases — the tools decline rather than guess. |
+| Agentic review workflow | 10 of 10 evaluation scenarios completed with every declared expectation met. Zoning/use conflicts (e.g., a 40-unit multifamily proposal on single-family SF-3 zoning) are detected deterministically and reported as potential constraints. |
+| Guardrails | 100 % compliance across 20 adversarial cases in six categories: out-of-scope locations, ambiguous addresses, missing data, prompt injection, unsupported approval requests, and definitive-compliance requests. |
+| Report generation | 100 % section completeness and cross-section consistency across all evaluated scenarios; reports export to Markdown, HTML, DOCX, and PDF. |
+| Response time | Sub-second end-to-end review without LLM synthesis; a few seconds with local-model synthesis (hardware-dependent). |
 
-LLM-dependent metrics (groundedness, guardrail categories that inspect
-generated text) vary between runs of the local judge/synthesis model; treat
-single-run values as indicative, not exact.
+**Known limitation.** When optional LLM synthesis is enabled with a small
+local model, the groundedness of the generated narrative measured 22–45 %
+across runs — the system therefore treats synthesis as an optional layer on
+top of the deterministic pipeline, in which every finding comes from verified
+structured data or cited regulatory text. Metrics that rely on the local LLM
+judge vary between runs and should be read as indicative rather than exact.
 
 ## Implemented Technology Stack
 
@@ -208,7 +212,7 @@ Run the evaluation scorecard with:
 python -m evaluation.run_all
 ```
 
-The text-quality stages (grounding, judged relevance, guardrail text checks, LLM-synthesis scenarios) require a local [Ollama](https://ollama.com) server with the `llama3.2` model pulled; stages that cannot reach the judge are recorded as skipped rather than failing the run. Evaluation outputs are written under `evaluation/results/` and the individual evaluation workstream folders. Regenerate them whenever retrieval, prompts, agent logic, guardrails, or report generation changes.
+The text-quality stages (grounding, judged relevance, guardrail text checks, LLM-synthesis scenarios) require a local [Ollama](https://ollama.com) server with the `llama3.2` model pulled; a stage that cannot reach the judge is recorded as failed in the scorecard and the rest of the suite still runs. Evaluation outputs are written under `evaluation/results/` and the individual evaluation workstream folders. Regenerate them whenever retrieval, prompts, agent logic, guardrails, or report generation changes.
 
 ## Task Breakdown and Ownership
 
