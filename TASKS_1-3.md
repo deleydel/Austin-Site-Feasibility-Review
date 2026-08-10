@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 python -m src.preprocessing.run_all             # Task 1: clean data -> data/processed/
 python -m src.rag.indexer                       # Task 2: parse DOCX, chunk, embed, index
-python -m pytest tests/ -v                      # correctness tests (45)
+python -m pytest tests/test_preprocessing.py tests/test_rag.py tests/test_tools.py -v   # Tasks 1-3 tests (48)
 python -m evaluation.retrieval.run_benchmark    # Task 2 retrieval metrics -> evaluation/retrieval/results/
 python -m evaluation.tools.run_latency          # Task 3 latency -> evaluation/tools/results/
 ```
@@ -27,7 +27,7 @@ python -m evaluation.tools.run_latency          # Task 3 latency -> evaluation/t
 
 | What | Result |
 | --- | --- |
-| Correctness tests | **45 / 45 pass** |
+| Correctness tests (Tasks 1-3 files) | **48 / 48 pass** |
 | Regulatory corpus parsed | 1,356 sections, **0 unclassified paragraphs** |
 | Chunks indexed | 1,940 (max 448 BGE tokens — under the 512 model limit) |
 | Retrieval Hit@5 / Hit@1 | **0.944** / 0.722 (18-question benchmark) |
@@ -187,7 +187,7 @@ guessed, and every uncertain case is surfaced instead of resolved silently.
 
 ## Test and evaluation coverage
 
-`tests/` — 45 pytest checks:
+`tests/` — 48 pytest checks for Tasks 1-3:
 
 - **test_preprocessing.py** (Task 1): multi-zoning preservation, dedup-audit
   flags, PII allow-list enforcement, VOID retention, date parsing, geometry

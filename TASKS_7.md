@@ -7,6 +7,18 @@ adversarial guardrail tests, harness tests, and a manual verification pass.
 Everything reported here was measured by the scripts in `evaluation/`. Nothing
 is estimated. Sample sizes are small and stated on every figure.
 
+> **Results update (2026-08-09).** The figures in this document are the
+> measurements taken when this workstream was delivered; they motivated fixes
+> that landed afterwards, so several headline numbers have since improved on
+> re-measurement: lay-language retrieval Hit@5 0.474 → **0.895** (query
+> expansion in Task 2), guardrail compliance 80 % → **100 %** (Tasks 5–6
+> hardening), agent task completion 9/10 → **10/10**, and the SF-3/multifamily
+> zoning conflict now appears in the final report as a potential constraint.
+> Groundedness of local-model synthesis remains the open limitation (22–45 %
+> across runs). The current authoritative scorecard is
+> [`evaluation/results/EVALUATION.md`](evaluation/results/EVALUATION.md);
+> the analysis and methodology below are unchanged and still apply.
+
 ## Setup
 
 ```bash

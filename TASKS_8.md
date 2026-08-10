@@ -51,7 +51,7 @@ running Streamlit session.
 | What | Result |
 | --- | --- |
 | Correctness tests (Task 8) | **6 / 6 pass** |
-| Full suite regression | **99 / 99 pass** (93 existing + 6 new) |
+| Full suite regression | **99 / 99 pass** at time of writing (93 existing + 6 new); the suite has since grown — see the current pytest output (109 as of the latest main) |
 | Live smoke: valid proposal | `input_valid=True`, `schema_complete=True` |
 | Live smoke: missing fields | blocked with `missing_information=[address, proposed_land_use]` |
 | Live smoke: out-of-scope address | blocked with scope `stop_reason` |
