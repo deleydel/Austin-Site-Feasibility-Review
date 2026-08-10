@@ -15,56 +15,6 @@
         "required": 12,
         "present": 12,
         "missing": [],
-        "empty": [
-          "potential_constraints"
-        ],
-        "unexpectedly_empty": [],
-        "complete": true
-      },
-      "exports": {
-        "md": {
-          "ok": true,
-          "bytes": 12065
-        },
-        "html": {
-          "ok": true,
-          "bytes": 14308
-        },
-        "docx": {
-          "ok": true,
-          "bytes": 40212
-        },
-        "pdf": {
-          "ok": true,
-          "bytes": 8344
-        }
-      },
-      "finding_labels": {
-        "labels_used": [
-          "no major issue identified from available data",
-          "verification required"
-        ],
-        "invalid": [],
-        "ok": true
-      },
-      "rule_based_conflicts": [],
-      "judged_conflicts": [
-        {
-          "sections": [
-            "zoning_and_land_use",
-            "project_and_site"
-          ],
-          "detail": "The property is zoned as SF-3-NP, which requires a minimum site area of 1 acre and at least 40% of the dwelling units to be single-family residential."
-        }
-      ],
-      "judge_assessed": true,
-      "consistent": true
-    },
-    "s2_floodplain_constraint": {
-      "completeness": {
-        "required": 12,
-        "present": 12,
-        "missing": [],
         "empty": [],
         "unexpectedly_empty": [],
         "complete": true
@@ -72,19 +22,19 @@
       "exports": {
         "md": {
           "ok": true,
-          "bytes": 11895
+          "bytes": 7364
         },
         "html": {
           "ok": true,
-          "bytes": 13867
+          "bytes": 9133
         },
         "docx": {
           "ok": true,
-          "bytes": 40179
+          "bytes": 39579
         },
         "pdf": {
           "ok": true,
-          "bytes": 7995
+          "bytes": 6114
         }
       },
       "finding_labels": {
@@ -103,9 +53,50 @@
             "project_and_site",
             "zoning_and_land_use"
           ],
-          "detail": "The proposed development is zoned as SF-3-NP, which requires compliance with site development regulations for a family residence (SF-3) district."
+          "detail": "Proposed land use (multifamily residential) does not match reported zoning (SF-3-NP)."
         }
       ],
+      "judge_assessed": true,
+      "consistent": true
+    },
+    "s2_floodplain_constraint": {
+      "completeness": {
+        "required": 12,
+        "present": 12,
+        "missing": [],
+        "empty": [],
+        "unexpectedly_empty": [],
+        "complete": true
+      },
+      "exports": {
+        "md": {
+          "ok": true,
+          "bytes": 8139
+        },
+        "html": {
+          "ok": true,
+          "bytes": 9907
+        },
+        "docx": {
+          "ok": true,
+          "bytes": 39647
+        },
+        "pdf": {
+          "ok": true,
+          "bytes": 6318
+        }
+      },
+      "finding_labels": {
+        "labels_used": [
+          "no major issue identified from available data",
+          "potential constraint",
+          "verification required"
+        ],
+        "invalid": [],
+        "ok": true
+      },
+      "rule_based_conflicts": [],
+      "judged_conflicts": [],
       "judge_assessed": true,
       "consistent": true
     },
@@ -123,19 +114,19 @@
       "exports": {
         "md": {
           "ok": true,
-          "bytes": 11080
+          "bytes": 6740
         },
         "html": {
           "ok": true,
-          "bytes": 13067
+          "bytes": 8506
         },
         "docx": {
           "ok": true,
-          "bytes": 40121
+          "bytes": 39338
         },
         "pdf": {
           "ok": true,
-          "bytes": 7817
+          "bytes": 5823
         }
       },
       "finding_labels": {
@@ -150,10 +141,10 @@
       "judged_conflicts": [
         {
           "sections": [
-            "zoning_and_land_use",
-            "drainage_flood_environmental"
+            "project_and_site",
+            "zoning_and_land_use"
           ],
-          "detail": "Floodplain intersection reported as false in zoning_and_land_use, but no floodplain intersection identified in drainage_flood_environmental."
+          "detail": "No single zoning designation is stated because the lookup was 'multiple_records' in both sections."
         }
       ],
       "judge_assessed": true,
@@ -173,19 +164,19 @@
       "exports": {
         "md": {
           "ok": true,
-          "bytes": 11830
+          "bytes": 8661
         },
         "html": {
           "ok": true,
-          "bytes": 14096
+          "bytes": 10470
         },
         "docx": {
           "ok": true,
-          "bytes": 40075
+          "bytes": 39718
         },
         "pdf": {
           "ok": true,
-          "bytes": 8166
+          "bytes": 6528
         }
       },
       "finding_labels": {
@@ -197,7 +188,13 @@
         "ok": true
       },
       "rule_based_conflicts": [],
-      "judged_conflicts": [],
+      "judged_conflicts": [
+        {
+          "sections": "project_and_site",
+          "zoning_and_land_use": "",
+          "detail": "Both report 'ambiguous' zoning status."
+        }
+      ],
       "judge_assessed": true,
       "consistent": true
     },
@@ -206,33 +203,32 @@
         "required": 12,
         "present": 12,
         "missing": [],
-        "empty": [
-          "potential_constraints"
-        ],
+        "empty": [],
         "unexpectedly_empty": [],
         "complete": true
       },
       "exports": {
         "md": {
           "ok": true,
-          "bytes": 11163
+          "bytes": 7932
         },
         "html": {
           "ok": true,
-          "bytes": 13123
+          "bytes": 9676
         },
         "docx": {
           "ok": true,
-          "bytes": 40003
+          "bytes": 39675
         },
         "pdf": {
           "ok": true,
-          "bytes": 7860
+          "bytes": 6402
         }
       },
       "finding_labels": {
         "labels_used": [
           "no major issue identified from available data",
+          "potential constraint",
           "verification required"
         ],
         "invalid": [],
@@ -245,7 +241,7 @@
             "project_and_site",
             "zoning_and_land_use"
           ],
-          "detail": "Water and Wastewater Capacity is reported as unknown in both sections."
+          "detail": "The project is reported to be in compliance with the Austin Land Development Code, but the zoning status is found and requires official verification."
         }
       ],
       "judge_assessed": true,

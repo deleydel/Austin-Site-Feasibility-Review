@@ -6,9 +6,9 @@ One entry per row of `manual_review_sheet.csv`. The regulation text is included 
 
 **Question:** Must a property owner dedicate drainage easements or rights-of-way when developing?
 
-**Evidence offered:** LDC 25-7-151 STORMWATER CONVEYANCE AND DRAINAGE FACILITIES
+**Evidence offered:** LDC 25-7-67 MODIFIED DRAINAGE STANDARDS FOR RESIDENTIAL INFILL
 
-> (A) The owner or developer of property to be developed is responsible for the conveyance of all stormwater flowing through the property, including stormwater that: (1) is directed to the property by other developed property; or (2) naturally flows through the property because of the topography. (B) Future upstream development shall be accounted for as determined under the Drainage Criteria Manual. (C) If the construction or improvement of a storm drainage facility is required along a property line that is common to more than one property owner, the owner proposing to develop the property is, at the time the property is developed, responsible for each required facility on either side of the common property line. (D) The responsibility of the owner proposing to develop the property includes the responsibility to dedicate or obtain the dedication of any right-of-way or easement necessary to accommodate the required construction or improvement of the storm drainage facility. (E) If an owner of property proposes to develop only a portion of that property, a stormwater drainage facility to serve that portion of the property proposed for immediate development or use is required, unless th [...]
+> (A) This section applies to a residential infill project. (B) A development application is not required to comply with Section 25-7-61 (Criteria for Approval of Development Applications), Section 25-7-151 (Stormwater Conveyance and Drainage Facilities), or Section 25-7-152 (Dedication of Easements and Right-of-Way) if: (1) The application is a resubdivision that does not exceed a gross site area of 17,780 square feet; or (2) The applicant provides a drainage plan demonstrating that all stormwater runoff from the development will be discharged: (a) to an existing storm drainage system; or (b) into right-of-way. (C) A development application must demonstrate all proposed improvements will be outside the erosion hazard zone, unless protective works are provided as prescribed in the Drainage Criteria Manual. (D) The owner of real property proposed to be developed shall be required to provide an easement for stormwater flow to the limits of the 100-year floodplain, as prescribed in the Drainage Criteria Manual.
 
 Allowed answers: `relevant / not_relevant`
 
@@ -34,9 +34,9 @@ Your verdict: ______
 
 **Question:** Drainage Criteria Manual section 8.3.3 safety criteria for stormwater management ponds
 
-**Evidence offered:** DCM 8.3.3 Safety Criteria for SWM Ponds
+**Evidence offered:** DCM 8.4.0 DETENTION POND STORAGE DETERMINATION
 
-> All ponds shall meet or exceed all specified safety criteria. Use of these criteria shall in no way relieve the engineer of the responsibility for the adequacy and safety of all aspects of the design of the SWM pond. A. The spillway, outfall, embankment, and appurtenant structures shall be designed to safely pass the design storm hydrograph with the freeboard shown in the table below. All contributing on-site drainage areas, and off-site areas which are routed through the SWM pond, shall be assumed to be fully developed in order to properly size the spillway, outfall, embankment and appurtenant structures. Any orifice with a dimension smaller than or equal to 12 inches shall be assumed to be fully blocked in order to properly size the spillway, outfall, embankment and appurtenant structures. For all spillways (especially enclosed conduits), the ability to adequately convey the design flows must take into account any submergence of the outlet, any existing or potential obstructions in the system and the capacity of the downstream system. | DETENTION POND CLASS | DESIGN STORM EVENT | FREEBOARD ON TOP OF ENBANKMENT, FT | | --- | --- | --- | | On-site/Off-site | | | | Small (DA < 25 ac [...]
+> A flow routing analysis using detailed hydrographs must be applied for all detention pond designs. The Soil Conservation Service hydrologic methods (TR-20) and the Hydrologic Engineering Center (HEC) hydrologic methods (HEC-HMS) may be used. The engineer may use other methods but must have their acceptability approved by the Director.
 
 Allowed answers: `relevant / not_relevant`
 
@@ -134,7 +134,7 @@ Your verdict: ______
 
 ## m11 - citation_support
 
-**Claim:** The project must comply with parking requirements, including adequate drives, aisles, and turning areas for access and usability.
+**Claim:** A person cannot connect a property to the City's water or wastewater utility system unless they hold a tap permit issued by the director of the Water and Wastewater Utility approving the connection.
 
 **Evidence offered:** cited None - no cited section was topically related to the claim
 
@@ -146,11 +146,9 @@ Your verdict: ______
 
 ## m12 - citation_support
 
-**Claim:** Water and wastewater capacity are confirmed available for the proposed development.
+**Claim:** A large development project with a property boundary located within 500 feet of a reclaimed water line must also connect to a reclaimed water line and use reclaimed water for the same purposes.
 
-**Evidence offered:** cited LDC 25-9-93 APPLICATION FOR TAP PERMIT; FEES; CAPACITY - The evidence states that water and wastewater capacity are confirmed available for the proposed development, as it explicitly mentions that the director of the Water and Wastewater Utility will not approve an application if existing facilities do not have actual capacity to serve the new connection.
-
-> (A) An applicant for a tap permit must apply to the Water and Wastewater Utility on a form approved by the director of the Water and Wastewater Utility. (B) An application for a tap permit must include: (1) the name, title, address and telephone number of the applicant; (2) a description of the property for which the tap permit is to be issued; (3) documentation demonstrating that the property that is the subject of the tap permit application is: (a) a legal lot under state law and local subdivision requirements; and (b) located in: (i) the City's water and wastewater impact fee service area; or (ii) an area covered by an agreement for the wholesale sale of water between the City and another utility service provider that authorizes the City to issue tap permits under the agreement; (4) if applicable, documentation that the applicant's service extension has been approved; and (5) other information that the director of the Water and Wastewater Utility determines is necessary to process the application. (C) An application for a tap permit must be accompanied by the payment of: (1) the tap permit fee, connection fee, and capital recovery fee set by the council under separate ordinance; [...]
+**Evidence offered:** cited None - no cited section was topically related to the claim
 
 Allowed answers: `supported / partially_supported / unsupported / uncited`
 
@@ -160,7 +158,7 @@ Your verdict: ______
 
 ## m13 - citation_support
 
-**Claim:** The site does not intersect with the floodplain, but there are nearby properties that have experienced flooding issues.
+**Claim:** case_number is a unique identifier for each permit case.
 
 **Evidence offered:** cited None - no cited section was topically related to the claim
 
@@ -172,11 +170,9 @@ Your verdict: ______
 
 ## m14 - citation_support
 
-**Claim:** Floodplain regulations may require additional mitigation measures.
+**Claim:** The permit array contains objects with properties case_number, address, status, work_type, and distance.
 
-**Evidence offered:** cited LDC 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS - claim and cited section share only 0% of the claim's content terms
-
-> (A) This section applies in a multifamily residence moderate-high density (MF-4) or multifamily residence high density (MF-5) district. (B) The minimum site area for each dwelling unit is: (1) 800 square feet, for an efficiency dwelling unit; (2) 1,000 square feet, for a one bedroom dwelling unit; and (3) 1,200 square feet, for a dwelling unit with two or more bedrooms.
+**Evidence offered:** cited None - no cited section was topically related to the claim
 
 Allowed answers: `supported / partially_supported / unsupported / uncited`
 
@@ -186,11 +182,9 @@ Your verdict: ______
 
 ## m15 - citation_support
 
-**Claim:** The proposed development is consistent with the SF-3-NP zoning designation.
+**Claim:** Plan reviews submitted are counted.
 
-**Evidence offered:** cited LDC 25-2-567 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN MULTIFAMILY DISTRICTS - claim and cited section share only 17% of the claim's content terms
-
-> (A) This section applies in a multifamily residence low density (MF-2) district, multifamily residence medium density (MF-3) district, multifamily residence moderate-high density (MF-4) district, or multifamily residence high density (MF-5) district on property that either has not been developed or that has been developed only with an agricultural use. (B) Except as provided in Subsection (C), a development may comply with multifamily residence highest density (MF-6) district site development regulations if the director of the Neighborhood Housing and Community Development Department certifies that the development complies with the City's S.M.A.R.T. Housing Program, and: (1) for a rental development, ten percent of the residential units in the development are reserved as affordable for a minimum of 40 years following the issuance of a certificate of occupancy for rental by a household earning not more that 60 percent of the median family income for the Austin metropolitan statistical area; or (2) for an owner-occupied development: (a) five percent of the residential units in the development are reserved as affordable for a minimum of 99 years following the issuance of a certificate [...]
+**Evidence offered:** cited None - no cited section was topically related to the claim
 
 Allowed answers: `supported / partially_supported / unsupported / uncited`
 

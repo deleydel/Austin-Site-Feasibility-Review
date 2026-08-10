@@ -89,3 +89,21 @@ def test_sf3_multifamily_flags_potential_zoning_conflict():
     assert zoning_review["potential_conflict"] is True
     assert "SF-3-NP" in zoning_review["conflict_detail"]
     assert "verification" in zoning_review["conflict_detail"].lower()
+
+    # The conflict must reach the FINAL report as a potential constraint,
+    # not stay buried in the review section — including without LLM synthesis.
+    final = result["final_report"]
+    constraints = final.get("potential_constraints") or []
+    conflict_findings = [
+        c for c in constraints
+        if c.get("category") == "zoning" and "SF-3-NP" in (c.get("detail") or "")
+    ]
+    assert conflict_findings, (
+        "zoning/use conflict missing from final potential_constraints"
+    )
+
+    from src.report.template import render_report_markdown
+
+    markdown = render_report_markdown(result["report_document"])
+    assert "SF-3-NP" in markdown
+    assert "potential zoning/use conflict" in markdown.lower()

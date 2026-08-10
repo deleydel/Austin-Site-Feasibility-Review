@@ -23,46 +23,28 @@
 <li>Development description: Proposed 40-unit multifamily residential development on an infill lot.</li>
 <li>Units: 40</li>
 <li>Site area (acres): 0.8</li>
-<li>Reported zoning: SF-3-NP (status: found)</li>
-<li>Floodplain intersection: False</li>
-<li>Watershed: Shoal Creek</li>
 </ul>
 <h3>Synthesis</h3>
-<p><strong>Summary of Feasibility Considerations</strong></p>
-<p>The provided data provides a comprehensive overview of the regulatory requirements for a proposed 40-unit multifamily residential development on an infill lot in Austin, Texas. The following are the major feasibility considerations, constraints, unknowns, and recommended next steps:</p>
-<p><strong>Major Feasibility Considerations:</strong></p>
-<ol>
-<li><strong>Zoning:</strong> The property is zoned as SF-3-NP, which requires a minimum site area of 1 acre and at least 40% of the dwelling units to be single-family residential.</li>
-<li><strong>Floodplain:</strong> The property does not intersect with the floodplain, but it is within the City of Austin Fully Developed 100-Year Floodplain.</li>
-<li><strong>Watershed:</strong> The property is located in the Shoal Creek watershed.</li>
-<li><strong>Transportation:</strong> The property requires access to a major roadway, which may impact driveway spacing and construction requirements.</li>
-</ol>
-<p><strong>Constraints:</strong></p>
-<ol>
-<li><strong>Driveway Spacing:</strong> The property&#x27;s frontage length will vary along a street, and driveway spacing requirements must be met.</li>
-<li><strong>Utility Capacity:</strong> The utility capacity for water and wastewater services is not established, and verification with the appropriate utility authority is required.</li>
-<li><strong>Environmental Concerns:</strong> The property is located in a watershed and may have environmental concerns that need to be addressed.</li>
-</ol>
-<p><strong>Unknowns:</strong></p>
-<ol>
-<li><strong>Utility Capacity:</strong> The actual capacity of the utilities (water and wastewater) is not established, and verification with the appropriate utility authority is required.</li>
-<li><strong>Environmental Impact:</strong> The potential environmental impact of the development on the watershed and surrounding area is unknown.</li>
-<li><strong>Driveway Spacing:</strong> The exact driveway spacing requirements are unclear, and further investigation is needed.</li>
-</ol>
-<p><strong>Recommended Next Steps:</strong></p>
-<ol>
-<li><strong>Verify Utility Capacity:</strong> Verify the actual capacity of the utilities (water and wastewater) with the appropriate utility authority.</li>
-<li><strong>Conduct Environmental Impact Study:</strong> Conduct an environmental impact study to assess the potential environmental impact of the development on the watershed and surrounding area.</li>
-<li><strong>Determine Driveway Spacing Requirements:</strong> Determine the exact driveway spacing requirements and ensure compliance with the relevant regulations.</li>
-<li><strong>Obtain Necessary Permits:</strong> Obtain the necessary permits, including a site plan permit, building permit, and zoning permit.</li>
-</ol>
-<p><strong>Additional Recommendations:</strong></p>
-<ol>
-<li><strong>Consult with Experts:</strong> Consult with experts in land use planning, environmental science, and engineering to ensure that all aspects of the development are properly addressed.</li>
-<li><strong>Conduct Public Outreach:</strong> Conduct public outreach to inform stakeholders about the proposed development and address any concerns or questions they may have.</li>
-<li><strong>Monitor Regulatory Requirements:</strong> Monitor regulatory requirements and updates to ensure compliance with changing regulations.</li>
-</ol>
-<p>By following these recommendations, you can better understand the feasibility of the proposed development and make informed decisions about moving forward with the project.</p>
+<p>This is a JSON response from an API, specifically a permit search API. It contains information about permits and plans submitted in the past.</p>
+<p>Here&#x27;s a breakdown of the structure:</p>
+<p>* The top-level object has three properties:</p>
+<p>	+ `permit`: an array of objects containing information about individual permits</p>
+<p>	+ `note`: a string providing context or additional information about the permits</p>
+<p>	+ `summary`: an object with summary statistics about the permits (number of permits, site plans, and plan reviews)</p>
+<p>* The `permit` array contains objects with the following properties:</p>
+<p>	+ `distance_ft`: the distance from the property line to the nearest point on the permit boundary</p>
+<p>	+ `permit_number`: a unique identifier for the permit</p>
+<p>	+ `case_type`: the type of case (e.g. &quot;Plan Review&quot;, &quot;Site Plan&quot;)</p>
+<p>	+ `work_class`: the type of work being done (e.g. &quot;Addition and Remodel&quot;, &quot;Repair&quot;)</p>
+<p>	+ `project_name`: a descriptive name for the project</p>
+<p>	+ `folder_description`: a brief description of the permit boundary</p>
+<p>	+ `status_current`: the current status of the permit (e.g. &quot;Approved&quot;, &quot;Expired&quot;)</p>
+<p>* The `note` string provides additional context or information about the permits.</p>
+<p>* The `summary` object contains summary statistics about the permits:</p>
+<p>	+ `permit_count`: the total number of permits</p>
+<p>	+ `site_plan_count`: the number of site plans submitted</p>
+<p>	+ `plan_review_count`: the number of plan reviews submitted</p>
+<p>Overall, this API provides a way to search for and retrieve information about past permits and plans in a given area.</p>
 <h2>Sources Consulted</h2>
 <ul>
 <li><strong>Austin Land Development Code, Title 25</strong> — https://library.municode.com/tx/austin/codes/land_development_code</li>
@@ -101,7 +83,12 @@
 </ul>
 <p>  - Limitation: City of Austin fully developed floodplain model (Atlas 14); not the FEMA effective floodplain. Preliminary screening only.</p>
 <h2>Zoning and Land-Use Context</h2>
-<p>Retrieved regulatory references:</p>
+<ul>
+<li>Preliminary reported zoning: SF-3-NP (status: found)</li>
+<li>Preliminary Open Data zoning only; not an official determination.</li>
+</ul>
+<p>Zoning context is preliminary. Designations are stated only when the lookup returns an exact single match.</p>
+<p>Regulatory references for this section:</p>
 <ul>
 <li>LDC § 25-2-1534 DEVELOPMENT REQUIREMENTS</li>
 <li>LDC § 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS</li>
@@ -110,37 +97,25 @@
 <li>LDC § 25-2-1532 RESIDENTIAL INFILL PERMITTED IN CERTAIN ZONING DISTRICTS</li>
 </ul>
 <h2>Site-Plan Considerations</h2>
-<p>Site-plan applicability depends on proposed use, zoning, and project characteristics; confirm with Development Services.</p>
-<p>Retrieved regulatory references:</p>
-<ul>
-<li>LDC § 25-2-1534 DEVELOPMENT REQUIREMENTS</li>
-<li>LDC § 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS</li>
-<li>LDC § 25-2-1523 DEVELOPMENT PLAN APPROVAL CRITERIA</li>
-<li>LDC § 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT</li>
-<li>LDC § 25-2-1532 RESIDENTIAL INFILL PERMITTED IN CERTAIN ZONING DISTRICTS</li>
-</ul>
+<p>Site-plan applicability depends on proposed use, zoning, and project characteristics; confirm with Development Services. Citations below are limited to site-plan provisions (LDC Chapter 25-5) when available.</p>
 <h2>Drainage, Flood, and Environmental Considerations</h2>
-<p>Retrieved regulatory references:</p>
+<ul>
+<li>Floodplain intersection: False</li>
+<li>Watershed: Shoal Creek</li>
+</ul>
+<p>Regulatory references for this section:</p>
 <ul>
 <li>DCM § 1.2.2 General</li>
-<li>LDC § 25-7-67 MODIFIED DRAINAGE STANDARDS FOR RESIDENTIAL INFILL</li>
 <li>LDC § 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS</li>
-<li>LDC § 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS</li>
-<li>LDC § 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT</li>
 </ul>
 <h2>Transportation and Access Considerations</h2>
-<p>Retrieved regulatory references:</p>
+<p>Regulatory references for this section:</p>
 <ul>
-<li>TCM § 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets</li>
-<li>LDC § 25-6-292 DESIGN AND CONSTRUCTION STANDARDS</li>
-<li>LDC § 25-6-114 NEIGHBORHOOD TRAFFIC ANALYSIS REQUIRED</li>
-<li>LDC § 25-6-381 MINIMUM FRONTAGE FOR ACCESS</li>
-<li>TCM § 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS</li>
+<li>DCM § 1.2.2 General</li>
 </ul>
 <h2>General Water and Wastewater Considerations</h2>
-<p>Regulatory requirements do not establish actual water or wastewater service availability or capacity. Verification with the appropriate utility authority is required.</p>
-<p>Regulatory requirements do not establish actual water or wastewater service availability or capacity. Verification with the appropriate utility authority is required.</p>
-<p>Retrieved regulatory references:</p>
+<p>Regulatory language does not establish utility service availability or capacity. Verification with the appropriate utility authority is required.</p>
+<p>Regulatory references for this section:</p>
 <ul>
 <li>LDC § 25-9-33 SERVICE EXTENSION APPLICATION</li>
 <li>LDC § 25-9-412 RECLAIMED WATER CONNECTION REQUIREMENTS</li>
@@ -149,42 +124,24 @@
 <li>LDC § 25-9-31 APPLICABILITY</li>
 </ul>
 <h2>Historical Permit and Case Context</h2>
-<p>Nearby permits and cases are historical context only. They must not be treated as evidence that the proposed development requires professional verification. [Claim removed or revised: unsupported definitive statement; professional verification required.]</p>
+<p>Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development.</p>
 <p>Summary: Permit count: 20, Site plan count: 0, Plan review count: 20</p>
 <h2>Potential Constraints</h2>
 <ul>
-<li>No major constraint labeled from available screening data; professional verification is still required.</li>
+<li>[potential constraint] zoning: Reported zoning is SF-3-NP, while the proposed land use is multifamily residential for the proposed 40-unit development. This combination presents a potential zoning/use conflict that requires verification against the applicable Austin Land Development Code requirements. No approval or prohibition determination is made here.</li>
 </ul>
 <h2>Missing Information and Required Verification</h2>
 <ul>
 <li>Verification required (zoning): Preliminary reported zoning was retrieved from Open Data and requires official verification.</li>
-<li>Verification required (historical_context): Nearby permits and cases are historical context only and must not be treated as approval precedent.</li>
+<li>Verification required (historical_context): Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development.</li>
 </ul>
 <h2>Source Citations</h2>
 <ol>
-<li>LDC — § 25-2-1534 DEVELOPMENT REQUIREMENTS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code</li>
-<li>LDC — § 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code</li>
-<li>LDC — § 25-2-1523 DEVELOPMENT PLAN APPROVAL CRITERIA (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code</li>
-<li>LDC — § 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code</li>
-<li>LDC — § 25-2-1532 RESIDENTIAL INFILL PERMITTED IN CERTAIN ZONING DISTRICTS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code</li>
 <li>DCM — § 1.2.2 General (Section 1) | https://library.municode.com/tx/austin/codes/drainage_criteria_manual</li>
-<li>LDC — § 25-7-67 MODIFIED DRAINAGE STANDARDS FOR RESIDENTIAL INFILL (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code</li>
 <li>LDC — § 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code</li>
-<li>LDC — § 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code</li>
-<li>LDC — § 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT (Chapter 25-8) | https://library.municode.com/tx/austin/codes/land_development_code</li>
-<li>TCM — § 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual</li>
-<li>LDC — § 25-6-292 DESIGN AND CONSTRUCTION STANDARDS (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code</li>
-<li>LDC — § 25-6-114 NEIGHBORHOOD TRAFFIC ANALYSIS REQUIRED (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code</li>
-<li>LDC — § 25-6-381 MINIMUM FRONTAGE FOR ACCESS (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code</li>
-<li>TCM — § 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual</li>
-<li>LDC — § 25-9-33 SERVICE EXTENSION APPLICATION (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code</li>
-<li>LDC — § 25-9-412 RECLAIMED WATER CONNECTION REQUIREMENTS (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code</li>
-<li>LDC — § 25-9-384 RECLAIMED WATER SERVICE APPLICATION (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code</li>
-<li>LDC — § 25-9-93 APPLICATION FOR TAP PERMIT; FEES; CAPACITY (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code</li>
-<li>LDC — § 25-9-31 APPLICABILITY (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code</li>
 </ol>
 <h2>Preliminary-Review Disclaimer</h2><div class="disclaimer">
-<p>This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service.</p>
+<p>This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service. Nearby permits and cases are historical context only and are not approval precedent. All findings require verification by qualified professionals and City of Austin authorities.</p>
 </div>
 </body>
 </html>

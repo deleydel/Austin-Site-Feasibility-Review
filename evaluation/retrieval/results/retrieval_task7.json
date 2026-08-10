@@ -11,7 +11,7 @@
       "realistic": 0.947,
       "citation": 1.0
     },
-    "median_latency_ms": 17.8,
+    "median_latency_ms": 17.7,
     "misses": [
       {
         "id": "h14",
@@ -350,7 +350,7 @@
       "hit_at_5_by_type": {
         "realistic": 0.947
       },
-      "median_latency_ms": 19.1,
+      "median_latency_ms": 18.0,
       "misses": [
         {
           "id": "h14",
@@ -648,7 +648,7 @@
       "hit_at_5_by_type": {
         "realistic": 0.895
       },
-      "median_latency_ms": 21.6,
+      "median_latency_ms": 19.7,
       "misses": [
         {
           "id": "h09",

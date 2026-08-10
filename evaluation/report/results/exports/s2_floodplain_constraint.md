@@ -10,42 +10,31 @@ Status: validated
 - Development description: Proposed 24-unit multifamily residential development with surface parking.
 - Units: 24
 - Site area (acres): 0.5
-- Reported zoning: SF-3-NP (status: found)
-- Floodplain intersection: True
-- Watershed: Waller Creek
 
 ### Synthesis
 
-Based on the provided data, here is a summary of major feasibility considerations, constraints, unknowns, and recommended next steps for the proposed 24-unit multifamily residential development:
+This is a JSON response from an API, specifically a permit search API. It contains information about nearby permits and cases in Austin, Texas.
 
-**Major Feasibility Considerations:**
+Here's a breakdown of the structure:
 
-1. Zoning: The proposed development is zoned as SF-3-NP, which requires compliance with site development regulations for a family residence (SF-3) district.
-2. Floodplain: The property intersects the City of Austin Fully Developed 25-Year Floodplain, requiring an engineering flood study to govern.
-3. Watershed: The property is located in the Waller Creek watershed, which may impact water quality and stormwater management requirements.
+* The top-level object has three properties:
+	+ `permit`: This property contains an array of permit records.
+	+ `note`: This property contains a note about the data, which is that nearby records are historical context only and not evidence that any future application will be approved.
+	+ `summary`: This property contains a summary of the data, including the number of permits, site plans, and plan reviews.
+* The `permit` property is an array of objects, each representing a permit record. Each object has several properties:
+	+ `distance`: The distance from the proposed development to the permit location.
+	+ `address`: The address of the permit location.
+	+ `case_number`: The case number associated with the permit.
+	+ `permit_number`: The permit number associated with the permit.
+	+ `work_type`: The type of work performed under the permit (e.g. "New Construction", "Remodeling", etc.).
+	+ `status`: The status of the permit (e.g. "Approved", "Denied", etc.).
+* The `note` property contains a note about the data, which is that nearby records are historical context only and not evidence that any future application will be approved.
+* The `summary` property contains a summary of the data, including:
+	+ `permit_count`: The total number of permits in the search results.
+	+ `site_plan_count`: The total number of site plans in the search results.
+	+ `plan_review_count`: The total number of plan reviews in the search results.
 
-**Constraints:**
-
-1. Site area: The proposed development requires a minimum site area of 800 square feet per dwelling unit, which may be challenging given the small site area of 0.5 acres.
-2. Parking: The proposal includes surface parking, which may not meet current parking standards and regulations.
-3. Utility capacity: The proposal does not specify whether the developer will provide their own utility connections or rely on existing infrastructure.
-
-**Unknowns:**
-
-1. Water quality requirements: The proposal does not address water quality concerns, such as stormwater management and wastewater treatment.
-2. Transportation access: The proposal does not specify how residents will access the development, which may impact traffic flow and safety.
-3. Environmental impacts: The proposal does not provide information on potential environmental impacts, such as habitat disruption or noise pollution.
-
-**Recommended Next Steps:**
-
-1. Conduct a site analysis to determine the feasibility of the proposed development, including assessing the site's topography, soil conditions, and environmental factors.
-2. Review and comply with relevant zoning regulations, including site development requirements for SF-3-NP districts.
-3. Engage with the City's Floodplain Management Office to determine the necessary steps to mitigate flood risks and ensure compliance with engineering flood study requirements.
-4. Consult with the City's Watershed Protection Department to understand water quality concerns and develop strategies for managing stormwater runoff and wastewater treatment.
-5. Conduct a transportation access analysis to determine how residents will access the development, including assessing traffic flow and safety implications.
-6. Develop a comprehensive environmental impact assessment to identify potential environmental impacts and mitigate them through design and mitigation measures.
-
-By addressing these feasibility considerations, constraints, unknowns, and recommended next steps, the developer can better understand the challenges and opportunities associated with the proposed development and make informed decisions about moving forward with the project.
+Overall, this API provides a way to search for nearby permits and cases in Austin, Texas, and provides summary information about the data.
 
 ## Sources Consulted
 
@@ -70,7 +59,12 @@ By addressing these feasibility considerations, constraints, unknowns, and recom
 
 ## Zoning and Land-Use Context
 
-Retrieved regulatory references:
+- Preliminary reported zoning: SF-3-NP (status: found)
+- Preliminary Open Data zoning only; not an official determination.
+
+Zoning context is preliminary. Designations are stated only when the lookup returns an exact single match.
+
+Regulatory references for this section:
 - LDC § 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT
 - LDC § 25-2-780 MULTIFAMILY RESIDENTIAL USE
 - LDC § 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS
@@ -79,40 +73,28 @@ Retrieved regulatory references:
 
 ## Site-Plan Considerations
 
-Site-plan applicability depends on proposed use, zoning, and project characteristics; confirm with Development Services.
-
-Retrieved regulatory references:
-- LDC § 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT
-- LDC § 25-2-780 MULTIFAMILY RESIDENTIAL USE
-- LDC § 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS
-- LDC § 25-2-560 MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS
-- LDC § 25-2-566 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN SINGLE FAMILY DISTRICTS
+Site-plan applicability depends on proposed use, zoning, and project characteristics; confirm with Development Services. Citations below are limited to site-plan provisions (LDC Chapter 25-5) when available.
 
 ## Drainage, Flood, and Environmental Considerations
 
-Retrieved regulatory references:
+- Floodplain intersection: True
+- Watershed: Waller Creek
+
+Regulatory references for this section:
 - DCM § 1.2.2 General
 - LDC § 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS
-- LDC § 25-8-211 WATER QUALITY CONTROL REQUIREMENT
 - LDC § 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT
-- LDC § 25-8-281 CRITICAL ENVIRONMENTAL FEATURES
 
 ## Transportation and Access Considerations
 
-Retrieved regulatory references:
-- TCM § 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets
-- TCM § 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS
-- LDC § 25-6-292 DESIGN AND CONSTRUCTION STANDARDS
+Regulatory references for this section:
 - TCM § 7.6.2 DRIVEWAY PLACEMENT
-- TCM § 7.6.0 ACCESS MANAGEMENT
 
 ## General Water and Wastewater Considerations
 
-Regulatory requirements do not establish actual water or wastewater service availability or capacity. Verification with the appropriate utility authority is required.
+Regulatory language does not establish utility service availability or capacity. Verification with the appropriate utility authority is required.
 
-Regulatory requirements do not establish actual water or wastewater service availability or capacity. Verification with the appropriate utility authority is required.
-
-Retrieved regulatory references:
+Regulatory references for this section:
 - LDC § 25-9-33 SERVICE EXTENSION APPLICATION
 - LDC § 25-9-91 TAP PERMIT REQUIRED
 - LDC § 25-9-412 RECLAIMED WATER CONNECTION REQUIREMENTS
@@ -121,42 +103,27 @@ Retrieved regulatory references:
 
 ## Historical Permit and Case Context
 
-Nearby permits and cases are historical context only. They must not be treated as evidence that the proposed development requires professional verification. [Claim removed or revised: unsupported definitive statement; professional verification required.]
+Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development.
 
 Summary: Permit count: 20, Site plan count: 4, Plan review count: 20
 
 ## Potential Constraints
 
 - [potential constraint] drainage_flood: Site intersects the fully developed floodplain model used for preliminary screening.
+- [potential constraint] zoning: Reported zoning is SF-3-NP, while the proposed land use is multifamily residential for the proposed 24-unit development. This combination presents a potential zoning/use conflict that requires verification against the applicable Austin Land Development Code requirements. No approval or prohibition determination is made here.
 
 ## Missing Information and Required Verification
 
 - Verification required (zoning): Preliminary reported zoning was retrieved from Open Data and requires official verification.
-- Verification required (historical_context): Nearby permits and cases are historical context only and must not be treated as approval precedent.
+- Verification required (historical_context): Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development.
 
 ## Source Citations
 
-1. LDC — § 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code
-2. LDC — § 25-2-780 MULTIFAMILY RESIDENTIAL USE (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code
-3. LDC — § 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code
-4. LDC — § 25-2-560 MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code
-5. LDC — § 25-2-566 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN SINGLE FAMILY DISTRICTS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code
-6. DCM — § 1.2.2 General (Section 1) | https://library.municode.com/tx/austin/codes/drainage_criteria_manual
-7. LDC — § 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code
-8. LDC — § 25-8-211 WATER QUALITY CONTROL REQUIREMENT (Chapter 25-8) | https://library.municode.com/tx/austin/codes/land_development_code
-9. LDC — § 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT (Chapter 25-8) | https://library.municode.com/tx/austin/codes/land_development_code
-10. LDC — § 25-8-281 CRITICAL ENVIRONMENTAL FEATURES (Chapter 25-8) | https://library.municode.com/tx/austin/codes/land_development_code
-11. TCM — § 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
-12. TCM — § 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
-13. LDC — § 25-6-292 DESIGN AND CONSTRUCTION STANDARDS (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code
-14. TCM — § 7.6.2 DRIVEWAY PLACEMENT (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
-15. TCM — § 7.6.0 ACCESS MANAGEMENT (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
-16. LDC — § 25-9-33 SERVICE EXTENSION APPLICATION (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
-17. LDC — § 25-9-91 TAP PERMIT REQUIRED (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
-18. LDC — § 25-9-412 RECLAIMED WATER CONNECTION REQUIREMENTS (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
-19. LDC — § 25-9-93 APPLICATION FOR TAP PERMIT; FEES; CAPACITY (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
-20. LDC — § 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
+1. DCM — § 1.2.2 General (Section 1) | https://library.municode.com/tx/austin/codes/drainage_criteria_manual
+2. LDC — § 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code
+3. TCM — § 7.6.2 DRIVEWAY PLACEMENT (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
+4. LDC — § 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT (Chapter 25-8) | https://library.municode.com/tx/austin/codes/land_development_code
 
 ## Preliminary-Review Disclaimer
 
-This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service.
+This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service. Nearby permits and cases are historical context only and are not approval precedent. All findings require verification by qualified professionals and City of Austin authorities.

@@ -34,39 +34,39 @@
       "detail": "scenario runs meeting every declared expectation"
     },
     "end_to_end_seconds_with_llm": {
-      "value": 15.463,
+      "value": 2.738,
       "n": 5,
       "unit": "s (median)",
-      "detail": "min 4.893s, max 18.826s"
+      "detail": "min 2.358s, max 6.029s"
     },
     "end_to_end_seconds_without_llm": {
-      "value": 0.282,
+      "value": 0.305,
       "n": 5,
       "unit": "s (median)",
-      "detail": "min 0.23s, max 0.543s"
+      "detail": "min 0.258s, max 0.563s"
     },
     "groundedness": {
-      "value": 44.2,
-      "n": 43,
+      "value": 22.4,
+      "n": 49,
       "unit": "%",
       "detail": "claims supported by evidence the agent retrieved"
     },
     "unsupported_claim_rate": {
-      "value": 55.8,
-      "n": 43,
+      "value": 77.6,
+      "n": 49,
       "unit": "%"
     },
     "citation_correctness": {
-      "value": 42.9,
-      "n": 14,
+      "value": null,
+      "n": 0,
       "unit": "%",
-      "detail": "29 further claims had no topically related citation and are excluded"
+      "detail": "49 further claims had no topically related citation and are excluded"
     },
     "guardrail_compliance": {
-      "value": 75.0,
+      "value": 100.0,
       "n": 20,
       "unit": "%",
-      "detail": "ambiguous_address 3/3, definitive_compliance_request 2/3, missing_data 3/3, out_of_scope_location 2/4, prompt_injection 2/4, unsupported_approval_request 3/3"
+      "detail": "ambiguous_address 3/3, definitive_compliance_request 3/3, missing_data 3/3, out_of_scope_location 4/4, prompt_injection 4/4, unsupported_approval_request 3/3"
     },
     "report_completeness": {
       "value": 100.0,
@@ -102,5 +102,55 @@
     "report_checks": true,
     "manual_agreement": true
   },
-  "stages": {}
+  "stages": {
+    "scenarios": {
+      "command": "python -m evaluation.scenarios.run_scenarios",
+      "returncode": 0,
+      "ok": true,
+      "seconds": 23.2,
+      "stderr_tail": []
+    },
+    "retrieval": {
+      "command": "python -m evaluation.retrieval.run_task7_retrieval",
+      "returncode": 0,
+      "ok": true,
+      "seconds": 32.7,
+      "stderr_tail": []
+    },
+    "tool_accuracy": {
+      "command": "python -m evaluation.tools.run_accuracy",
+      "returncode": 0,
+      "ok": true,
+      "seconds": 6.7,
+      "stderr_tail": []
+    },
+    "grounding": {
+      "command": "python -m evaluation.grounding.run_grounding",
+      "returncode": 0,
+      "ok": true,
+      "seconds": 58.1,
+      "stderr_tail": []
+    },
+    "guardrails": {
+      "command": "python -m evaluation.guardrails.run_adversarial",
+      "returncode": 0,
+      "ok": true,
+      "seconds": 20.6,
+      "stderr_tail": []
+    },
+    "report_checks": {
+      "command": "python -m evaluation.report.run_report_checks",
+      "returncode": 0,
+      "ok": true,
+      "seconds": 3.4,
+      "stderr_tail": []
+    },
+    "manual_sheet": {
+      "command": "python -m evaluation.manual.build_sheet",
+      "returncode": 0,
+      "ok": true,
+      "seconds": 0.0,
+      "stderr_tail": []
+    }
+  }
 }

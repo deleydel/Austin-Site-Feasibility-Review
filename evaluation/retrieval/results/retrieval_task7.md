@@ -8,7 +8,7 @@
 | Hit@5 | 0.955 |
 | Recall@5 | 0.939 |
 | MRR | 0.924 |
-| median latency (ms) | 17.8 |
+| median latency (ms) | 17.7 |
 | judged relevance, precision@5 | 74.5% (82/110) |
 
 ## Relevance judge calibration

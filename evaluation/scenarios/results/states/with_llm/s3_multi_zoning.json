@@ -16,6 +16,8 @@
     "zoning_site_plan": {
       "query": "Austin development requirements for Commercial retail. Reported zoning is unknown zoning. Development description: Proposed single-story retail building with associated parking.. Identify applicable zoning, land use, and site plan requirements.",
       "reported_zoning": "unknown zoning",
+      "potential_conflict": false,
+      "conflict_detail": null,
       "retrieved_passages": [
         {
           "chunk_id": "LDC:300:4",
@@ -707,7 +709,7 @@
         "site_plan_count": 0,
         "plan_review_count": 9
       },
-      "note": "Nearby permits and cases are historical context only. They must not be treated as evidence that the proposed development will be approved."
+      "note": "Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development."
     }
   },
   "evidence": [
@@ -1094,118 +1096,6 @@
   ],
   "citations": [
     {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-2",
-      "section_number": "25-2-518",
-      "section_title": "QUALIFYING DEVELOPMENT",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. PRINCIPAL USE AND DEVELOPMENT REGULATIONS > Division 2. Requirements for All Districts > \u00a7 25-2-518 QUALIFYING DEVELOPMENT",
-      "chunk_id": "LDC:327:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-2",
-      "section_number": "25-2-818",
-      "section_title": "MOBILE RETAIL ESTABLISHMENTS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Division 2. Commercial Uses > \u00a7 25-2-818 MOBILE RETAIL ESTABLISHMENTS",
-      "chunk_id": "LDC:481:1",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-2",
-      "section_number": "25-2-91",
-      "section_title": "PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. ZONING DISTRICTS > Division 3. Commercial Base Districts > \u00a7 25-2-91 PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS",
-      "chunk_id": "LDC:202:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-2",
-      "section_number": "25-2-581",
-      "section_title": "CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements > \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
-      "chunk_id": "LDC:350:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-7",
-      "section_number": "25-7-94",
-      "section_title": "REQUIREMENTS IN CENTRAL BUSINESS AREA",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA",
-      "chunk_id": "LDC:915:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-7",
-      "section_number": "25-7-66",
-      "section_title": "SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
-      "chunk_id": "LDC:910:1",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-7",
-      "section_number": "25-7-92",
-      "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-      "chunk_id": "LDC:913:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-7",
-      "section_number": "25-7-61",
-      "section_title": "CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS",
-      "chunk_id": "LDC:905:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
       "source": "DCM",
       "source_name": "Austin Drainage Criteria Manual",
       "source_url": "https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
@@ -1214,150 +1104,16 @@
       "section_title": "Floodplain Delineations",
       "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.6 Floodplain Delineations",
       "chunk_id": "DCM:1171:0",
-      "claim_support": "retrieved_passage",
+      "review_category": "drainage_environmental",
+      "query": "Austin drainage and environmental requirements for Commercial retail. Development description: Proposed single-story retail building with associated parking.. Floodplain intersection: False. Watershed: Panther Hollow. Identify applicable drainage, floodplain, watershed, water quality, and environmental requirements.",
+      "support_context": "A.\tCity of Austin.\n1.\tFor purposes of this Drainage Criteria Manual, a drainage area of 64 acres or greater is required within a contributing watershed to create a \"floodplain\". For areas of flow with less than 64 acres of contributing area, no floodplain shall be defined unless the City or FEMA currently indicates the area as a floodplain. In all cases where a floodplain delineation is required, its determination shall be based on the projected full development of all properties contributing to the point of consideration. It is the responsibility of the design engineer to determine, based on the most accurate information available, what the floodplain delineation is.\n2.\tThe design engineer may elect to utilize a floodplain delineation previously approved by the Director of the Watershed Protection Department, assuming the same is still applicable under present requirements and criteria. In so doing the engineer does not remove himself from the responsibility for the delineation's accuracy.\nB.\tFederal Emergency Management Agency.\n1.\tThe Federal Emergency Management Agency (FEMA) maintains Flood Insurance Rate Maps (FIRM's) that depict floodplain boundaries. The floodplain boundaries depicted on FIRM's are based on existing conditions of development in the contributing area at the time the floodplain study that delineated the floodplain was completed.\n2.\tFEMA reviews and approves or denies all revisions or amendments to FIRM's. FEMA revises or amends FIRM's by approval of a Letter of Map Change (LOMC). FEMA establishes the process and fees necessary for review of an application for a LOMC.",
+      "claim_support": "supported",
+      "support_score": 0.3,
+      "excerpt": "A.\tCity of Austin.\n1.\tFor purposes of this Drainage Criteria Manual, a drainage area of 64 acres or greater is required within a contributing watershed to create a \"floodplain\". For areas of flow with less than 64 acres of contributing area, no floodplain shall be defined unless the City or FEMA currently indicates the area as a floodplain. In all cases where a floodplain delineation is required, ",
       "verification_status": "found",
       "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "TCM",
-      "source_name": "Austin Transportation Criteria Manual",
-      "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-      "chapter": "Section 9",
-      "section_number": "9.3.4.1",
-      "section_title": "Queuing",
-      "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.4.1 Queuing",
-      "chunk_id": "TCM:1261:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "TCM",
-      "source_name": "Austin Transportation Criteria Manual",
-      "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-      "chapter": "Section 9",
-      "section_number": "9.4.1",
-      "section_title": "OFF-STREET GENERAL LOADING REQUIREMENTS",
-      "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.4.1 OFF-STREET GENERAL LOADING REQUIREMENTS",
-      "chunk_id": "TCM:1267:1",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "TCM",
-      "source_name": "Austin Transportation Criteria Manual",
-      "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-      "chapter": "Section 9",
-      "section_number": "9.3.2",
-      "section_title": "GENERAL DESIGN CRITERIA",
-      "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.2 GENERAL DESIGN CRITERIA",
-      "chunk_id": "TCM:1251:1",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-6",
-      "section_number": "25-6-472",
-      "section_title": "PARKING FACILITY STANDARDS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS",
-      "chunk_id": "LDC:848:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-6",
-      "section_number": "25-6-292",
-      "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS",
-      "chunk_id": "LDC:819:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-9",
-      "section_number": "25-9-33",
-      "section_title": "SERVICE EXTENSION APPLICATION",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-33 SERVICE EXTENSION APPLICATION",
-      "chunk_id": "LDC:1046:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-9",
-      "section_number": "25-9-383",
-      "section_title": "AVAILABILITY OF RECLAIMED WATER SERVICE",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 4. RECLAIMED WATER > \u00a7 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE",
-      "chunk_id": "LDC:1140:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-9",
-      "section_number": "25-9-410",
-      "section_title": "APPLICABILITY",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 5. ADDITIONAL WATER CONSERVATION REQUIREMENTS > \u00a7 25-9-410 APPLICABILITY",
-      "chunk_id": "LDC:1159:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-9",
-      "section_number": "25-9-31",
-      "section_title": "APPLICABILITY",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-31 APPLICABILITY",
-      "chunk_id": "LDC:1044:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-9",
-      "section_number": "25-9-91",
-      "section_title": "TAP PERMIT REQUIRED",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-91 TAP PERMIT REQUIRED",
-      "chunk_id": "LDC:1062:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
+      "verification_detail": "Section text supports the attached claim/context (term overlap 100%).",
+      "supported_claim": "This is a JSON response from an API, likely related to land use or building permits in Austin, Texas."
     }
   ],
   "execution_trace": [
@@ -1711,8 +1467,13 @@
     "site_summary": {
       "reported_zoning": null,
       "zoning_status": "multiple_records",
+      "zoning_note": "No single zoning designation is stated because the lookup was 'multiple_records'.",
       "floodplain_intersection": false,
-      "watershed": "Panther Hollow"
+      "watershed": "Panther Hollow",
+      "zoning_designations": [
+        "DR",
+        "I-RR"
+      ]
     },
     "sources_consulted": [
       {
@@ -1790,24 +1551,18 @@
     ],
     "review_sections": {
       "zoning_site_plan": {
-        "query": "Austin development requirements for Commercial retail. Reported zoning is unknown zoning. Development description: Proposed single-story retail building with associated parking.. Identify applicable zoning, land use, and site plan requirements.",
         "reported_zoning": "unknown zoning",
+        "potential_conflict": false,
+        "conflict_detail": null,
         "retrieved_passages": [
-          {
-            "doc_id": "LDC",
-            "section_number": "2.4",
-            "section_title": "TIER TWO REQUIREMENTS",
-            "chapter": "Chapter 25-2",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. SPECIAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart B. Planned Unit Development Standards > \u00a7 2.4 TIER TWO REQUIREMENTS"
-          },
           {
             "doc_id": "LDC",
             "section_number": "25-2-518",
             "section_title": "QUALIFYING DEVELOPMENT",
             "chapter": "Chapter 25-2",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. PRINCIPAL USE AND DEVELOPMENT REGULATIONS > Division 2. Requirements for All Districts > \u00a7 25-2-518 QUALIFYING DEVELOPMENT"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. PRINCIPAL USE AND DEVELOPMENT REGULATIONS > Division 2. Requirements for All Districts > \u00a7 25-2-518 QUALIFYING DEVELOPMENT",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -1815,7 +1570,8 @@
             "section_title": "MOBILE RETAIL ESTABLISHMENTS",
             "chapter": "Chapter 25-2",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Division 2. Commercial Uses > \u00a7 25-2-818 MOBILE RETAIL ESTABLISHMENTS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Division 2. Commercial Uses > \u00a7 25-2-818 MOBILE RETAIL ESTABLISHMENTS",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -1823,7 +1579,8 @@
             "section_title": "PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS",
             "chapter": "Chapter 25-2",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. ZONING DISTRICTS > Division 3. Commercial Base Districts > \u00a7 25-2-91 PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. ZONING DISTRICTS > Division 3. Commercial Base Districts > \u00a7 25-2-91 PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -1831,13 +1588,13 @@
             "section_title": "CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
             "chapter": "Chapter 25-2",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements > \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements > \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
+            "support_score": 1.0
           }
         ],
-        "retrieved_passage_count": 5
+        "retrieved_passage_count": 4
       },
       "drainage_environmental": {
-        "query": "Austin drainage and environmental requirements for Commercial retail. Development description: Proposed single-story retail building with associated parking.. Floodplain intersection: False. Watershed: Panther Hollow. Identify applicable drainage, floodplain, watershed, water quality, and environmental requirements.",
         "floodplain": {
           "status": "found",
           "latitude": 30.381842028716,
@@ -1863,7 +1620,8 @@
             "section_title": "REQUIREMENTS IN CENTRAL BUSINESS AREA",
             "chapter": "Chapter 25-7",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -1871,7 +1629,8 @@
             "section_title": "SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
             "chapter": "Chapter 25-7",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -1879,7 +1638,8 @@
             "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
             "chapter": "Chapter 25-7",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -1887,7 +1647,8 @@
             "section_title": "CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS",
             "chapter": "Chapter 25-7",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS",
+            "support_score": 1.0
           },
           {
             "doc_id": "DCM",
@@ -1895,13 +1656,13 @@
             "section_title": "Floodplain Delineations",
             "chapter": "Section 1",
             "source_url": "https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
-            "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.6 Floodplain Delineations"
+            "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.6 Floodplain Delineations",
+            "support_score": 1.0
           }
         ],
         "retrieved_passage_count": 5
       },
       "transportation_access": {
-        "query": "Austin transportation and site access requirements for Commercial retail. Development description: Proposed single-story retail building with associated parking.. Approximate units: unknown. Identify applicable transportation, driveway, access, parking, circulation, and traffic requirements.",
         "retrieved_passages": [
           {
             "doc_id": "TCM",
@@ -1909,7 +1670,8 @@
             "section_title": "Queuing",
             "chapter": "Section 9",
             "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.4.1 Queuing"
+            "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.4.1 Queuing",
+            "support_score": 1.0
           },
           {
             "doc_id": "TCM",
@@ -1917,7 +1679,8 @@
             "section_title": "OFF-STREET GENERAL LOADING REQUIREMENTS",
             "chapter": "Section 9",
             "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.4.1 OFF-STREET GENERAL LOADING REQUIREMENTS"
+            "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.4.1 OFF-STREET GENERAL LOADING REQUIREMENTS",
+            "support_score": 1.0
           },
           {
             "doc_id": "TCM",
@@ -1925,7 +1688,8 @@
             "section_title": "GENERAL DESIGN CRITERIA",
             "chapter": "Section 9",
             "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.2 GENERAL DESIGN CRITERIA"
+            "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.2 GENERAL DESIGN CRITERIA",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -1933,7 +1697,8 @@
             "section_title": "PARKING FACILITY STANDARDS",
             "chapter": "Chapter 25-6",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -1941,13 +1706,13 @@
             "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
             "chapter": "Chapter 25-6",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS",
+            "support_score": 1.0
           }
         ],
         "retrieved_passage_count": 5
       },
       "water_wastewater": {
-        "query": "Austin water and wastewater requirements for Commercial retail. Development description: Proposed single-story retail building with associated parking.. Approximate units: unknown. Identify applicable general water, wastewater, utility connection, and infrastructure requirements. Do not assume service availability or utility capacity.",
         "retrieved_passages": [
           {
             "doc_id": "LDC",
@@ -1955,7 +1720,8 @@
             "section_title": "SERVICE EXTENSION APPLICATION",
             "chapter": "Chapter 25-9",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-33 SERVICE EXTENSION APPLICATION"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-33 SERVICE EXTENSION APPLICATION",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -1963,7 +1729,8 @@
             "section_title": "AVAILABILITY OF RECLAIMED WATER SERVICE",
             "chapter": "Chapter 25-9",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 4. RECLAIMED WATER > \u00a7 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 4. RECLAIMED WATER > \u00a7 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -1971,7 +1738,8 @@
             "section_title": "APPLICABILITY",
             "chapter": "Chapter 25-9",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 5. ADDITIONAL WATER CONSERVATION REQUIREMENTS > \u00a7 25-9-410 APPLICABILITY"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 5. ADDITIONAL WATER CONSERVATION REQUIREMENTS > \u00a7 25-9-410 APPLICABILITY",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -1979,7 +1747,8 @@
             "section_title": "APPLICABILITY",
             "chapter": "Chapter 25-9",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-31 APPLICABILITY"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-31 APPLICABILITY",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -1987,7 +1756,8 @@
             "section_title": "TAP PERMIT REQUIRED",
             "chapter": "Chapter 25-9",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-91 TAP PERMIT REQUIRED"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-91 TAP PERMIT REQUIRED",
+            "support_score": 1.0
           }
         ],
         "note": "Regulatory requirements do not establish actual water or wastewater service availability or capacity. Verification with the appropriate utility authority is required.",
@@ -2267,14 +2037,14 @@
           "site_plan_count": 0,
           "plan_review_count": 9
         },
-        "note": "Nearby permits and cases are historical context only. They must not be treated as evidence that the proposed development requires professional verification. [Claim removed or revised: unsupported definitive statement; professional verification required.]"
+        "note": "Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development."
       }
     },
     "findings": [
       {
         "category": "zoning",
         "label": "verification required",
-        "detail": "Zoning lookup status is 'multiple_records'; official verification is required before design decisions."
+        "detail": "Zoning lookup status is 'multiple_records'; no single zoning designation is selected. Official verification is required."
       },
       {
         "category": "drainage_flood",
@@ -2289,12 +2059,12 @@
       {
         "category": "historical_context",
         "label": "verification required",
-        "detail": "Nearby permits and cases are historical context only and must not be treated as approval precedent."
+        "detail": "Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development."
       },
       {
         "category": "citations",
         "label": "verification required",
-        "detail": "One or more retrieved citations could not be verified against the approved regulatory index."
+        "detail": "One or more retrieved citations could not be verified as supporting the associated claim or retrieval context."
       }
     ],
     "potential_constraints": [],
@@ -2303,132 +2073,20 @@
       {
         "category": "zoning",
         "label": "verification required",
-        "detail": "Zoning lookup status is 'multiple_records'; official verification is required before design decisions."
+        "detail": "Zoning lookup status is 'multiple_records'; no single zoning designation is selected. Official verification is required."
       },
       {
         "category": "historical_context",
         "label": "verification required",
-        "detail": "Nearby permits and cases are historical context only and must not be treated as approval precedent."
+        "detail": "Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development."
       },
       {
         "category": "citations",
         "label": "verification required",
-        "detail": "One or more retrieved citations could not be verified against the approved regulatory index."
+        "detail": "One or more retrieved citations could not be verified as supporting the associated claim or retrieval context."
       }
     ],
     "citations": [
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-2",
-        "section_number": "25-2-518",
-        "section_title": "QUALIFYING DEVELOPMENT",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. PRINCIPAL USE AND DEVELOPMENT REGULATIONS > Division 2. Requirements for All Districts > \u00a7 25-2-518 QUALIFYING DEVELOPMENT",
-        "chunk_id": "LDC:327:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-2",
-        "section_number": "25-2-818",
-        "section_title": "MOBILE RETAIL ESTABLISHMENTS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Division 2. Commercial Uses > \u00a7 25-2-818 MOBILE RETAIL ESTABLISHMENTS",
-        "chunk_id": "LDC:481:1",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-2",
-        "section_number": "25-2-91",
-        "section_title": "PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. ZONING DISTRICTS > Division 3. Commercial Base Districts > \u00a7 25-2-91 PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS",
-        "chunk_id": "LDC:202:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-2",
-        "section_number": "25-2-581",
-        "section_title": "CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements > \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
-        "chunk_id": "LDC:350:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-7",
-        "section_number": "25-7-94",
-        "section_title": "REQUIREMENTS IN CENTRAL BUSINESS AREA",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA",
-        "chunk_id": "LDC:915:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-7",
-        "section_number": "25-7-66",
-        "section_title": "SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
-        "chunk_id": "LDC:910:1",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-7",
-        "section_number": "25-7-92",
-        "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-        "chunk_id": "LDC:913:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-7",
-        "section_number": "25-7-61",
-        "section_title": "CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS",
-        "chunk_id": "LDC:905:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
       {
         "source": "DCM",
         "source_name": "Austin Drainage Criteria Manual",
@@ -2437,151 +2095,11 @@
         "section_number": "1.2.6",
         "section_title": "Floodplain Delineations",
         "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.6 Floodplain Delineations",
-        "chunk_id": "DCM:1171:0",
-        "claim_support": "retrieved_passage",
         "verification_status": "found",
         "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "TCM",
-        "source_name": "Austin Transportation Criteria Manual",
-        "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-        "chapter": "Section 9",
-        "section_number": "9.3.4.1",
-        "section_title": "Queuing",
-        "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.4.1 Queuing",
-        "chunk_id": "TCM:1261:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "TCM",
-        "source_name": "Austin Transportation Criteria Manual",
-        "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-        "chapter": "Section 9",
-        "section_number": "9.4.1",
-        "section_title": "OFF-STREET GENERAL LOADING REQUIREMENTS",
-        "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.4.1 OFF-STREET GENERAL LOADING REQUIREMENTS",
-        "chunk_id": "TCM:1267:1",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "TCM",
-        "source_name": "Austin Transportation Criteria Manual",
-        "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-        "chapter": "Section 9",
-        "section_number": "9.3.2",
-        "section_title": "GENERAL DESIGN CRITERIA",
-        "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.2 GENERAL DESIGN CRITERIA",
-        "chunk_id": "TCM:1251:1",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-6",
-        "section_number": "25-6-472",
-        "section_title": "PARKING FACILITY STANDARDS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS",
-        "chunk_id": "LDC:848:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-6",
-        "section_number": "25-6-292",
-        "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS",
-        "chunk_id": "LDC:819:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-9",
-        "section_number": "25-9-33",
-        "section_title": "SERVICE EXTENSION APPLICATION",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-33 SERVICE EXTENSION APPLICATION",
-        "chunk_id": "LDC:1046:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-9",
-        "section_number": "25-9-383",
-        "section_title": "AVAILABILITY OF RECLAIMED WATER SERVICE",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 4. RECLAIMED WATER > \u00a7 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE",
-        "chunk_id": "LDC:1140:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-9",
-        "section_number": "25-9-410",
-        "section_title": "APPLICABILITY",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 5. ADDITIONAL WATER CONSERVATION REQUIREMENTS > \u00a7 25-9-410 APPLICABILITY",
-        "chunk_id": "LDC:1159:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-9",
-        "section_number": "25-9-31",
-        "section_title": "APPLICABILITY",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-31 APPLICABILITY",
-        "chunk_id": "LDC:1044:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-9",
-        "section_number": "25-9-91",
-        "section_title": "TAP PERMIT REQUIRED",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-91 TAP PERMIT REQUIRED",
-        "chunk_id": "LDC:1062:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
+        "claim_support": "supported",
+        "support_score": 0.3,
+        "review_category": "drainage_environmental"
       }
     ],
     "rejected_citations": [
@@ -2593,36 +2111,30 @@
         "section_number": "2.4",
         "section_title": "TIER TWO REQUIREMENTS",
         "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. SPECIAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart B. Planned Unit Development Standards > \u00a7 2.4 TIER TWO REQUIREMENTS",
-        "chunk_id": "LDC:300:4",
-        "claim_support": "retrieved_passage",
         "verification_status": "ambiguous",
         "supports_claim": false,
-        "verification_detail": "Multiple sections matched; citation requires manual verification."
+        "claim_support": "pending_verification",
+        "support_score": null,
+        "review_category": "zoning_site_plan"
       }
     ],
-    "llm_synthesis": "Based on the provided site data and regulatory evidence, here is a summary of major feasibility considerations, constraints, unknowns, and recommended next steps:\n\n**Major Feasibility Considerations:**\n\n1. Zoning: The property is zoned as DR (Development Reserve) and I-RR (Rural Residence), which may create conflicts and require additional approvals.\n2. Floodplain: The site does not intersect with the floodplain, but there are nearby properties that do. This may impact future development plans.\n3. Watershed: The site is located in the Panther Hollow watershed, which receives water from Lake Austin.\n\n**Constraints:**\n\n1. Zoning restrictions: The DR and I-RR zoning designations may limit the type of development that can occur on the property.\n2. Floodplain regulations: While the site does not intersect with the floodplain, there are nearby properties that do, which may impact future development plans.\n3. Watershed protection: The Panther Hollow watershed is a sensitive area that requires careful consideration to avoid environmental impacts.\n\n**Unknowns:**\n\n1. Utility capacity: There is no information on the availability of utilities such as water, sewer, and electricity at the site.\n2. Parking requirements: The regulations for parking requirements are not clear, which may impact the design of the retail building.\n3. Environmental impacts: While there are nearby properties that intersect with the floodplain, it is unclear what environmental impacts this may have on the proposed development.\n\n**Recommended Next Steps:**\n\n1. Verify zoning: Obtain official verification of the property's zoning designation to ensure compliance with regulations.\n2. Conduct environmental assessments: Hire a professional to conduct an environmental assessment to identify potential risks and opportunities associated with the site.\n3. Research utility capacity: Contact Austin Water, Capital Metropolitan Utility District (CMUD), and other relevant utilities to determine availability and capacity for water, sewer, and electricity at the site.\n4. Review parking regulations: Consult with the City of Austin's Transportation Department to understand parking requirements and ensure compliance with regulations.\n5. Engage with stakeholders: Meet with local residents, business owners, and community groups to discuss concerns and gather feedback on the proposed development.\n\nBy addressing these unknowns and constraints, developers can better understand the feasibility of their proposal and make informed decisions about moving forward with the project.",
-    "unsupported_claims": [
-      {
-        "claim_type": "definitive_approval",
-        "match": "will be approved",
-        "span": "121:137"
-      }
-    ],
+    "llm_synthesis": "This is a JSON response from an API, likely related to land use or building permits in Austin, Texas. Here's a breakdown of the data:\n\n**Permits**\n\n* There are 6 permits associated with the address `10600 LITTLE WIND CV`.\n* The permit types include:\n\t+ R-329 (Residential Structures Other Than Bldg)\n\t+ R-435 (Residential Renovations/Remodels)\n\n**Plan Reviews**\n\n* There are 9 plan reviews associated with the address `10600 LITTLE WIND CV`.\n* The plan review types include:\n\t+ R-329 (Residential Structures Other Than Bldg)\n\t+ R-434 (Addition & Alterations)\n\t+ R-101 (Single Family Houses)\n\n**Summary**\n\n* There are 6 permits, 0 site plans, and 9 plan reviews associated with the address `10600 LITTLE WIND CV`.\n\n**Notes**\n\n* Nearby permits and cases are historical context only and do not indicate future permitting outcomes for the proposed development.\n* The API notes that nearby records are historical context only and should not be relied upon as evidence of future approval.\n\nOverall, this data suggests that there have been several building or renovation projects at the address `10600 LITTLE WIND CV` in the past, but it does not provide information on whether any of these projects were approved or denied.",
+    "unsupported_claims": [],
     "warnings": [
       "Zoning could not be confirmed exactly and requires verification.",
       "1 citation(s) failed verification and were excluded from supported regulatory citations."
     ],
     "regulatory_evidence_count": 20,
-    "verified_citation_count": 19,
-    "disclaimer": "This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service."
+    "verified_citation_count": 1,
+    "disclaimer": "This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service. Nearby permits and cases are historical context only and are not approval precedent. All findings require verification by qualified professionals and City of Austin authorities."
   },
   "guardrail_result": {
     "status": "validated",
     "scope_ok": true,
     "unsupported_request": false,
-    "citations_verified": 19,
+    "citations_verified": 1,
     "citations_rejected": 1,
-    "unsupported_claim_count": 1,
+    "unsupported_claim_count": 0,
     "finding_count": 5
   },
   "report_document": {
@@ -2642,10 +2154,15 @@
         "site_summary": {
           "reported_zoning": null,
           "zoning_status": "multiple_records",
+          "zoning_note": "No single zoning designation is stated because the lookup was 'multiple_records'.",
           "floodplain_intersection": false,
-          "watershed": "Panther Hollow"
+          "watershed": "Panther Hollow",
+          "zoning_designations": [
+            "DR",
+            "I-RR"
+          ]
         },
-        "llm_synthesis": "Based on the provided site data and regulatory evidence, here is a summary of major feasibility considerations, constraints, unknowns, and recommended next steps:\n\n**Major Feasibility Considerations:**\n\n1. Zoning: The property is zoned as DR (Development Reserve) and I-RR (Rural Residence), which may create conflicts and require additional approvals.\n2. Floodplain: The site does not intersect with the floodplain, but there are nearby properties that do. This may impact future development plans.\n3. Watershed: The site is located in the Panther Hollow watershed, which receives water from Lake Austin.\n\n**Constraints:**\n\n1. Zoning restrictions: The DR and I-RR zoning designations may limit the type of development that can occur on the property.\n2. Floodplain regulations: While the site does not intersect with the floodplain, there are nearby properties that do, which may impact future development plans.\n3. Watershed protection: The Panther Hollow watershed is a sensitive area that requires careful consideration to avoid environmental impacts.\n\n**Unknowns:**\n\n1. Utility capacity: There is no information on the availability of utilities such as water, sewer, and electricity at the site.\n2. Parking requirements: The regulations for parking requirements are not clear, which may impact the design of the retail building.\n3. Environmental impacts: While there are nearby properties that intersect with the floodplain, it is unclear what environmental impacts this may have on the proposed development.\n\n**Recommended Next Steps:**\n\n1. Verify zoning: Obtain official verification of the property's zoning designation to ensure compliance with regulations.\n2. Conduct environmental assessments: Hire a professional to conduct an environmental assessment to identify potential risks and opportunities associated with the site.\n3. Research utility capacity: Contact Austin Water, Capital Metropolitan Utility District (CMUD), and other relevant utilities to determine availability and capacity for water, sewer, and electricity at the site.\n4. Review parking regulations: Consult with the City of Austin's Transportation Department to understand parking requirements and ensure compliance with regulations.\n5. Engage with stakeholders: Meet with local residents, business owners, and community groups to discuss concerns and gather feedback on the proposed development.\n\nBy addressing these unknowns and constraints, developers can better understand the feasibility of their proposal and make informed decisions about moving forward with the project."
+        "llm_synthesis": "This is a JSON response from an API, likely related to land use or building permits in Austin, Texas. Here's a breakdown of the data:\n\n**Permits**\n\n* There are 6 permits associated with the address `10600 LITTLE WIND CV`.\n* The permit types include:\n\t+ R-329 (Residential Structures Other Than Bldg)\n\t+ R-435 (Residential Renovations/Remodels)\n\n**Plan Reviews**\n\n* There are 9 plan reviews associated with the address `10600 LITTLE WIND CV`.\n* The plan review types include:\n\t+ R-329 (Residential Structures Other Than Bldg)\n\t+ R-434 (Addition & Alterations)\n\t+ R-101 (Single Family Houses)\n\n**Summary**\n\n* There are 6 permits, 0 site plans, and 9 plan reviews associated with the address `10600 LITTLE WIND CV`.\n\n**Notes**\n\n* Nearby permits and cases are historical context only and do not indicate future permitting outcomes for the proposed development.\n* The API notes that nearby records are historical context only and should not be relied upon as evidence of future approval.\n\nOverall, this data suggests that there have been several building or renovation projects at the address `10600 LITTLE WIND CV` in the past, but it does not provide information on whether any of these projects were approved or denied."
       },
       "sources_consulted": {
         "heading": "Sources Consulted",
@@ -2728,19 +2245,11 @@
         "heading": "Zoning and Land-Use Context",
         "reported_zoning": null,
         "zoning_status": "multiple_records",
+        "zoning_note": "No single zoning designation is stated because the lookup was 'multiple_records'.",
         "review": {
-          "query": "Austin development requirements for Commercial retail. Reported zoning is unknown zoning. Development description: Proposed single-story retail building with associated parking.. Identify applicable zoning, land use, and site plan requirements.",
-          "note": null,
-          "retrieved_passage_count": 5,
+          "note": "Zoning context is preliminary. Designations are stated only when the lookup returns an exact single match.",
+          "retrieved_passage_count": 4,
           "passages": [
-            {
-              "doc_id": "LDC",
-              "section_number": "2.4",
-              "section_title": "TIER TWO REQUIREMENTS",
-              "chapter": "Chapter 25-2",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. SPECIAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart B. Planned Unit Development Standards > \u00a7 2.4 TIER TWO REQUIREMENTS"
-            },
             {
               "doc_id": "LDC",
               "section_number": "25-2-518",
@@ -2779,95 +2288,19 @@
       "site_plan_considerations": {
         "heading": "Site-Plan Considerations",
         "review": {
-          "query": "Austin development requirements for Commercial retail. Reported zoning is unknown zoning. Development description: Proposed single-story retail building with associated parking.. Identify applicable zoning, land use, and site plan requirements.",
-          "note": null,
-          "retrieved_passage_count": 5,
-          "passages": [
-            {
-              "doc_id": "LDC",
-              "section_number": "2.4",
-              "section_title": "TIER TWO REQUIREMENTS",
-              "chapter": "Chapter 25-2",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. SPECIAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart B. Planned Unit Development Standards > \u00a7 2.4 TIER TWO REQUIREMENTS"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-2-518",
-              "section_title": "QUALIFYING DEVELOPMENT",
-              "chapter": "Chapter 25-2",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. PRINCIPAL USE AND DEVELOPMENT REGULATIONS > Division 2. Requirements for All Districts > \u00a7 25-2-518 QUALIFYING DEVELOPMENT"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-2-818",
-              "section_title": "MOBILE RETAIL ESTABLISHMENTS",
-              "chapter": "Chapter 25-2",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Division 2. Commercial Uses > \u00a7 25-2-818 MOBILE RETAIL ESTABLISHMENTS"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-2-91",
-              "section_title": "PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS",
-              "chapter": "Chapter 25-2",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. ZONING DISTRICTS > Division 3. Commercial Base Districts > \u00a7 25-2-91 PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-2-581",
-              "section_title": "CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
-              "chapter": "Chapter 25-2",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements > \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS"
-            }
-          ]
-        },
-        "note": "Site-plan applicability depends on proposed use, zoning, and project characteristics; confirm with Development Services."
+          "note": "Site-plan applicability depends on proposed use, zoning, and project characteristics; confirm with Development Services. Citations below are limited to site-plan provisions (LDC Chapter 25-5) when available.",
+          "retrieved_passage_count": 0,
+          "passages": []
+        }
       },
       "drainage_flood_environmental": {
         "heading": "Drainage, Flood, and Environmental Considerations",
         "floodplain_intersection": false,
         "watershed": "Panther Hollow",
         "review": {
-          "query": "Austin drainage and environmental requirements for Commercial retail. Development description: Proposed single-story retail building with associated parking.. Floodplain intersection: False. Watershed: Panther Hollow. Identify applicable drainage, floodplain, watershed, water quality, and environmental requirements.",
           "note": null,
-          "retrieved_passage_count": 5,
+          "retrieved_passage_count": 1,
           "passages": [
-            {
-              "doc_id": "LDC",
-              "section_number": "25-7-94",
-              "section_title": "REQUIREMENTS IN CENTRAL BUSINESS AREA",
-              "chapter": "Chapter 25-7",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-7-66",
-              "section_title": "SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
-              "chapter": "Chapter 25-7",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-7-92",
-              "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-              "chapter": "Chapter 25-7",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-7-61",
-              "section_title": "CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS",
-              "chapter": "Chapter 25-7",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS"
-            },
             {
               "doc_id": "DCM",
               "section_number": "1.2.6",
@@ -2882,49 +2315,16 @@
       "transportation_access": {
         "heading": "Transportation and Access Considerations",
         "review": {
-          "query": "Austin transportation and site access requirements for Commercial retail. Development description: Proposed single-story retail building with associated parking.. Approximate units: unknown. Identify applicable transportation, driveway, access, parking, circulation, and traffic requirements.",
           "note": null,
-          "retrieved_passage_count": 5,
+          "retrieved_passage_count": 1,
           "passages": [
             {
-              "doc_id": "TCM",
-              "section_number": "9.3.4.1",
-              "section_title": "Queuing",
-              "chapter": "Section 9",
-              "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-              "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.4.1 Queuing"
-            },
-            {
-              "doc_id": "TCM",
-              "section_number": "9.4.1",
-              "section_title": "OFF-STREET GENERAL LOADING REQUIREMENTS",
-              "chapter": "Section 9",
-              "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-              "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.4.1 OFF-STREET GENERAL LOADING REQUIREMENTS"
-            },
-            {
-              "doc_id": "TCM",
-              "section_number": "9.3.2",
-              "section_title": "GENERAL DESIGN CRITERIA",
-              "chapter": "Section 9",
-              "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-              "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.2 GENERAL DESIGN CRITERIA"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-6-472",
-              "section_title": "PARKING FACILITY STANDARDS",
-              "chapter": "Chapter 25-6",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-6-292",
-              "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
-              "chapter": "Chapter 25-6",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS"
+              "doc_id": "DCM",
+              "section_number": "1.2.6",
+              "section_title": "Floodplain Delineations",
+              "chapter": "Section 1",
+              "source_url": "https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
+              "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.6 Floodplain Delineations"
             }
           ]
         }
@@ -2932,8 +2332,6 @@
       "water_wastewater": {
         "heading": "General Water and Wastewater Considerations",
         "review": {
-          "query": "Austin water and wastewater requirements for Commercial retail. Development description: Proposed single-story retail building with associated parking.. Approximate units: unknown. Identify applicable general water, wastewater, utility connection, and infrastructure requirements. Do not assume service availability or utility capacity.",
-          "note": "Regulatory requirements do not establish actual water or wastewater service availability or capacity. Verification with the appropriate utility authority is required.",
           "retrieved_passage_count": 5,
           "passages": [
             {
@@ -2978,7 +2376,7 @@
             }
           ]
         },
-        "note": "Regulatory requirements do not establish actual water or wastewater service availability or capacity. Verification with the appropriate utility authority is required."
+        "note": "Regulatory language does not establish utility service availability or capacity. Verification with the appropriate utility authority is required."
       },
       "historical_permit_case_context": {
         "heading": "Historical Permit and Case Context",
@@ -2988,7 +2386,7 @@
             "site_plan_count": 0,
             "plan_review_count": 9
           },
-          "note": "Nearby permits and cases are historical context only. They must not be treated as evidence that the proposed development requires professional verification. [Claim removed or revised: unsupported definitive statement; professional verification required.]"
+          "note": "Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development."
         }
       },
       "potential_constraints": {
@@ -3002,44 +2400,17 @@
           {
             "category": "zoning",
             "label": "verification required",
-            "detail": "Zoning lookup status is 'multiple_records'; official verification is required before design decisions."
+            "detail": "Zoning lookup status is 'multiple_records'; no single zoning designation is selected. Official verification is required."
           },
           {
             "category": "historical_context",
             "label": "verification required",
-            "detail": "Nearby permits and cases are historical context only and must not be treated as approval precedent."
+            "detail": "Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development."
           },
           {
             "category": "citations",
             "label": "verification required",
-            "detail": "One or more retrieved citations could not be verified against the approved regulatory index."
-          }
-        ],
-        "findings": [
-          {
-            "category": "zoning",
-            "label": "verification required",
-            "detail": "Zoning lookup status is 'multiple_records'; official verification is required before design decisions."
-          },
-          {
-            "category": "drainage_flood",
-            "label": "no major issue identified from available data",
-            "detail": "No floodplain intersection identified in available screening data; proximity notes are informational only."
-          },
-          {
-            "category": "watershed",
-            "label": "no major issue identified from available data",
-            "detail": "Watershed identified as Panther Hollow from available data."
-          },
-          {
-            "category": "historical_context",
-            "label": "verification required",
-            "detail": "Nearby permits and cases are historical context only and must not be treated as approval precedent."
-          },
-          {
-            "category": "citations",
-            "label": "verification required",
-            "detail": "One or more retrieved citations could not be verified against the approved regulatory index."
+            "detail": "One or more retrieved citations could not be verified as supporting the associated claim or retrieval context."
           }
         ],
         "warnings": [
@@ -3050,139 +2421,9 @@
       "source_citations": {
         "heading": "Source Citations",
         "items": [
-          "LDC \u2014 \u00a7 25-2-518 QUALIFYING DEVELOPMENT (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-2-818 MOBILE RETAIL ESTABLISHMENTS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-2-91 PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "DCM \u2014 \u00a7 1.2.6 Floodplain Delineations (Section 1) | https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
-          "TCM \u2014 \u00a7 9.3.4.1 Queuing (Section 9) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-          "TCM \u2014 \u00a7 9.4.1 OFF-STREET GENERAL LOADING REQUIREMENTS (Section 9) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-          "TCM \u2014 \u00a7 9.3.2 GENERAL DESIGN CRITERIA (Section 9) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-          "LDC \u2014 \u00a7 25-6-472 PARKING FACILITY STANDARDS (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-9-33 SERVICE EXTENSION APPLICATION (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-9-410 APPLICABILITY (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-9-31 APPLICABILITY (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-9-91 TAP PERMIT REQUIRED (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code"
+          "DCM \u2014 \u00a7 1.2.6 Floodplain Delineations (Section 1) | https://library.municode.com/tx/austin/codes/drainage_criteria_manual"
         ],
         "raw": [
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-2",
-            "section_number": "25-2-518",
-            "section_title": "QUALIFYING DEVELOPMENT",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. PRINCIPAL USE AND DEVELOPMENT REGULATIONS > Division 2. Requirements for All Districts > \u00a7 25-2-518 QUALIFYING DEVELOPMENT",
-            "chunk_id": "LDC:327:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-2",
-            "section_number": "25-2-818",
-            "section_title": "MOBILE RETAIL ESTABLISHMENTS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Division 2. Commercial Uses > \u00a7 25-2-818 MOBILE RETAIL ESTABLISHMENTS",
-            "chunk_id": "LDC:481:1",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-2",
-            "section_number": "25-2-91",
-            "section_title": "PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 2. ZONING DISTRICTS > Division 3. Commercial Base Districts > \u00a7 25-2-91 PURPOSES OF COMMERCIAL DISTRICTS DESIGNATIONS",
-            "chunk_id": "LDC:202:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-2",
-            "section_number": "25-2-581",
-            "section_title": "CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Subpart A. General Requirements > \u00a7 25-2-581 CENTRAL BUSINESS DISTRICT (CBD) DISTRICT REGULATIONS",
-            "chunk_id": "LDC:350:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-7",
-            "section_number": "25-7-94",
-            "section_title": "REQUIREMENTS IN CENTRAL BUSINESS AREA",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-94 REQUIREMENTS IN CENTRAL BUSINESS AREA",
-            "chunk_id": "LDC:915:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-7",
-            "section_number": "25-7-66",
-            "section_title": "SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
-            "chunk_id": "LDC:910:1",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-7",
-            "section_number": "25-7-92",
-            "section_title": "ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 4. SPECIAL REQUIREMENTS IN ZONING JURISDICTION > \u00a7 25-7-92 ENCROACHMENT ON FLOODPLAIN PROHIBITED",
-            "chunk_id": "LDC:913:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-7",
-            "section_number": "25-7-61",
-            "section_title": "CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-61 CRITERIA FOR APPROVAL OF DEVELOPMENT APPLICATIONS",
-            "chunk_id": "LDC:905:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
           {
             "source": "DCM",
             "source_name": "Austin Drainage Criteria Manual",
@@ -3191,163 +2432,23 @@
             "section_number": "1.2.6",
             "section_title": "Floodplain Delineations",
             "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.6 Floodplain Delineations",
-            "chunk_id": "DCM:1171:0",
-            "claim_support": "retrieved_passage",
             "verification_status": "found",
             "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "TCM",
-            "source_name": "Austin Transportation Criteria Manual",
-            "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "chapter": "Section 9",
-            "section_number": "9.3.4.1",
-            "section_title": "Queuing",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.4.1 Queuing",
-            "chunk_id": "TCM:1261:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "TCM",
-            "source_name": "Austin Transportation Criteria Manual",
-            "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "chapter": "Section 9",
-            "section_number": "9.4.1",
-            "section_title": "OFF-STREET GENERAL LOADING REQUIREMENTS",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.4.1 OFF-STREET GENERAL LOADING REQUIREMENTS",
-            "chunk_id": "TCM:1267:1",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "TCM",
-            "source_name": "Austin Transportation Criteria Manual",
-            "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "chapter": "Section 9",
-            "section_number": "9.3.2",
-            "section_title": "GENERAL DESIGN CRITERIA",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 9 PARKING AND LOADING > 9.3.2 GENERAL DESIGN CRITERIA",
-            "chunk_id": "TCM:1251:1",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-6",
-            "section_number": "25-6-472",
-            "section_title": "PARKING FACILITY STANDARDS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 7. OFF-STREET PARKING AND LOADING > Division 1. General Regulations > \u00a7 25-6-472 PARKING FACILITY STANDARDS",
-            "chunk_id": "LDC:848:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-6",
-            "section_number": "25-6-292",
-            "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS",
-            "chunk_id": "LDC:819:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-9",
-            "section_number": "25-9-33",
-            "section_title": "SERVICE EXTENSION APPLICATION",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-33 SERVICE EXTENSION APPLICATION",
-            "chunk_id": "LDC:1046:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-9",
-            "section_number": "25-9-383",
-            "section_title": "AVAILABILITY OF RECLAIMED WATER SERVICE",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 4. RECLAIMED WATER > \u00a7 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE",
-            "chunk_id": "LDC:1140:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-9",
-            "section_number": "25-9-410",
-            "section_title": "APPLICABILITY",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 5. ADDITIONAL WATER CONSERVATION REQUIREMENTS > \u00a7 25-9-410 APPLICABILITY",
-            "chunk_id": "LDC:1159:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-9",
-            "section_number": "25-9-31",
-            "section_title": "APPLICABILITY",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-31 APPLICABILITY",
-            "chunk_id": "LDC:1044:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-9",
-            "section_number": "25-9-91",
-            "section_title": "TAP PERMIT REQUIRED",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-91 TAP PERMIT REQUIRED",
-            "chunk_id": "LDC:1062:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
+            "claim_support": "supported",
+            "support_score": 0.3,
+            "review_category": "drainage_environmental"
           }
         ]
       },
       "disclaimer": {
         "heading": "Preliminary-Review Disclaimer",
-        "text": "This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service."
+        "text": "This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service. Nearby permits and cases are historical context only and are not approval precedent. All findings require verification by qualified professionals and City of Austin authorities."
       }
     },
     "metrics": {
-      "verified_citation_count": 19,
+      "verified_citation_count": 1,
       "regulatory_evidence_count": 20,
-      "unsupported_claim_count": 1
+      "unsupported_claim_count": 0
     },
     "schema_complete": true,
     "missing_sections": []

@@ -1,5 +1,5 @@
 {
-  "m01": "relevant",
+  "m01": "not_relevant",
   "m02": "relevant",
   "m03": "relevant",
   "m04": "relevant",
@@ -10,8 +10,8 @@
   "m09": "correct",
   "m10": "correct",
   "m11": "uncited",
-  "m12": "supported",
+  "m12": "uncited",
   "m13": "uncited",
-  "m14": "unsupported",
-  "m15": "unsupported"
+  "m14": "uncited",
+  "m15": "uncited"
 }

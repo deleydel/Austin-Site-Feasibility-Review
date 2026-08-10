@@ -153,6 +153,22 @@ def apply_guardrails(state: dict[str, Any]) -> dict[str, Any]:
             supported = linked
 
     findings = classify_site_findings(site_context)
+
+    # A deterministic zoning/use conflict detected by the zoning review node
+    # must surface as a potential constraint in the final report even when
+    # LLM synthesis is disabled or unavailable.
+    zoning_site_plan = (reviews or {}).get("zoning_site_plan") or {}
+    if zoning_site_plan.get("potential_conflict") and zoning_site_plan.get(
+        "conflict_detail"
+    ):
+        findings.append(
+            {
+                "category": "zoning",
+                "label": "potential constraint",
+                "detail": zoning_site_plan["conflict_detail"],
+            }
+        )
+
     if rejected:
         warnings.append(
             f"{len(rejected)} citation(s) failed verification and were "

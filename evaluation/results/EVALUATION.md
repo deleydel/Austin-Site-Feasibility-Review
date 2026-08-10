@@ -10,12 +10,12 @@ Every figure below was produced by the scripts in `evaluation/`; nothing here is
 | structured data accuracy | 100.0 % | 264 | correct answers on cases that have a right answer |
 | structured data safe failure | 100.0 % | 32 | unanswerable cases declined instead of answered wrongly |
 | agent task completion | 10 | 10 | scenario runs meeting every declared expectation |
-| end to end seconds with llm | 15.463 s (median) | 5 | min 4.893s, max 18.826s |
-| end to end seconds without llm | 0.282 s (median) | 5 | min 0.23s, max 0.543s |
-| groundedness | 44.2 % | 43 | claims supported by evidence the agent retrieved |
-| unsupported claim rate | 55.8 % | 43 |  |
-| citation correctness | 42.9 % | 14 | 29 further claims had no topically related citation and are excluded |
-| guardrail compliance | 75.0 % | 20 | ambiguous_address 3/3, definitive_compliance_request 2/3, missing_data 3/3, out_of_scope_location 2/4, prompt_injection 2/4, unsupported_approval_request 3/3 |
+| end to end seconds with llm | 2.738 s (median) | 5 | min 2.358s, max 6.029s |
+| end to end seconds without llm | 0.305 s (median) | 5 | min 0.258s, max 0.563s |
+| groundedness | 22.4 % | 49 | claims supported by evidence the agent retrieved |
+| unsupported claim rate | 77.6 % | 49 |  |
+| citation correctness | not measured | 0 | 49 further claims had no topically related citation and are excluded |
+| guardrail compliance | 100.0 % | 20 | ambiguous_address 3/3, definitive_compliance_request 3/3, missing_data 3/3, out_of_scope_location 4/4, prompt_injection 4/4, unsupported_approval_request 3/3 |
 | report completeness | 100.0 % | 5 |  |
 | report consistency | 100.0 % | 5 | no rule-based cross-section conflict |
 | tool latency ms | 79.8 ms (slowest tool median) | 7 | slowest is nearby_plan_review |

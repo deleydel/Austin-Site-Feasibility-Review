@@ -14,6 +14,8 @@
     "zoning_site_plan": {
       "query": "Austin development requirements for Multifamily residential. Reported zoning is SF-3-NP. Development description: Proposed 24-unit multifamily residential development with surface parking.. Identify applicable zoning, land use, and site plan requirements.",
       "reported_zoning": "SF-3-NP",
+      "potential_conflict": true,
+      "conflict_detail": "Reported zoning is SF-3-NP, while the proposed land use is multifamily residential for the proposed 24-unit development. This combination presents a potential zoning/use conflict that requires verification against the applicable Austin Land Development Code requirements. No approval or prohibition determination is made here.",
       "retrieved_passages": [
         {
           "chunk_id": "LDC:447:0",
@@ -1170,7 +1172,7 @@
         "site_plan_count": 4,
         "plan_review_count": 20
       },
-      "note": "Nearby permits and cases are historical context only. They must not be treated as evidence that the proposed development will be approved."
+      "note": "Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development."
     }
   },
   "evidence": [
@@ -1557,76 +1559,6 @@
   ],
   "citations": [
     {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-2",
-      "section_number": "25-2-771",
-      "section_title": "SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Subpart A. Requirements for Specific Uses > \u00a7 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT",
-      "chunk_id": "LDC:447:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-2",
-      "section_number": "25-2-780",
-      "section_title": "MULTIFAMILY RESIDENTIAL USE",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Subpart A. Requirements for Specific Uses > \u00a7 25-2-780 MULTIFAMILY RESIDENTIAL USE",
-      "chunk_id": "LDC:456:1",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-2",
-      "section_number": "25-2-563",
-      "section_title": "MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS",
-      "chunk_id": "LDC:345:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-2",
-      "section_number": "25-2-560",
-      "section_title": "MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-560 MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS",
-      "chunk_id": "LDC:342:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-2",
-      "section_number": "25-2-566",
-      "section_title": "SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN SINGLE FAMILY DISTRICTS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-566 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN SINGLE FAMILY DISTRICTS",
-      "chunk_id": "LDC:348:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
       "source": "DCM",
       "source_name": "Austin Drainage Criteria Manual",
       "source_url": "https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
@@ -1635,10 +1567,16 @@
       "section_title": "General",
       "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.2 General",
       "chunk_id": "DCM:1167:1",
-      "claim_support": "retrieved_passage",
+      "review_category": "drainage_environmental",
+      "query": "Austin drainage and environmental requirements for Multifamily residential. Development description: Proposed 24-unit multifamily residential development with surface parking.. Floodplain intersection: True. Watershed: Waller Creek. Identify applicable drainage, floodplain, watershed, water quality, and environmental requirements.",
+      "support_context": "2.\tDevelopments that are immediately adjacent to and discharge directly into Waller Creek below the Waller Creek Tunnel Inlet (downstream of 12th Street) and that are located in the Waller Creek Tax Increment Reinvestment Zone (TIRZ).\n3.\tResidential infill projects, as defined in LDC 25-1-21(97) (Residential Infill Project), that are being reviewed under Section 25-7-67 (Modified Drainage Standards for Residential Infill).\nG.\tDetention Alternatives. The City recognizes the need for small projects to have an alternative means of meeting stormwater quantity mitigation (detention) requirements. Section 8.2.0 of the Drainage Criteria Manual defines the Regional Stormwater Management Program (RSMP) and describes the requirements for participation in the program. The City will allow small land developments that meet the following simplified requirements to participate in the RSMP. This participation shall take the form of off-site improvements or payment-in-lieu of detention at the discretion of the Director of the Watershed Protection Department. A development project that meets all of the following requirements is not subject to subsection D. above.\n1.\tCommercial, multi-family that is not a residential infill project as defined in LDC 25-1-21(97), or mixed-use developments with a site development area of 0.5 acres or less;\n2.\tThe proposed impervious cover does not exceed the maximum allowed by a restrictive covenant or plat note for the property, if applicable;\n3.\tThe development does not propose impervious cover over and above current zoning maximums through the application of the various infill options provided in neighborhood plans; and\n4.\tAny increase in runoff from the site shall be discharged to an existing storm drainage system, or right-of-way. If this cannot be achieved, a licensed engineer must submit the following:\ni.\tA signed and sealed drainage plan; and",
+      "claim_support": "supported",
+      "support_score": 0.455,
+      "excerpt": "A.\tStormwater runoff peak flow rates for the two (2), ten (10), 25 and 100-year frequency storms shall not cause increased inundation of any building or roadway surface or create any additional adverse flooding impacts.\nB.\tStreet curbs, gutters, inlets and storm drains shall be designed to intercept, contain and transport all runoff from the 25-year frequency storm.\nC.\tIn addition to B. above, the",
       "verification_status": "found",
       "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
+      "verification_detail": "Section text supports the attached claim/context (term overlap 100%).",
+      "supported_claim": "+ `summary`: This property contains a summary of the data, including the number of permits, site plans, and plan reviews."
     },
     {
       "source": "LDC",
@@ -1649,94 +1587,16 @@
       "section_title": "SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
       "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
       "chunk_id": "LDC:910:1",
-      "claim_support": "retrieved_passage",
+      "review_category": "drainage_environmental",
+      "query": "Austin drainage and environmental requirements for Multifamily residential. Development description: Proposed 24-unit multifamily residential development with surface parking.. Floodplain intersection: True. Watershed: Waller Creek. Identify applicable drainage, floodplain, watershed, water quality, and environmental requirements.",
+      "support_context": "(a)\tfinished floor elevations;\n(b)\tdriveway and sidewalk locations;\n(c)\tbuilding footprint; and\n(d)\tlocation of all stormwater discharge.\n(2)\tThe requirements of Paragraph (C)(1) do not apply to development of a single-family residential use on a platted lot if impervious cover will not exceed 45%, as calculated based on gross site area.\n(3)\tFor development of a single-family residential subdivision:\n(a)\tthe construction plans for subdivision infrastructure must include a concept plan identifying building footprints and the location of sidewalks and driveways for each lot within the subdivision; and\n(b)\ta grading plan for each lot, consistent with the subdivision construction plans, if applicable, must be provided at the time of development and building permit review.\n(D)\tThe requirements of this section do not:\n(1)\taffect implementation of the Regional Stormwater Management Program, as prescribed by the Drainage Criteria Manual; or\n(2)\tprohibit the director from waiving detention requirements, as prescribed in the Drainage Criteria Manual, if an applicant provides offsite improvements that result in an overall improvement of flooding conditions within the affected watershed.\nNote(s)\u2014Part 3 of Ordinance No. 20141214-096 states, \"The City Manager is directed to adopt administrative rules that are determined to be necessary for implementation of this ordinance. The requirements of this ordinance control in the event of a conflict with the Drainage Criteria Manual, including but not limited to \u00a7 1.2.2(G), the Environmental Criteria Manual, or other administrative rules.\"\nPart 6 of Ordinance No. 20171214-096 states, \"This ordinance expires on December 14, 2019.\"",
+      "claim_support": "supported",
+      "support_score": 0.429,
+      "excerpt": "(A)\tThe requirements of this section supplement the criteria in Section 25-7-61 (Criteria for Approval of Development Applications) for development within the area bound by Oltorf to the north, the Union Pacific railroad tracks to the east, Highway 290/Ben White Boulevard to the south, and South Lamar and Manchaca Road to the west.\n(B)\tThe director may determine that a development will have no adv",
       "verification_status": "found",
       "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-8",
-      "section_number": "25-8-211",
-      "section_title": "WATER QUALITY CONTROL REQUIREMENT",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 6. WATER QUALITY CONTROLS > Division 1. Requirement and Standards > \u00a7 25-8-211 WATER QUALITY CONTROL REQUIREMENT",
-      "chunk_id": "LDC:955:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-8",
-      "section_number": "25-8-261",
-      "section_title": "CRITICAL WATER QUALITY ZONE DEVELOPMENT",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 1. Waterway and Floodplain Protection > \u00a7 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT",
-      "chunk_id": "LDC:964:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-8",
-      "section_number": "25-8-281",
-      "section_title": "CRITICAL ENVIRONMENTAL FEATURES",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 2. Protection for Special Features > \u00a7 25-8-281 CRITICAL ENVIRONMENTAL FEATURES",
-      "chunk_id": "LDC:967:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "TCM",
-      "source_name": "Austin Transportation Criteria Manual",
-      "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-      "chapter": "Section 7",
-      "section_number": "7.6.1.1",
-      "section_title": "Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets",
-      "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets",
-      "chunk_id": "TCM:1233:1",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "TCM",
-      "source_name": "Austin Transportation Criteria Manual",
-      "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-      "chapter": "Section 7",
-      "section_number": "7.6.1",
-      "section_title": "PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS",
-      "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS",
-      "chunk_id": "TCM:1232:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-6",
-      "section_number": "25-6-292",
-      "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS",
-      "chunk_id": "LDC:819:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
+      "verification_detail": "Section text supports the attached claim/context (term overlap 100%).",
+      "supported_claim": "* The `permit` property is an array of objects, each representing a permit record."
     },
     {
       "source": "TCM",
@@ -1747,94 +1607,36 @@
       "section_title": "DRIVEWAY PLACEMENT",
       "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.2 DRIVEWAY PLACEMENT",
       "chunk_id": "TCM:1234:0",
-      "claim_support": "retrieved_passage",
+      "review_category": "transportation_access",
+      "query": "Austin transportation and site access requirements for Multifamily residential. Development description: Proposed 24-unit multifamily residential development with surface parking.. Approximate units: 24. Identify applicable transportation, driveway, access, parking, circulation, and traffic requirements.",
+      "support_context": "Driveways operate together along a street and their placement affects the safety and efficiency of a street to move vehicles through and to adjacent properties. Several factors must be considered when determining the placement of the driveway:\n1.\tStreet Level that the driveway draws access from;\n2.\tTarget speed of the street;\n3.\tLevel of non-motorized vehicle activity;\n4.\tAmount of site frontage available to be accessed;\n5.\tApproach directions of traffic in need of accessing the development;\n6.\tLocation of existing cross streets and traffic signals;\n7.\tTraffic signal coordination requirements;\n8.\tProximity to other proposed and existing driveways; and\n9.\tIntersection sight distance per Section 3.4.2.1.1.\nTable 7-5 defines minimum spacing based the Level of the street access is being taken from and driveway access type. Spacing driveways per criteria in Table 7-5 with respect to other driveways and intersections will maximize the traffic safety, flow, and operations of the street. The dimensions in Tables 7-5 for spacing between driveways should be increased whenever possible so that the number of driveways can be reduced. Dimension control for applying the criteria in Table 7-5 is shown in Figure 7-5.\nTable 7-5 - Minimum Driveway Spacing1\n| Street Level2 | Minor Driveway | Major Driveway |\n| --- | --- | --- |\n| 4 | N/A | 280 |\n| 3 | N/A | 200 |\n| 2 | 75 | 150 |\n| 1 | 50 | 75 |\n1.\tDistances are measured from inside edge of pavement of each driveway or the edge of the intersecting street travel lanes as in Figure 7-5.\n2.\tStreet level refers to the street that vehicles are using to access the site. Level 5 streets do not have driveways.\n[caption] Figure 7-5 \u2014 Driveway Spacing",
+      "claim_support": "supported",
+      "support_score": 0.571,
+      "excerpt": "Driveways operate together along a street and their placement affects the safety and efficiency of a street to move vehicles through and to adjacent properties. Several factors must be considered when determining the placement of the driveway:\n1.\tStreet Level that the driveway draws access from;\n2.\tTarget speed of the street;\n3.\tLevel of non-motorized vehicle activity;\n4.\tAmount of site frontage a",
       "verification_status": "found",
       "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "TCM",
-      "source_name": "Austin Transportation Criteria Manual",
-      "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-      "chapter": "Section 7",
-      "section_number": "7.6.0",
-      "section_title": "ACCESS MANAGEMENT",
-      "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.0 ACCESS MANAGEMENT",
-      "chunk_id": "TCM:1231:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
+      "verification_detail": "Section text supports the attached claim/context (term overlap 100%).",
+      "supported_claim": "Each object has several properties:\n\t+ `distance`: The distance from the proposed development to the permit location."
     },
     {
       "source": "LDC",
       "source_name": "Austin Land Development Code (Title 25)",
       "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-9",
-      "section_number": "25-9-33",
-      "section_title": "SERVICE EXTENSION APPLICATION",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-33 SERVICE EXTENSION APPLICATION",
-      "chunk_id": "LDC:1046:0",
-      "claim_support": "retrieved_passage",
+      "chapter": "Chapter 25-8",
+      "section_number": "25-8-261",
+      "section_title": "CRITICAL WATER QUALITY ZONE DEVELOPMENT",
+      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 1. Waterway and Floodplain Protection > \u00a7 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT",
+      "chunk_id": "LDC:964:0",
+      "review_category": "drainage_environmental",
+      "query": "Austin drainage and environmental requirements for Multifamily residential. Development description: Proposed 24-unit multifamily residential development with surface parking.. Floodplain intersection: True. Watershed: Waller Creek. Identify applicable drainage, floodplain, watershed, water quality, and environmental requirements.",
+      "support_context": "In all watersheds, development is prohibited in a critical water quality zone except as provided in this Division. Development allowed in the critical water quality zone under this Division shall be revegetated and restored within the limits of construction as prescribed by the Environmental Criteria Manual.\n(A)\tA fence that does not obstruct flood flows is permitted in a critical water quality zone.\n(B)\tOpen space is permitted in a critical water quality zone if a program of fertilizer, pesticide, and herbicide use is approved by the Watershed Protection Department, subject to the conditions in this Subsection.\n(1)\tIn a water supply rural watershed, water supply suburban, or the Barton Springs Zone, open space is limited to sustainable urban agriculture or a community garden if the requirements in Subsection (B)(4) are met, multi-use trails, picnic facilities, and outdoor facilities, excluding stables, corrals for animals and athletic fields.\n(2)\tA park with a council-adopted plan may include recreational development other than that described in Subsection (B)(1).\n(3)\tA hard surfaced trail may cross the critical water quality zone pursuant to Section 25-8-262 (Critical Water Quality Zone Mobility Crossings). A hard surfaced trail that does not cross the critical water quality zone may be located within the critical water quality zone only if:\n(a)\tdesigned in accordance with the Environmental Criteria Manual;\n(b)\tlocated outside the erosion hazard zone unless protective works are provided as prescribed in the Drainage Criteria Manual;\n(c)\tlimited to 12 feet in width plus one-foot compacted sub-grade shoulders, unless a wider trail is designated in a Council-adopted plan;\n(d)\tlocated not less than 25 feet from the centerline of a waterway if within an urban watershed;",
+      "claim_support": "supported",
+      "support_score": 0.667,
+      "excerpt": "In all watersheds, development is prohibited in a critical water quality zone except as provided in this Division. Development allowed in the critical water quality zone under this Division shall be revegetated and restored within the limits of construction as prescribed by the Environmental Criteria Manual.\n(A)\tA fence that does not obstruct flood flows is permitted in a critical water quality zo",
       "verification_status": "found",
       "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-9",
-      "section_number": "25-9-91",
-      "section_title": "TAP PERMIT REQUIRED",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-91 TAP PERMIT REQUIRED",
-      "chunk_id": "LDC:1062:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-9",
-      "section_number": "25-9-412",
-      "section_title": "RECLAIMED WATER CONNECTION REQUIREMENTS",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 5. ADDITIONAL WATER CONSERVATION REQUIREMENTS > \u00a7 25-9-412 RECLAIMED WATER CONNECTION REQUIREMENTS",
-      "chunk_id": "LDC:1161:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-9",
-      "section_number": "25-9-93",
-      "section_title": "APPLICATION FOR TAP PERMIT; FEES; CAPACITY",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-93 APPLICATION FOR TAP PERMIT; FEES; CAPACITY",
-      "chunk_id": "LDC:1064:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
-    },
-    {
-      "source": "LDC",
-      "source_name": "Austin Land Development Code (Title 25)",
-      "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-      "chapter": "Chapter 25-9",
-      "section_number": "25-9-383",
-      "section_title": "AVAILABILITY OF RECLAIMED WATER SERVICE",
-      "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 4. RECLAIMED WATER > \u00a7 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE",
-      "chunk_id": "LDC:1140:0",
-      "claim_support": "retrieved_passage",
-      "verification_status": "found",
-      "supports_claim": true,
-      "verification_detail": "Section verified in regulatory index."
+      "verification_detail": "Section text supports the attached claim/context (term overlap 100%).",
+      "supported_claim": "+ `address`: The address of the permit location."
     }
   ],
   "execution_trace": [
@@ -2645,6 +2447,7 @@
     "site_summary": {
       "reported_zoning": "SF-3-NP",
       "zoning_status": "found",
+      "zoning_note": "Preliminary Open Data zoning only; not an official determination.",
       "floodplain_intersection": true,
       "watershed": "Waller Creek"
     },
@@ -2724,8 +2527,9 @@
     ],
     "review_sections": {
       "zoning_site_plan": {
-        "query": "Austin development requirements for Multifamily residential. Reported zoning is SF-3-NP. Development description: Proposed 24-unit multifamily residential development with surface parking.. Identify applicable zoning, land use, and site plan requirements.",
         "reported_zoning": "SF-3-NP",
+        "potential_conflict": true,
+        "conflict_detail": "Reported zoning is SF-3-NP, while the proposed land use is multifamily residential for the proposed 24-unit development. This combination presents a potential zoning/use conflict that requires verification against the applicable Austin Land Development Code requirements. No approval or prohibition determination is made here.",
         "retrieved_passages": [
           {
             "doc_id": "LDC",
@@ -2733,7 +2537,8 @@
             "section_title": "SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT",
             "chapter": "Chapter 25-2",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Subpart A. Requirements for Specific Uses > \u00a7 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Subpart A. Requirements for Specific Uses > \u00a7 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -2741,7 +2546,8 @@
             "section_title": "MULTIFAMILY RESIDENTIAL USE",
             "chapter": "Chapter 25-2",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Subpart A. Requirements for Specific Uses > \u00a7 25-2-780 MULTIFAMILY RESIDENTIAL USE"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Subpart A. Requirements for Specific Uses > \u00a7 25-2-780 MULTIFAMILY RESIDENTIAL USE",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -2749,7 +2555,8 @@
             "section_title": "MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS",
             "chapter": "Chapter 25-2",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -2757,7 +2564,8 @@
             "section_title": "MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS",
             "chapter": "Chapter 25-2",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-560 MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-560 MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -2765,13 +2573,13 @@
             "section_title": "SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN SINGLE FAMILY DISTRICTS",
             "chapter": "Chapter 25-2",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-566 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN SINGLE FAMILY DISTRICTS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-566 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN SINGLE FAMILY DISTRICTS",
+            "support_score": 1.0
           }
         ],
         "retrieved_passage_count": 5
       },
       "drainage_environmental": {
-        "query": "Austin drainage and environmental requirements for Multifamily residential. Development description: Proposed 24-unit multifamily residential development with surface parking.. Floodplain intersection: True. Watershed: Waller Creek. Identify applicable drainage, floodplain, watershed, water quality, and environmental requirements.",
         "floodplain": {
           "status": "found",
           "latitude": 30.32173983,
@@ -2803,7 +2611,8 @@
             "section_title": "General",
             "chapter": "Section 1",
             "source_url": "https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
-            "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.2 General"
+            "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.2 General",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -2811,7 +2620,8 @@
             "section_title": "SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
             "chapter": "Chapter 25-7",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -2819,7 +2629,8 @@
             "section_title": "WATER QUALITY CONTROL REQUIREMENT",
             "chapter": "Chapter 25-8",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 6. WATER QUALITY CONTROLS > Division 1. Requirement and Standards > \u00a7 25-8-211 WATER QUALITY CONTROL REQUIREMENT"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 6. WATER QUALITY CONTROLS > Division 1. Requirement and Standards > \u00a7 25-8-211 WATER QUALITY CONTROL REQUIREMENT",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -2827,7 +2638,8 @@
             "section_title": "CRITICAL WATER QUALITY ZONE DEVELOPMENT",
             "chapter": "Chapter 25-8",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 1. Waterway and Floodplain Protection > \u00a7 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 1. Waterway and Floodplain Protection > \u00a7 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -2835,13 +2647,13 @@
             "section_title": "CRITICAL ENVIRONMENTAL FEATURES",
             "chapter": "Chapter 25-8",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 2. Protection for Special Features > \u00a7 25-8-281 CRITICAL ENVIRONMENTAL FEATURES"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 2. Protection for Special Features > \u00a7 25-8-281 CRITICAL ENVIRONMENTAL FEATURES",
+            "support_score": 1.0
           }
         ],
         "retrieved_passage_count": 5
       },
       "transportation_access": {
-        "query": "Austin transportation and site access requirements for Multifamily residential. Development description: Proposed 24-unit multifamily residential development with surface parking.. Approximate units: 24. Identify applicable transportation, driveway, access, parking, circulation, and traffic requirements.",
         "retrieved_passages": [
           {
             "doc_id": "TCM",
@@ -2849,7 +2661,8 @@
             "section_title": "Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets",
             "chapter": "Section 7",
             "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets"
+            "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets",
+            "support_score": 1.0
           },
           {
             "doc_id": "TCM",
@@ -2857,7 +2670,8 @@
             "section_title": "PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS",
             "chapter": "Section 7",
             "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS"
+            "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -2865,7 +2679,8 @@
             "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
             "chapter": "Chapter 25-6",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS",
+            "support_score": 1.0
           },
           {
             "doc_id": "TCM",
@@ -2873,7 +2688,8 @@
             "section_title": "DRIVEWAY PLACEMENT",
             "chapter": "Section 7",
             "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.2 DRIVEWAY PLACEMENT"
+            "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.2 DRIVEWAY PLACEMENT",
+            "support_score": 1.0
           },
           {
             "doc_id": "TCM",
@@ -2881,13 +2697,13 @@
             "section_title": "ACCESS MANAGEMENT",
             "chapter": "Section 7",
             "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.0 ACCESS MANAGEMENT"
+            "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.0 ACCESS MANAGEMENT",
+            "support_score": 1.0
           }
         ],
         "retrieved_passage_count": 5
       },
       "water_wastewater": {
-        "query": "Austin water and wastewater requirements for Multifamily residential. Development description: Proposed 24-unit multifamily residential development with surface parking.. Approximate units: 24. Identify applicable general water, wastewater, utility connection, and infrastructure requirements. Do not assume service availability or utility capacity.",
         "retrieved_passages": [
           {
             "doc_id": "LDC",
@@ -2895,7 +2711,8 @@
             "section_title": "SERVICE EXTENSION APPLICATION",
             "chapter": "Chapter 25-9",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-33 SERVICE EXTENSION APPLICATION"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-33 SERVICE EXTENSION APPLICATION",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -2903,7 +2720,8 @@
             "section_title": "TAP PERMIT REQUIRED",
             "chapter": "Chapter 25-9",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-91 TAP PERMIT REQUIRED"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-91 TAP PERMIT REQUIRED",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -2911,7 +2729,8 @@
             "section_title": "RECLAIMED WATER CONNECTION REQUIREMENTS",
             "chapter": "Chapter 25-9",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 5. ADDITIONAL WATER CONSERVATION REQUIREMENTS > \u00a7 25-9-412 RECLAIMED WATER CONNECTION REQUIREMENTS"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 5. ADDITIONAL WATER CONSERVATION REQUIREMENTS > \u00a7 25-9-412 RECLAIMED WATER CONNECTION REQUIREMENTS",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -2919,7 +2738,8 @@
             "section_title": "APPLICATION FOR TAP PERMIT; FEES; CAPACITY",
             "chapter": "Chapter 25-9",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-93 APPLICATION FOR TAP PERMIT; FEES; CAPACITY"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-93 APPLICATION FOR TAP PERMIT; FEES; CAPACITY",
+            "support_score": 1.0
           },
           {
             "doc_id": "LDC",
@@ -2927,7 +2747,8 @@
             "section_title": "AVAILABILITY OF RECLAIMED WATER SERVICE",
             "chapter": "Chapter 25-9",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 4. RECLAIMED WATER > \u00a7 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE"
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 4. RECLAIMED WATER > \u00a7 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE",
+            "support_score": 1.0
           }
         ],
         "note": "Regulatory requirements do not establish actual water or wastewater service availability or capacity. Verification with the appropriate utility authority is required.",
@@ -3666,7 +3487,7 @@
           "site_plan_count": 4,
           "plan_review_count": 20
         },
-        "note": "Nearby permits and cases are historical context only. They must not be treated as evidence that the proposed development requires professional verification. [Claim removed or revised: unsupported definitive statement; professional verification required.]"
+        "note": "Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development."
       }
     },
     "findings": [
@@ -3688,7 +3509,12 @@
       {
         "category": "historical_context",
         "label": "verification required",
-        "detail": "Nearby permits and cases are historical context only and must not be treated as approval precedent."
+        "detail": "Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development."
+      },
+      {
+        "category": "zoning",
+        "label": "potential constraint",
+        "detail": "Reported zoning is SF-3-NP, while the proposed land use is multifamily residential for the proposed 24-unit development. This combination presents a potential zoning/use conflict that requires verification against the applicable Austin Land Development Code requirements. No approval or prohibition determination is made here."
       }
     ],
     "potential_constraints": [
@@ -3696,6 +3522,11 @@
         "category": "drainage_flood",
         "label": "potential constraint",
         "detail": "Site intersects the fully developed floodplain model used for preliminary screening."
+      },
+      {
+        "category": "zoning",
+        "label": "potential constraint",
+        "detail": "Reported zoning is SF-3-NP, while the proposed land use is multifamily residential for the proposed 24-unit development. This combination presents a potential zoning/use conflict that requires verification against the applicable Austin Land Development Code requirements. No approval or prohibition determination is made here."
       }
     ],
     "missing_information": [],
@@ -3708,80 +3539,10 @@
       {
         "category": "historical_context",
         "label": "verification required",
-        "detail": "Nearby permits and cases are historical context only and must not be treated as approval precedent."
+        "detail": "Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development."
       }
     ],
     "citations": [
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-2",
-        "section_number": "25-2-771",
-        "section_title": "SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Subpart A. Requirements for Specific Uses > \u00a7 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT",
-        "chunk_id": "LDC:447:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-2",
-        "section_number": "25-2-780",
-        "section_title": "MULTIFAMILY RESIDENTIAL USE",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Subpart A. Requirements for Specific Uses > \u00a7 25-2-780 MULTIFAMILY RESIDENTIAL USE",
-        "chunk_id": "LDC:456:1",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-2",
-        "section_number": "25-2-563",
-        "section_title": "MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS",
-        "chunk_id": "LDC:345:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-2",
-        "section_number": "25-2-560",
-        "section_title": "MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-560 MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS",
-        "chunk_id": "LDC:342:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-2",
-        "section_number": "25-2-566",
-        "section_title": "SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN SINGLE FAMILY DISTRICTS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-566 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN SINGLE FAMILY DISTRICTS",
-        "chunk_id": "LDC:348:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
       {
         "source": "DCM",
         "source_name": "Austin Drainage Criteria Manual",
@@ -3790,11 +3551,11 @@
         "section_number": "1.2.2",
         "section_title": "General",
         "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.2 General",
-        "chunk_id": "DCM:1167:1",
-        "claim_support": "retrieved_passage",
         "verification_status": "found",
         "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
+        "claim_support": "supported",
+        "support_score": 0.455,
+        "review_category": "drainage_environmental"
       },
       {
         "source": "LDC",
@@ -3804,95 +3565,11 @@
         "section_number": "25-7-66",
         "section_title": "SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
         "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
-        "chunk_id": "LDC:910:1",
-        "claim_support": "retrieved_passage",
         "verification_status": "found",
         "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-8",
-        "section_number": "25-8-211",
-        "section_title": "WATER QUALITY CONTROL REQUIREMENT",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 6. WATER QUALITY CONTROLS > Division 1. Requirement and Standards > \u00a7 25-8-211 WATER QUALITY CONTROL REQUIREMENT",
-        "chunk_id": "LDC:955:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-8",
-        "section_number": "25-8-261",
-        "section_title": "CRITICAL WATER QUALITY ZONE DEVELOPMENT",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 1. Waterway and Floodplain Protection > \u00a7 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT",
-        "chunk_id": "LDC:964:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-8",
-        "section_number": "25-8-281",
-        "section_title": "CRITICAL ENVIRONMENTAL FEATURES",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 2. Protection for Special Features > \u00a7 25-8-281 CRITICAL ENVIRONMENTAL FEATURES",
-        "chunk_id": "LDC:967:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "TCM",
-        "source_name": "Austin Transportation Criteria Manual",
-        "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-        "chapter": "Section 7",
-        "section_number": "7.6.1.1",
-        "section_title": "Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets",
-        "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets",
-        "chunk_id": "TCM:1233:1",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "TCM",
-        "source_name": "Austin Transportation Criteria Manual",
-        "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-        "chapter": "Section 7",
-        "section_number": "7.6.1",
-        "section_title": "PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS",
-        "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS",
-        "chunk_id": "TCM:1232:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-6",
-        "section_number": "25-6-292",
-        "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS",
-        "chunk_id": "LDC:819:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
+        "claim_support": "supported",
+        "support_score": 0.429,
+        "review_category": "drainage_environmental"
       },
       {
         "source": "TCM",
@@ -3902,119 +3579,43 @@
         "section_number": "7.6.2",
         "section_title": "DRIVEWAY PLACEMENT",
         "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.2 DRIVEWAY PLACEMENT",
-        "chunk_id": "TCM:1234:0",
-        "claim_support": "retrieved_passage",
         "verification_status": "found",
         "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "TCM",
-        "source_name": "Austin Transportation Criteria Manual",
-        "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-        "chapter": "Section 7",
-        "section_number": "7.6.0",
-        "section_title": "ACCESS MANAGEMENT",
-        "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.0 ACCESS MANAGEMENT",
-        "chunk_id": "TCM:1231:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
+        "claim_support": "supported",
+        "support_score": 0.571,
+        "review_category": "transportation_access"
       },
       {
         "source": "LDC",
         "source_name": "Austin Land Development Code (Title 25)",
         "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-9",
-        "section_number": "25-9-33",
-        "section_title": "SERVICE EXTENSION APPLICATION",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-33 SERVICE EXTENSION APPLICATION",
-        "chunk_id": "LDC:1046:0",
-        "claim_support": "retrieved_passage",
+        "chapter": "Chapter 25-8",
+        "section_number": "25-8-261",
+        "section_title": "CRITICAL WATER QUALITY ZONE DEVELOPMENT",
+        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 1. Waterway and Floodplain Protection > \u00a7 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT",
         "verification_status": "found",
         "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-9",
-        "section_number": "25-9-91",
-        "section_title": "TAP PERMIT REQUIRED",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-91 TAP PERMIT REQUIRED",
-        "chunk_id": "LDC:1062:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-9",
-        "section_number": "25-9-412",
-        "section_title": "RECLAIMED WATER CONNECTION REQUIREMENTS",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 5. ADDITIONAL WATER CONSERVATION REQUIREMENTS > \u00a7 25-9-412 RECLAIMED WATER CONNECTION REQUIREMENTS",
-        "chunk_id": "LDC:1161:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-9",
-        "section_number": "25-9-93",
-        "section_title": "APPLICATION FOR TAP PERMIT; FEES; CAPACITY",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-93 APPLICATION FOR TAP PERMIT; FEES; CAPACITY",
-        "chunk_id": "LDC:1064:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
-      },
-      {
-        "source": "LDC",
-        "source_name": "Austin Land Development Code (Title 25)",
-        "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-        "chapter": "Chapter 25-9",
-        "section_number": "25-9-383",
-        "section_title": "AVAILABILITY OF RECLAIMED WATER SERVICE",
-        "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 4. RECLAIMED WATER > \u00a7 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE",
-        "chunk_id": "LDC:1140:0",
-        "claim_support": "retrieved_passage",
-        "verification_status": "found",
-        "supports_claim": true,
-        "verification_detail": "Section verified in regulatory index."
+        "claim_support": "supported",
+        "support_score": 0.667,
+        "review_category": "drainage_environmental"
       }
     ],
     "rejected_citations": [],
-    "llm_synthesis": "Based on the provided data, here is a summary of major feasibility considerations, constraints, unknowns, and recommended next steps for the proposed 24-unit multifamily residential development:\n\n**Major Feasibility Considerations:**\n\n1. Zoning: The proposed development is zoned as SF-3-NP, which requires compliance with site development regulations for a family residence (SF-3) district.\n2. Floodplain: The property intersects the City of Austin Fully Developed 25-Year Floodplain, requiring an engineering flood study to govern.\n3. Watershed: The property is located in the Waller Creek watershed, which may impact water quality and stormwater management requirements.\n\n**Constraints:**\n\n1. Site area: The proposed development requires a minimum site area of 800 square feet per dwelling unit, which may be challenging given the small site area of 0.5 acres.\n2. Parking: The proposal includes surface parking, which may not meet current parking standards and regulations.\n3. Utility capacity: The proposal does not specify whether the developer will provide their own utility connections or rely on existing infrastructure.\n\n**Unknowns:**\n\n1. Water quality requirements: The proposal does not address water quality concerns, such as stormwater management and wastewater treatment.\n2. Transportation access: The proposal does not specify how residents will access the development, which may impact traffic flow and safety.\n3. Environmental impacts: The proposal does not provide information on potential environmental impacts, such as habitat disruption or noise pollution.\n\n**Recommended Next Steps:**\n\n1. Conduct a site analysis to determine the feasibility of the proposed development, including assessing the site's topography, soil conditions, and environmental factors.\n2. Review and comply with relevant zoning regulations, including site development requirements for SF-3-NP districts.\n3. Engage with the City's Floodplain Management Office to determine the necessary steps to mitigate flood risks and ensure compliance with engineering flood study requirements.\n4. Consult with the City's Watershed Protection Department to understand water quality concerns and develop strategies for managing stormwater runoff and wastewater treatment.\n5. Conduct a transportation access analysis to determine how residents will access the development, including assessing traffic flow and safety implications.\n6. Develop a comprehensive environmental impact assessment to identify potential environmental impacts and mitigate them through design and mitigation measures.\n\nBy addressing these feasibility considerations, constraints, unknowns, and recommended next steps, the developer can better understand the challenges and opportunities associated with the proposed development and make informed decisions about moving forward with the project.",
-    "unsupported_claims": [
-      {
-        "claim_type": "definitive_approval",
-        "match": "will be approved",
-        "span": "121:137"
-      }
-    ],
+    "llm_synthesis": "This is a JSON response from an API, specifically a permit search API. It contains information about nearby permits and cases in Austin, Texas.\n\nHere's a breakdown of the structure:\n\n* The top-level object has three properties:\n\t+ `permit`: This property contains an array of permit records.\n\t+ `note`: This property contains a note about the data, which is that nearby records are historical context only and not evidence that any future application will be approved.\n\t+ `summary`: This property contains a summary of the data, including the number of permits, site plans, and plan reviews.\n* The `permit` property is an array of objects, each representing a permit record. Each object has several properties:\n\t+ `distance`: The distance from the proposed development to the permit location.\n\t+ `address`: The address of the permit location.\n\t+ `case_number`: The case number associated with the permit.\n\t+ `permit_number`: The permit number associated with the permit.\n\t+ `work_type`: The type of work performed under the permit (e.g. \"New Construction\", \"Remodeling\", etc.).\n\t+ `status`: The status of the permit (e.g. \"Approved\", \"Denied\", etc.).\n* The `note` property contains a note about the data, which is that nearby records are historical context only and not evidence that any future application will be approved.\n* The `summary` property contains a summary of the data, including:\n\t+ `permit_count`: The total number of permits in the search results.\n\t+ `site_plan_count`: The total number of site plans in the search results.\n\t+ `plan_review_count`: The total number of plan reviews in the search results.\n\nOverall, this API provides a way to search for nearby permits and cases in Austin, Texas, and provides summary information about the data.",
+    "unsupported_claims": [],
     "warnings": [],
     "regulatory_evidence_count": 20,
-    "verified_citation_count": 20,
-    "disclaimer": "This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service."
+    "verified_citation_count": 4,
+    "disclaimer": "This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service. Nearby permits and cases are historical context only and are not approval precedent. All findings require verification by qualified professionals and City of Austin authorities."
   },
   "guardrail_result": {
     "status": "validated",
     "scope_ok": true,
     "unsupported_request": false,
-    "citations_verified": 20,
+    "citations_verified": 4,
     "citations_rejected": 0,
-    "unsupported_claim_count": 1,
-    "finding_count": 4
+    "unsupported_claim_count": 0,
+    "finding_count": 5
   },
   "report_document": {
     "title": "Preliminary Development Feasibility Report",
@@ -4033,10 +3634,11 @@
         "site_summary": {
           "reported_zoning": "SF-3-NP",
           "zoning_status": "found",
+          "zoning_note": "Preliminary Open Data zoning only; not an official determination.",
           "floodplain_intersection": true,
           "watershed": "Waller Creek"
         },
-        "llm_synthesis": "Based on the provided data, here is a summary of major feasibility considerations, constraints, unknowns, and recommended next steps for the proposed 24-unit multifamily residential development:\n\n**Major Feasibility Considerations:**\n\n1. Zoning: The proposed development is zoned as SF-3-NP, which requires compliance with site development regulations for a family residence (SF-3) district.\n2. Floodplain: The property intersects the City of Austin Fully Developed 25-Year Floodplain, requiring an engineering flood study to govern.\n3. Watershed: The property is located in the Waller Creek watershed, which may impact water quality and stormwater management requirements.\n\n**Constraints:**\n\n1. Site area: The proposed development requires a minimum site area of 800 square feet per dwelling unit, which may be challenging given the small site area of 0.5 acres.\n2. Parking: The proposal includes surface parking, which may not meet current parking standards and regulations.\n3. Utility capacity: The proposal does not specify whether the developer will provide their own utility connections or rely on existing infrastructure.\n\n**Unknowns:**\n\n1. Water quality requirements: The proposal does not address water quality concerns, such as stormwater management and wastewater treatment.\n2. Transportation access: The proposal does not specify how residents will access the development, which may impact traffic flow and safety.\n3. Environmental impacts: The proposal does not provide information on potential environmental impacts, such as habitat disruption or noise pollution.\n\n**Recommended Next Steps:**\n\n1. Conduct a site analysis to determine the feasibility of the proposed development, including assessing the site's topography, soil conditions, and environmental factors.\n2. Review and comply with relevant zoning regulations, including site development requirements for SF-3-NP districts.\n3. Engage with the City's Floodplain Management Office to determine the necessary steps to mitigate flood risks and ensure compliance with engineering flood study requirements.\n4. Consult with the City's Watershed Protection Department to understand water quality concerns and develop strategies for managing stormwater runoff and wastewater treatment.\n5. Conduct a transportation access analysis to determine how residents will access the development, including assessing traffic flow and safety implications.\n6. Develop a comprehensive environmental impact assessment to identify potential environmental impacts and mitigate them through design and mitigation measures.\n\nBy addressing these feasibility considerations, constraints, unknowns, and recommended next steps, the developer can better understand the challenges and opportunities associated with the proposed development and make informed decisions about moving forward with the project."
+        "llm_synthesis": "This is a JSON response from an API, specifically a permit search API. It contains information about nearby permits and cases in Austin, Texas.\n\nHere's a breakdown of the structure:\n\n* The top-level object has three properties:\n\t+ `permit`: This property contains an array of permit records.\n\t+ `note`: This property contains a note about the data, which is that nearby records are historical context only and not evidence that any future application will be approved.\n\t+ `summary`: This property contains a summary of the data, including the number of permits, site plans, and plan reviews.\n* The `permit` property is an array of objects, each representing a permit record. Each object has several properties:\n\t+ `distance`: The distance from the proposed development to the permit location.\n\t+ `address`: The address of the permit location.\n\t+ `case_number`: The case number associated with the permit.\n\t+ `permit_number`: The permit number associated with the permit.\n\t+ `work_type`: The type of work performed under the permit (e.g. \"New Construction\", \"Remodeling\", etc.).\n\t+ `status`: The status of the permit (e.g. \"Approved\", \"Denied\", etc.).\n* The `note` property contains a note about the data, which is that nearby records are historical context only and not evidence that any future application will be approved.\n* The `summary` property contains a summary of the data, including:\n\t+ `permit_count`: The total number of permits in the search results.\n\t+ `site_plan_count`: The total number of site plans in the search results.\n\t+ `plan_review_count`: The total number of plan reviews in the search results.\n\nOverall, this API provides a way to search for nearby permits and cases in Austin, Texas, and provides summary information about the data."
       },
       "sources_consulted": {
         "heading": "Sources Consulted",
@@ -4119,9 +3721,9 @@
         "heading": "Zoning and Land-Use Context",
         "reported_zoning": "SF-3-NP",
         "zoning_status": "found",
+        "zoning_note": "Preliminary Open Data zoning only; not an official determination.",
         "review": {
-          "query": "Austin development requirements for Multifamily residential. Reported zoning is SF-3-NP. Development description: Proposed 24-unit multifamily residential development with surface parking.. Identify applicable zoning, land use, and site plan requirements.",
-          "note": null,
+          "note": "Zoning context is preliminary. Designations are stated only when the lookup returns an exact single match.",
           "retrieved_passage_count": 5,
           "passages": [
             {
@@ -4170,62 +3772,18 @@
       "site_plan_considerations": {
         "heading": "Site-Plan Considerations",
         "review": {
-          "query": "Austin development requirements for Multifamily residential. Reported zoning is SF-3-NP. Development description: Proposed 24-unit multifamily residential development with surface parking.. Identify applicable zoning, land use, and site plan requirements.",
-          "note": null,
-          "retrieved_passage_count": 5,
-          "passages": [
-            {
-              "doc_id": "LDC",
-              "section_number": "25-2-771",
-              "section_title": "SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT",
-              "chapter": "Chapter 25-2",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Subpart A. Requirements for Specific Uses > \u00a7 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-2-780",
-              "section_title": "MULTIFAMILY RESIDENTIAL USE",
-              "chapter": "Chapter 25-2",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Subpart A. Requirements for Specific Uses > \u00a7 25-2-780 MULTIFAMILY RESIDENTIAL USE"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-2-563",
-              "section_title": "MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS",
-              "chapter": "Chapter 25-2",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-2-560",
-              "section_title": "MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS",
-              "chapter": "Chapter 25-2",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-560 MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-2-566",
-              "section_title": "SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN SINGLE FAMILY DISTRICTS",
-              "chapter": "Chapter 25-2",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-566 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN SINGLE FAMILY DISTRICTS"
-            }
-          ]
-        },
-        "note": "Site-plan applicability depends on proposed use, zoning, and project characteristics; confirm with Development Services."
+          "note": "Site-plan applicability depends on proposed use, zoning, and project characteristics; confirm with Development Services. Citations below are limited to site-plan provisions (LDC Chapter 25-5) when available.",
+          "retrieved_passage_count": 0,
+          "passages": []
+        }
       },
       "drainage_flood_environmental": {
         "heading": "Drainage, Flood, and Environmental Considerations",
         "floodplain_intersection": true,
         "watershed": "Waller Creek",
         "review": {
-          "query": "Austin drainage and environmental requirements for Multifamily residential. Development description: Proposed 24-unit multifamily residential development with surface parking.. Floodplain intersection: True. Watershed: Waller Creek. Identify applicable drainage, floodplain, watershed, water quality, and environmental requirements.",
           "note": null,
-          "retrieved_passage_count": 5,
+          "retrieved_passage_count": 3,
           "passages": [
             {
               "doc_id": "DCM",
@@ -4245,27 +3803,11 @@
             },
             {
               "doc_id": "LDC",
-              "section_number": "25-8-211",
-              "section_title": "WATER QUALITY CONTROL REQUIREMENT",
-              "chapter": "Chapter 25-8",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 6. WATER QUALITY CONTROLS > Division 1. Requirement and Standards > \u00a7 25-8-211 WATER QUALITY CONTROL REQUIREMENT"
-            },
-            {
-              "doc_id": "LDC",
               "section_number": "25-8-261",
               "section_title": "CRITICAL WATER QUALITY ZONE DEVELOPMENT",
               "chapter": "Chapter 25-8",
               "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
               "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 1. Waterway and Floodplain Protection > \u00a7 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-8-281",
-              "section_title": "CRITICAL ENVIRONMENTAL FEATURES",
-              "chapter": "Chapter 25-8",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 2. Protection for Special Features > \u00a7 25-8-281 CRITICAL ENVIRONMENTAL FEATURES"
             }
           ]
         }
@@ -4273,34 +3815,9 @@
       "transportation_access": {
         "heading": "Transportation and Access Considerations",
         "review": {
-          "query": "Austin transportation and site access requirements for Multifamily residential. Development description: Proposed 24-unit multifamily residential development with surface parking.. Approximate units: 24. Identify applicable transportation, driveway, access, parking, circulation, and traffic requirements.",
           "note": null,
-          "retrieved_passage_count": 5,
+          "retrieved_passage_count": 1,
           "passages": [
-            {
-              "doc_id": "TCM",
-              "section_number": "7.6.1.1",
-              "section_title": "Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets",
-              "chapter": "Section 7",
-              "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-              "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets"
-            },
-            {
-              "doc_id": "TCM",
-              "section_number": "7.6.1",
-              "section_title": "PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS",
-              "chapter": "Section 7",
-              "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-              "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS"
-            },
-            {
-              "doc_id": "LDC",
-              "section_number": "25-6-292",
-              "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
-              "chapter": "Chapter 25-6",
-              "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-              "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS"
-            },
             {
               "doc_id": "TCM",
               "section_number": "7.6.2",
@@ -4308,14 +3825,6 @@
               "chapter": "Section 7",
               "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
               "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.2 DRIVEWAY PLACEMENT"
-            },
-            {
-              "doc_id": "TCM",
-              "section_number": "7.6.0",
-              "section_title": "ACCESS MANAGEMENT",
-              "chapter": "Section 7",
-              "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-              "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.0 ACCESS MANAGEMENT"
             }
           ]
         }
@@ -4323,8 +3832,6 @@
       "water_wastewater": {
         "heading": "General Water and Wastewater Considerations",
         "review": {
-          "query": "Austin water and wastewater requirements for Multifamily residential. Development description: Proposed 24-unit multifamily residential development with surface parking.. Approximate units: 24. Identify applicable general water, wastewater, utility connection, and infrastructure requirements. Do not assume service availability or utility capacity.",
-          "note": "Regulatory requirements do not establish actual water or wastewater service availability or capacity. Verification with the appropriate utility authority is required.",
           "retrieved_passage_count": 5,
           "passages": [
             {
@@ -4369,7 +3876,7 @@
             }
           ]
         },
-        "note": "Regulatory requirements do not establish actual water or wastewater service availability or capacity. Verification with the appropriate utility authority is required."
+        "note": "Regulatory language does not establish utility service availability or capacity. Verification with the appropriate utility authority is required."
       },
       "historical_permit_case_context": {
         "heading": "Historical Permit and Case Context",
@@ -4379,7 +3886,7 @@
             "site_plan_count": 4,
             "plan_review_count": 20
           },
-          "note": "Nearby permits and cases are historical context only. They must not be treated as evidence that the proposed development requires professional verification. [Claim removed or revised: unsupported definitive statement; professional verification required.]"
+          "note": "Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development."
         }
       },
       "potential_constraints": {
@@ -4389,6 +3896,11 @@
             "category": "drainage_flood",
             "label": "potential constraint",
             "detail": "Site intersects the fully developed floodplain model used for preliminary screening."
+          },
+          {
+            "category": "zoning",
+            "label": "potential constraint",
+            "detail": "Reported zoning is SF-3-NP, while the proposed land use is multifamily residential for the proposed 24-unit development. This combination presents a potential zoning/use conflict that requires verification against the applicable Austin Land Development Code requirements. No approval or prohibition determination is made here."
           }
         ]
       },
@@ -4404,29 +3916,7 @@
           {
             "category": "historical_context",
             "label": "verification required",
-            "detail": "Nearby permits and cases are historical context only and must not be treated as approval precedent."
-          }
-        ],
-        "findings": [
-          {
-            "category": "zoning",
-            "label": "verification required",
-            "detail": "Preliminary reported zoning was retrieved from Open Data and requires official verification."
-          },
-          {
-            "category": "drainage_flood",
-            "label": "potential constraint",
-            "detail": "Site intersects the fully developed floodplain model used for preliminary screening."
-          },
-          {
-            "category": "watershed",
-            "label": "no major issue identified from available data",
-            "detail": "Watershed identified as Waller Creek from available data."
-          },
-          {
-            "category": "historical_context",
-            "label": "verification required",
-            "detail": "Nearby permits and cases are historical context only and must not be treated as approval precedent."
+            "detail": "Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development."
           }
         ],
         "warnings": []
@@ -4434,98 +3924,12 @@
       "source_citations": {
         "heading": "Source Citations",
         "items": [
-          "LDC \u2014 \u00a7 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-2-780 MULTIFAMILY RESIDENTIAL USE (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-2-560 MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-2-566 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN SINGLE FAMILY DISTRICTS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code",
           "DCM \u2014 \u00a7 1.2.2 General (Section 1) | https://library.municode.com/tx/austin/codes/drainage_criteria_manual",
           "LDC \u2014 \u00a7 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-8-211 WATER QUALITY CONTROL REQUIREMENT (Chapter 25-8) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT (Chapter 25-8) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-8-281 CRITICAL ENVIRONMENTAL FEATURES (Chapter 25-8) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "TCM \u2014 \u00a7 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-          "TCM \u2014 \u00a7 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-          "LDC \u2014 \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code",
           "TCM \u2014 \u00a7 7.6.2 DRIVEWAY PLACEMENT (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-          "TCM \u2014 \u00a7 7.6.0 ACCESS MANAGEMENT (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-          "LDC \u2014 \u00a7 25-9-33 SERVICE EXTENSION APPLICATION (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-9-91 TAP PERMIT REQUIRED (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-9-412 RECLAIMED WATER CONNECTION REQUIREMENTS (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-9-93 APPLICATION FOR TAP PERMIT; FEES; CAPACITY (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code",
-          "LDC \u2014 \u00a7 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code"
+          "LDC \u2014 \u00a7 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT (Chapter 25-8) | https://library.municode.com/tx/austin/codes/land_development_code"
         ],
         "raw": [
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-2",
-            "section_number": "25-2-771",
-            "section_title": "SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Subpart A. Requirements for Specific Uses > \u00a7 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT",
-            "chunk_id": "LDC:447:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-2",
-            "section_number": "25-2-780",
-            "section_title": "MULTIFAMILY RESIDENTIAL USE",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 4. ADDITIONAL REQUIREMENTS FOR CERTAIN USES > Subpart A. Requirements for Specific Uses > \u00a7 25-2-780 MULTIFAMILY RESIDENTIAL USE",
-            "chunk_id": "LDC:456:1",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-2",
-            "section_number": "25-2-563",
-            "section_title": "MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS",
-            "chunk_id": "LDC:345:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-2",
-            "section_number": "25-2-560",
-            "section_title": "MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-560 MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS",
-            "chunk_id": "LDC:342:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-2",
-            "section_number": "25-2-566",
-            "section_title": "SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN SINGLE FAMILY DISTRICTS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-2 ZONING > ARTICLE 3. ADDITIONAL REQUIREMENTS FOR CERTAIN DISTRICTS > Division 1. Residential Districts > \u00a7 25-2-566 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN SINGLE FAMILY DISTRICTS",
-            "chunk_id": "LDC:348:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
           {
             "source": "DCM",
             "source_name": "Austin Drainage Criteria Manual",
@@ -4534,11 +3938,11 @@
             "section_number": "1.2.2",
             "section_title": "General",
             "breadcrumb": "Austin Drainage Criteria Manual > Section 1 DRAINAGE POLICY > 1.2.2 General",
-            "chunk_id": "DCM:1167:1",
-            "claim_support": "retrieved_passage",
             "verification_status": "found",
             "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
+            "claim_support": "supported",
+            "support_score": 0.455,
+            "review_category": "drainage_environmental"
           },
           {
             "source": "LDC",
@@ -4548,95 +3952,11 @@
             "section_number": "25-7-66",
             "section_title": "SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
             "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-7 DRAINAGE > ARTICLE 3. REQUIREMENTS FOR APPROVAL > \u00a7 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS",
-            "chunk_id": "LDC:910:1",
-            "claim_support": "retrieved_passage",
             "verification_status": "found",
             "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-8",
-            "section_number": "25-8-211",
-            "section_title": "WATER QUALITY CONTROL REQUIREMENT",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 6. WATER QUALITY CONTROLS > Division 1. Requirement and Standards > \u00a7 25-8-211 WATER QUALITY CONTROL REQUIREMENT",
-            "chunk_id": "LDC:955:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-8",
-            "section_number": "25-8-261",
-            "section_title": "CRITICAL WATER QUALITY ZONE DEVELOPMENT",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 1. Waterway and Floodplain Protection > \u00a7 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT",
-            "chunk_id": "LDC:964:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-8",
-            "section_number": "25-8-281",
-            "section_title": "CRITICAL ENVIRONMENTAL FEATURES",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 2. Protection for Special Features > \u00a7 25-8-281 CRITICAL ENVIRONMENTAL FEATURES",
-            "chunk_id": "LDC:967:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "TCM",
-            "source_name": "Austin Transportation Criteria Manual",
-            "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "chapter": "Section 7",
-            "section_number": "7.6.1.1",
-            "section_title": "Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets",
-            "chunk_id": "TCM:1233:1",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "TCM",
-            "source_name": "Austin Transportation Criteria Manual",
-            "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "chapter": "Section 7",
-            "section_number": "7.6.1",
-            "section_title": "PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS",
-            "chunk_id": "TCM:1232:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-6",
-            "section_number": "25-6-292",
-            "section_title": "DESIGN AND CONSTRUCTION STANDARDS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-6 TRANSPORTATION > ARTICLE 5. DRIVEWAY, SIDEWALK, AND RIGHT-OF-WAY CONSTRUCTION > Division 3. General Design and Construction Requirements > \u00a7 25-6-292 DESIGN AND CONSTRUCTION STANDARDS",
-            "chunk_id": "LDC:819:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
+            "claim_support": "supported",
+            "support_score": 0.429,
+            "review_category": "drainage_environmental"
           },
           {
             "source": "TCM",
@@ -4646,107 +3966,37 @@
             "section_number": "7.6.2",
             "section_title": "DRIVEWAY PLACEMENT",
             "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.2 DRIVEWAY PLACEMENT",
-            "chunk_id": "TCM:1234:0",
-            "claim_support": "retrieved_passage",
             "verification_status": "found",
             "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "TCM",
-            "source_name": "Austin Transportation Criteria Manual",
-            "source_url": "https://library.municode.com/tx/austin/codes/transportation_criteria_manual",
-            "chapter": "Section 7",
-            "section_number": "7.6.0",
-            "section_title": "ACCESS MANAGEMENT",
-            "breadcrumb": "Austin Transportation Criteria Manual > Section 7 DRIVEWAYS > 7.6.0 ACCESS MANAGEMENT",
-            "chunk_id": "TCM:1231:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
+            "claim_support": "supported",
+            "support_score": 0.571,
+            "review_category": "transportation_access"
           },
           {
             "source": "LDC",
             "source_name": "Austin Land Development Code (Title 25)",
             "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-9",
-            "section_number": "25-9-33",
-            "section_title": "SERVICE EXTENSION APPLICATION",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Subpart A. General Provisions > \u00a7 25-9-33 SERVICE EXTENSION APPLICATION",
-            "chunk_id": "LDC:1046:0",
-            "claim_support": "retrieved_passage",
+            "chapter": "Chapter 25-8",
+            "section_number": "25-8-261",
+            "section_title": "CRITICAL WATER QUALITY ZONE DEVELOPMENT",
+            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-8 ENVIRONMENT > ARTICLE 7. REQUIREMENTS IN ALL WATERSHEDS > Division 1. Waterway and Floodplain Protection > \u00a7 25-8-261 CRITICAL WATER QUALITY ZONE DEVELOPMENT",
             "verification_status": "found",
             "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-9",
-            "section_number": "25-9-91",
-            "section_title": "TAP PERMIT REQUIRED",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-91 TAP PERMIT REQUIRED",
-            "chunk_id": "LDC:1062:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-9",
-            "section_number": "25-9-412",
-            "section_title": "RECLAIMED WATER CONNECTION REQUIREMENTS",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 5. ADDITIONAL WATER CONSERVATION REQUIREMENTS > \u00a7 25-9-412 RECLAIMED WATER CONNECTION REQUIREMENTS",
-            "chunk_id": "LDC:1161:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-9",
-            "section_number": "25-9-93",
-            "section_title": "APPLICATION FOR TAP PERMIT; FEES; CAPACITY",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 1. UTILITY SERVICE > Division 3. Tap Permits > \u00a7 25-9-93 APPLICATION FOR TAP PERMIT; FEES; CAPACITY",
-            "chunk_id": "LDC:1064:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
-          },
-          {
-            "source": "LDC",
-            "source_name": "Austin Land Development Code (Title 25)",
-            "source_url": "https://library.municode.com/tx/austin/codes/land_development_code",
-            "chapter": "Chapter 25-9",
-            "section_number": "25-9-383",
-            "section_title": "AVAILABILITY OF RECLAIMED WATER SERVICE",
-            "breadcrumb": "Austin Land Development Code (Title 25) > Chapter 25-9 WATER AND WASTEWATER > ARTICLE 4. RECLAIMED WATER > \u00a7 25-9-383 AVAILABILITY OF RECLAIMED WATER SERVICE",
-            "chunk_id": "LDC:1140:0",
-            "claim_support": "retrieved_passage",
-            "verification_status": "found",
-            "supports_claim": true,
-            "verification_detail": "Section verified in regulatory index."
+            "claim_support": "supported",
+            "support_score": 0.667,
+            "review_category": "drainage_environmental"
           }
         ]
       },
       "disclaimer": {
         "heading": "Preliminary-Review Disclaimer",
-        "text": "This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service."
+        "text": "This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service. Nearby permits and cases are historical context only and are not approval precedent. All findings require verification by qualified professionals and City of Austin authorities."
       }
     },
     "metrics": {
-      "verified_citation_count": 20,
+      "verified_citation_count": 4,
       "regulatory_evidence_count": 20,
-      "unsupported_claim_count": 1
+      "unsupported_claim_count": 0
     },
     "schema_complete": true,
     "missing_sections": []

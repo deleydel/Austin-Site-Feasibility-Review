@@ -58,7 +58,8 @@ Shared paths and configuration belong in `src/config.py`. Commands should be run
 │   ├── manual/                   #   hand-scored sample + judge-agreement rate
 │   └── results/                  #   EVALUATION.md + evaluation_results.json
 │
-├── docs/                         # Task 9 (planned): presentation slides, video demo & presentation link
+│      # (Task 9 presentation slides and the recorded demonstration are submitted
+│      #  separately through Canvas and are not stored in this repository.)
 │
 └── data/
     ├── raw/                      #   original DOCX/CSV/GeoJSON — NOT in git (over GitHub size
@@ -101,6 +102,38 @@ The implemented review sequence is:
 8. Display the result in Streamlit and export Markdown, HTML, DOCX, or PDF reports.
 
 
+
+## Framework at a Glance
+
+| Part | Where | What it does |
+| --- | --- | --- |
+| Data preprocessing (Task 1) | `src/preprocessing/` | Cleans municipal CSV/GeoJSON into Parquet, drops PII, writes the source manifest and data-quality report |
+| Regulatory RAG (Task 2) | `src/rag/` | Parses the LDC/DCM/TCM DOCX into section-aware chunks, embeds them (BGE + ChromaDB), and serves hybrid dense+BM25 retrieval with lay-language query expansion and exact section lookup |
+| Structured-data tools (Task 3) | `src/tools/` | Deterministic zoning, geocoding, floodplain, watershed, and nearby-record lookups with explicit safety statuses |
+| Agentic workflow (Task 4) | `src/agents/` | LangGraph review graph: input validation, site context, specialized review nodes, deterministic zoning-conflict check, optional LLM synthesis |
+| Guardrails (Task 5) | `src/guardrails/` | Scope validation, approved-source and citation verification, unsupported-claim sanitization, privacy filtering |
+| Report generation (Task 6) | `src/report/` | Structured report schema, template, and Markdown/HTML/DOCX/PDF export |
+| Evaluation (Task 7) | `evaluation/` | Retrieval, grounding, guardrail, scenario, and report benchmarks with a local LLM judge; results in `evaluation/results/` |
+| Frontend (Task 8) | `app/` | Streamlit form, progress display, findings, citations, and report downloads |
+
+## Results Summary
+
+Current measured results (full scorecard with sample sizes and caveats:
+[`evaluation/results/EVALUATION.md`](evaluation/results/EVALUATION.md)):
+
+| Area | Result |
+| --- | --- |
+| Retrieval (held-out, 22 q) | Hit@5 0.955, MRR 0.924; lay-language phrasing Hit@5 0.895 |
+| Structured-data tools | 100 % accuracy (n=264); 100 % safe failure on unanswerable cases (n=32) |
+| Agent workflow | 10/10 scenarios complete; deterministic SF-3/multifamily conflict surfaced in the final report |
+| Guardrails | 100 % compliance across all six adversarial categories (n=20) |
+| Reports | 100 % completeness and consistency; all four export formats |
+| LLM synthesis quality | groundedness of local-model synthesis remains the weak point (22–45 % across runs) and varies with the model used |
+| Tool latency | 0.2–80 ms per call (slowest: nearby plan-review search) |
+
+LLM-dependent metrics (groundedness, guardrail categories that inspect
+generated text) vary between runs of the local judge/synthesis model; treat
+single-run values as indicative, not exact.
 
 ## Implemented Technology Stack
 
@@ -170,7 +203,7 @@ Run the complete test suite from the repository root:
 python -m pytest tests/ -q
 ```
 
-The current suite contains 99 checks. Tests that initialize the regulatory retriever require the BGE model to be available locally; a fresh environment downloads it on first use. To test without network access, cache the model first and then set the Hugging Face offline environment variables.
+The repository includes more than 100 correctness and integration checks (109 at the time of writing; use the pytest output as the authoritative count). Tests that initialize the regulatory retriever require the BGE model to be available locally; a fresh environment downloads it on first use. To test without network access, cache the model first and then set the Hugging Face offline environment variables.
 
 Run the evaluation scorecard with:
 

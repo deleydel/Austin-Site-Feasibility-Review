@@ -10,46 +10,37 @@ Status: validated
 - Development description: Proposed 12-unit multifamily residential development.
 - Units: 12
 - Site area (acres): None
-- Reported zoning: None (status: ambiguous)
-- Floodplain intersection: None
-- Watershed: None
 
 ### Synthesis
 
-**Feasibility Considerations, Constraints, Unknowns, and Recommended Next Steps**
+The provided JSON data appears to be a summary of regulatory requirements for land development in Austin, Texas. The data includes information on water and wastewater regulations, as well as other relevant details.
 
-**Major Feasibility Considerations:**
+Here's a breakdown of the key points from the data:
 
-1. **Zoning:** The subject property is located in an ambiguous zoning district (SF-3-NP), which requires further verification.
-2. **Floodplain:** Floodplain checks require confirmed coordinates, which are not available at this time.
-3. **Watershed:** Watershed lookup requires confirmed coordinates, which are not available at this time.
-4. **Transportation Access:** Driveway placement and spacing requirements must be considered to ensure safe and efficient access.
+**Water and Wastewater Regulations**
 
-**Constraints:**
+* A small development project with a property boundary located within 250 feet of a reclaimed water line must connect to a reclaimed water line and use reclaimed water for irrigation, cooling, toilet flushing, and other significant non-potable water uses.
+* A large development project with a property boundary located within 500 feet of a reclaimed water line must also connect to a reclaimed water line and use reclaimed water for the same purposes.
+* The Director may grant variances for these requirements under certain circumstances.
 
-1. **Utility Capacity:** The availability of water and wastewater services is not established, requiring verification with the relevant utility authorities.
-2. **Regulatory Requirements:** Compliance with Austin's Land Development Code (LDC) and Transportation Criteria Manual (TCM) requirements must be ensured.
+**Tap Permits**
 
-**Unknowns:**
+* A person cannot connect a property to the City's water or wastewater utility system unless they hold a tap permit issued by the director of the Water and Wastewater Utility approving the connection.
 
-1. **Confirmed Coordinates:** Floodplain and watershed checks require confirmed coordinates to proceed.
-2. **Utility Service Availability:** Verification of water and wastewater service availability is required.
-3. **Zoning Designation:** The subject property's zoning designation requires further verification.
+**Pressure Anomalies**
 
-**Recommended Next Steps:**
+* If a larger or smaller meter is required solely due to abnormally low or high pressure in the City's main, the director of the Water and Wastewater Utility or their designee may adjust the number of service units to reflect more accurately the flow rate and system pressure conditions.
 
-1. **Verify Zoning Designation:** Obtain an official zoning determination for the subject property.
-2. **Confirm Coordinates:** Gather confirmed coordinates for floodplain and watershed checks.
-3. **Contact Utility Authorities:** Verify water and wastewater service availability and capacity with relevant utility authorities.
-4. **Review LDC and TCM Requirements:** Ensure compliance with Austin's Land Development Code (LDC) and Transportation Criteria Manual (TCM) requirements.
+**Applicability**
 
-**Additional Recommendations:**
+* This subpart does not apply to a service extension that is constructed as part of a project serving a property for which the Director determines that the water or wastewater system can provide suitable and sufficient service in accordance with the Utilities Criteria Manual, and:
+	+ The nearest point on the property's boundary is 100 feet or less from an accessible water or wastewater system; or
+	+ The Director determines that a suitable service connection can be made in compliance with the Utilities Criteria Manual to a water or wastewater main on the opposite side of an undivided city or county roadway.
 
-1. **Hire a Professional:** Consider hiring a professional (e.g., urban planner, engineer) to assist with the development process.
-2. **Conduct Site Analysis:** Conduct a thorough site analysis to identify potential issues and opportunities.
-3. **Engage with Stakeholders:** Engage with local stakeholders, including neighbors and community groups, to ensure that their concerns are addressed.
+**Historical Context**
 
-By addressing these feasibility considerations, constraints, unknowns, and recommended next steps, you can move forward with the development process while minimizing risks and ensuring compliance with relevant regulations.
+* Nearby permits and cases are historical context only and do not indicate future permitting outcomes for the proposed development.
+* The summary includes information on permit, site plan, and plan review counts, but these values are not relevant to the current regulatory requirements being summarized.
 
 ## Sources Consulted
 
@@ -74,49 +65,37 @@ By addressing these feasibility considerations, constraints, unknowns, and recom
 
 ## Zoning and Land-Use Context
 
-Retrieved regulatory references:
-- LDC § 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT
-- LDC § 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS
-- LDC § 25-2-560 MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS
-- LDC § 25-2-561 MULTIFAMILY RESIDENCE LOW DENSITY (MF-2) DISTRICT REGULATIONS
+- No single zoning designation stated (lookup status: ambiguous)
+- No single zoning designation is stated because the lookup was 'ambiguous'.
+
+Zoning context is preliminary. Designations are stated only when the lookup returns an exact single match.
+
+Regulatory references for this section:
 - LDC § 25-2-567 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN MULTIFAMILY DISTRICTS
 
 ## Site-Plan Considerations
 
-Site-plan applicability depends on proposed use, zoning, and project characteristics; confirm with Development Services.
-
-Retrieved regulatory references:
-- LDC § 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT
-- LDC § 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS
-- LDC § 25-2-560 MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS
-- LDC § 25-2-561 MULTIFAMILY RESIDENCE LOW DENSITY (MF-2) DISTRICT REGULATIONS
-- LDC § 25-2-567 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN MULTIFAMILY DISTRICTS
+Site-plan applicability depends on proposed use, zoning, and project characteristics; confirm with Development Services. Citations below are limited to site-plan provisions (LDC Chapter 25-5) when available.
 
 ## Drainage, Flood, and Environmental Considerations
 
-Retrieved regulatory references:
-- LDC § 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS
-- DCM § 1.2.6 Floodplain Delineations
-- LDC § 25-7-8 COMPUTATION OF STORMWATER RUNOFF
+- Floodplain intersection: None
+- Watershed: None
+
+Regulatory references for this section:
 - DCM § 8.2.3 Watershed Floodplain Models
-- LDC § 25-7-67 MODIFIED DRAINAGE STANDARDS FOR RESIDENTIAL INFILL
+- DCM § 1.2.6 Floodplain Delineations
 
 ## Transportation and Access Considerations
 
-Retrieved regulatory references:
-- TCM § 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets
-- TCM § 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS
-- LDC § 25-6-292 DESIGN AND CONSTRUCTION STANDARDS
-- TCM § 7.6.0 ACCESS MANAGEMENT
-- TCM § 7.6.2 DRIVEWAY PLACEMENT
+Regulatory references for this section:
+- DCM § 1.2.6 Floodplain Delineations
 
 ## General Water and Wastewater Considerations
 
-Regulatory requirements do not establish actual water or wastewater service availability or capacity. Verification with the appropriate utility authority is required.
+Regulatory language does not establish utility service availability or capacity. Verification with the appropriate utility authority is required.
 
-Regulatory requirements do not establish actual water or wastewater service availability or capacity. Verification with the appropriate utility authority is required.
-
-Retrieved regulatory references:
+Regulatory references for this section:
 - LDC § 25-9-33 SERVICE EXTENSION APPLICATION
 - LDC § 25-9-412 RECLAIMED WATER CONNECTION REQUIREMENTS
 - LDC § 25-9-91 TAP PERMIT REQUIRED
@@ -125,7 +104,7 @@ Retrieved regulatory references:
 
 ## Historical Permit and Case Context
 
-Nearby permits and cases are historical context only. They must not be treated as evidence that the proposed development requires professional verification. [Claim removed or revised: unsupported definitive statement; professional verification required.]
+Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development.
 
 Summary: Permit count: 0, Site plan count: 0, Plan review count: 0
 
@@ -135,36 +114,23 @@ Summary: Permit count: 0, Site plan count: 0, Plan review count: 0
 
 ## Missing Information and Required Verification
 
-- Verification required (zoning): Zoning lookup status is 'ambiguous'; official verification is required before design decisions.
+- Verification required (zoning): Zoning lookup status is 'ambiguous'; no single zoning designation is selected. Official verification is required.
 - Verification required (drainage_flood): Floodplain status is incomplete or ambiguous and requires verification.
-- Verification required (location): Site coordinates were not uniquely confirmed; spatial checks may be incomplete.
-- Verification required (historical_context): Nearby permits and cases are historical context only and must not be treated as approval precedent.
+- Verification required (historical_context): Nearby permits and cases are historical context only. They are not approval precedent and do not indicate future permitting outcomes for the proposed development.
 - Warning: Zoning could not be confirmed exactly and requires verification.
 - Warning: Site coordinates could not be confirmed and require verification.
 
 ## Source Citations
 
-1. LDC — § 25-2-771 SINGLE-FAMILY RESIDENTIAL USE IN A MULTIFAMILY DISTRICT (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code
-2. LDC — § 25-2-563 MULTIFAMILY RESIDENCE MODERATE-HIGH DENSITY (MF-4) AND MULTIFAMILY RESIDENCE HIGH DENSITY (MF-5) DISTRICT REGULATIONS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code
-3. LDC — § 25-2-560 MULTIFAMILY RESIDENCE LIMITED DENSITY (MF-1) DISTRICT REGULATIONS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code
-4. LDC — § 25-2-561 MULTIFAMILY RESIDENCE LOW DENSITY (MF-2) DISTRICT REGULATIONS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code
-5. LDC — § 25-2-567 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN MULTIFAMILY DISTRICTS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code
-6. LDC — § 25-7-66 SUPPLEMENTAL REQUIREMENTS FOR DEVELOPMENT APPLICATIONS IN CERTAIN PLANNING AREAS (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code
-7. DCM — § 1.2.6 Floodplain Delineations (Section 1) | https://library.municode.com/tx/austin/codes/drainage_criteria_manual
-8. LDC — § 25-7-8 COMPUTATION OF STORMWATER RUNOFF (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code
-9. DCM — § 8.2.3 Watershed Floodplain Models (Section 8) | https://library.municode.com/tx/austin/codes/drainage_criteria_manual
-10. LDC — § 25-7-67 MODIFIED DRAINAGE STANDARDS FOR RESIDENTIAL INFILL (Chapter 25-7) | https://library.municode.com/tx/austin/codes/land_development_code
-11. TCM — § 7.6.1.1 Multi-Unit Residential Development accessing Minor Drives on Level 1 Streets (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
-12. TCM — § 7.6.1 PROPERTY FRONTAGE DRIVEWAY REQUIREMENTS (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
-13. LDC — § 25-6-292 DESIGN AND CONSTRUCTION STANDARDS (Chapter 25-6) | https://library.municode.com/tx/austin/codes/land_development_code
-14. TCM — § 7.6.0 ACCESS MANAGEMENT (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
-15. TCM — § 7.6.2 DRIVEWAY PLACEMENT (Section 7) | https://library.municode.com/tx/austin/codes/transportation_criteria_manual
-16. LDC — § 25-9-33 SERVICE EXTENSION APPLICATION (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
-17. LDC — § 25-9-412 RECLAIMED WATER CONNECTION REQUIREMENTS (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
-18. LDC — § 25-9-91 TAP PERMIT REQUIRED (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
-19. LDC — § 25-9-333 PRESSURE ANOMALIES (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
-20. LDC — § 25-9-31 APPLICABILITY (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
+1. DCM — § 8.2.3 Watershed Floodplain Models (Section 8) | https://library.municode.com/tx/austin/codes/drainage_criteria_manual
+2. LDC — § 25-9-33 SERVICE EXTENSION APPLICATION (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
+3. LDC — § 25-9-412 RECLAIMED WATER CONNECTION REQUIREMENTS (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
+4. LDC — § 25-2-567 SPECIAL REQUIREMENTS FOR AFFORDABLE HOUSING IN CERTAIN MULTIFAMILY DISTRICTS (Chapter 25-2) | https://library.municode.com/tx/austin/codes/land_development_code
+5. LDC — § 25-9-91 TAP PERMIT REQUIRED (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
+6. LDC — § 25-9-333 PRESSURE ANOMALIES (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
+7. LDC — § 25-9-31 APPLICABILITY (Chapter 25-9) | https://library.municode.com/tx/austin/codes/land_development_code
+8. DCM — § 1.2.6 Floodplain Delineations (Section 1) | https://library.municode.com/tx/austin/codes/drainage_criteria_manual
 
 ## Preliminary-Review Disclaimer
 
-This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service.
+This is a preliminary site-feasibility screening only. It is not an official zoning determination, code-compliance decision, development approval, or guarantee of utility service. Nearby permits and cases are historical context only and are not approval precedent. All findings require verification by qualified professionals and City of Austin authorities.
