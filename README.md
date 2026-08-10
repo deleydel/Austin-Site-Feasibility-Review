@@ -148,15 +148,16 @@ judge vary between runs and should be read as indicative rather than exact.
 
 | Layer | Implemented Components | Purpose |
 | --- | --- | --- |
-| Data | CSV, DOCX, GeoJSON, Parquet, GeoParquet | Source documents and processed municipal data |
-| Vector store | ChromaDB | Persistent regulatory embedding index |
-| Retrieval | BAAI `bge-base-en-v1.5`, BM25, weighted reciprocal-rank fusion | Semantic and lexical regulatory retrieval |
-| Structured tools | Pandas, GeoPandas, Shapely, PyProj, RapidFuzz, usaddress | Address, zoning, spatial, and nearby-record queries |
+| Data | CSV, DOCX (python-docx), GeoJSON, Parquet, GeoParquet | Source documents and processed municipal data |
+| Vector store | ChromaDB (persistent, cosine) | Regulatory embedding index |
+| Retrieval | Sentence-Transformers `BAAI/bge-base-en-v1.5`, rank_bm25, weighted reciprocal-rank fusion, regulatory-vocabulary query expansion, exact section-citation lookup | Semantic and lexical regulatory retrieval that also handles conversational phrasing |
+| Structured tools | Pandas, GeoPandas, Shapely, PyProj, RapidFuzz, usaddress, requests (US Census geocoder fallback) | Address, zoning, spatial, and nearby-record queries |
 | Orchestration | LangGraph | Ordered review workflow and shared state |
-| Generative model | Configurable OpenAI Chat Completions model | Optional final synthesis |
+| Generative model | Configurable Chat Completions model via `langchain-openai` — OpenAI or any OpenAI-compatible endpoint (e.g., a local Ollama server via `OPENAI_BASE_URL`); disabled unless explicitly enabled | Optional final synthesis |
+| Guardrails | Pure-Python validation: scope rules, approved-source list, citation verification, claim sanitization, privacy filtering | Safety and citation integrity, no external dependencies |
 | Application | Python and Streamlit | User input, findings, citations, and downloads |
-| Reporting | python-docx and fpdf2 | Markdown, HTML, DOCX, and PDF export |
-| Evaluation | pytest plus custom retrieval, grounding, guardrail, and scenario evaluators | Correctness and measured prototype performance |
+| Reporting | Custom Markdown/HTML templates, python-docx, fpdf2 | Markdown, HTML, DOCX, and PDF export |
+| Evaluation | pytest; custom retrieval, grounding, guardrail, scenario, and report evaluators; a locally run llama3.2 judge (Ollama) calibrated before its verdicts are used | Correctness and measured prototype performance |
 
 
 
