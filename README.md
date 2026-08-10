@@ -58,8 +58,7 @@ Shared paths and configuration belong in `src/config.py`. Commands should be run
 │   ├── manual/                   #   hand-scored sample + judge-agreement rate
 │   └── results/                  #   EVALUATION.md + evaluation_results.json
 │
-│      # (Task 9 presentation slides and the recorded demonstration are submitted
-│      #  separately through Canvas and are not stored in this repository.)
+│   
 │
 └── data/
     ├── raw/                      #   original DOCX/CSV/GeoJSON — NOT in git (over GitHub size
