@@ -58,8 +58,6 @@ Shared paths and configuration belong in `src/config.py`. Commands should be run
 │   ├── manual/                   #   hand-scored sample + judge-agreement rate
 │   └── results/                  #   EVALUATION.md + evaluation_results.json
 │
-│   
-│
 └── data/
     ├── raw/                      #   original DOCX/CSV/GeoJSON — NOT in git (over GitHub size
     │                             #   limits); download link in data/README.md (only needed to
@@ -210,7 +208,7 @@ Run the evaluation scorecard with:
 python -m evaluation.run_all
 ```
 
-Evaluation outputs are written under `evaluation/results/` and the individual evaluation workstream folders. Regenerate them whenever retrieval, prompts, agent logic, guardrails, or report generation changes.
+The text-quality stages (grounding, judged relevance, guardrail text checks, LLM-synthesis scenarios) require a local [Ollama](https://ollama.com) server with the `llama3.2` model pulled; stages that cannot reach the judge are recorded as skipped rather than failing the run. Evaluation outputs are written under `evaluation/results/` and the individual evaluation workstream folders. Regenerate them whenever retrieval, prompts, agent logic, guardrails, or report generation changes.
 
 ## Task Breakdown and Ownership
 
