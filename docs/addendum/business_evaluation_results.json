@@ -1,0 +1,48 @@
+{
+  "title": "Business evaluation results (Part 2)",
+  "scenario": "1714 Madison Avenue, Austin, TX — 40-unit multifamily",
+  "metric_1_review_time_reduction": {
+    "method": "Same-scenario manual task-hour estimate vs system median wall-clock",
+    "manual_hours": 65,
+    "manual_seconds": 234000,
+    "manual_task_breakdown_hours": {
+      "site_data_collection": 8,
+      "zoning_and_regulatory_research": 10,
+      "drainage_and_environmental_review": 10,
+      "transportation_and_access_review": 10,
+      "utilities_and_development_history_review": 7,
+      "findings_and_citation_validation": 5,
+      "report_preparation": 10,
+      "senior_review_and_final_revision": 5
+    },
+    "system_median_without_llm_seconds": 0.305,
+    "system_median_with_llm_seconds": 2.738,
+    "absolute_reduction_seconds_vs_no_llm": 233999.695,
+    "speedup_x_vs_no_llm": 767213.1,
+    "pct_time_saved_vs_no_llm": 99.9999,
+    "status": "measured"
+  },
+  "metric_2_constraint_completeness": {
+    "items_total": 9,
+    "identified": 7,
+    "partial": 2,
+    "missing": 0,
+    "weighted_pct": 88.9,
+    "strict_pct": 77.8,
+    "status": "measured"
+  },
+  "metric_3_user_confidence_trust": {
+    "mean_likert": null,
+    "scale": "1-5",
+    "status": "skipped",
+    "note": "No Likert survey run; technical proxies noted in BUSINESS_EVALUATION.md",
+    "instrument": "docs/addendum/USER_TRUST_USEFULNESS_SURVEY.md"
+  },
+  "metric_4_usefulness_vs_manual": {
+    "mean_likert": null,
+    "scale": "1-5",
+    "status": "skipped",
+    "note": "No Likert survey run; completeness + time reduction used as objective signals",
+    "instrument": "docs/addendum/USER_TRUST_USEFULNESS_SURVEY.md"
+  }
+}

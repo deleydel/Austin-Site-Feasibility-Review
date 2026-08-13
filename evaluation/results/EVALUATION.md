@@ -27,3 +27,10 @@ Every figure below was produced by the scripts in `evaluation/`; nothing here is
 - **Safe failure** matters as much as accuracy here: the system is required never to answer when it does not know.
 - **Groundedness and citation correctness** come from an LLM judge whose support verdicts are re-checked in code - a verdict is rejected unless the evidence really contains the claim's numbers and named identifiers. Every failure path resolves to unsupported.
 - **Guardrail compliance** scores the end-to-end outcome, so a request blocked at input and one neutralised at output both count as safe.
+
+## Business evaluation (proposal metrics)
+
+Proposal business metrics are in [`docs/addendum/BUSINESS_EVALUATION.md`](../../docs/addendum/BUSINESS_EVALUATION.md):
+
+- **Measured:** review-time reduction (65 h manual vs 0.305 s system) and constraint completeness (88.9% / 77.8%)
+- **Skipped:** user confidence/trust and usefulness Likert surveys
