@@ -4,6 +4,14 @@ Austin SiteFeasibility AI is a GenAI assistant for preliminary land-development 
 
 The system supports early screening only. It does not issue an official zoning determination, establish code compliance, guarantee utility service, or replace review by qualified engineers and City of Austin authorities.
 
+## Presentation Slides
+
+[Link to the presentation slides](https://gamma.app/docs/arirsne24wgi3ed)
+
+## Video of Demo and Slides Presentation
+
+[Link to the video](https://drive.google.com/file/d/1ynpNGYo8wXtzN-hrlPDSK0Q8kW_lcGL_/view?usp=drive_link)
+
 ## Repository Structure
 
 The repository is organized by responsibility. Application code lives under `src/`, with separate packages for preprocessing, RAG, structured-data tools, agent orchestration, guardrails, and report generation. The Streamlit entry point is under `app/`. Correctness and integration checks are under `tests/`, while measured benchmarks, adversarial scenarios, evaluation scripts, and generated scorecards are under `evaluation/`.
@@ -242,10 +250,4 @@ The text-quality stages (grounding, judged relevance, guardrail text checks, LLM
 
 The minimum successful implementation must accept an Austin site and proposed development, retrieve relevant site facts from structured municipal data, retrieve applicable Austin requirements through RAG, coordinate the review through an agentic workflow, enforce guardrails, and produce a cautious source-cited downloadable report. The demo must also show measured evaluation results and at least one guardrail response.
 
-## Presentation Slides
 
-[Link to the presentation slides](https://gamma.app/docs/arirsne24wgi3ed)
-
-## Video of Demo and Slides Presentation
-
-[Link to the video](https://drive.google.com/file/d/1ynpNGYo8wXtzN-hrlPDSK0Q8kW_lcGL_/view?usp=drive_link)
