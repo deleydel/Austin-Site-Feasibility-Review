@@ -244,4 +244,8 @@ The minimum successful implementation must accept an Austin site and proposed de
 
 ## Presentation Slides
 
-[View the presentation slides](https://gamma.app/docs/arirsne24wgi3ed)
+[Link to the presentation slides](https://gamma.app/docs/arirsne24wgi3ed)
+
+## Video of Demo and Slides Presentation
+
+[Link to the video](https://drive.google.com/file/d/1ynpNGYo8wXtzN-hrlPDSK0Q8kW_lcGL_/view?usp=drive_link)
