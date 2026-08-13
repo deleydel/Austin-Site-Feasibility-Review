@@ -241,3 +241,7 @@ The text-quality stages (grounding, judged relevance, guardrail text checks, LLM
 ## Minimum Definition of Success
 
 The minimum successful implementation must accept an Austin site and proposed development, retrieve relevant site facts from structured municipal data, retrieve applicable Austin requirements through RAG, coordinate the review through an agentic workflow, enforce guardrails, and produce a cautious source-cited downloadable report. The demo must also show measured evaluation results and at least one guardrail response.
+
+## Presentation Slides
+
+[View the presentation slides](https://gamma.app/docs/arirsne24wgi3ed)
